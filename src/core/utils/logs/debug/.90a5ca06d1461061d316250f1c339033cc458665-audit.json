@@ -1,0 +1,50 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\.90a5ca06d1461061d316250f1c339033cc458665-audit.json",
+    "files": [
+        {
+            "date": 1672680033318,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-01-02.log",
+            "hash": "6c763021c53c4451c92cce906438ceb2bc5e53848bb16154aa644f1657cad03c"
+        },
+        {
+            "date": 1672789908221,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-01-04.log",
+            "hash": "2aa17c4450ccaa1ad039b583ed8c1f212d5aa09a7132e6b509a6de6b4dd11449"
+        },
+        {
+            "date": 1672880880553,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-01-05.log",
+            "hash": "3983c955093b13a72e3f5edcbe295e232c67f19c93b6a7fb7884ef035f53d7f4"
+        },
+        {
+            "date": 1675786685672,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-02-07.log",
+            "hash": "caae027853e8f64f35bee6f8e66e221ec8c9b45ce9dcb35992cb624c21b5174a"
+        },
+        {
+            "date": 1675834432413,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-02-08.log",
+            "hash": "01049a0441e45a37be647dc8480ec1f8ccd57392d79bde48752c4494999e2ee5"
+        },
+        {
+            "date": 1676394832578,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-02-14.log",
+            "hash": "e901e2b399a3347b3276958dc9e41e88764ac1a6803bb9096cf8eaaa06a7c333"
+        },
+        {
+            "date": 1676466849519,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-02-15.log",
+            "hash": "769236f5862caf98267d0e3b2cbf18779f4e2f6908c5c47bf465ef7dc49e5593"
+        },
+        {
+            "date": 1676504254567,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\logs\\debug\\2023-02-16.log",
+            "hash": "2f691c3b7660a3428e8d5f4467dd58c7c42ede7d57b556894e4e600a2b83ca62"
+        }
+    ],
+    "hashType": "sha256"
+}

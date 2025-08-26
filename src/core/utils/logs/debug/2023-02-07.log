@@ -1,0 +1,680 @@
+2023-02-07 17:18:11 info: Initializing Routes ....
+2023-02-07 17:18:11 info: Routes Initialized Successfully ✔️
+2023-02-07 17:18:11 info: Initializing Swagger ....
+2023-02-07 17:18:11 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:18:11 info: Initializing Error Handler ....
+2023-02-07 17:18:11 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:18:11 info: Starting Server ....
+2023-02-07 17:18:11 info: =================================
+2023-02-07 17:18:11 info: ========= SERVER 🚀=======
+2023-02-07 17:18:11 info: ========= ENV: development ========
+2023-02-07 17:18:11 info: ========= PORT: 3000 ========
+2023-02-07 17:18:11 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:18:11 info: =================================
+2023-02-07 17:18:11 info: =================================
+2023-02-07 17:18:11 info: ========= DATABASE 🚀=======
+2023-02-07 17:18:11 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:18:11 info: =================================
+2023-02-07 17:19:47 info: Initializing Routes ....
+2023-02-07 17:19:47 info: Routes Initialized Successfully ✔️
+2023-02-07 17:19:47 info: Initializing Swagger ....
+2023-02-07 17:19:47 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:19:47 info: Initializing Error Handler ....
+2023-02-07 17:19:47 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:19:47 info: Starting Server ....
+2023-02-07 17:19:47 info: =================================
+2023-02-07 17:19:47 info: ========= SERVER 🚀=======
+2023-02-07 17:19:47 info: ========= ENV: development ========
+2023-02-07 17:19:47 info: ========= PORT: 3000 ========
+2023-02-07 17:19:47 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:19:47 info: =================================
+2023-02-07 17:19:48 info: =================================
+2023-02-07 17:19:48 info: ========= DATABASE 🚀=======
+2023-02-07 17:19:48 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:19:48 info: =================================
+2023-02-07 17:20:17 info: Initializing Routes ....
+2023-02-07 17:20:17 info: Routes Initialized Successfully ✔️
+2023-02-07 17:20:17 info: Initializing Swagger ....
+2023-02-07 17:20:17 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:20:17 info: Initializing Error Handler ....
+2023-02-07 17:20:17 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:20:17 info: Starting Server ....
+2023-02-07 17:20:17 info: =================================
+2023-02-07 17:20:17 info: ========= SERVER 🚀=======
+2023-02-07 17:20:17 info: ========= ENV: development ========
+2023-02-07 17:20:17 info: ========= PORT: 3000 ========
+2023-02-07 17:20:17 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:20:17 info: =================================
+2023-02-07 17:20:17 info: =================================
+2023-02-07 17:20:17 info: ========= DATABASE 🚀=======
+2023-02-07 17:20:17 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:20:17 info: =================================
+2023-02-07 17:20:28 info: Initializing Routes ....
+2023-02-07 17:20:28 info: Routes Initialized Successfully ✔️
+2023-02-07 17:20:28 info: Initializing Swagger ....
+2023-02-07 17:20:28 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:20:28 info: Initializing Error Handler ....
+2023-02-07 17:20:28 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:20:28 info: Starting Server ....
+2023-02-07 17:20:28 info: =================================
+2023-02-07 17:20:28 info: ========= SERVER 🚀=======
+2023-02-07 17:20:28 info: ========= ENV: development ========
+2023-02-07 17:20:28 info: ========= PORT: 3000 ========
+2023-02-07 17:20:28 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:20:28 info: =================================
+2023-02-07 17:20:29 info: =================================
+2023-02-07 17:20:29 info: ========= DATABASE 🚀=======
+2023-02-07 17:20:29 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:20:29 info: =================================
+2023-02-07 17:20:45 info: Initializing Routes ....
+2023-02-07 17:20:45 info: Routes Initialized Successfully ✔️
+2023-02-07 17:20:45 info: Initializing Swagger ....
+2023-02-07 17:20:45 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:20:45 info: Initializing Error Handler ....
+2023-02-07 17:20:45 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:20:45 info: Starting Server ....
+2023-02-07 17:20:45 info: =================================
+2023-02-07 17:20:45 info: ========= SERVER 🚀=======
+2023-02-07 17:20:45 info: ========= ENV: development ========
+2023-02-07 17:20:45 info: ========= PORT: 3000 ========
+2023-02-07 17:20:45 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:20:45 info: =================================
+2023-02-07 17:20:45 info: =================================
+2023-02-07 17:20:45 info: ========= DATABASE 🚀=======
+2023-02-07 17:20:45 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:20:45 info: =================================
+2023-02-07 17:21:05 info: Initializing Routes ....
+2023-02-07 17:21:05 info: Routes Initialized Successfully ✔️
+2023-02-07 17:21:05 info: Initializing Swagger ....
+2023-02-07 17:21:05 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:21:05 info: Initializing Error Handler ....
+2023-02-07 17:21:05 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:21:05 info: Starting Server ....
+2023-02-07 17:21:05 info: =================================
+2023-02-07 17:21:05 info: ========= SERVER 🚀=======
+2023-02-07 17:21:05 info: ========= ENV: development ========
+2023-02-07 17:21:05 info: ========= PORT: 3000 ========
+2023-02-07 17:21:05 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:21:05 info: =================================
+2023-02-07 17:21:05 info: =================================
+2023-02-07 17:21:05 info: ========= DATABASE 🚀=======
+2023-02-07 17:21:05 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:21:05 info: =================================
+2023-02-07 17:33:39 info: Initializing Routes ....
+2023-02-07 17:33:39 info: Routes Initialized Successfully ✔️
+2023-02-07 17:33:39 info: Initializing Swagger ....
+2023-02-07 17:33:39 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:33:39 info: Initializing Error Handler ....
+2023-02-07 17:33:39 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:33:39 info: Starting Server ....
+2023-02-07 17:33:39 info: =================================
+2023-02-07 17:33:39 info: ========= SERVER 🚀=======
+2023-02-07 17:33:39 info: ========= ENV: development ========
+2023-02-07 17:33:39 info: ========= PORT: 3000 ========
+2023-02-07 17:33:39 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:33:39 info: =================================
+2023-02-07 17:33:39 info: =================================
+2023-02-07 17:33:39 info: ========= DATABASE 🚀=======
+2023-02-07 17:33:39 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:33:39 info: =================================
+2023-02-07 17:34:19 info: Initializing Routes ....
+2023-02-07 17:34:19 info: Routes Initialized Successfully ✔️
+2023-02-07 17:34:19 info: Initializing Swagger ....
+2023-02-07 17:34:19 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:34:19 info: Initializing Error Handler ....
+2023-02-07 17:34:19 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:34:19 info: Starting Server ....
+2023-02-07 17:34:19 info: =================================
+2023-02-07 17:34:19 info: ========= SERVER 🚀=======
+2023-02-07 17:34:19 info: ========= ENV: development ========
+2023-02-07 17:34:19 info: ========= PORT: 3000 ========
+2023-02-07 17:34:19 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:34:19 info: =================================
+2023-02-07 17:34:19 info: =================================
+2023-02-07 17:34:19 info: ========= DATABASE 🚀=======
+2023-02-07 17:34:19 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:34:19 info: =================================
+2023-02-07 17:36:53 info: Initializing Routes ....
+2023-02-07 17:36:53 info: Routes Initialized Successfully ✔️
+2023-02-07 17:36:53 info: Initializing Swagger ....
+2023-02-07 17:36:53 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:36:53 info: Initializing Error Handler ....
+2023-02-07 17:36:53 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:36:53 info: Starting Server ....
+2023-02-07 17:36:53 info: =================================
+2023-02-07 17:36:53 info: ========= SERVER 🚀=======
+2023-02-07 17:36:53 info: ========= ENV: development ========
+2023-02-07 17:36:53 info: ========= PORT: 3000 ========
+2023-02-07 17:36:53 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:36:53 info: =================================
+2023-02-07 17:36:54 info: =================================
+2023-02-07 17:36:54 info: ========= DATABASE 🚀=======
+2023-02-07 17:36:54 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:36:54 info: =================================
+2023-02-07 17:40:14 info: Initializing Routes ....
+2023-02-07 17:40:14 info: Routes Initialized Successfully ✔️
+2023-02-07 17:40:14 info: Initializing Swagger ....
+2023-02-07 17:40:14 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:40:14 info: Initializing Error Handler ....
+2023-02-07 17:40:14 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:40:14 info: Starting Server ....
+2023-02-07 17:40:14 info: =================================
+2023-02-07 17:40:14 info: ========= SERVER 🚀=======
+2023-02-07 17:40:14 info: ========= ENV: development ========
+2023-02-07 17:40:14 info: ========= PORT: 3000 ========
+2023-02-07 17:40:14 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:40:14 info: =================================
+2023-02-07 17:40:14 info: =================================
+2023-02-07 17:40:14 info: ========= DATABASE 🚀=======
+2023-02-07 17:40:14 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:40:14 info: =================================
+2023-02-07 17:42:47 info: Initializing Routes ....
+2023-02-07 17:42:47 info: Routes Initialized Successfully ✔️
+2023-02-07 17:42:47 info: Initializing Swagger ....
+2023-02-07 17:42:47 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:42:47 info: Initializing Error Handler ....
+2023-02-07 17:42:47 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:42:47 info: Starting Server ....
+2023-02-07 17:42:47 info: =================================
+2023-02-07 17:42:47 info: ========= SERVER 🚀=======
+2023-02-07 17:42:47 info: ========= ENV: development ========
+2023-02-07 17:42:47 info: ========= PORT: 3000 ========
+2023-02-07 17:42:47 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:42:47 info: =================================
+2023-02-07 17:42:48 info: =================================
+2023-02-07 17:42:48 info: ========= DATABASE 🚀=======
+2023-02-07 17:42:48 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:42:48 info: =================================
+2023-02-07 17:44:56 info: Initializing Routes ....
+2023-02-07 17:44:57 info: Routes Initialized Successfully ✔️
+2023-02-07 17:44:57 info: Initializing Swagger ....
+2023-02-07 17:44:57 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:44:57 info: Initializing Error Handler ....
+2023-02-07 17:44:57 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:44:57 info: Starting Server ....
+2023-02-07 17:44:57 info: =================================
+2023-02-07 17:44:57 info: ========= SERVER 🚀=======
+2023-02-07 17:44:57 info: ========= ENV: development ========
+2023-02-07 17:44:57 info: ========= PORT: 3000 ========
+2023-02-07 17:44:57 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:44:57 info: =================================
+2023-02-07 17:44:57 info: =================================
+2023-02-07 17:44:57 info: ========= DATABASE 🚀=======
+2023-02-07 17:44:57 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:44:57 info: =================================
+2023-02-07 17:46:40 info: Initializing Routes ....
+2023-02-07 17:46:40 info: Routes Initialized Successfully ✔️
+2023-02-07 17:46:40 info: Initializing Swagger ....
+2023-02-07 17:46:40 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:46:40 info: Initializing Error Handler ....
+2023-02-07 17:46:40 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:46:40 info: Starting Server ....
+2023-02-07 17:46:40 info: =================================
+2023-02-07 17:46:40 info: ========= SERVER 🚀=======
+2023-02-07 17:46:40 info: ========= ENV: development ========
+2023-02-07 17:46:40 info: ========= PORT: 3000 ========
+2023-02-07 17:46:40 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:46:40 info: =================================
+2023-02-07 17:46:41 info: =================================
+2023-02-07 17:46:41 info: ========= DATABASE 🚀=======
+2023-02-07 17:46:41 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:46:41 info: =================================
+2023-02-07 17:46:53 info: Initializing Routes ....
+2023-02-07 17:46:53 info: Routes Initialized Successfully ✔️
+2023-02-07 17:46:53 info: Initializing Swagger ....
+2023-02-07 17:46:53 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:46:53 info: Initializing Error Handler ....
+2023-02-07 17:46:53 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:46:53 info: Starting Server ....
+2023-02-07 17:46:53 info: =================================
+2023-02-07 17:46:53 info: ========= SERVER 🚀=======
+2023-02-07 17:46:53 info: ========= ENV: development ========
+2023-02-07 17:46:53 info: ========= PORT: 3000 ========
+2023-02-07 17:46:53 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:46:53 info: =================================
+2023-02-07 17:46:53 info: =================================
+2023-02-07 17:46:53 info: ========= DATABASE 🚀=======
+2023-02-07 17:46:53 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:46:53 info: =================================
+2023-02-07 17:48:59 info: Initializing Routes ....
+2023-02-07 17:48:59 info: Routes Initialized Successfully ✔️
+2023-02-07 17:48:59 info: Initializing Swagger ....
+2023-02-07 17:48:59 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:48:59 info: Initializing Error Handler ....
+2023-02-07 17:48:59 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:48:59 info: Starting Server ....
+2023-02-07 17:48:59 info: =================================
+2023-02-07 17:48:59 info: ========= SERVER 🚀=======
+2023-02-07 17:48:59 info: ========= ENV: development ========
+2023-02-07 17:48:59 info: ========= PORT: 3000 ========
+2023-02-07 17:48:59 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:48:59 info: =================================
+2023-02-07 17:48:59 info: =================================
+2023-02-07 17:48:59 info: ========= DATABASE 🚀=======
+2023-02-07 17:48:59 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:48:59 info: =================================
+2023-02-07 17:56:47 info: Initializing Routes ....
+2023-02-07 17:56:47 info: Routes Initialized Successfully ✔️
+2023-02-07 17:56:47 info: Initializing Swagger ....
+2023-02-07 17:56:47 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:56:47 info: Initializing Error Handler ....
+2023-02-07 17:56:47 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:56:47 info: Starting Server ....
+2023-02-07 17:56:47 info: =================================
+2023-02-07 17:56:47 info: ========= SERVER 🚀=======
+2023-02-07 17:56:47 info: ========= ENV: development ========
+2023-02-07 17:56:47 info: ========= PORT: 3000 ========
+2023-02-07 17:56:48 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:56:48 info: =================================
+2023-02-07 17:56:48 info: =================================
+2023-02-07 17:56:48 info: ========= DATABASE 🚀=======
+2023-02-07 17:56:48 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:56:48 info: =================================
+2023-02-07 17:57:38 info: Initializing Routes ....
+2023-02-07 17:57:38 info: Routes Initialized Successfully ✔️
+2023-02-07 17:57:38 info: Initializing Swagger ....
+2023-02-07 17:57:38 info: Swagger Initialized Successfully ✔️
+2023-02-07 17:57:38 info: Initializing Error Handler ....
+2023-02-07 17:57:38 info: Error Handler Initialized Successfully ✔️
+2023-02-07 17:57:38 info: Starting Server ....
+2023-02-07 17:57:38 info: =================================
+2023-02-07 17:57:38 info: ========= SERVER 🚀=======
+2023-02-07 17:57:38 info: ========= ENV: development ========
+2023-02-07 17:57:38 info: ========= PORT: 3000 ========
+2023-02-07 17:57:38 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 17:57:38 info: =================================
+2023-02-07 17:57:38 info: =================================
+2023-02-07 17:57:38 info: ========= DATABASE 🚀=======
+2023-02-07 17:57:38 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 17:57:38 info: =================================
+2023-02-07 18:05:17 info: Initializing Routes ....
+2023-02-07 18:05:17 info: Routes Initialized Successfully ✔️
+2023-02-07 18:05:17 info: Initializing Swagger ....
+2023-02-07 18:05:17 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:05:17 info: Initializing Error Handler ....
+2023-02-07 18:05:17 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:05:17 info: Starting Server ....
+2023-02-07 18:05:17 info: =================================
+2023-02-07 18:05:17 info: ========= SERVER 🚀=======
+2023-02-07 18:05:17 info: ========= ENV: development ========
+2023-02-07 18:05:17 info: ========= PORT: 3000 ========
+2023-02-07 18:05:17 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:05:17 info: =================================
+2023-02-07 18:05:17 info: =================================
+2023-02-07 18:05:17 info: ========= DATABASE 🚀=======
+2023-02-07 18:05:17 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:05:17 info: =================================
+2023-02-07 18:05:25 info: Initializing Routes ....
+2023-02-07 18:05:25 info: Routes Initialized Successfully ✔️
+2023-02-07 18:05:25 info: Initializing Swagger ....
+2023-02-07 18:05:25 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:05:25 info: Initializing Error Handler ....
+2023-02-07 18:05:25 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:05:25 info: Starting Server ....
+2023-02-07 18:05:25 info: =================================
+2023-02-07 18:05:25 info: ========= SERVER 🚀=======
+2023-02-07 18:05:25 info: ========= ENV: development ========
+2023-02-07 18:05:25 info: ========= PORT: 3000 ========
+2023-02-07 18:05:25 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:05:25 info: =================================
+2023-02-07 18:05:25 info: =================================
+2023-02-07 18:05:25 info: ========= DATABASE 🚀=======
+2023-02-07 18:05:25 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:05:25 info: =================================
+2023-02-07 18:13:58 info: Initializing Routes ....
+2023-02-07 18:13:58 info: Routes Initialized Successfully ✔️
+2023-02-07 18:13:58 info: Initializing Swagger ....
+2023-02-07 18:13:58 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:13:58 info: Initializing Error Handler ....
+2023-02-07 18:13:58 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:13:58 info: Starting Server ....
+2023-02-07 18:13:58 info: =================================
+2023-02-07 18:13:58 info: ========= SERVER 🚀=======
+2023-02-07 18:13:58 info: ========= ENV: development ========
+2023-02-07 18:13:58 info: ========= PORT: 3000 ========
+2023-02-07 18:13:58 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:13:58 info: =================================
+2023-02-07 18:13:58 info: =================================
+2023-02-07 18:13:58 info: ========= DATABASE 🚀=======
+2023-02-07 18:13:58 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:13:58 info: =================================
+2023-02-07 18:14:10 info: Initializing Routes ....
+2023-02-07 18:14:10 info: Routes Initialized Successfully ✔️
+2023-02-07 18:14:10 info: Initializing Swagger ....
+2023-02-07 18:14:10 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:14:10 info: Initializing Error Handler ....
+2023-02-07 18:14:10 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:14:10 info: Starting Server ....
+2023-02-07 18:14:10 info: =================================
+2023-02-07 18:14:10 info: ========= SERVER 🚀=======
+2023-02-07 18:14:10 info: ========= ENV: development ========
+2023-02-07 18:14:10 info: ========= PORT: 3000 ========
+2023-02-07 18:14:10 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:14:10 info: =================================
+2023-02-07 18:14:10 info: =================================
+2023-02-07 18:14:10 info: ========= DATABASE 🚀=======
+2023-02-07 18:14:10 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:14:10 info: =================================
+2023-02-07 18:17:34 info: Initializing Routes ....
+2023-02-07 18:17:34 info: Routes Initialized Successfully ✔️
+2023-02-07 18:17:34 info: Initializing Swagger ....
+2023-02-07 18:17:34 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:17:34 info: Initializing Error Handler ....
+2023-02-07 18:17:34 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:17:34 info: Starting Server ....
+2023-02-07 18:17:34 info: =================================
+2023-02-07 18:17:34 info: ========= SERVER 🚀=======
+2023-02-07 18:17:34 info: ========= ENV: development ========
+2023-02-07 18:17:34 info: ========= PORT: 3000 ========
+2023-02-07 18:17:34 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:17:34 info: =================================
+2023-02-07 18:17:34 info: =================================
+2023-02-07 18:17:34 info: ========= DATABASE 🚀=======
+2023-02-07 18:17:34 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:17:34 info: =================================
+2023-02-07 18:19:06 info: Initializing Routes ....
+2023-02-07 18:19:06 info: Routes Initialized Successfully ✔️
+2023-02-07 18:19:06 info: Initializing Swagger ....
+2023-02-07 18:19:06 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:19:06 info: Initializing Error Handler ....
+2023-02-07 18:19:06 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:19:06 info: Starting Server ....
+2023-02-07 18:19:06 info: =================================
+2023-02-07 18:19:06 info: ========= SERVER 🚀=======
+2023-02-07 18:19:06 info: ========= ENV: development ========
+2023-02-07 18:19:06 info: ========= PORT: 3000 ========
+2023-02-07 18:19:06 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:19:06 info: =================================
+2023-02-07 18:19:06 info: =================================
+2023-02-07 18:19:06 info: ========= DATABASE 🚀=======
+2023-02-07 18:19:06 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:19:06 info: =================================
+2023-02-07 18:20:11 info: Initializing Routes ....
+2023-02-07 18:20:11 info: Routes Initialized Successfully ✔️
+2023-02-07 18:20:11 info: Initializing Swagger ....
+2023-02-07 18:20:11 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:20:11 info: Initializing Error Handler ....
+2023-02-07 18:20:11 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:20:11 info: Starting Server ....
+2023-02-07 18:20:11 info: =================================
+2023-02-07 18:20:11 info: ========= SERVER 🚀=======
+2023-02-07 18:20:11 info: ========= ENV: development ========
+2023-02-07 18:20:11 info: ========= PORT: 3000 ========
+2023-02-07 18:20:11 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:20:11 info: =================================
+2023-02-07 18:20:11 info: =================================
+2023-02-07 18:20:11 info: ========= DATABASE 🚀=======
+2023-02-07 18:20:11 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:20:11 info: =================================
+2023-02-07 18:37:52 info: Initializing Routes ....
+2023-02-07 18:37:52 info: Routes Initialized Successfully ✔️
+2023-02-07 18:37:52 info: Initializing Swagger ....
+2023-02-07 18:37:52 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:37:52 info: Initializing Error Handler ....
+2023-02-07 18:37:52 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:37:52 info: Starting Server ....
+2023-02-07 18:37:52 info: =================================
+2023-02-07 18:37:52 info: ========= SERVER 🚀=======
+2023-02-07 18:37:52 info: ========= ENV: development ========
+2023-02-07 18:37:52 info: ========= PORT: 3000 ========
+2023-02-07 18:37:52 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:37:52 info: =================================
+2023-02-07 18:37:52 info: =================================
+2023-02-07 18:37:52 info: ========= DATABASE 🚀=======
+2023-02-07 18:37:52 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:37:52 info: =================================
+2023-02-07 18:38:56 info: Initializing Routes ....
+2023-02-07 18:38:56 info: Routes Initialized Successfully ✔️
+2023-02-07 18:38:56 info: Initializing Swagger ....
+2023-02-07 18:38:56 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:38:56 info: Initializing Error Handler ....
+2023-02-07 18:38:56 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:38:56 info: Starting Server ....
+2023-02-07 18:38:56 info: =================================
+2023-02-07 18:38:56 info: ========= SERVER 🚀=======
+2023-02-07 18:38:56 info: ========= ENV: development ========
+2023-02-07 18:38:56 info: ========= PORT: 3000 ========
+2023-02-07 18:38:56 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:38:56 info: =================================
+2023-02-07 18:38:56 info: =================================
+2023-02-07 18:38:56 info: ========= DATABASE 🚀=======
+2023-02-07 18:38:56 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:38:56 info: =================================
+2023-02-07 18:39:19 info: Initializing Routes ....
+2023-02-07 18:39:19 info: Routes Initialized Successfully ✔️
+2023-02-07 18:39:19 info: Initializing Swagger ....
+2023-02-07 18:39:19 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:39:19 info: Initializing Error Handler ....
+2023-02-07 18:39:19 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:39:19 info: Starting Server ....
+2023-02-07 18:39:19 info: =================================
+2023-02-07 18:39:19 info: ========= SERVER 🚀=======
+2023-02-07 18:39:19 info: ========= ENV: development ========
+2023-02-07 18:39:19 info: ========= PORT: 3000 ========
+2023-02-07 18:39:19 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:39:19 info: =================================
+2023-02-07 18:39:19 info: =================================
+2023-02-07 18:39:19 info: ========= DATABASE 🚀=======
+2023-02-07 18:39:19 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:39:19 info: =================================
+2023-02-07 18:41:02 info: Initializing Routes ....
+2023-02-07 18:41:02 info: Routes Initialized Successfully ✔️
+2023-02-07 18:41:02 info: Initializing Swagger ....
+2023-02-07 18:41:02 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:41:02 info: Initializing Error Handler ....
+2023-02-07 18:41:02 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:41:02 info: Starting Server ....
+2023-02-07 18:41:02 info: =================================
+2023-02-07 18:41:02 info: ========= SERVER 🚀=======
+2023-02-07 18:41:02 info: ========= ENV: development ========
+2023-02-07 18:41:02 info: ========= PORT: 3000 ========
+2023-02-07 18:41:02 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:41:02 info: =================================
+2023-02-07 18:41:02 info: =================================
+2023-02-07 18:41:02 info: ========= DATABASE 🚀=======
+2023-02-07 18:41:02 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:41:02 info: =================================
+2023-02-07 18:43:09 info: Initializing Routes ....
+2023-02-07 18:43:09 info: Routes Initialized Successfully ✔️
+2023-02-07 18:43:09 info: Initializing Swagger ....
+2023-02-07 18:43:09 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:43:09 info: Initializing Error Handler ....
+2023-02-07 18:43:09 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:43:09 info: Starting Server ....
+2023-02-07 18:43:09 info: =================================
+2023-02-07 18:43:09 info: ========= SERVER 🚀=======
+2023-02-07 18:43:09 info: ========= ENV: development ========
+2023-02-07 18:43:09 info: ========= PORT: 3000 ========
+2023-02-07 18:43:09 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:43:09 info: =================================
+2023-02-07 18:43:10 info: =================================
+2023-02-07 18:43:10 info: ========= DATABASE 🚀=======
+2023-02-07 18:43:10 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:43:10 info: =================================
+2023-02-07 18:45:02 info: Initializing Routes ....
+2023-02-07 18:45:02 info: Routes Initialized Successfully ✔️
+2023-02-07 18:45:02 info: Initializing Swagger ....
+2023-02-07 18:45:02 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:45:02 info: Initializing Error Handler ....
+2023-02-07 18:45:02 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:45:02 info: Starting Server ....
+2023-02-07 18:45:02 info: =================================
+2023-02-07 18:45:02 info: ========= SERVER 🚀=======
+2023-02-07 18:45:02 info: ========= ENV: development ========
+2023-02-07 18:45:02 info: ========= PORT: 3000 ========
+2023-02-07 18:45:02 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:45:02 info: =================================
+2023-02-07 18:45:02 info: =================================
+2023-02-07 18:45:02 info: ========= DATABASE 🚀=======
+2023-02-07 18:45:02 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:45:02 info: =================================
+2023-02-07 18:50:36 info: Initializing Routes ....
+2023-02-07 18:50:36 info: Routes Initialized Successfully ✔️
+2023-02-07 18:50:36 info: Initializing Swagger ....
+2023-02-07 18:50:36 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:50:36 info: Initializing Error Handler ....
+2023-02-07 18:50:36 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:50:36 info: Starting Server ....
+2023-02-07 18:50:36 info: =================================
+2023-02-07 18:50:36 info: ========= SERVER 🚀=======
+2023-02-07 18:50:36 info: ========= ENV: development ========
+2023-02-07 18:50:36 info: ========= PORT: 3000 ========
+2023-02-07 18:50:36 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:50:36 info: =================================
+2023-02-07 18:50:36 info: =================================
+2023-02-07 18:50:36 info: ========= DATABASE 🚀=======
+2023-02-07 18:50:36 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:50:36 info: =================================
+2023-02-07 18:50:45 info: Initializing Routes ....
+2023-02-07 18:50:45 info: Routes Initialized Successfully ✔️
+2023-02-07 18:50:45 info: Initializing Swagger ....
+2023-02-07 18:50:45 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:50:45 info: Initializing Error Handler ....
+2023-02-07 18:50:45 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:50:45 info: Starting Server ....
+2023-02-07 18:50:45 info: =================================
+2023-02-07 18:50:45 info: ========= SERVER 🚀=======
+2023-02-07 18:50:45 info: ========= ENV: development ========
+2023-02-07 18:50:45 info: ========= PORT: 3000 ========
+2023-02-07 18:50:45 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:50:45 info: =================================
+2023-02-07 18:50:45 info: =================================
+2023-02-07 18:50:45 info: ========= DATABASE 🚀=======
+2023-02-07 18:50:45 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:50:45 info: =================================
+2023-02-07 18:51:11 info: Initializing Routes ....
+2023-02-07 18:51:11 info: Routes Initialized Successfully ✔️
+2023-02-07 18:51:11 info: Initializing Swagger ....
+2023-02-07 18:51:11 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:51:11 info: Initializing Error Handler ....
+2023-02-07 18:51:11 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:51:11 info: Starting Server ....
+2023-02-07 18:51:11 info: =================================
+2023-02-07 18:51:11 info: ========= SERVER 🚀=======
+2023-02-07 18:51:11 info: ========= ENV: development ========
+2023-02-07 18:51:11 info: ========= PORT: 3000 ========
+2023-02-07 18:51:11 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:51:11 info: =================================
+2023-02-07 18:51:11 info: =================================
+2023-02-07 18:51:11 info: ========= DATABASE 🚀=======
+2023-02-07 18:51:11 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:51:11 info: =================================
+2023-02-07 18:51:53 info: Initializing Routes ....
+2023-02-07 18:51:53 info: Routes Initialized Successfully ✔️
+2023-02-07 18:51:53 info: Initializing Swagger ....
+2023-02-07 18:51:53 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:51:53 info: Initializing Error Handler ....
+2023-02-07 18:51:53 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:51:53 info: Starting Server ....
+2023-02-07 18:51:53 info: =================================
+2023-02-07 18:51:53 info: ========= SERVER 🚀=======
+2023-02-07 18:51:53 info: ========= ENV: development ========
+2023-02-07 18:51:53 info: ========= PORT: 3000 ========
+2023-02-07 18:51:53 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:51:53 info: =================================
+2023-02-07 18:51:53 info: =================================
+2023-02-07 18:51:53 info: ========= DATABASE 🚀=======
+2023-02-07 18:51:53 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:51:53 info: =================================
+2023-02-07 18:54:09 info: Initializing Routes ....
+2023-02-07 18:54:09 info: Routes Initialized Successfully ✔️
+2023-02-07 18:54:09 info: Initializing Swagger ....
+2023-02-07 18:54:09 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:54:09 info: Initializing Error Handler ....
+2023-02-07 18:54:09 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:54:09 info: Starting Server ....
+2023-02-07 18:54:09 info: =================================
+2023-02-07 18:54:09 info: ========= SERVER 🚀=======
+2023-02-07 18:54:09 info: ========= ENV: development ========
+2023-02-07 18:54:09 info: ========= PORT: 3000 ========
+2023-02-07 18:54:09 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:54:09 info: =================================
+2023-02-07 18:54:09 info: =================================
+2023-02-07 18:54:09 info: ========= DATABASE 🚀=======
+2023-02-07 18:54:09 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:54:09 info: =================================
+2023-02-07 18:54:30 info: Initializing Routes ....
+2023-02-07 18:54:30 info: Routes Initialized Successfully ✔️
+2023-02-07 18:54:30 info: Initializing Swagger ....
+2023-02-07 18:54:30 info: Swagger Initialized Successfully ✔️
+2023-02-07 18:54:30 info: Initializing Error Handler ....
+2023-02-07 18:54:30 info: Error Handler Initialized Successfully ✔️
+2023-02-07 18:54:30 info: Starting Server ....
+2023-02-07 18:54:30 info: =================================
+2023-02-07 18:54:30 info: ========= SERVER 🚀=======
+2023-02-07 18:54:30 info: ========= ENV: development ========
+2023-02-07 18:54:30 info: ========= PORT: 3000 ========
+2023-02-07 18:54:30 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 18:54:30 info: =================================
+2023-02-07 18:54:30 info: =================================
+2023-02-07 18:54:30 info: ========= DATABASE 🚀=======
+2023-02-07 18:54:30 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 18:54:30 info: =================================
+2023-02-07 19:01:40 info: Initializing Routes ....
+2023-02-07 19:01:40 info: Routes Initialized Successfully ✔️
+2023-02-07 19:01:40 info: Initializing Swagger ....
+2023-02-07 19:01:40 info: Swagger Initialized Successfully ✔️
+2023-02-07 19:01:40 info: Initializing Error Handler ....
+2023-02-07 19:01:40 info: Error Handler Initialized Successfully ✔️
+2023-02-07 19:01:40 info: Starting Server ....
+2023-02-07 19:01:40 info: =================================
+2023-02-07 19:01:40 info: ========= SERVER 🚀=======
+2023-02-07 19:01:40 info: ========= ENV: development ========
+2023-02-07 19:01:40 info: ========= PORT: 3000 ========
+2023-02-07 19:01:40 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 19:01:40 info: =================================
+2023-02-07 19:01:41 info: =================================
+2023-02-07 19:01:41 info: ========= DATABASE 🚀=======
+2023-02-07 19:01:41 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 19:01:41 info: =================================
+2023-02-07 19:10:52 info: Initializing Routes ....
+2023-02-07 19:10:52 info: Routes Initialized Successfully ✔️
+2023-02-07 19:10:52 info: Initializing Swagger ....
+2023-02-07 19:10:52 info: Swagger Initialized Successfully ✔️
+2023-02-07 19:10:52 info: Initializing Error Handler ....
+2023-02-07 19:10:52 info: Error Handler Initialized Successfully ✔️
+2023-02-07 19:10:52 info: Starting Server ....
+2023-02-07 19:10:52 info: =================================
+2023-02-07 19:10:52 info: ========= SERVER 🚀=======
+2023-02-07 19:10:52 info: ========= ENV: development ========
+2023-02-07 19:10:52 info: ========= PORT: 3000 ========
+2023-02-07 19:10:52 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 19:10:52 info: =================================
+2023-02-07 19:10:52 info: =================================
+2023-02-07 19:10:52 info: ========= DATABASE 🚀=======
+2023-02-07 19:10:52 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 19:10:52 info: =================================
+2023-02-07 19:16:08 info: Initializing Routes ....
+2023-02-07 19:16:08 info: Routes Initialized Successfully ✔️
+2023-02-07 19:16:08 info: Initializing Swagger ....
+2023-02-07 19:16:08 info: Swagger Initialized Successfully ✔️
+2023-02-07 19:16:08 info: Initializing Error Handler ....
+2023-02-07 19:16:08 info: Error Handler Initialized Successfully ✔️
+2023-02-07 19:16:08 info: Starting Server ....
+2023-02-07 19:16:08 info: =================================
+2023-02-07 19:16:08 info: ========= SERVER 🚀=======
+2023-02-07 19:16:08 info: ========= ENV: development ========
+2023-02-07 19:16:08 info: ========= PORT: 3000 ========
+2023-02-07 19:16:08 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 19:16:08 info: =================================
+2023-02-07 19:16:09 info: =================================
+2023-02-07 19:16:09 info: ========= DATABASE 🚀=======
+2023-02-07 19:16:09 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 19:16:09 info: =================================
+2023-02-07 19:16:29 info: Initializing Routes ....
+2023-02-07 19:16:29 info: Routes Initialized Successfully ✔️
+2023-02-07 19:16:29 info: Initializing Swagger ....
+2023-02-07 19:16:29 info: Swagger Initialized Successfully ✔️
+2023-02-07 19:16:29 info: Initializing Error Handler ....
+2023-02-07 19:16:29 info: Error Handler Initialized Successfully ✔️
+2023-02-07 19:16:29 info: Starting Server ....
+2023-02-07 19:16:29 info: =================================
+2023-02-07 19:16:29 info: ========= SERVER 🚀=======
+2023-02-07 19:16:29 info: ========= ENV: development ========
+2023-02-07 19:16:29 info: ========= PORT: 3000 ========
+2023-02-07 19:16:29 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-07 19:16:29 info: =================================
+2023-02-07 19:16:30 info: =================================
+2023-02-07 19:16:30 info: ========= DATABASE 🚀=======
+2023-02-07 19:16:30 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-07 19:16:30 info: =================================

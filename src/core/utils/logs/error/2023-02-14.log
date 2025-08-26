@@ -1,0 +1,365 @@
+2023-02-14 18:34:37 error: [POST] /api/v1/auth/register >> StatusCode:: 400, Message:: Unexpected token s in JSON at position 101
+2023-02-14 18:34:52 error: unhandledRejection Invalid symbol.
+2023-02-14 18:51:49 error: unhandledRejection Invalid symbol.
+2023-02-14 19:02:23 error: unhandledRejection Invalid symbol.
+2023-02-14 19:07:31 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:117:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 19:08:40 error: Error: Invalid symbol.
+    at C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\node_modules\binance-api-node\dist\http-client.js:102:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async WalletProvider.getCoinPricePercent (C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:17:35)
+    at async C:\Users\Mrbarnk\Documents\Projects\typescript\Morizon-Backend\src\wallet\providers\WalletProvider.ts:118:36
+2023-02-14 20:37:09 error: [GET] /api/v1/wallets >> StatusCode:: 401, Message:: Wrong authentication token used

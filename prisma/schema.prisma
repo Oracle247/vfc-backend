@@ -1,0 +1,76 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "postgresql" // or "mysql" / "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id          String    @id @default(cuid())
+  firstName   String
+  lastName    String
+  email       String    @unique
+  phoneNumber String
+  gender      Gender
+  address     String
+  dateOfBirth DateTime?
+  password    String?
+
+  // Campus-specific details
+  matricNumber String? @unique // For students only
+  department   String?
+  level        String? // e.g. "100", "200", "300", "400", "Postgraduate"
+  faculty      String?
+
+  // Other identifiers
+  role             UserRole // Student, Staff, Visitor
+  nationality      String?
+  stateOfOrigin    String?
+  emergencyContact String?
+
+  // Attendance relation
+  attendances Attendance[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model AttendanceSession {
+  id          String       @id @default(cuid())
+  serviceName String
+  date        DateTime
+  attendees   Attendance[]
+  createdAt   DateTime     @default(now())
+}
+
+model Attendance {
+  id        String            @id @default(cuid())
+  sessionId String
+  userId    String
+  session   AttendanceSession @relation(fields: [sessionId], references: [id])
+  user      User              @relation(fields: [userId], references: [id])
+  markedAt  DateTime          @default(now())
+}
+
+enum UserRole {
+  MEMBER
+  ADMIN
+  WORKER
+  FIRST_TIMER
+  EXECUTIVE
+}
+
+enum VisitType {
+  MEMBER
+  FIRST_TIMER
+  VISITOR
+}
+
+enum Gender {
+  MALE
+  FEMALE
+}

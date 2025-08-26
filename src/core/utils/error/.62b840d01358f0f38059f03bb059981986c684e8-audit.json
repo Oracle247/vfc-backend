@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\error\\.62b840d01358f0f38059f03bb059981986c684e8-audit.json",
+    "files": [
+        {
+            "date": 1672677507289,
+            "name": "C:\\Users\\Mrbarnk\\Documents\\Projects\\typescript\\Morizon-Backend\\src\\core\\utils\\error\\2023-01-02.log",
+            "hash": "094624d92f6b67ffce018ed1a267a83fc6a16a7bc1886c9f7924945aa7b28d53"
+        }
+    ],
+    "hashType": "sha256"
+}

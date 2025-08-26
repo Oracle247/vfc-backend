@@ -1,0 +1,485 @@
+2023-02-16 00:37:40 info: Initializing Routes ....
+2023-02-16 00:37:40 info: Routes Initialized Successfully ✔️
+2023-02-16 00:37:40 info: Initializing Swagger ....
+2023-02-16 00:37:40 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:37:40 info: Initializing Error Handler ....
+2023-02-16 00:37:40 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:37:40 info: Starting Server ....
+2023-02-16 00:37:40 info: =================================
+2023-02-16 00:37:40 info: ========= SERVER 🚀=======
+2023-02-16 00:37:40 info: ========= ENV: development ========
+2023-02-16 00:37:40 info: ========= PORT: 3000 ========
+2023-02-16 00:37:40 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:37:40 info: =================================
+2023-02-16 00:37:40 info: =================================
+2023-02-16 00:37:40 info: ========= DATABASE 🚀=======
+2023-02-16 00:37:40 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:37:40 info: =================================
+2023-02-16 00:37:40 info: Agenda Cron Ready ✔
+2023-02-16 00:38:38 info: Initializing Routes ....
+2023-02-16 00:38:38 info: Routes Initialized Successfully ✔️
+2023-02-16 00:38:38 info: Initializing Swagger ....
+2023-02-16 00:38:38 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:38:38 info: Initializing Error Handler ....
+2023-02-16 00:38:38 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:38:38 info: Starting Server ....
+2023-02-16 00:38:38 info: =================================
+2023-02-16 00:38:38 info: ========= SERVER 🚀=======
+2023-02-16 00:38:38 info: ========= ENV: development ========
+2023-02-16 00:38:38 info: ========= PORT: 3000 ========
+2023-02-16 00:38:38 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:38:38 info: =================================
+2023-02-16 00:38:38 info: =================================
+2023-02-16 00:38:38 info: ========= DATABASE 🚀=======
+2023-02-16 00:38:38 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:38:38 info: =================================
+2023-02-16 00:38:38 info: Agenda Cron Ready ✔
+2023-02-16 00:39:02 info: Initializing Routes ....
+2023-02-16 00:39:02 info: Routes Initialized Successfully ✔️
+2023-02-16 00:39:02 info: Initializing Swagger ....
+2023-02-16 00:39:02 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:39:02 info: Initializing Error Handler ....
+2023-02-16 00:39:02 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:39:02 info: Starting Server ....
+2023-02-16 00:39:02 info: =================================
+2023-02-16 00:39:02 info: ========= SERVER 🚀=======
+2023-02-16 00:39:02 info: ========= ENV: development ========
+2023-02-16 00:39:02 info: ========= PORT: 3000 ========
+2023-02-16 00:39:02 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:39:02 info: =================================
+2023-02-16 00:39:02 info: =================================
+2023-02-16 00:39:02 info: ========= DATABASE 🚀=======
+2023-02-16 00:39:02 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:39:02 info: =================================
+2023-02-16 00:39:02 info: Agenda Cron Ready ✔
+2023-02-16 00:43:33 info: Initializing Routes ....
+2023-02-16 00:43:33 info: Routes Initialized Successfully ✔️
+2023-02-16 00:43:33 info: Initializing Swagger ....
+2023-02-16 00:43:33 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:43:33 info: Initializing Error Handler ....
+2023-02-16 00:43:33 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:43:33 info: Starting Server ....
+2023-02-16 00:43:33 info: =================================
+2023-02-16 00:43:33 info: ========= SERVER 🚀=======
+2023-02-16 00:43:33 info: ========= ENV: development ========
+2023-02-16 00:43:33 info: ========= PORT: 3000 ========
+2023-02-16 00:43:33 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:43:33 info: =================================
+2023-02-16 00:43:33 info: =================================
+2023-02-16 00:43:33 info: ========= DATABASE 🚀=======
+2023-02-16 00:43:33 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:43:33 info: =================================
+2023-02-16 00:43:33 info: Agenda Cron Ready ✔
+2023-02-16 00:44:02 error: [POST] /api/v1/account/kyc/verify >> StatusCode:: 401, Message:: Authentication token missing
+2023-02-16 00:44:02 info: [0mPOST /api/v1/account/kyc/verify [33m401[0m 30.701 ms - 42[0m
+2023-02-16 00:44:30 info: {"statusCode":400,"msg":"Could not find the country name."}
+2023-02-16 00:44:30 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 218.534 ms - 42[0m
+2023-02-16 00:45:02 info: Initializing Routes ....
+2023-02-16 00:45:02 info: Routes Initialized Successfully ✔️
+2023-02-16 00:45:02 info: Initializing Swagger ....
+2023-02-16 00:45:02 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:45:02 info: Initializing Error Handler ....
+2023-02-16 00:45:02 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:45:02 info: Starting Server ....
+2023-02-16 00:45:02 info: =================================
+2023-02-16 00:45:02 info: ========= SERVER 🚀=======
+2023-02-16 00:45:02 info: ========= ENV: development ========
+2023-02-16 00:45:02 info: ========= PORT: 3000 ========
+2023-02-16 00:45:02 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:45:02 info: =================================
+2023-02-16 00:45:02 info: =================================
+2023-02-16 00:45:02 info: ========= DATABASE 🚀=======
+2023-02-16 00:45:02 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:45:02 info: =================================
+2023-02-16 00:45:02 info: Agenda Cron Ready ✔
+2023-02-16 00:45:05 info: {"statusCode":400,"msg":"Could not find the country name."}
+2023-02-16 00:45:05 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 70.099 ms - 42[0m
+2023-02-16 00:45:42 info: Initializing Routes ....
+2023-02-16 00:45:42 info: Routes Initialized Successfully ✔️
+2023-02-16 00:45:42 info: Initializing Swagger ....
+2023-02-16 00:45:42 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:45:42 info: Initializing Error Handler ....
+2023-02-16 00:45:42 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:45:42 info: Starting Server ....
+2023-02-16 00:45:42 info: =================================
+2023-02-16 00:45:42 info: ========= SERVER 🚀=======
+2023-02-16 00:45:42 info: ========= ENV: development ========
+2023-02-16 00:45:42 info: ========= PORT: 3000 ========
+2023-02-16 00:45:42 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:45:42 info: =================================
+2023-02-16 00:45:42 info: =================================
+2023-02-16 00:45:42 info: ========= DATABASE 🚀=======
+2023-02-16 00:45:42 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:45:42 info: =================================
+2023-02-16 00:45:42 info: Agenda Cron Ready ✔
+2023-02-16 00:45:45 info: {"statusCode":400,"msg":"Request failed with status code 404"}
+2023-02-16 00:45:45 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 2542.209 ms - 45[0m
+2023-02-16 00:46:01 info: Initializing Routes ....
+2023-02-16 00:46:01 info: Routes Initialized Successfully ✔️
+2023-02-16 00:46:01 info: Initializing Swagger ....
+2023-02-16 00:46:01 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:46:01 info: Initializing Error Handler ....
+2023-02-16 00:46:01 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:46:01 info: Starting Server ....
+2023-02-16 00:46:01 info: =================================
+2023-02-16 00:46:01 info: ========= SERVER 🚀=======
+2023-02-16 00:46:01 info: ========= ENV: development ========
+2023-02-16 00:46:01 info: ========= PORT: 3000 ========
+2023-02-16 00:46:01 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:46:01 info: =================================
+2023-02-16 00:46:01 info: =================================
+2023-02-16 00:46:01 info: ========= DATABASE 🚀=======
+2023-02-16 00:46:01 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:46:01 info: =================================
+2023-02-16 00:46:01 info: Agenda Cron Ready ✔
+2023-02-16 00:46:06 info: Initializing Routes ....
+2023-02-16 00:46:06 info: Routes Initialized Successfully ✔️
+2023-02-16 00:46:06 info: Initializing Swagger ....
+2023-02-16 00:46:06 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:46:06 info: Initializing Error Handler ....
+2023-02-16 00:46:06 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:46:06 info: Starting Server ....
+2023-02-16 00:46:06 info: =================================
+2023-02-16 00:46:06 info: ========= SERVER 🚀=======
+2023-02-16 00:46:06 info: ========= ENV: development ========
+2023-02-16 00:46:06 info: ========= PORT: 3000 ========
+2023-02-16 00:46:06 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:46:06 info: =================================
+2023-02-16 00:46:06 info: =================================
+2023-02-16 00:46:06 info: ========= DATABASE 🚀=======
+2023-02-16 00:46:06 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:46:06 info: =================================
+2023-02-16 00:46:06 info: Agenda Cron Ready ✔
+2023-02-16 00:46:09 info: {"statusCode":400,"msg":"Request failed with status code 404"}
+2023-02-16 00:46:09 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1203.984 ms - 45[0m
+2023-02-16 00:47:41 info: Initializing Routes ....
+2023-02-16 00:47:41 info: Routes Initialized Successfully ✔️
+2023-02-16 00:47:41 info: Initializing Swagger ....
+2023-02-16 00:47:41 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:47:41 info: Initializing Error Handler ....
+2023-02-16 00:47:41 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:47:41 info: Starting Server ....
+2023-02-16 00:47:41 info: =================================
+2023-02-16 00:47:41 info: ========= SERVER 🚀=======
+2023-02-16 00:47:41 info: ========= ENV: development ========
+2023-02-16 00:47:41 info: ========= PORT: 3000 ========
+2023-02-16 00:47:41 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:47:41 info: =================================
+2023-02-16 00:47:41 info: =================================
+2023-02-16 00:47:41 info: ========= DATABASE 🚀=======
+2023-02-16 00:47:41 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:47:41 info: =================================
+2023-02-16 00:47:41 info: Agenda Cron Ready ✔
+2023-02-16 00:47:54 info: Initializing Routes ....
+2023-02-16 00:47:54 info: Routes Initialized Successfully ✔️
+2023-02-16 00:47:54 info: Initializing Swagger ....
+2023-02-16 00:47:54 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:47:54 info: Initializing Error Handler ....
+2023-02-16 00:47:54 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:47:54 info: Starting Server ....
+2023-02-16 00:47:54 info: =================================
+2023-02-16 00:47:54 info: ========= SERVER 🚀=======
+2023-02-16 00:47:54 info: ========= ENV: development ========
+2023-02-16 00:47:54 info: ========= PORT: 3000 ========
+2023-02-16 00:47:54 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:47:54 info: =================================
+2023-02-16 00:47:54 info: =================================
+2023-02-16 00:47:54 info: ========= DATABASE 🚀=======
+2023-02-16 00:47:54 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:47:54 info: =================================
+2023-02-16 00:47:54 info: Agenda Cron Ready ✔
+2023-02-16 00:47:55 info: {"statusCode":400,"msg":"Request failed with status code 404"}
+2023-02-16 00:47:55 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1237.640 ms - 45[0m
+2023-02-16 00:48:14 info: {"statusCode":400,"msg":"Request failed with status code 404"}
+2023-02-16 00:48:14 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1110.383 ms - 45[0m
+2023-02-16 00:49:09 info: Initializing Routes ....
+2023-02-16 00:49:09 info: Routes Initialized Successfully ✔️
+2023-02-16 00:49:09 info: Initializing Swagger ....
+2023-02-16 00:49:09 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:49:09 info: Initializing Error Handler ....
+2023-02-16 00:49:09 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:49:09 info: Starting Server ....
+2023-02-16 00:49:09 info: =================================
+2023-02-16 00:49:09 info: ========= SERVER 🚀=======
+2023-02-16 00:49:09 info: ========= ENV: development ========
+2023-02-16 00:49:09 info: ========= PORT: 3000 ========
+2023-02-16 00:49:09 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:49:09 info: =================================
+2023-02-16 00:49:09 info: =================================
+2023-02-16 00:49:09 info: ========= DATABASE 🚀=======
+2023-02-16 00:49:09 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:49:09 info: =================================
+2023-02-16 00:49:09 info: Agenda Cron Ready ✔
+2023-02-16 00:49:14 info: {"statusCode":400,"msg":"Request failed with status code 404"}
+2023-02-16 00:49:14 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1186.143 ms - 45[0m
+2023-02-16 00:49:28 info: Initializing Routes ....
+2023-02-16 00:49:28 info: Routes Initialized Successfully ✔️
+2023-02-16 00:49:28 info: Initializing Swagger ....
+2023-02-16 00:49:28 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:49:28 info: Initializing Error Handler ....
+2023-02-16 00:49:28 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:49:28 info: Starting Server ....
+2023-02-16 00:49:28 info: =================================
+2023-02-16 00:49:28 info: ========= SERVER 🚀=======
+2023-02-16 00:49:28 info: ========= ENV: development ========
+2023-02-16 00:49:28 info: ========= PORT: 3000 ========
+2023-02-16 00:49:28 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:49:28 info: =================================
+2023-02-16 00:49:28 info: =================================
+2023-02-16 00:49:28 info: ========= DATABASE 🚀=======
+2023-02-16 00:49:28 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:49:28 info: =================================
+2023-02-16 00:49:28 info: Agenda Cron Ready ✔
+2023-02-16 00:53:26 info: [0mPOST /api/v1/sessions [33m404[0m 17.425 ms - 155[0m
+2023-02-16 00:54:14 info: {"statusCode":400,"msg":"Request failed with status code 404"}
+2023-02-16 00:54:14 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1194.325 ms - 45[0m
+2023-02-16 00:54:49 info: Initializing Routes ....
+2023-02-16 00:54:49 info: Routes Initialized Successfully ✔️
+2023-02-16 00:54:49 info: Initializing Swagger ....
+2023-02-16 00:54:49 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:54:49 info: Initializing Error Handler ....
+2023-02-16 00:54:49 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:54:49 info: Starting Server ....
+2023-02-16 00:54:49 info: =================================
+2023-02-16 00:54:49 info: ========= SERVER 🚀=======
+2023-02-16 00:54:49 info: ========= ENV: development ========
+2023-02-16 00:54:49 info: ========= PORT: 3000 ========
+2023-02-16 00:54:49 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:54:49 info: =================================
+2023-02-16 00:54:49 info: =================================
+2023-02-16 00:54:49 info: ========= DATABASE 🚀=======
+2023-02-16 00:54:49 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:54:49 info: =================================
+2023-02-16 00:54:49 info: Agenda Cron Ready ✔
+2023-02-16 00:54:50 info: {"statusCode":400,"msg":"Request failed with status code 400"}
+2023-02-16 00:54:50 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1207.740 ms - 45[0m
+2023-02-16 00:55:09 info: Initializing Routes ....
+2023-02-16 00:55:09 info: Routes Initialized Successfully ✔️
+2023-02-16 00:55:09 info: Initializing Swagger ....
+2023-02-16 00:55:09 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:55:09 info: Initializing Error Handler ....
+2023-02-16 00:55:09 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:55:09 info: Starting Server ....
+2023-02-16 00:55:09 info: =================================
+2023-02-16 00:55:09 info: ========= SERVER 🚀=======
+2023-02-16 00:55:09 info: ========= ENV: development ========
+2023-02-16 00:55:09 info: ========= PORT: 3000 ========
+2023-02-16 00:55:09 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:55:09 info: =================================
+2023-02-16 00:55:10 info: =================================
+2023-02-16 00:55:10 info: ========= DATABASE 🚀=======
+2023-02-16 00:55:10 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:55:10 info: =================================
+2023-02-16 00:55:10 info: Agenda Cron Ready ✔
+2023-02-16 00:55:15 info: {"statusCode":400,"msg":"Request failed with status code 400"}
+2023-02-16 00:55:15 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1219.596 ms - 45[0m
+2023-02-16 00:55:55 info: Initializing Routes ....
+2023-02-16 00:55:55 info: Routes Initialized Successfully ✔️
+2023-02-16 00:55:55 info: Initializing Swagger ....
+2023-02-16 00:55:55 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:55:55 info: Initializing Error Handler ....
+2023-02-16 00:55:55 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:55:55 info: Starting Server ....
+2023-02-16 00:55:55 info: =================================
+2023-02-16 00:55:55 info: ========= SERVER 🚀=======
+2023-02-16 00:55:55 info: ========= ENV: development ========
+2023-02-16 00:55:55 info: ========= PORT: 3000 ========
+2023-02-16 00:55:55 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:55:55 info: =================================
+2023-02-16 00:55:55 info: =================================
+2023-02-16 00:55:55 info: ========= DATABASE 🚀=======
+2023-02-16 00:55:55 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:55:55 info: =================================
+2023-02-16 00:55:55 info: Agenda Cron Ready ✔
+2023-02-16 00:56:06 info: Initializing Routes ....
+2023-02-16 00:56:06 info: Routes Initialized Successfully ✔️
+2023-02-16 00:56:06 info: Initializing Swagger ....
+2023-02-16 00:56:06 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:56:06 info: Initializing Error Handler ....
+2023-02-16 00:56:06 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:56:06 info: Starting Server ....
+2023-02-16 00:56:06 info: =================================
+2023-02-16 00:56:06 info: ========= SERVER 🚀=======
+2023-02-16 00:56:06 info: ========= ENV: development ========
+2023-02-16 00:56:06 info: ========= PORT: 3000 ========
+2023-02-16 00:56:06 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:56:06 info: =================================
+2023-02-16 00:56:06 info: =================================
+2023-02-16 00:56:06 info: ========= DATABASE 🚀=======
+2023-02-16 00:56:06 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:56:06 info: =================================
+2023-02-16 00:56:06 info: Agenda Cron Ready ✔
+2023-02-16 00:56:08 info: {"statusCode":400,"msg":"Request failed with status code 400"}
+2023-02-16 00:56:08 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1267.522 ms - 45[0m
+2023-02-16 00:56:30 info: Initializing Routes ....
+2023-02-16 00:56:30 info: Routes Initialized Successfully ✔️
+2023-02-16 00:56:30 info: Initializing Swagger ....
+2023-02-16 00:56:30 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:56:30 info: Initializing Error Handler ....
+2023-02-16 00:56:30 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:56:30 info: Starting Server ....
+2023-02-16 00:56:30 info: =================================
+2023-02-16 00:56:30 info: ========= SERVER 🚀=======
+2023-02-16 00:56:30 info: ========= ENV: development ========
+2023-02-16 00:56:30 info: ========= PORT: 3000 ========
+2023-02-16 00:56:30 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:56:30 info: =================================
+2023-02-16 00:56:30 info: =================================
+2023-02-16 00:56:30 info: ========= DATABASE 🚀=======
+2023-02-16 00:56:30 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:56:30 info: =================================
+2023-02-16 00:56:30 info: Agenda Cron Ready ✔
+2023-02-16 00:57:07 info: Initializing Routes ....
+2023-02-16 00:57:07 info: Routes Initialized Successfully ✔️
+2023-02-16 00:57:07 info: Initializing Swagger ....
+2023-02-16 00:57:07 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:57:07 info: Initializing Error Handler ....
+2023-02-16 00:57:07 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:57:07 info: Starting Server ....
+2023-02-16 00:57:07 info: =================================
+2023-02-16 00:57:07 info: ========= SERVER 🚀=======
+2023-02-16 00:57:07 info: ========= ENV: development ========
+2023-02-16 00:57:07 info: ========= PORT: 3000 ========
+2023-02-16 00:57:07 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:57:07 info: =================================
+2023-02-16 00:57:07 info: =================================
+2023-02-16 00:57:07 info: ========= DATABASE 🚀=======
+2023-02-16 00:57:07 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:57:07 info: =================================
+2023-02-16 00:57:07 info: Agenda Cron Ready ✔
+2023-02-16 00:57:09 info: {"statusCode":400,"msg":"Expected string, received object"}
+2023-02-16 00:57:09 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1223.946 ms - 42[0m
+2023-02-16 00:58:07 info: Initializing Routes ....
+2023-02-16 00:58:07 info: Routes Initialized Successfully ✔️
+2023-02-16 00:58:07 info: Initializing Swagger ....
+2023-02-16 00:58:07 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:58:07 info: Initializing Error Handler ....
+2023-02-16 00:58:07 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:58:07 info: Starting Server ....
+2023-02-16 00:58:07 info: =================================
+2023-02-16 00:58:07 info: ========= SERVER 🚀=======
+2023-02-16 00:58:07 info: ========= ENV: development ========
+2023-02-16 00:58:07 info: ========= PORT: 3000 ========
+2023-02-16 00:58:07 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:58:07 info: =================================
+2023-02-16 00:58:08 info: =================================
+2023-02-16 00:58:08 info: ========= DATABASE 🚀=======
+2023-02-16 00:58:08 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:58:08 info: =================================
+2023-02-16 00:58:08 info: Agenda Cron Ready ✔
+2023-02-16 00:58:10 info: {"statusCode":400,"msg":"Expected string, received number"}
+2023-02-16 00:58:10 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1298.472 ms - 42[0m
+2023-02-16 00:58:24 info: Initializing Routes ....
+2023-02-16 00:58:24 info: Routes Initialized Successfully ✔️
+2023-02-16 00:58:24 info: Initializing Swagger ....
+2023-02-16 00:58:24 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:58:24 info: Initializing Error Handler ....
+2023-02-16 00:58:24 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:58:24 info: Starting Server ....
+2023-02-16 00:58:24 info: =================================
+2023-02-16 00:58:24 info: ========= SERVER 🚀=======
+2023-02-16 00:58:24 info: ========= ENV: development ========
+2023-02-16 00:58:24 info: ========= PORT: 3000 ========
+2023-02-16 00:58:24 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:58:24 info: =================================
+2023-02-16 00:58:24 info: =================================
+2023-02-16 00:58:24 info: ========= DATABASE 🚀=======
+2023-02-16 00:58:24 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:58:24 info: =================================
+2023-02-16 00:58:25 info: Agenda Cron Ready ✔
+2023-02-16 00:58:26 info: {"statusCode":400,"msg":"document.proof must be a valid image of jpeg, jpg, png or pdf type and valid video of mp4, quicktime or mov type"}
+2023-02-16 00:58:26 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 1897.507 ms - 122[0m
+2023-02-16 00:58:36 info: Initializing Routes ....
+2023-02-16 00:58:36 info: Routes Initialized Successfully ✔️
+2023-02-16 00:58:36 info: Initializing Swagger ....
+2023-02-16 00:58:36 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:58:36 info: Initializing Error Handler ....
+2023-02-16 00:58:36 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:58:36 info: Starting Server ....
+2023-02-16 00:58:36 info: =================================
+2023-02-16 00:58:36 info: ========= SERVER 🚀=======
+2023-02-16 00:58:36 info: ========= ENV: development ========
+2023-02-16 00:58:36 info: ========= PORT: 3000 ========
+2023-02-16 00:58:36 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:58:36 info: =================================
+2023-02-16 00:58:36 info: =================================
+2023-02-16 00:58:36 info: ========= DATABASE 🚀=======
+2023-02-16 00:58:36 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:58:36 info: =================================
+2023-02-16 00:58:36 info: Agenda Cron Ready ✔
+2023-02-16 00:58:44 info: Initializing Routes ....
+2023-02-16 00:58:44 info: Routes Initialized Successfully ✔️
+2023-02-16 00:58:44 info: Initializing Swagger ....
+2023-02-16 00:58:44 info: Swagger Initialized Successfully ✔️
+2023-02-16 00:58:44 info: Initializing Error Handler ....
+2023-02-16 00:58:44 info: Error Handler Initialized Successfully ✔️
+2023-02-16 00:58:44 info: Starting Server ....
+2023-02-16 00:58:44 info: =================================
+2023-02-16 00:58:44 info: ========= SERVER 🚀=======
+2023-02-16 00:58:44 info: ========= ENV: development ========
+2023-02-16 00:58:44 info: ========= PORT: 3000 ========
+2023-02-16 00:58:44 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 00:58:44 info: =================================
+2023-02-16 00:58:45 info: =================================
+2023-02-16 00:58:45 info: ========= DATABASE 🚀=======
+2023-02-16 00:58:45 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 00:58:45 info: =================================
+2023-02-16 00:58:45 info: Agenda Cron Ready ✔
+2023-02-16 00:59:33 info: {"statusCode":200,"msg":"Account kyc verified successfully"}
+2023-02-16 00:59:33 info: [0mPOST /api/v1/account/kyc/verify [32m200[0m 35709.140 ms - 43[0m
+2023-02-16 01:00:32 info: {"statusCode":400,"msg":"document.proof must be a valid image of jpeg, jpg, png or pdf type and valid video of mp4, quicktime or mov type"}
+2023-02-16 01:00:32 info: [0mPOST /api/v1/account/kyc/verify [33m400[0m 981.309 ms - 122[0m
+2023-02-16 01:01:06 info: Initializing Routes ....
+2023-02-16 01:01:06 info: Routes Initialized Successfully ✔️
+2023-02-16 01:01:06 info: Initializing Swagger ....
+2023-02-16 01:01:06 info: Swagger Initialized Successfully ✔️
+2023-02-16 01:01:06 info: Initializing Error Handler ....
+2023-02-16 01:01:06 info: Error Handler Initialized Successfully ✔️
+2023-02-16 01:01:06 info: Starting Server ....
+2023-02-16 01:01:06 info: =================================
+2023-02-16 01:01:06 info: ========= SERVER 🚀=======
+2023-02-16 01:01:06 info: ========= ENV: development ========
+2023-02-16 01:01:06 info: ========= PORT: 3000 ========
+2023-02-16 01:01:06 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 01:01:06 info: =================================
+2023-02-16 01:01:06 info: =================================
+2023-02-16 01:01:06 info: ========= DATABASE 🚀=======
+2023-02-16 01:01:06 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 01:01:06 info: =================================
+2023-02-16 01:01:06 info: Agenda Cron Ready ✔
+2023-02-16 01:05:44 info: Initializing Routes ....
+2023-02-16 01:05:44 info: Routes Initialized Successfully ✔️
+2023-02-16 01:05:44 info: Initializing Swagger ....
+2023-02-16 01:05:44 info: Swagger Initialized Successfully ✔️
+2023-02-16 01:05:44 info: Initializing Error Handler ....
+2023-02-16 01:05:44 info: Error Handler Initialized Successfully ✔️
+2023-02-16 01:05:44 info: Starting Server ....
+2023-02-16 01:05:44 info: =================================
+2023-02-16 01:05:44 info: ========= SERVER 🚀=======
+2023-02-16 01:05:44 info: ========= ENV: development ========
+2023-02-16 01:05:44 info: ========= PORT: 3000 ========
+2023-02-16 01:05:44 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 01:05:44 info: =================================
+2023-02-16 01:05:44 info: =================================
+2023-02-16 01:05:44 info: ========= DATABASE 🚀=======
+2023-02-16 01:05:44 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 01:05:44 info: =================================
+2023-02-16 01:05:44 info: Agenda Cron Ready ✔
+2023-02-16 01:05:52 info: Initializing Routes ....
+2023-02-16 01:05:52 info: Routes Initialized Successfully ✔️
+2023-02-16 01:05:52 info: Initializing Swagger ....
+2023-02-16 01:05:52 info: Swagger Initialized Successfully ✔️
+2023-02-16 01:05:52 info: Initializing Error Handler ....
+2023-02-16 01:05:52 info: Error Handler Initialized Successfully ✔️
+2023-02-16 01:05:52 info: Starting Server ....
+2023-02-16 01:05:52 info: =================================
+2023-02-16 01:05:52 info: ========= SERVER 🚀=======
+2023-02-16 01:05:52 info: ========= ENV: development ========
+2023-02-16 01:05:52 info: ========= PORT: 3000 ========
+2023-02-16 01:05:52 info: 🚀 Server running on  127.0.0.1:3000 🚀
+2023-02-16 01:05:52 info: =================================
+2023-02-16 01:05:52 info: =================================
+2023-02-16 01:05:52 info: ========= DATABASE 🚀=======
+2023-02-16 01:05:52 info: 🚀 Database running on mongodb://127.0.0.1:27017/morizondb 🚀
+2023-02-16 01:05:52 info: =================================
+2023-02-16 01:05:52 info: Agenda Cron Ready ✔
