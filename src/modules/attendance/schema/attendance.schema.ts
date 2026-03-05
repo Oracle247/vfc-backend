@@ -6,7 +6,7 @@ import { z } from "zod";
  */
 export const CreateAttendanceSessionSchema = z.object({
     serviceName: z.string().min(1, "Service name is required"),
-    date: z.string().datetime({ message: "Invalid date format" }),
+    startedAt: z.string().datetime({ message: "Invalid date format" }),
 });
 
 /**
@@ -15,7 +15,7 @@ export const CreateAttendanceSessionSchema = z.object({
 export const UpdateAttendanceSessionSchema = z
     .object({
         serviceName: z.string().min(1).optional(),
-        date: z.string().datetime().optional(),
+        startedAt: z.string().datetime().optional(),
     })
     .refine((data) => Object.keys(data).length > 0, {
         message: "At least one field must be provided",
@@ -27,4 +27,12 @@ export const UpdateAttendanceSessionSchema = z
 export const MarkAttendanceSchema = z.object({
     sessionId: z.string().cuid("Invalid session ID"),
     userId: z.string().cuid("Invalid user ID"),
+});
+
+/**
+ * Schema for bulk marking attendance (multiple users at once)
+ */
+export const BulkMarkAttendanceSchema = z.object({
+    sessionId: z.string().cuid("Invalid session ID"),
+    userIds: z.array(z.string().cuid("Invalid user ID")).min(1, "At least one user ID is required"),
 });

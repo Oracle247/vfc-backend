@@ -48,7 +48,7 @@ class App {
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
     this.initializeErrorHandling();
-    this.handleViews();
+    // this.handleViews();
   }
 
   public listen() {
@@ -94,15 +94,15 @@ class App {
     return server
   }
 
-  handleViews() {
-    // Set Handlebars as the view engine
-    this.app.engine('handlebars', engine());
-    this.app.set('view engine', 'handlebars');
-    this.app.set('views', './views'); // Folder where your views will be stored
-    Handlebars?.registerHelper('ifEquals', function (arg1, arg2, options) {
-      return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
-    });
-  }
+  // handleViews() {
+  //   // Set Handlebars as the view engine
+  //   this.app.engine('handlebars', engine());
+  //   this.app.set('view engine', 'handlebars');
+  //   this.app.set('views', './views'); // Folder where your views will be stored
+  //   Handlebars?.registerHelper('ifEquals', function (arg1, arg2, options) {
+  //     return (arg1 == arg2) ? options.fn(this) : options.inverse(this);
+  //   });
+  // }
 
   public createServer() {
     return http.createServer(this.app)

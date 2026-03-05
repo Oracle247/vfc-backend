@@ -6,7 +6,8 @@ import { UserRole } from '@prisma/client';
 import {
   CreateAttendanceSessionSchema,
   UpdateAttendanceSessionSchema,
-  MarkAttendanceSchema
+  MarkAttendanceSchema,
+  BulkMarkAttendanceSchema
 } from '../schema/attendance.schema';
 import { validate } from '../../../core/middlewares';
 
@@ -27,7 +28,7 @@ class AttendanceRoute implements Routes {
     // Start a new attendance session
     this.router.post(`${this.path}/session`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
+      authorize(UserRole.ADMIN, UserRole.WORKER),
       validate(CreateAttendanceSessionSchema),
       this.attendanceController.startSession
     );
@@ -35,29 +36,35 @@ class AttendanceRoute implements Routes {
     // Mark a user's attendance
     this.router.post(`${this.path}/mark`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
+      authorize(UserRole.ADMIN, UserRole.WORKER),
       validate(MarkAttendanceSchema),
       this.attendanceController.markAttendance
     );
 
-    // Get all sessions (with pagination) for a branch
+    // Bulk mark attendance for multiple users
+    this.router.post(`${this.path}/mark-bulk`,
+      authenticate,
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      validate(BulkMarkAttendanceSchema),
+      this.attendanceController.bulkMarkAttendance
+    );
+
+    // Get all sessions (with pagination)
     this.router.get(`${this.path}/sessions`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
       this.attendanceController.getAllSessions
     );
 
     // Get single session by ID
     this.router.get(`${this.path}/session/:id`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
       this.attendanceController.getSessionById
     );
 
     // Update a session
     this.router.put(`${this.path}/session/:id`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
+      authorize(UserRole.ADMIN),
       validate(UpdateAttendanceSessionSchema),
       this.attendanceController.updateSession
     );
@@ -65,7 +72,7 @@ class AttendanceRoute implements Routes {
     // Delete a session
     this.router.delete(`${this.path}/session/:id`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
+      authorize(UserRole.ADMIN),
       this.attendanceController.deleteSession
     );
   }

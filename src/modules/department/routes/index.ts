@@ -1,0 +1,1 @@
+export { DepartmentRoute } from './DepartmentRoute';

@@ -1,0 +1,1 @@
+export { DepartmentService } from './DepartmentService';

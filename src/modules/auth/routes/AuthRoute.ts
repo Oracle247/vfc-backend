@@ -2,6 +2,7 @@
 import { Request, Response, NextFunction, Router } from 'express';
 import { AuthController } from '../controllers';
 import { Routes } from "../../../core/routes/interfaces";
+import { authenticate } from '../../../core/middlewares/AuthMiddleware';
 import { ChangePasswordSchema, LoginSchema, RegisterSchema, ResetPasswordSchema, VerifyTokenSchema } from '../schema/auth.schema';
 import { validate } from '../../../core/middlewares';
 
@@ -23,7 +24,7 @@ class AuthRoute implements Routes {
 
         this.router.post(`${this.path}/login`, validate(LoginSchema), this.userController.login);
 
-        this.router.post(`${this.path}/change-password`, validate(ChangePasswordSchema), this.userController.changePassword);
+        this.router.post(`${this.path}/change-password`, authenticate, validate(ChangePasswordSchema), this.userController.changePassword);
 
         this.router.post(`${this.path}/reset-password`, validate(ResetPasswordSchema), this.userController.resetPassword);
 

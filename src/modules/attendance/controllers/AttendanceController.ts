@@ -11,9 +11,8 @@ export class AttendanceController {
    */
   public startSession = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { serviceName, date } = req.body;
-      console.log({ body: req.body })
-      const result = await this.attendanceService.startSession(serviceName, new Date(date));
+      const { serviceName, startedAt } = req.body;
+      const result = await this.attendanceService.startSession(serviceName, new Date(startedAt));
       successResponse(res, "Attendance session started successfully", StatusCodes.CREATED, result);
     } catch (err) {
       next(err);
@@ -69,6 +68,19 @@ export class AttendanceController {
       const { id } = req.params;
       const result = await this.attendanceService.updateSession(id, req.body);
       successResponse(res, "Attendance session updated successfully", StatusCodes.OK, result);
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  /**
+   * Bulk mark attendance for multiple users
+   */
+  public bulkMarkAttendance = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { sessionId, userIds } = req.body;
+      const result = await this.attendanceService.bulkMarkAttendance(sessionId, userIds);
+      successResponse(res, "Bulk attendance marked successfully", StatusCodes.OK, result);
     } catch (err) {
       next(err);
     }

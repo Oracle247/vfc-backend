@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { Gender, UserRole } from "@prisma/client";
+import { Gender, ChurchStatus } from "@prisma/client";
 
 // Register User Schema
 export const RegisterSchema = z.object({
@@ -18,7 +18,7 @@ export const RegisterSchema = z.object({
     faculty: z.string().optional(),
 
     // Other identifiers
-    role: z.nativeEnum(UserRole), // Student, Staff, Visitor
+    churchStatus: z.nativeEnum(ChurchStatus), // member, visitor, first_timer
     nationality: z.string().optional(),
     stateOfOrigin: z.string().optional(),
     emergencyContact: z.string().optional(),

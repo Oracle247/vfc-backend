@@ -11,20 +11,18 @@ type AttendanceSession = Prisma.AttendanceSessionGetPayload<{
 }>;
 
 export class AttendanceService {
-  /**
-   * Start a new attendance session (e.g., "Sunday Service")
-   */
-  async startSession(serviceName: string, date: Date): Promise<AttendanceSession> {
-    // Prevent duplicate sessions for same date + service
+
+  async startSession(serviceName: string, startedAt: Date): Promise<AttendanceSession> {
+    // Prevent duplicate sessions for same startedAt + service
     const existing = await prisma.attendanceSession.findFirst({
-      where: { date, serviceName },
+      where: { startedAt, serviceName },
     });
     if (existing) throw new Error("Session already exists for this date and service");
 
     return await prisma.attendanceSession.create({
       data: {
         serviceName,
-        date,
+        startedAt,
       },
       include: {
         attendees: { include: { user: true } },
@@ -32,9 +30,6 @@ export class AttendanceService {
     });
   }
 
-  /**
-   * Mark a user's attendance for a session
-   */
   async markAttendance(sessionId: string, userId: string) {
     // Ensure session exists
     const session = await prisma.attendanceSession.findUnique({
@@ -48,15 +43,14 @@ export class AttendanceService {
     });
     if (alreadyMarked) throw new Error("User already marked present");
 
-    return await prisma.attendance.create({
+    await prisma.attendance.create({
       data: { sessionId, userId },
       include: { user: true },
     });
+
+    return { success: true };
   }
 
-  /**
-   * Get all attendance sessions (with pagination)
-   */
   async getAllSessions(page = 1, limit = 10) {
     return await paginate(prisma.attendanceSession, {
       page,
@@ -68,9 +62,6 @@ export class AttendanceService {
     });
   }
 
-  /**
-   * Get session details (with attendees)
-   */
   async getSessionById(sessionId: string): Promise<AttendanceSession | null> {
     const session = await prisma.attendanceSession.findUnique({
       where: { id: sessionId },
@@ -84,9 +75,6 @@ export class AttendanceService {
     return session;
   }
 
-  /**
-   * Update session details (e.g., service name, date)
-   */
   async updateSession(sessionId: string, data: Partial<{ serviceName: string; date: Date }>) {
     return await prisma.attendanceSession.update({
       where: { id: sessionId },
@@ -95,9 +83,32 @@ export class AttendanceService {
     });
   }
 
-  /**
-   * Delete a session (removes attendance records too)
-   */
+  async bulkMarkAttendance(sessionId: string, userIds: string[]) {
+    const session = await prisma.attendanceSession.findUnique({
+      where: { id: sessionId },
+    });
+    if (!session) throw new Error("Attendance session not found");
+
+    const existing = await prisma.attendance.findMany({
+      where: { sessionId, userId: { in: userIds } },
+      select: { userId: true },
+    });
+    const alreadyMarkedIds = new Set(existing.map(a => a.userId));
+
+    const toMark = userIds.filter(id => !alreadyMarkedIds.has(id));
+
+    if (toMark.length > 0) {
+      await prisma.attendance.createMany({
+        data: toMark.map(userId => ({ sessionId, userId })),
+      });
+    }
+
+    return {
+      marked: toMark.length,
+      alreadyPresent: alreadyMarkedIds.size,
+    };
+  }
+
   async deleteSession(sessionId: string) {
     return await prisma.attendanceSession.delete({
       where: { id: sessionId },

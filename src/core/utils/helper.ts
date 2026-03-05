@@ -1,12 +1,3 @@
-const cheerio = require("cheerio");
-import fs from 'fs';
-
-import axios from "axios";
-import { PDFDocument, StandardFonts } from 'pdf-lib';
-import { logo } from "./logo";
-import { ICreateOrderItem } from '../../modules/order/interfaces/OrderInterface';
-
-
 export default class HelperClass {
   static checkPhoneNumber(phoneNumber?: string): string {
     const phone = phoneNumber
@@ -114,40 +105,13 @@ export default class HelperClass {
         ? { isPhoneNumber: true }
         : null;
   }
+
+  static generateInvoiceNumber(): string {
+    const year = new Date().getFullYear();
+    return `INV-${year}-${Date.now()}`;
+  };
+
 }
-
-
-export const upsertModifierGroup = (productId: string, group: any) => ({
-  where: { id: group.id ?? "" },
-  update: {
-    name: group.name,
-    isRequired: group.isRequired,
-    maxSelections: group.maxSelections,
-    modifiers: group.modifiers ? { upsert: group.modifiers.map(upsertModifier) } : undefined,
-  },
-  create: {
-    name: group.name,
-    isRequired: group.isRequired,
-    maxSelections: group.maxSelections,
-    modifiers: group.modifiers ? { create: group.modifiers.map(createModifier) } : undefined,
-  },
-});
-
-export const upsertModifier = (modifier: any) => ({
-  where: { id: modifier.id ?? "" },
-  update: {
-    name: modifier.name,
-    price: modifier.price,
-    image: modifier.image,
-  },
-  create: createModifier(modifier),
-});
-
-export const createModifier = (modifier: any) => ({
-  name: modifier.name,
-  price: modifier.price,
-  image: modifier.image,
-});
 
 
 

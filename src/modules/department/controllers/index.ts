@@ -1,0 +1,1 @@
+export { DepartmentController } from './DepartmentController';

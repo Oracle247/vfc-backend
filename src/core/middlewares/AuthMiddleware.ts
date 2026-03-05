@@ -8,7 +8,8 @@ export function authenticate(req: Request, res: Response, next: NextFunction) {
     try {
         const token = req.headers.authorization?.split(" ")[1];
         if (!token) {
-            res.status(401).json({ message: "Unauthorized" });
+            res.status(401).json({ message: "Unauthorized: No token provided" });
+            return;
         }
 
         const decoded = jwt.verify(token, JWT_SECRET) as { userId: string; role: UserRole };
@@ -16,11 +17,11 @@ export function authenticate(req: Request, res: Response, next: NextFunction) {
 
         next();
     } catch (error) {
-        res.status(401).json({ message: "Invalid token" });
+        res.status(401).json({ message: "Invalid or expired token" });
     }
 }
 
-export function authorize(roles: UserRole[]) {
+export function authorize(...roles: UserRole[]) {
     return (req: Request, res: Response, next: NextFunction): void => {
         try {
             if (!req.user || !roles.includes(req.user.role)) {

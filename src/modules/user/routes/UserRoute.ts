@@ -1,9 +1,11 @@
-
 import { Request, Response, NextFunction, Router } from 'express';
 import { UserController } from '../controllers';
 import { Routes } from "../../../core/routes/interfaces";
 import { authenticate, authorize } from '../../../core/middlewares/AuthMiddleware';
 import { UserRole } from '@prisma/client';
+import { upload } from '../../../core/utils';
+import { validate } from '../../../core/middlewares';
+import { UpdateChurchJourneySchema, SetPasswordSchema, UpdateUserSchema } from '../schema/user.schema';
 
 class UserRoute implements Routes {
   public path = '/user';
@@ -19,34 +21,87 @@ class UserRoute implements Routes {
       next()
     })
 
-    this.router.get(`${this.path}`,
+    // Filtered, paginated user list
+    this.router.get(`${this.path}/list`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
-      this.userController.getAllUsers
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      this.userController.getFilteredUsers
     );
 
-    this.router.get(`${this.path}/:id`,
+    // Search users by name
+    this.router.get(`${this.path}/search`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
-      this.userController.getUserById
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      this.userController.getUserByName
     );
 
-    this.router.get(`${this.path}/:id`,
+    // Get current user profile
+    this.router.get(`${this.path}/me`,
       authenticate,
       this.userController.getUser
     );
 
-    // this.router.post(`${this.path}/`, this.userController.createUser);
+    // Bulk import members from Excel
+    this.router.post(`${this.path}/bulk-import`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      upload.single("file"),
+      this.userController.bulkImport
+    );
 
-    // this.router.put(`${this.path}/:id`, this.userController.updateUser);
+    // Analyze expenses from Excel
+    this.router.post(`${this.path}/analyze-expenses`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      upload.single("statement"),
+      this.userController.analyzeExpenses
+    );
 
+    // Get all users
+    this.router.get(`${this.path}`,
+      authenticate,
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      this.userController.getAllUsers
+    );
+
+    // Get user by ID
+    this.router.get(`${this.path}/:id`,
+      authenticate,
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      this.userController.getUserById
+    );
+
+    // Update user profile
+    this.router.put(`${this.path}/:id`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(UpdateUserSchema),
+      this.userController.updateUser
+    );
+
+    // Update church journey / role
+    this.router.patch(`${this.path}/:id/church-journey`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(UpdateChurchJourneySchema),
+      this.userController.updateChurchJourney
+    );
+
+    // Set password for a user
+    this.router.patch(`${this.path}/:id/set-password`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(SetPasswordSchema),
+      this.userController.setPassword
+    );
+
+    // Delete user
     this.router.delete(`${this.path}/:id`,
       authenticate,
-      authorize([UserRole.EXECUTIVE, UserRole.ADMIN]),
+      authorize(UserRole.ADMIN),
       this.userController.deleteUser
     );
   }
 }
 
 export { UserRoute };
-

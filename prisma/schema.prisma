@@ -27,22 +27,37 @@ model User {
   faculty      String?
 
   // Other identifiers
-  role             UserRole // Student, Staff, Visitor
   nationality      String?
   stateOfOrigin    String?
   emergencyContact String?
 
-  // Attendance relation
-  attendances Attendance[]
+  // Layered church journey
+  churchStatus   ChurchStatus    @default(VISITOR)
+  membershipType MembershipType?
+  workerType     WorkerType?
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  // System access role (separate from church journey)
+  role UserRole @default(MEMBER)
+
+  attendances  Attendance[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  departments  Department[] @relation("UserDepartments")
+  departmentId String?
+  Department   Department[] @relation("DepartmentHead")
+
+  createdInvoices  Invoice[] @relation("CreatedInvoices")
+  paidInvoices     Invoice[] @relation("PaidInvoices")
+  approvedInvoices Invoice[] @relation("ApprovedInvoices")
+  recordedPayments InvoicePayment[] @relation("RecordedPayments")
 }
 
 model AttendanceSession {
   id          String       @id @default(cuid())
   serviceName String
-  date        DateTime
+  date        DateTime?
+  startedAt   DateTime     @default(now())
+  endedAt     DateTime?
   attendees   Attendance[]
   createdAt   DateTime     @default(now())
 }
@@ -56,21 +71,127 @@ model Attendance {
   markedAt  DateTime          @default(now())
 }
 
-enum UserRole {
-  MEMBER
-  ADMIN
-  WORKER
-  FIRST_TIMER
-  EXECUTIVE
+model Department {
+  id          String  @id @default(uuid())
+  name        String  @unique
+  description String?
+  headId      String?
+  head        User?   @relation("DepartmentHead", fields: [headId], references: [id])
+  members     User[]  @relation("UserDepartments")
+  userId      String?
 }
 
-enum VisitType {
-  MEMBER
-  FIRST_TIMER
-  VISITOR
+model Invoice {
+  id            String @id @default(uuid())
+  invoiceNumber String @unique
+
+  title       String
+  description String?
+  currency    String  @default("NGN")
+
+  status InvoiceStatus @default(CREATED)
+
+  totalAmount Float @default(0)
+
+  createdById    String
+  markedPaidById String?
+  approvedById   String?
+
+  receiptUrl String?
+
+  paidAt     DateTime?
+  approvedAt DateTime?
+
+  createdBy    User? @relation("CreatedInvoices", fields: [createdById], references: [id])
+  markedPaidBy User? @relation("PaidInvoices", fields: [markedPaidById], references: [id])
+  approvedBy   User? @relation("ApprovedInvoices", fields: [approvedById], references: [id])
+
+  departments InvoiceDepartment[]
+  payments    InvoicePayment[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model InvoiceDepartment {
+  id String @id @default(uuid())
+
+  invoiceId      String
+  departmentName String
+
+  bankName      String
+  accountName   String
+  accountNumber String
+
+  invoice Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+
+  items InvoiceItem[]
+
+  createdAt DateTime @default(now())
+
+  @@index([invoiceId])
+}
+
+model InvoiceItem {
+  id          String @id @default(uuid())
+  description String
+  quantity    Int    @default(1)
+  unitPrice   Float
+  totalPrice  Float
+
+  invoiceDepartmentId String
+  invoiceDepartment   InvoiceDepartment @relation(fields: [invoiceDepartmentId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
 }
 
 enum Gender {
   MALE
   FEMALE
+}
+
+enum ChurchStatus {
+  FIRST_TIMER
+  VISITOR
+  MEMBER
+}
+
+enum MembershipType {
+  NON_WORKER
+  WORKER
+}
+
+enum WorkerType {
+  REGULAR
+  EXECUTIVE
+}
+
+enum UserRole {
+  MEMBER
+  WORKER
+  ADMIN
+}
+
+model InvoicePayment {
+  id           String   @id @default(uuid())
+  invoiceId    String
+  amount       Float
+  receiptUrl   String?
+  note         String?
+  recordedById String
+  paidAt       DateTime @default(now())
+
+  invoice    Invoice @relation(fields: [invoiceId], references: [id], onDelete: Cascade)
+  recordedBy User    @relation("RecordedPayments", fields: [recordedById], references: [id])
+
+  createdAt DateTime @default(now())
+
+  @@index([invoiceId])
+}
+
+enum InvoiceStatus {
+  CREATED
+  APPROVED
+  PARTIALLY_PAID
+  PAID
 }

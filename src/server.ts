@@ -3,7 +3,9 @@ import {
     IndexRoute,
     UserRoute,
     AttendanceRoute,
-    AuthRoute
+    AuthRoute,
+    InvoiceRoute,
+    DepartmentRoute
 } from './core/routes';
 import { validateEnv } from './core/utils/validateEnv';
 
@@ -13,6 +15,8 @@ const app = new App([
     new UserRoute(),
     new AuthRoute(),
     new AttendanceRoute(),
+    new InvoiceRoute(),
+    new DepartmentRoute(),
     new IndexRoute()
 ]);
 
