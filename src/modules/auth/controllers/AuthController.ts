@@ -20,6 +20,7 @@ export class AuthController {
 
     public login = async (req: Request, res: Response, next: NextFunction) => {
         try {
+            console.log("Login successful, sending response with data:", req.body);
             const data = await this.authService.login(req.body.email, req.body.password);
             successResponse(res, "Login successful", StatusCodes.OK, { ...data });
         } catch (err) {

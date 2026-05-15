@@ -83,6 +83,7 @@ export class UserController {
   public getUserByName = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { name } = req.query;
+      console.log("Searching for user with name:", name);
       const user = await this.userService.getUserByName(name as string);
       if (!user) return next(new Error("User not found"));
       successResponse(res, "User fetched successfully", StatusCodes.OK, user);

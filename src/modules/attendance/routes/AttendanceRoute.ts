@@ -49,6 +49,32 @@ class AttendanceRoute implements Routes {
       this.attendanceController.bulkMarkAttendance
     );
 
+    // Analytics endpoints (must be before /session/:id to avoid conflict)
+    this.router.get(`${this.path}/analytics/summary`,
+      authenticate,
+      this.attendanceController.getAttendanceSummary
+    );
+
+    this.router.get(`${this.path}/analytics/top-members`,
+      authenticate,
+      this.attendanceController.getTopMembers
+    );
+
+    this.router.get(`${this.path}/analytics/member-history/:userId`,
+      authenticate,
+      this.attendanceController.getMemberAttendanceHistory
+    );
+
+    this.router.get(`${this.path}/analytics/trend`,
+      authenticate,
+      this.attendanceController.getAttendanceTrend
+    );
+
+    this.router.get(`${this.path}/analytics/rate`,
+      authenticate,
+      this.attendanceController.getAttendanceRate
+    );
+
     // Get all sessions (with pagination)
     this.router.get(`${this.path}/sessions`,
       authenticate,

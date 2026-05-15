@@ -114,4 +114,95 @@ export class AttendanceService {
       where: { id: sessionId },
     });
   }
+
+  async getAttendanceSummary() {
+    const [totalSessions, totalAttendanceRecords, uniqueAttendees] = await Promise.all([
+      prisma.attendanceSession.count(),
+      prisma.attendance.count(),
+      prisma.attendance.groupBy({ by: ['userId'] }).then(r => r.length),
+    ]);
+
+    const avgAttendancePerSession = totalSessions > 0
+      ? Math.round(totalAttendanceRecords / totalSessions)
+      : 0;
+
+    return { totalSessions, uniqueAttendees, avgAttendancePerSession };
+  }
+
+  async getTopMembers(limit = 10) {
+    const grouped = await prisma.attendance.groupBy({
+      by: ['userId'],
+      _count: { userId: true },
+      orderBy: { _count: { userId: 'desc' } },
+      take: limit,
+    });
+
+    const userIds = grouped.map(g => g.userId);
+    const users = await prisma.user.findMany({
+      where: { id: { in: userIds } },
+      select: { id: true, firstName: true, lastName: true, email: true, churchStatus: true },
+    });
+
+    const userMap = new Map(users.map(u => [u.id, u]));
+
+    return grouped.map(g => ({
+      ...userMap.get(g.userId),
+      attendanceCount: g._count.userId,
+    }));
+  }
+
+  async getMemberAttendanceHistory(userId: string) {
+    return await prisma.attendance.findMany({
+      where: { userId },
+      include: {
+        session: { select: { id: true, serviceName: true, startedAt: true } },
+      },
+      orderBy: { markedAt: 'asc' },
+    });
+  }
+
+  async getAttendanceTrend(groupBy: 'session' | 'week' | 'month' = 'session') {
+    if (groupBy === 'session') {
+      const sessions = await prisma.attendanceSession.findMany({
+        include: { _count: { select: { attendees: true } } },
+        orderBy: { startedAt: 'asc' },
+      });
+
+      return sessions.map(s => ({
+        period: s.startedAt.toISOString(),
+        label: s.serviceName,
+        count: s._count.attendees,
+      }));
+    }
+
+    const interval = groupBy === 'week' ? 'week' : 'month';
+    const results: { period: Date; count: bigint }[] = await prisma.$queryRawUnsafe(
+      `SELECT date_trunc('${interval}', "markedAt") as period, COUNT(*)::bigint as count FROM "Attendance" GROUP BY period ORDER BY period`
+    );
+
+    return results.map(r => ({
+      period: new Date(r.period).toISOString(),
+      label: interval,
+      count: Number(r.count),
+    }));
+  }
+
+  async getAttendanceRate() {
+    const [totalMembers, sessions] = await Promise.all([
+      prisma.user.count(),
+      prisma.attendanceSession.findMany({
+        include: { _count: { select: { attendees: true } } },
+        orderBy: { startedAt: 'asc' },
+      }),
+    ]);
+
+    return sessions.map(s => ({
+      sessionId: s.id,
+      serviceName: s.serviceName,
+      date: s.startedAt.toISOString(),
+      attendeeCount: s._count.attendees,
+      totalMembers,
+      rate: totalMembers > 0 ? Math.round((s._count.attendees / totalMembers) * 100) : 0,
+    }));
+  }
 }

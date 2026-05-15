@@ -1,8 +1,7 @@
 // prisma/schema.prisma
 
 datasource db {
-  provider = "postgresql" // or "mysql" / "sqlite"
-  url      = env("DATABASE_URL")
+  provider = "postgresql"
 }
 
 generator client {
@@ -46,9 +45,9 @@ model User {
   departmentId String?
   Department   Department[] @relation("DepartmentHead")
 
-  createdInvoices  Invoice[] @relation("CreatedInvoices")
-  paidInvoices     Invoice[] @relation("PaidInvoices")
-  approvedInvoices Invoice[] @relation("ApprovedInvoices")
+  createdInvoices  Invoice[]        @relation("CreatedInvoices")
+  paidInvoices     Invoice[]        @relation("PaidInvoices")
+  approvedInvoices Invoice[]        @relation("ApprovedInvoices")
   recordedPayments InvoicePayment[] @relation("RecordedPayments")
 }
 

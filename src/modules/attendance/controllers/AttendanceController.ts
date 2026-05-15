@@ -98,4 +98,52 @@ export class AttendanceController {
       next(err);
     }
   };
+
+  public getAttendanceSummary = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.attendanceService.getAttendanceSummary();
+      successResponse(res, "Attendance summary fetched successfully", StatusCodes.OK, result);
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  public getTopMembers = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const limit = parseInt(req.query.limit as string) || 10;
+      const result = await this.attendanceService.getTopMembers(limit);
+      successResponse(res, "Top members fetched successfully", StatusCodes.OK, result);
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  public getMemberAttendanceHistory = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { userId } = req.params;
+      const result = await this.attendanceService.getMemberAttendanceHistory(userId);
+      successResponse(res, "Member attendance history fetched successfully", StatusCodes.OK, result);
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  public getAttendanceTrend = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const groupBy = (req.query.groupBy as 'session' | 'week' | 'month') || 'session';
+      const result = await this.attendanceService.getAttendanceTrend(groupBy);
+      successResponse(res, "Attendance trend fetched successfully", StatusCodes.OK, result);
+    } catch (err) {
+      next(err);
+    }
+  };
+
+  public getAttendanceRate = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.attendanceService.getAttendanceRate();
+      successResponse(res, "Attendance rate fetched successfully", StatusCodes.OK, result);
+    } catch (err) {
+      next(err);
+    }
+  };
 }

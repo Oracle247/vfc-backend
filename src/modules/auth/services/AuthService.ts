@@ -9,11 +9,6 @@ const JWT_SECRET = process.env.JWT_SECRET || "your_secret_key";
 export class AuthService {
     private userService = new UserService();
 
-    /**
-     * Register a new user
-     * - Default role is MEMBER (no password required)
-     * - Workers/Admins should have password set via setPassword endpoint
-     */
     async register(data: IUser) {
         const existingUser = await this.userService.getUserByEmail(data.email);
         if (existingUser) throw new Error("User already exists");
@@ -26,9 +21,6 @@ export class AuthService {
         return { user: newUser };
     }
 
-    /**
-     * Login - generates JWT with userId and role
-     */
     async login(email: string, password: string) {
         const user = await this.userService.getUserByEmail(email);
         if (!user) throw new Error("Invalid email or password");
@@ -49,7 +41,7 @@ export class AuthService {
 
         const { password: _, ...userWithoutPassword } = user;
 
-        return { user: userWithoutPassword, token };
+        return { user: userWithoutPassword, accessToken: token };
     }
 
     /**
