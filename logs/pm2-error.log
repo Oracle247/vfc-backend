@@ -1,0 +1,2408 @@
+2026-05-18 17:52:59 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:52:59 +01:00: 
+2026-05-18 17:52:59 +01:00: ```
+2026-05-18 17:52:59 +01:00: new PrismaClient({
+2026-05-18 17:52:59 +01:00:   ...
+2026-05-18 17:52:59 +01:00: })
+2026-05-18 17:52:59 +01:00: ```
+2026-05-18 17:52:59 +01:00: 
+2026-05-18 17:52:59 +01:00: or
+2026-05-18 17:52:59 +01:00: 
+2026-05-18 17:52:59 +01:00: ```
+2026-05-18 17:52:59 +01:00: constructor() {
+2026-05-18 17:52:59 +01:00:   super({ ... });
+2026-05-18 17:52:59 +01:00: }
+2026-05-18 17:52:59 +01:00: ```
+2026-05-18 17:52:59 +01:00:           
+2026-05-18 17:52:59 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:52:59 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:52:59 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:52:59 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:52:59 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:52:59 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:52:59 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:52:59 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:52:59 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:52:59 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:52:59 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:52:59 +01:00:   errorCode: undefined,
+2026-05-18 17:52:59 +01:00:   retryable: undefined
+2026-05-18 17:52:59 +01:00: }
+2026-05-18 17:53:06 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:06 +01:00: 
+2026-05-18 17:53:06 +01:00: ```
+2026-05-18 17:53:06 +01:00: new PrismaClient({
+2026-05-18 17:53:06 +01:00:   ...
+2026-05-18 17:53:06 +01:00: })
+2026-05-18 17:53:06 +01:00: ```
+2026-05-18 17:53:06 +01:00: 
+2026-05-18 17:53:06 +01:00: or
+2026-05-18 17:53:06 +01:00: 
+2026-05-18 17:53:06 +01:00: ```
+2026-05-18 17:53:06 +01:00: constructor() {
+2026-05-18 17:53:06 +01:00:   super({ ... });
+2026-05-18 17:53:06 +01:00: }
+2026-05-18 17:53:06 +01:00: ```
+2026-05-18 17:53:06 +01:00:           
+2026-05-18 17:53:06 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:06 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:06 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:06 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:06 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:06 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:06 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:06 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:06 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:06 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:06 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:06 +01:00:   errorCode: undefined,
+2026-05-18 17:53:06 +01:00:   retryable: undefined
+2026-05-18 17:53:06 +01:00: }
+2026-05-18 17:53:13 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:13 +01:00: 
+2026-05-18 17:53:13 +01:00: ```
+2026-05-18 17:53:13 +01:00: new PrismaClient({
+2026-05-18 17:53:13 +01:00:   ...
+2026-05-18 17:53:13 +01:00: })
+2026-05-18 17:53:13 +01:00: ```
+2026-05-18 17:53:13 +01:00: 
+2026-05-18 17:53:13 +01:00: or
+2026-05-18 17:53:13 +01:00: 
+2026-05-18 17:53:13 +01:00: ```
+2026-05-18 17:53:13 +01:00: constructor() {
+2026-05-18 17:53:13 +01:00:   super({ ... });
+2026-05-18 17:53:13 +01:00: }
+2026-05-18 17:53:13 +01:00: ```
+2026-05-18 17:53:13 +01:00:           
+2026-05-18 17:53:13 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:13 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:13 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:13 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:13 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:13 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:13 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:13 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:13 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:13 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:13 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:13 +01:00:   errorCode: undefined,
+2026-05-18 17:53:13 +01:00:   retryable: undefined
+2026-05-18 17:53:13 +01:00: }
+2026-05-18 17:53:20 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:20 +01:00: 
+2026-05-18 17:53:20 +01:00: ```
+2026-05-18 17:53:20 +01:00: new PrismaClient({
+2026-05-18 17:53:20 +01:00:   ...
+2026-05-18 17:53:20 +01:00: })
+2026-05-18 17:53:20 +01:00: ```
+2026-05-18 17:53:20 +01:00: 
+2026-05-18 17:53:20 +01:00: or
+2026-05-18 17:53:20 +01:00: 
+2026-05-18 17:53:20 +01:00: ```
+2026-05-18 17:53:20 +01:00: constructor() {
+2026-05-18 17:53:20 +01:00:   super({ ... });
+2026-05-18 17:53:20 +01:00: }
+2026-05-18 17:53:20 +01:00: ```
+2026-05-18 17:53:20 +01:00:           
+2026-05-18 17:53:20 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:20 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:20 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:20 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:20 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:20 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:20 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:20 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:20 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:20 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:20 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:20 +01:00:   errorCode: undefined,
+2026-05-18 17:53:20 +01:00:   retryable: undefined
+2026-05-18 17:53:20 +01:00: }
+2026-05-18 17:53:27 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:27 +01:00: 
+2026-05-18 17:53:27 +01:00: ```
+2026-05-18 17:53:27 +01:00: new PrismaClient({
+2026-05-18 17:53:27 +01:00:   ...
+2026-05-18 17:53:27 +01:00: })
+2026-05-18 17:53:27 +01:00: ```
+2026-05-18 17:53:27 +01:00: 
+2026-05-18 17:53:27 +01:00: or
+2026-05-18 17:53:27 +01:00: 
+2026-05-18 17:53:27 +01:00: ```
+2026-05-18 17:53:27 +01:00: constructor() {
+2026-05-18 17:53:27 +01:00:   super({ ... });
+2026-05-18 17:53:27 +01:00: }
+2026-05-18 17:53:27 +01:00: ```
+2026-05-18 17:53:27 +01:00:           
+2026-05-18 17:53:27 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:27 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:27 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:27 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:27 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:27 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:27 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:27 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:27 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:27 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:27 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:27 +01:00:   errorCode: undefined,
+2026-05-18 17:53:27 +01:00:   retryable: undefined
+2026-05-18 17:53:27 +01:00: }
+2026-05-18 17:53:35 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:35 +01:00: 
+2026-05-18 17:53:35 +01:00: ```
+2026-05-18 17:53:35 +01:00: new PrismaClient({
+2026-05-18 17:53:35 +01:00:   ...
+2026-05-18 17:53:35 +01:00: })
+2026-05-18 17:53:35 +01:00: ```
+2026-05-18 17:53:35 +01:00: 
+2026-05-18 17:53:35 +01:00: or
+2026-05-18 17:53:35 +01:00: 
+2026-05-18 17:53:35 +01:00: ```
+2026-05-18 17:53:35 +01:00: constructor() {
+2026-05-18 17:53:35 +01:00:   super({ ... });
+2026-05-18 17:53:35 +01:00: }
+2026-05-18 17:53:35 +01:00: ```
+2026-05-18 17:53:35 +01:00:           
+2026-05-18 17:53:35 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:35 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:35 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:35 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:35 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:35 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:35 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:35 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:35 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:35 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:35 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:35 +01:00:   errorCode: undefined,
+2026-05-18 17:53:35 +01:00:   retryable: undefined
+2026-05-18 17:53:35 +01:00: }
+2026-05-18 17:53:42 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:42 +01:00: 
+2026-05-18 17:53:42 +01:00: ```
+2026-05-18 17:53:42 +01:00: new PrismaClient({
+2026-05-18 17:53:42 +01:00:   ...
+2026-05-18 17:53:42 +01:00: })
+2026-05-18 17:53:42 +01:00: ```
+2026-05-18 17:53:42 +01:00: 
+2026-05-18 17:53:42 +01:00: or
+2026-05-18 17:53:42 +01:00: 
+2026-05-18 17:53:42 +01:00: ```
+2026-05-18 17:53:42 +01:00: constructor() {
+2026-05-18 17:53:42 +01:00:   super({ ... });
+2026-05-18 17:53:42 +01:00: }
+2026-05-18 17:53:42 +01:00: ```
+2026-05-18 17:53:42 +01:00:           
+2026-05-18 17:53:42 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:42 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:42 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:42 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:42 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:42 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:42 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:42 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:42 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:42 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:42 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:42 +01:00:   errorCode: undefined,
+2026-05-18 17:53:42 +01:00:   retryable: undefined
+2026-05-18 17:53:42 +01:00: }
+2026-05-18 17:53:50 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:50 +01:00: 
+2026-05-18 17:53:50 +01:00: ```
+2026-05-18 17:53:50 +01:00: new PrismaClient({
+2026-05-18 17:53:50 +01:00:   ...
+2026-05-18 17:53:50 +01:00: })
+2026-05-18 17:53:50 +01:00: ```
+2026-05-18 17:53:50 +01:00: 
+2026-05-18 17:53:50 +01:00: or
+2026-05-18 17:53:50 +01:00: 
+2026-05-18 17:53:50 +01:00: ```
+2026-05-18 17:53:50 +01:00: constructor() {
+2026-05-18 17:53:50 +01:00:   super({ ... });
+2026-05-18 17:53:50 +01:00: }
+2026-05-18 17:53:50 +01:00: ```
+2026-05-18 17:53:50 +01:00:           
+2026-05-18 17:53:50 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:50 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:50 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:50 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:50 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:50 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:50 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:50 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:50 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:50 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:50 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:50 +01:00:   errorCode: undefined,
+2026-05-18 17:53:50 +01:00:   retryable: undefined
+2026-05-18 17:53:50 +01:00: }
+2026-05-18 17:53:57 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:53:57 +01:00: 
+2026-05-18 17:53:57 +01:00: ```
+2026-05-18 17:53:57 +01:00: new PrismaClient({
+2026-05-18 17:53:57 +01:00:   ...
+2026-05-18 17:53:57 +01:00: })
+2026-05-18 17:53:57 +01:00: ```
+2026-05-18 17:53:57 +01:00: 
+2026-05-18 17:53:57 +01:00: or
+2026-05-18 17:53:57 +01:00: 
+2026-05-18 17:53:57 +01:00: ```
+2026-05-18 17:53:57 +01:00: constructor() {
+2026-05-18 17:53:57 +01:00:   super({ ... });
+2026-05-18 17:53:57 +01:00: }
+2026-05-18 17:53:57 +01:00: ```
+2026-05-18 17:53:57 +01:00:           
+2026-05-18 17:53:57 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:53:57 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:53:57 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:53:57 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:53:57 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:53:57 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:53:57 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:53:57 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:53:57 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:53:57 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:53:57 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:53:57 +01:00:   errorCode: undefined,
+2026-05-18 17:53:57 +01:00:   retryable: undefined
+2026-05-18 17:53:57 +01:00: }
+2026-05-18 17:54:06 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:54:06 +01:00: 
+2026-05-18 17:54:06 +01:00: ```
+2026-05-18 17:54:06 +01:00: new PrismaClient({
+2026-05-18 17:54:06 +01:00:   ...
+2026-05-18 17:54:06 +01:00: })
+2026-05-18 17:54:06 +01:00: ```
+2026-05-18 17:54:06 +01:00: 
+2026-05-18 17:54:06 +01:00: or
+2026-05-18 17:54:06 +01:00: 
+2026-05-18 17:54:06 +01:00: ```
+2026-05-18 17:54:06 +01:00: constructor() {
+2026-05-18 17:54:06 +01:00:   super({ ... });
+2026-05-18 17:54:06 +01:00: }
+2026-05-18 17:54:06 +01:00: ```
+2026-05-18 17:54:06 +01:00:           
+2026-05-18 17:54:06 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:54:06 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:54:06 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:54:06 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:54:06 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:54:06 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:54:06 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:54:06 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:54:06 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:54:06 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:54:06 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:54:06 +01:00:   errorCode: undefined,
+2026-05-18 17:54:06 +01:00:   retryable: undefined
+2026-05-18 17:54:06 +01:00: }
+2026-05-18 17:54:14 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:54:14 +01:00: 
+2026-05-18 17:54:14 +01:00: ```
+2026-05-18 17:54:14 +01:00: new PrismaClient({
+2026-05-18 17:54:14 +01:00:   ...
+2026-05-18 17:54:14 +01:00: })
+2026-05-18 17:54:14 +01:00: ```
+2026-05-18 17:54:14 +01:00: 
+2026-05-18 17:54:14 +01:00: or
+2026-05-18 17:54:14 +01:00: 
+2026-05-18 17:54:14 +01:00: ```
+2026-05-18 17:54:14 +01:00: constructor() {
+2026-05-18 17:54:14 +01:00:   super({ ... });
+2026-05-18 17:54:14 +01:00: }
+2026-05-18 17:54:14 +01:00: ```
+2026-05-18 17:54:14 +01:00:           
+2026-05-18 17:54:14 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:54:14 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:54:14 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:54:14 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:54:14 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:54:14 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:54:14 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:54:14 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:54:14 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:54:14 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:54:14 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:54:14 +01:00:   errorCode: undefined,
+2026-05-18 17:54:14 +01:00:   retryable: undefined
+2026-05-18 17:54:14 +01:00: }
+2026-05-18 17:54:27 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:54:27 +01:00: 
+2026-05-18 17:54:27 +01:00: ```
+2026-05-18 17:54:27 +01:00: new PrismaClient({
+2026-05-18 17:54:27 +01:00:   ...
+2026-05-18 17:54:27 +01:00: })
+2026-05-18 17:54:27 +01:00: ```
+2026-05-18 17:54:27 +01:00: 
+2026-05-18 17:54:27 +01:00: or
+2026-05-18 17:54:27 +01:00: 
+2026-05-18 17:54:27 +01:00: ```
+2026-05-18 17:54:27 +01:00: constructor() {
+2026-05-18 17:54:27 +01:00:   super({ ... });
+2026-05-18 17:54:27 +01:00: }
+2026-05-18 17:54:27 +01:00: ```
+2026-05-18 17:54:27 +01:00:           
+2026-05-18 17:54:27 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:54:27 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:54:27 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:54:27 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:54:27 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:54:27 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:54:27 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:54:27 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:54:27 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:54:27 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:54:27 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:54:27 +01:00:   errorCode: undefined,
+2026-05-18 17:54:27 +01:00:   retryable: undefined
+2026-05-18 17:54:27 +01:00: }
+2026-05-18 17:54:35 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:54:35 +01:00: 
+2026-05-18 17:54:35 +01:00: ```
+2026-05-18 17:54:35 +01:00: new PrismaClient({
+2026-05-18 17:54:35 +01:00:   ...
+2026-05-18 17:54:35 +01:00: })
+2026-05-18 17:54:35 +01:00: ```
+2026-05-18 17:54:35 +01:00: 
+2026-05-18 17:54:35 +01:00: or
+2026-05-18 17:54:35 +01:00: 
+2026-05-18 17:54:35 +01:00: ```
+2026-05-18 17:54:35 +01:00: constructor() {
+2026-05-18 17:54:35 +01:00:   super({ ... });
+2026-05-18 17:54:35 +01:00: }
+2026-05-18 17:54:35 +01:00: ```
+2026-05-18 17:54:35 +01:00:           
+2026-05-18 17:54:35 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:54:35 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:54:35 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:54:35 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:54:35 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:54:35 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:54:35 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:54:35 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:54:35 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:54:35 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:54:35 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:54:35 +01:00:   errorCode: undefined,
+2026-05-18 17:54:35 +01:00:   retryable: undefined
+2026-05-18 17:54:35 +01:00: }
+2026-05-18 17:54:45 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:54:45 +01:00: 
+2026-05-18 17:54:45 +01:00: ```
+2026-05-18 17:54:45 +01:00: new PrismaClient({
+2026-05-18 17:54:45 +01:00:   ...
+2026-05-18 17:54:45 +01:00: })
+2026-05-18 17:54:45 +01:00: ```
+2026-05-18 17:54:45 +01:00: 
+2026-05-18 17:54:45 +01:00: or
+2026-05-18 17:54:45 +01:00: 
+2026-05-18 17:54:45 +01:00: ```
+2026-05-18 17:54:45 +01:00: constructor() {
+2026-05-18 17:54:45 +01:00:   super({ ... });
+2026-05-18 17:54:45 +01:00: }
+2026-05-18 17:54:45 +01:00: ```
+2026-05-18 17:54:45 +01:00:           
+2026-05-18 17:54:45 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:54:45 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:54:45 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:54:45 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:54:45 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:54:45 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:54:45 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:54:45 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:54:45 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:54:45 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:54:45 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:54:45 +01:00:   errorCode: undefined,
+2026-05-18 17:54:45 +01:00:   retryable: undefined
+2026-05-18 17:54:45 +01:00: }
+2026-05-18 17:54:54 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:54:54 +01:00: 
+2026-05-18 17:54:54 +01:00: ```
+2026-05-18 17:54:54 +01:00: new PrismaClient({
+2026-05-18 17:54:54 +01:00:   ...
+2026-05-18 17:54:54 +01:00: })
+2026-05-18 17:54:54 +01:00: ```
+2026-05-18 17:54:54 +01:00: 
+2026-05-18 17:54:54 +01:00: or
+2026-05-18 17:54:54 +01:00: 
+2026-05-18 17:54:54 +01:00: ```
+2026-05-18 17:54:54 +01:00: constructor() {
+2026-05-18 17:54:54 +01:00:   super({ ... });
+2026-05-18 17:54:54 +01:00: }
+2026-05-18 17:54:54 +01:00: ```
+2026-05-18 17:54:54 +01:00:           
+2026-05-18 17:54:54 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:54:54 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:54:54 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:54:54 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:54:54 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:54:54 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:54:54 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:54:54 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:54:54 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:54:54 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:54:54 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:54:54 +01:00:   errorCode: undefined,
+2026-05-18 17:54:54 +01:00:   retryable: undefined
+2026-05-18 17:54:54 +01:00: }
+2026-05-18 17:55:02 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:55:02 +01:00: 
+2026-05-18 17:55:02 +01:00: ```
+2026-05-18 17:55:02 +01:00: new PrismaClient({
+2026-05-18 17:55:02 +01:00:   ...
+2026-05-18 17:55:02 +01:00: })
+2026-05-18 17:55:02 +01:00: ```
+2026-05-18 17:55:02 +01:00: 
+2026-05-18 17:55:02 +01:00: or
+2026-05-18 17:55:02 +01:00: 
+2026-05-18 17:55:02 +01:00: ```
+2026-05-18 17:55:02 +01:00: constructor() {
+2026-05-18 17:55:02 +01:00:   super({ ... });
+2026-05-18 17:55:02 +01:00: }
+2026-05-18 17:55:02 +01:00: ```
+2026-05-18 17:55:02 +01:00:           
+2026-05-18 17:55:02 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:55:02 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:55:02 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:55:02 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:55:02 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:55:02 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:55:02 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:55:02 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:55:02 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:55:02 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:55:02 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:55:02 +01:00:   errorCode: undefined,
+2026-05-18 17:55:02 +01:00:   retryable: undefined
+2026-05-18 17:55:02 +01:00: }
+2026-05-18 17:55:10 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:55:10 +01:00: 
+2026-05-18 17:55:10 +01:00: ```
+2026-05-18 17:55:10 +01:00: new PrismaClient({
+2026-05-18 17:55:10 +01:00:   ...
+2026-05-18 17:55:10 +01:00: })
+2026-05-18 17:55:10 +01:00: ```
+2026-05-18 17:55:10 +01:00: 
+2026-05-18 17:55:10 +01:00: or
+2026-05-18 17:55:10 +01:00: 
+2026-05-18 17:55:10 +01:00: ```
+2026-05-18 17:55:10 +01:00: constructor() {
+2026-05-18 17:55:10 +01:00:   super({ ... });
+2026-05-18 17:55:10 +01:00: }
+2026-05-18 17:55:10 +01:00: ```
+2026-05-18 17:55:10 +01:00:           
+2026-05-18 17:55:10 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:55:10 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:55:10 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:55:10 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:55:10 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:55:10 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:55:10 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:55:10 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:55:10 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:55:10 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:55:10 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:55:10 +01:00:   errorCode: undefined,
+2026-05-18 17:55:10 +01:00:   retryable: undefined
+2026-05-18 17:55:10 +01:00: }
+2026-05-18 17:55:25 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:55:25 +01:00: 
+2026-05-18 17:55:25 +01:00: ```
+2026-05-18 17:55:25 +01:00: new PrismaClient({
+2026-05-18 17:55:25 +01:00:   ...
+2026-05-18 17:55:25 +01:00: })
+2026-05-18 17:55:25 +01:00: ```
+2026-05-18 17:55:25 +01:00: 
+2026-05-18 17:55:25 +01:00: or
+2026-05-18 17:55:25 +01:00: 
+2026-05-18 17:55:25 +01:00: ```
+2026-05-18 17:55:25 +01:00: constructor() {
+2026-05-18 17:55:25 +01:00:   super({ ... });
+2026-05-18 17:55:25 +01:00: }
+2026-05-18 17:55:25 +01:00: ```
+2026-05-18 17:55:25 +01:00:           
+2026-05-18 17:55:25 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:55:25 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:55:25 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:55:25 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:55:25 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:55:25 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:55:25 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:55:25 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:55:25 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:55:25 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:55:25 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:55:25 +01:00:   errorCode: undefined,
+2026-05-18 17:55:25 +01:00:   retryable: undefined
+2026-05-18 17:55:25 +01:00: }
+2026-05-18 17:55:34 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:55:34 +01:00: 
+2026-05-18 17:55:34 +01:00: ```
+2026-05-18 17:55:34 +01:00: new PrismaClient({
+2026-05-18 17:55:34 +01:00:   ...
+2026-05-18 17:55:34 +01:00: })
+2026-05-18 17:55:34 +01:00: ```
+2026-05-18 17:55:34 +01:00: 
+2026-05-18 17:55:34 +01:00: or
+2026-05-18 17:55:34 +01:00: 
+2026-05-18 17:55:34 +01:00: ```
+2026-05-18 17:55:34 +01:00: constructor() {
+2026-05-18 17:55:34 +01:00:   super({ ... });
+2026-05-18 17:55:34 +01:00: }
+2026-05-18 17:55:34 +01:00: ```
+2026-05-18 17:55:34 +01:00:           
+2026-05-18 17:55:34 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:55:34 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:55:34 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:55:34 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:55:34 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:55:34 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:55:34 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:55:34 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:55:34 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:55:34 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:55:34 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:55:34 +01:00:   errorCode: undefined,
+2026-05-18 17:55:34 +01:00:   retryable: undefined
+2026-05-18 17:55:34 +01:00: }
+2026-05-18 17:55:44 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:55:44 +01:00: 
+2026-05-18 17:55:44 +01:00: ```
+2026-05-18 17:55:44 +01:00: new PrismaClient({
+2026-05-18 17:55:44 +01:00:   ...
+2026-05-18 17:55:44 +01:00: })
+2026-05-18 17:55:44 +01:00: ```
+2026-05-18 17:55:44 +01:00: 
+2026-05-18 17:55:44 +01:00: or
+2026-05-18 17:55:44 +01:00: 
+2026-05-18 17:55:44 +01:00: ```
+2026-05-18 17:55:44 +01:00: constructor() {
+2026-05-18 17:55:44 +01:00:   super({ ... });
+2026-05-18 17:55:44 +01:00: }
+2026-05-18 17:55:44 +01:00: ```
+2026-05-18 17:55:44 +01:00:           
+2026-05-18 17:55:44 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:55:44 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:55:44 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:55:44 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:55:44 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:55:44 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:55:44 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:55:44 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:55:44 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:55:44 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:55:44 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:55:44 +01:00:   errorCode: undefined,
+2026-05-18 17:55:44 +01:00:   retryable: undefined
+2026-05-18 17:55:44 +01:00: }
+2026-05-18 17:55:54 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:55:54 +01:00: 
+2026-05-18 17:55:54 +01:00: ```
+2026-05-18 17:55:54 +01:00: new PrismaClient({
+2026-05-18 17:55:54 +01:00:   ...
+2026-05-18 17:55:54 +01:00: })
+2026-05-18 17:55:54 +01:00: ```
+2026-05-18 17:55:54 +01:00: 
+2026-05-18 17:55:54 +01:00: or
+2026-05-18 17:55:54 +01:00: 
+2026-05-18 17:55:54 +01:00: ```
+2026-05-18 17:55:54 +01:00: constructor() {
+2026-05-18 17:55:54 +01:00:   super({ ... });
+2026-05-18 17:55:54 +01:00: }
+2026-05-18 17:55:54 +01:00: ```
+2026-05-18 17:55:54 +01:00:           
+2026-05-18 17:55:54 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:55:54 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:55:54 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:55:54 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:55:54 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:55:54 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:55:54 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:55:54 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:55:54 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:55:54 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:55:54 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:55:54 +01:00:   errorCode: undefined,
+2026-05-18 17:55:54 +01:00:   retryable: undefined
+2026-05-18 17:55:54 +01:00: }
+2026-05-18 17:56:04 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:56:04 +01:00: 
+2026-05-18 17:56:04 +01:00: ```
+2026-05-18 17:56:04 +01:00: new PrismaClient({
+2026-05-18 17:56:04 +01:00:   ...
+2026-05-18 17:56:04 +01:00: })
+2026-05-18 17:56:04 +01:00: ```
+2026-05-18 17:56:04 +01:00: 
+2026-05-18 17:56:04 +01:00: or
+2026-05-18 17:56:04 +01:00: 
+2026-05-18 17:56:04 +01:00: ```
+2026-05-18 17:56:04 +01:00: constructor() {
+2026-05-18 17:56:04 +01:00:   super({ ... });
+2026-05-18 17:56:04 +01:00: }
+2026-05-18 17:56:04 +01:00: ```
+2026-05-18 17:56:04 +01:00:           
+2026-05-18 17:56:04 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:56:04 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:56:04 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:56:04 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:56:04 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:56:04 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:56:04 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:56:04 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:56:04 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:56:04 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:56:04 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:56:04 +01:00:   errorCode: undefined,
+2026-05-18 17:56:04 +01:00:   retryable: undefined
+2026-05-18 17:56:04 +01:00: }
+2026-05-18 17:56:14 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:56:14 +01:00: 
+2026-05-18 17:56:14 +01:00: ```
+2026-05-18 17:56:14 +01:00: new PrismaClient({
+2026-05-18 17:56:14 +01:00:   ...
+2026-05-18 17:56:14 +01:00: })
+2026-05-18 17:56:14 +01:00: ```
+2026-05-18 17:56:14 +01:00: 
+2026-05-18 17:56:14 +01:00: or
+2026-05-18 17:56:14 +01:00: 
+2026-05-18 17:56:14 +01:00: ```
+2026-05-18 17:56:14 +01:00: constructor() {
+2026-05-18 17:56:14 +01:00:   super({ ... });
+2026-05-18 17:56:14 +01:00: }
+2026-05-18 17:56:14 +01:00: ```
+2026-05-18 17:56:14 +01:00:           
+2026-05-18 17:56:14 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:56:14 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:56:14 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:56:14 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:56:14 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:56:14 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:56:14 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:56:14 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:56:14 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:56:14 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:56:14 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:56:14 +01:00:   errorCode: undefined,
+2026-05-18 17:56:14 +01:00:   retryable: undefined
+2026-05-18 17:56:14 +01:00: }
+2026-05-18 17:56:25 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:56:25 +01:00: 
+2026-05-18 17:56:25 +01:00: ```
+2026-05-18 17:56:25 +01:00: new PrismaClient({
+2026-05-18 17:56:25 +01:00:   ...
+2026-05-18 17:56:25 +01:00: })
+2026-05-18 17:56:25 +01:00: ```
+2026-05-18 17:56:25 +01:00: 
+2026-05-18 17:56:25 +01:00: or
+2026-05-18 17:56:25 +01:00: 
+2026-05-18 17:56:25 +01:00: ```
+2026-05-18 17:56:25 +01:00: constructor() {
+2026-05-18 17:56:25 +01:00:   super({ ... });
+2026-05-18 17:56:25 +01:00: }
+2026-05-18 17:56:25 +01:00: ```
+2026-05-18 17:56:25 +01:00:           
+2026-05-18 17:56:25 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:56:25 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:56:25 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:56:25 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:56:25 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:56:25 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:56:25 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:56:25 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:56:25 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:56:25 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:56:25 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:56:25 +01:00:   errorCode: undefined,
+2026-05-18 17:56:25 +01:00:   retryable: undefined
+2026-05-18 17:56:25 +01:00: }
+2026-05-18 17:56:36 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:56:36 +01:00: 
+2026-05-18 17:56:36 +01:00: ```
+2026-05-18 17:56:36 +01:00: new PrismaClient({
+2026-05-18 17:56:36 +01:00:   ...
+2026-05-18 17:56:36 +01:00: })
+2026-05-18 17:56:36 +01:00: ```
+2026-05-18 17:56:36 +01:00: 
+2026-05-18 17:56:36 +01:00: or
+2026-05-18 17:56:36 +01:00: 
+2026-05-18 17:56:36 +01:00: ```
+2026-05-18 17:56:36 +01:00: constructor() {
+2026-05-18 17:56:36 +01:00:   super({ ... });
+2026-05-18 17:56:36 +01:00: }
+2026-05-18 17:56:36 +01:00: ```
+2026-05-18 17:56:36 +01:00:           
+2026-05-18 17:56:36 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:56:36 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:56:36 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:56:36 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:56:36 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:56:36 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:56:36 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:56:36 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:56:36 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:56:36 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:56:36 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:56:36 +01:00:   errorCode: undefined,
+2026-05-18 17:56:36 +01:00:   retryable: undefined
+2026-05-18 17:56:36 +01:00: }
+2026-05-18 17:56:54 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:56:54 +01:00: 
+2026-05-18 17:56:54 +01:00: ```
+2026-05-18 17:56:54 +01:00: new PrismaClient({
+2026-05-18 17:56:54 +01:00:   ...
+2026-05-18 17:56:54 +01:00: })
+2026-05-18 17:56:54 +01:00: ```
+2026-05-18 17:56:54 +01:00: 
+2026-05-18 17:56:54 +01:00: or
+2026-05-18 17:56:54 +01:00: 
+2026-05-18 17:56:54 +01:00: ```
+2026-05-18 17:56:54 +01:00: constructor() {
+2026-05-18 17:56:54 +01:00:   super({ ... });
+2026-05-18 17:56:54 +01:00: }
+2026-05-18 17:56:54 +01:00: ```
+2026-05-18 17:56:54 +01:00:           
+2026-05-18 17:56:54 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:56:54 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:56:54 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:56:54 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:56:54 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:56:54 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:56:54 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:56:54 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:56:54 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:56:54 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:56:54 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:56:54 +01:00:   errorCode: undefined,
+2026-05-18 17:56:54 +01:00:   retryable: undefined
+2026-05-18 17:56:54 +01:00: }
+2026-05-18 17:57:08 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:57:08 +01:00: 
+2026-05-18 17:57:08 +01:00: ```
+2026-05-18 17:57:08 +01:00: new PrismaClient({
+2026-05-18 17:57:08 +01:00:   ...
+2026-05-18 17:57:08 +01:00: })
+2026-05-18 17:57:08 +01:00: ```
+2026-05-18 17:57:08 +01:00: 
+2026-05-18 17:57:08 +01:00: or
+2026-05-18 17:57:08 +01:00: 
+2026-05-18 17:57:08 +01:00: ```
+2026-05-18 17:57:08 +01:00: constructor() {
+2026-05-18 17:57:08 +01:00:   super({ ... });
+2026-05-18 17:57:08 +01:00: }
+2026-05-18 17:57:08 +01:00: ```
+2026-05-18 17:57:08 +01:00:           
+2026-05-18 17:57:08 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:57:08 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:57:08 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:57:08 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:57:08 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:57:08 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:57:08 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:57:08 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:57:08 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:57:08 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:57:08 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:57:08 +01:00:   errorCode: undefined,
+2026-05-18 17:57:08 +01:00:   retryable: undefined
+2026-05-18 17:57:08 +01:00: }
+2026-05-18 17:57:21 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:57:21 +01:00: 
+2026-05-18 17:57:21 +01:00: ```
+2026-05-18 17:57:21 +01:00: new PrismaClient({
+2026-05-18 17:57:21 +01:00:   ...
+2026-05-18 17:57:21 +01:00: })
+2026-05-18 17:57:21 +01:00: ```
+2026-05-18 17:57:21 +01:00: 
+2026-05-18 17:57:21 +01:00: or
+2026-05-18 17:57:21 +01:00: 
+2026-05-18 17:57:21 +01:00: ```
+2026-05-18 17:57:21 +01:00: constructor() {
+2026-05-18 17:57:21 +01:00:   super({ ... });
+2026-05-18 17:57:21 +01:00: }
+2026-05-18 17:57:21 +01:00: ```
+2026-05-18 17:57:21 +01:00:           
+2026-05-18 17:57:21 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:57:21 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:57:21 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:57:21 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:57:21 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:57:21 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:57:21 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:57:21 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:57:21 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:57:21 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:57:21 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:57:21 +01:00:   errorCode: undefined,
+2026-05-18 17:57:21 +01:00:   retryable: undefined
+2026-05-18 17:57:21 +01:00: }
+2026-05-18 17:57:30 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:57:30 +01:00: 
+2026-05-18 17:57:30 +01:00: ```
+2026-05-18 17:57:30 +01:00: new PrismaClient({
+2026-05-18 17:57:30 +01:00:   ...
+2026-05-18 17:57:30 +01:00: })
+2026-05-18 17:57:30 +01:00: ```
+2026-05-18 17:57:30 +01:00: 
+2026-05-18 17:57:30 +01:00: or
+2026-05-18 17:57:30 +01:00: 
+2026-05-18 17:57:30 +01:00: ```
+2026-05-18 17:57:30 +01:00: constructor() {
+2026-05-18 17:57:30 +01:00:   super({ ... });
+2026-05-18 17:57:30 +01:00: }
+2026-05-18 17:57:30 +01:00: ```
+2026-05-18 17:57:30 +01:00:           
+2026-05-18 17:57:30 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:57:30 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:57:30 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:57:30 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:57:30 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:57:30 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:57:30 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:57:30 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:57:30 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:57:30 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:57:30 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:57:30 +01:00:   errorCode: undefined,
+2026-05-18 17:57:30 +01:00:   retryable: undefined
+2026-05-18 17:57:30 +01:00: }
+2026-05-18 17:57:39 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:57:39 +01:00: 
+2026-05-18 17:57:39 +01:00: ```
+2026-05-18 17:57:39 +01:00: new PrismaClient({
+2026-05-18 17:57:39 +01:00:   ...
+2026-05-18 17:57:39 +01:00: })
+2026-05-18 17:57:39 +01:00: ```
+2026-05-18 17:57:39 +01:00: 
+2026-05-18 17:57:39 +01:00: or
+2026-05-18 17:57:39 +01:00: 
+2026-05-18 17:57:39 +01:00: ```
+2026-05-18 17:57:39 +01:00: constructor() {
+2026-05-18 17:57:39 +01:00:   super({ ... });
+2026-05-18 17:57:39 +01:00: }
+2026-05-18 17:57:39 +01:00: ```
+2026-05-18 17:57:39 +01:00:           
+2026-05-18 17:57:39 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:57:39 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:57:39 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:57:39 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:57:39 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:57:39 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:57:39 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:57:39 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:57:39 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:57:39 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:57:39 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:57:39 +01:00:   errorCode: undefined,
+2026-05-18 17:57:39 +01:00:   retryable: undefined
+2026-05-18 17:57:39 +01:00: }
+2026-05-18 17:57:48 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:57:48 +01:00: 
+2026-05-18 17:57:48 +01:00: ```
+2026-05-18 17:57:48 +01:00: new PrismaClient({
+2026-05-18 17:57:48 +01:00:   ...
+2026-05-18 17:57:48 +01:00: })
+2026-05-18 17:57:48 +01:00: ```
+2026-05-18 17:57:48 +01:00: 
+2026-05-18 17:57:48 +01:00: or
+2026-05-18 17:57:48 +01:00: 
+2026-05-18 17:57:48 +01:00: ```
+2026-05-18 17:57:48 +01:00: constructor() {
+2026-05-18 17:57:48 +01:00:   super({ ... });
+2026-05-18 17:57:48 +01:00: }
+2026-05-18 17:57:48 +01:00: ```
+2026-05-18 17:57:48 +01:00:           
+2026-05-18 17:57:48 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:57:48 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:57:48 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:57:48 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:57:48 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:57:48 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:57:48 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:57:48 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:57:48 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:57:48 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:57:48 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:57:48 +01:00:   errorCode: undefined,
+2026-05-18 17:57:48 +01:00:   retryable: undefined
+2026-05-18 17:57:48 +01:00: }
+2026-05-18 17:58:02 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:58:02 +01:00: 
+2026-05-18 17:58:02 +01:00: ```
+2026-05-18 17:58:02 +01:00: new PrismaClient({
+2026-05-18 17:58:02 +01:00:   ...
+2026-05-18 17:58:02 +01:00: })
+2026-05-18 17:58:02 +01:00: ```
+2026-05-18 17:58:02 +01:00: 
+2026-05-18 17:58:02 +01:00: or
+2026-05-18 17:58:02 +01:00: 
+2026-05-18 17:58:02 +01:00: ```
+2026-05-18 17:58:02 +01:00: constructor() {
+2026-05-18 17:58:02 +01:00:   super({ ... });
+2026-05-18 17:58:02 +01:00: }
+2026-05-18 17:58:02 +01:00: ```
+2026-05-18 17:58:02 +01:00:           
+2026-05-18 17:58:02 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:58:02 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:58:02 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:58:02 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:58:02 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:58:02 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:58:02 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:58:02 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:58:02 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:58:02 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:58:02 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:58:02 +01:00:   errorCode: undefined,
+2026-05-18 17:58:02 +01:00:   retryable: undefined
+2026-05-18 17:58:02 +01:00: }
+2026-05-18 17:58:13 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:58:13 +01:00: 
+2026-05-18 17:58:13 +01:00: ```
+2026-05-18 17:58:13 +01:00: new PrismaClient({
+2026-05-18 17:58:13 +01:00:   ...
+2026-05-18 17:58:13 +01:00: })
+2026-05-18 17:58:13 +01:00: ```
+2026-05-18 17:58:13 +01:00: 
+2026-05-18 17:58:13 +01:00: or
+2026-05-18 17:58:13 +01:00: 
+2026-05-18 17:58:13 +01:00: ```
+2026-05-18 17:58:13 +01:00: constructor() {
+2026-05-18 17:58:13 +01:00:   super({ ... });
+2026-05-18 17:58:13 +01:00: }
+2026-05-18 17:58:13 +01:00: ```
+2026-05-18 17:58:13 +01:00:           
+2026-05-18 17:58:13 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:58:13 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:58:13 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:58:13 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:58:13 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:58:13 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:58:13 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:58:13 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:58:13 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:58:13 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:58:13 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:58:13 +01:00:   errorCode: undefined,
+2026-05-18 17:58:13 +01:00:   retryable: undefined
+2026-05-18 17:58:13 +01:00: }
+2026-05-18 17:58:24 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:58:24 +01:00: 
+2026-05-18 17:58:24 +01:00: ```
+2026-05-18 17:58:24 +01:00: new PrismaClient({
+2026-05-18 17:58:24 +01:00:   ...
+2026-05-18 17:58:24 +01:00: })
+2026-05-18 17:58:24 +01:00: ```
+2026-05-18 17:58:24 +01:00: 
+2026-05-18 17:58:24 +01:00: or
+2026-05-18 17:58:24 +01:00: 
+2026-05-18 17:58:24 +01:00: ```
+2026-05-18 17:58:24 +01:00: constructor() {
+2026-05-18 17:58:24 +01:00:   super({ ... });
+2026-05-18 17:58:24 +01:00: }
+2026-05-18 17:58:24 +01:00: ```
+2026-05-18 17:58:24 +01:00:           
+2026-05-18 17:58:24 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:58:24 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:58:24 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:58:24 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:58:24 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:58:24 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:58:24 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:58:24 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:58:24 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:58:24 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:58:24 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:58:24 +01:00:   errorCode: undefined,
+2026-05-18 17:58:24 +01:00:   retryable: undefined
+2026-05-18 17:58:24 +01:00: }
+2026-05-18 17:58:35 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:58:35 +01:00: 
+2026-05-18 17:58:35 +01:00: ```
+2026-05-18 17:58:35 +01:00: new PrismaClient({
+2026-05-18 17:58:35 +01:00:   ...
+2026-05-18 17:58:35 +01:00: })
+2026-05-18 17:58:35 +01:00: ```
+2026-05-18 17:58:35 +01:00: 
+2026-05-18 17:58:35 +01:00: or
+2026-05-18 17:58:35 +01:00: 
+2026-05-18 17:58:35 +01:00: ```
+2026-05-18 17:58:35 +01:00: constructor() {
+2026-05-18 17:58:35 +01:00:   super({ ... });
+2026-05-18 17:58:35 +01:00: }
+2026-05-18 17:58:35 +01:00: ```
+2026-05-18 17:58:35 +01:00:           
+2026-05-18 17:58:35 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:58:35 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:58:35 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:58:35 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:58:35 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:58:35 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:58:35 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:58:35 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:58:35 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:58:35 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:58:35 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:58:35 +01:00:   errorCode: undefined,
+2026-05-18 17:58:35 +01:00:   retryable: undefined
+2026-05-18 17:58:35 +01:00: }
+2026-05-18 17:58:49 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:58:49 +01:00: 
+2026-05-18 17:58:49 +01:00: ```
+2026-05-18 17:58:49 +01:00: new PrismaClient({
+2026-05-18 17:58:49 +01:00:   ...
+2026-05-18 17:58:49 +01:00: })
+2026-05-18 17:58:49 +01:00: ```
+2026-05-18 17:58:49 +01:00: 
+2026-05-18 17:58:49 +01:00: or
+2026-05-18 17:58:49 +01:00: 
+2026-05-18 17:58:49 +01:00: ```
+2026-05-18 17:58:49 +01:00: constructor() {
+2026-05-18 17:58:49 +01:00:   super({ ... });
+2026-05-18 17:58:49 +01:00: }
+2026-05-18 17:58:49 +01:00: ```
+2026-05-18 17:58:49 +01:00:           
+2026-05-18 17:58:49 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:58:49 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:58:49 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:58:49 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:58:49 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:58:49 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:58:49 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:58:49 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:58:49 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:58:49 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:58:49 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:58:49 +01:00:   errorCode: undefined,
+2026-05-18 17:58:49 +01:00:   retryable: undefined
+2026-05-18 17:58:49 +01:00: }
+2026-05-18 17:59:02 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:59:02 +01:00: 
+2026-05-18 17:59:02 +01:00: ```
+2026-05-18 17:59:02 +01:00: new PrismaClient({
+2026-05-18 17:59:02 +01:00:   ...
+2026-05-18 17:59:02 +01:00: })
+2026-05-18 17:59:02 +01:00: ```
+2026-05-18 17:59:02 +01:00: 
+2026-05-18 17:59:02 +01:00: or
+2026-05-18 17:59:02 +01:00: 
+2026-05-18 17:59:02 +01:00: ```
+2026-05-18 17:59:02 +01:00: constructor() {
+2026-05-18 17:59:02 +01:00:   super({ ... });
+2026-05-18 17:59:02 +01:00: }
+2026-05-18 17:59:02 +01:00: ```
+2026-05-18 17:59:02 +01:00:           
+2026-05-18 17:59:02 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:59:02 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:59:02 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:59:02 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:59:02 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:59:02 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:59:02 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:59:02 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:59:02 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:59:02 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:59:02 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:59:02 +01:00:   errorCode: undefined,
+2026-05-18 17:59:02 +01:00:   retryable: undefined
+2026-05-18 17:59:02 +01:00: }
+2026-05-18 17:59:13 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:59:13 +01:00: 
+2026-05-18 17:59:13 +01:00: ```
+2026-05-18 17:59:13 +01:00: new PrismaClient({
+2026-05-18 17:59:13 +01:00:   ...
+2026-05-18 17:59:13 +01:00: })
+2026-05-18 17:59:13 +01:00: ```
+2026-05-18 17:59:13 +01:00: 
+2026-05-18 17:59:13 +01:00: or
+2026-05-18 17:59:13 +01:00: 
+2026-05-18 17:59:13 +01:00: ```
+2026-05-18 17:59:13 +01:00: constructor() {
+2026-05-18 17:59:13 +01:00:   super({ ... });
+2026-05-18 17:59:13 +01:00: }
+2026-05-18 17:59:13 +01:00: ```
+2026-05-18 17:59:13 +01:00:           
+2026-05-18 17:59:13 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:59:13 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:59:13 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:59:13 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:59:13 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:59:13 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:59:13 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:59:13 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:59:13 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:59:13 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:59:13 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:59:13 +01:00:   errorCode: undefined,
+2026-05-18 17:59:13 +01:00:   retryable: undefined
+2026-05-18 17:59:13 +01:00: }
+2026-05-18 17:59:23 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:59:23 +01:00: 
+2026-05-18 17:59:23 +01:00: ```
+2026-05-18 17:59:23 +01:00: new PrismaClient({
+2026-05-18 17:59:23 +01:00:   ...
+2026-05-18 17:59:23 +01:00: })
+2026-05-18 17:59:23 +01:00: ```
+2026-05-18 17:59:23 +01:00: 
+2026-05-18 17:59:23 +01:00: or
+2026-05-18 17:59:23 +01:00: 
+2026-05-18 17:59:23 +01:00: ```
+2026-05-18 17:59:23 +01:00: constructor() {
+2026-05-18 17:59:23 +01:00:   super({ ... });
+2026-05-18 17:59:23 +01:00: }
+2026-05-18 17:59:23 +01:00: ```
+2026-05-18 17:59:23 +01:00:           
+2026-05-18 17:59:23 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:59:23 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:59:23 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:59:23 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:59:23 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:59:23 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:59:23 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:59:23 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:59:23 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:59:23 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:59:23 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:59:23 +01:00:   errorCode: undefined,
+2026-05-18 17:59:23 +01:00:   retryable: undefined
+2026-05-18 17:59:23 +01:00: }
+2026-05-18 17:59:33 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:59:33 +01:00: 
+2026-05-18 17:59:33 +01:00: ```
+2026-05-18 17:59:33 +01:00: new PrismaClient({
+2026-05-18 17:59:33 +01:00:   ...
+2026-05-18 17:59:33 +01:00: })
+2026-05-18 17:59:33 +01:00: ```
+2026-05-18 17:59:33 +01:00: 
+2026-05-18 17:59:33 +01:00: or
+2026-05-18 17:59:33 +01:00: 
+2026-05-18 17:59:33 +01:00: ```
+2026-05-18 17:59:33 +01:00: constructor() {
+2026-05-18 17:59:33 +01:00:   super({ ... });
+2026-05-18 17:59:33 +01:00: }
+2026-05-18 17:59:33 +01:00: ```
+2026-05-18 17:59:33 +01:00:           
+2026-05-18 17:59:33 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:59:33 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:59:33 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:59:33 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:59:33 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:59:33 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:59:33 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:59:33 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:59:33 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:59:33 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:59:33 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:59:33 +01:00:   errorCode: undefined,
+2026-05-18 17:59:33 +01:00:   retryable: undefined
+2026-05-18 17:59:33 +01:00: }
+2026-05-18 17:59:42 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:59:42 +01:00: 
+2026-05-18 17:59:42 +01:00: ```
+2026-05-18 17:59:42 +01:00: new PrismaClient({
+2026-05-18 17:59:42 +01:00:   ...
+2026-05-18 17:59:42 +01:00: })
+2026-05-18 17:59:42 +01:00: ```
+2026-05-18 17:59:42 +01:00: 
+2026-05-18 17:59:42 +01:00: or
+2026-05-18 17:59:42 +01:00: 
+2026-05-18 17:59:42 +01:00: ```
+2026-05-18 17:59:42 +01:00: constructor() {
+2026-05-18 17:59:42 +01:00:   super({ ... });
+2026-05-18 17:59:42 +01:00: }
+2026-05-18 17:59:42 +01:00: ```
+2026-05-18 17:59:42 +01:00:           
+2026-05-18 17:59:42 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:59:42 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:59:42 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:59:42 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:59:42 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:59:42 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:59:42 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:59:42 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:59:42 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:59:42 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:59:42 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:59:42 +01:00:   errorCode: undefined,
+2026-05-18 17:59:42 +01:00:   retryable: undefined
+2026-05-18 17:59:42 +01:00: }
+2026-05-18 17:59:51 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 17:59:51 +01:00: 
+2026-05-18 17:59:51 +01:00: ```
+2026-05-18 17:59:51 +01:00: new PrismaClient({
+2026-05-18 17:59:51 +01:00:   ...
+2026-05-18 17:59:51 +01:00: })
+2026-05-18 17:59:51 +01:00: ```
+2026-05-18 17:59:51 +01:00: 
+2026-05-18 17:59:51 +01:00: or
+2026-05-18 17:59:51 +01:00: 
+2026-05-18 17:59:51 +01:00: ```
+2026-05-18 17:59:51 +01:00: constructor() {
+2026-05-18 17:59:51 +01:00:   super({ ... });
+2026-05-18 17:59:51 +01:00: }
+2026-05-18 17:59:51 +01:00: ```
+2026-05-18 17:59:51 +01:00:           
+2026-05-18 17:59:51 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 17:59:51 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 17:59:51 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 17:59:51 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 17:59:51 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 17:59:51 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 17:59:51 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 17:59:51 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 17:59:51 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 17:59:51 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 17:59:51 +01:00:   clientVersion: '7.8.0',
+2026-05-18 17:59:51 +01:00:   errorCode: undefined,
+2026-05-18 17:59:51 +01:00:   retryable: undefined
+2026-05-18 17:59:51 +01:00: }
+2026-05-18 18:00:01 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:00:01 +01:00: 
+2026-05-18 18:00:01 +01:00: ```
+2026-05-18 18:00:01 +01:00: new PrismaClient({
+2026-05-18 18:00:01 +01:00:   ...
+2026-05-18 18:00:01 +01:00: })
+2026-05-18 18:00:01 +01:00: ```
+2026-05-18 18:00:01 +01:00: 
+2026-05-18 18:00:01 +01:00: or
+2026-05-18 18:00:01 +01:00: 
+2026-05-18 18:00:01 +01:00: ```
+2026-05-18 18:00:01 +01:00: constructor() {
+2026-05-18 18:00:01 +01:00:   super({ ... });
+2026-05-18 18:00:01 +01:00: }
+2026-05-18 18:00:01 +01:00: ```
+2026-05-18 18:00:01 +01:00:           
+2026-05-18 18:00:01 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:00:01 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:00:01 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:00:01 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:00:01 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:00:01 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:00:01 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:00:01 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:00:01 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:00:01 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:00:01 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:00:01 +01:00:   errorCode: undefined,
+2026-05-18 18:00:01 +01:00:   retryable: undefined
+2026-05-18 18:00:01 +01:00: }
+2026-05-18 18:00:11 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:00:11 +01:00: 
+2026-05-18 18:00:11 +01:00: ```
+2026-05-18 18:00:11 +01:00: new PrismaClient({
+2026-05-18 18:00:11 +01:00:   ...
+2026-05-18 18:00:11 +01:00: })
+2026-05-18 18:00:11 +01:00: ```
+2026-05-18 18:00:11 +01:00: 
+2026-05-18 18:00:11 +01:00: or
+2026-05-18 18:00:11 +01:00: 
+2026-05-18 18:00:11 +01:00: ```
+2026-05-18 18:00:11 +01:00: constructor() {
+2026-05-18 18:00:11 +01:00:   super({ ... });
+2026-05-18 18:00:11 +01:00: }
+2026-05-18 18:00:11 +01:00: ```
+2026-05-18 18:00:11 +01:00:           
+2026-05-18 18:00:11 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:00:11 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:00:11 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:00:11 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:00:11 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:00:11 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:00:11 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:00:11 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:00:11 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:00:11 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:00:11 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:00:11 +01:00:   errorCode: undefined,
+2026-05-18 18:00:11 +01:00:   retryable: undefined
+2026-05-18 18:00:11 +01:00: }
+2026-05-18 18:00:21 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:00:21 +01:00: 
+2026-05-18 18:00:21 +01:00: ```
+2026-05-18 18:00:21 +01:00: new PrismaClient({
+2026-05-18 18:00:21 +01:00:   ...
+2026-05-18 18:00:21 +01:00: })
+2026-05-18 18:00:21 +01:00: ```
+2026-05-18 18:00:21 +01:00: 
+2026-05-18 18:00:21 +01:00: or
+2026-05-18 18:00:21 +01:00: 
+2026-05-18 18:00:21 +01:00: ```
+2026-05-18 18:00:21 +01:00: constructor() {
+2026-05-18 18:00:21 +01:00:   super({ ... });
+2026-05-18 18:00:21 +01:00: }
+2026-05-18 18:00:21 +01:00: ```
+2026-05-18 18:00:21 +01:00:           
+2026-05-18 18:00:21 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:00:21 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:00:21 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:00:21 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:00:21 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:00:21 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:00:21 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:00:21 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:00:21 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:00:21 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:00:21 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:00:21 +01:00:   errorCode: undefined,
+2026-05-18 18:00:21 +01:00:   retryable: undefined
+2026-05-18 18:00:21 +01:00: }
+2026-05-18 18:00:30 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:00:30 +01:00: 
+2026-05-18 18:00:30 +01:00: ```
+2026-05-18 18:00:30 +01:00: new PrismaClient({
+2026-05-18 18:00:30 +01:00:   ...
+2026-05-18 18:00:30 +01:00: })
+2026-05-18 18:00:30 +01:00: ```
+2026-05-18 18:00:30 +01:00: 
+2026-05-18 18:00:30 +01:00: or
+2026-05-18 18:00:30 +01:00: 
+2026-05-18 18:00:30 +01:00: ```
+2026-05-18 18:00:30 +01:00: constructor() {
+2026-05-18 18:00:30 +01:00:   super({ ... });
+2026-05-18 18:00:30 +01:00: }
+2026-05-18 18:00:30 +01:00: ```
+2026-05-18 18:00:30 +01:00:           
+2026-05-18 18:00:30 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:00:30 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:00:30 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:00:30 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:00:30 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:00:30 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:00:30 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:00:30 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:00:30 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:00:30 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:00:30 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:00:30 +01:00:   errorCode: undefined,
+2026-05-18 18:00:30 +01:00:   retryable: undefined
+2026-05-18 18:00:30 +01:00: }
+2026-05-18 18:00:39 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:00:39 +01:00: 
+2026-05-18 18:00:39 +01:00: ```
+2026-05-18 18:00:39 +01:00: new PrismaClient({
+2026-05-18 18:00:39 +01:00:   ...
+2026-05-18 18:00:39 +01:00: })
+2026-05-18 18:00:39 +01:00: ```
+2026-05-18 18:00:39 +01:00: 
+2026-05-18 18:00:39 +01:00: or
+2026-05-18 18:00:39 +01:00: 
+2026-05-18 18:00:39 +01:00: ```
+2026-05-18 18:00:39 +01:00: constructor() {
+2026-05-18 18:00:39 +01:00:   super({ ... });
+2026-05-18 18:00:39 +01:00: }
+2026-05-18 18:00:39 +01:00: ```
+2026-05-18 18:00:39 +01:00:           
+2026-05-18 18:00:39 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:00:39 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:00:39 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:00:39 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:00:39 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:00:39 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:00:39 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:00:39 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:00:39 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:00:39 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:00:39 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:00:39 +01:00:   errorCode: undefined,
+2026-05-18 18:00:39 +01:00:   retryable: undefined
+2026-05-18 18:00:39 +01:00: }
+2026-05-18 18:00:48 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:00:48 +01:00: 
+2026-05-18 18:00:48 +01:00: ```
+2026-05-18 18:00:48 +01:00: new PrismaClient({
+2026-05-18 18:00:48 +01:00:   ...
+2026-05-18 18:00:48 +01:00: })
+2026-05-18 18:00:48 +01:00: ```
+2026-05-18 18:00:48 +01:00: 
+2026-05-18 18:00:48 +01:00: or
+2026-05-18 18:00:48 +01:00: 
+2026-05-18 18:00:48 +01:00: ```
+2026-05-18 18:00:48 +01:00: constructor() {
+2026-05-18 18:00:48 +01:00:   super({ ... });
+2026-05-18 18:00:48 +01:00: }
+2026-05-18 18:00:48 +01:00: ```
+2026-05-18 18:00:48 +01:00:           
+2026-05-18 18:00:48 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:00:48 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:00:48 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:00:48 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:00:48 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:00:48 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:00:48 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:00:48 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:00:48 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:00:48 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:00:48 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:00:48 +01:00:   errorCode: undefined,
+2026-05-18 18:00:48 +01:00:   retryable: undefined
+2026-05-18 18:00:48 +01:00: }
+2026-05-18 18:00:58 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:00:58 +01:00: 
+2026-05-18 18:00:58 +01:00: ```
+2026-05-18 18:00:58 +01:00: new PrismaClient({
+2026-05-18 18:00:58 +01:00:   ...
+2026-05-18 18:00:58 +01:00: })
+2026-05-18 18:00:58 +01:00: ```
+2026-05-18 18:00:58 +01:00: 
+2026-05-18 18:00:58 +01:00: or
+2026-05-18 18:00:58 +01:00: 
+2026-05-18 18:00:58 +01:00: ```
+2026-05-18 18:00:58 +01:00: constructor() {
+2026-05-18 18:00:58 +01:00:   super({ ... });
+2026-05-18 18:00:58 +01:00: }
+2026-05-18 18:00:58 +01:00: ```
+2026-05-18 18:00:58 +01:00:           
+2026-05-18 18:00:58 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:00:58 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:00:58 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:00:58 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:00:58 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:00:58 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:00:58 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:00:58 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:00:58 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:00:58 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:00:58 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:00:58 +01:00:   errorCode: undefined,
+2026-05-18 18:00:58 +01:00:   retryable: undefined
+2026-05-18 18:00:58 +01:00: }
+2026-05-18 18:01:08 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:01:08 +01:00: 
+2026-05-18 18:01:08 +01:00: ```
+2026-05-18 18:01:08 +01:00: new PrismaClient({
+2026-05-18 18:01:08 +01:00:   ...
+2026-05-18 18:01:08 +01:00: })
+2026-05-18 18:01:08 +01:00: ```
+2026-05-18 18:01:08 +01:00: 
+2026-05-18 18:01:08 +01:00: or
+2026-05-18 18:01:08 +01:00: 
+2026-05-18 18:01:08 +01:00: ```
+2026-05-18 18:01:08 +01:00: constructor() {
+2026-05-18 18:01:08 +01:00:   super({ ... });
+2026-05-18 18:01:08 +01:00: }
+2026-05-18 18:01:08 +01:00: ```
+2026-05-18 18:01:08 +01:00:           
+2026-05-18 18:01:08 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:01:08 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:01:08 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:01:08 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:01:08 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:01:08 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:01:08 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:01:08 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:01:08 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:01:08 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:01:08 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:01:08 +01:00:   errorCode: undefined,
+2026-05-18 18:01:08 +01:00:   retryable: undefined
+2026-05-18 18:01:08 +01:00: }
+2026-05-18 18:01:18 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:01:18 +01:00: 
+2026-05-18 18:01:18 +01:00: ```
+2026-05-18 18:01:18 +01:00: new PrismaClient({
+2026-05-18 18:01:18 +01:00:   ...
+2026-05-18 18:01:18 +01:00: })
+2026-05-18 18:01:18 +01:00: ```
+2026-05-18 18:01:18 +01:00: 
+2026-05-18 18:01:18 +01:00: or
+2026-05-18 18:01:18 +01:00: 
+2026-05-18 18:01:18 +01:00: ```
+2026-05-18 18:01:18 +01:00: constructor() {
+2026-05-18 18:01:18 +01:00:   super({ ... });
+2026-05-18 18:01:18 +01:00: }
+2026-05-18 18:01:18 +01:00: ```
+2026-05-18 18:01:18 +01:00:           
+2026-05-18 18:01:18 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:01:18 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:01:18 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:01:18 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:01:18 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:01:18 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:01:18 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:01:18 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:01:18 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:01:18 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:01:18 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:01:18 +01:00:   errorCode: undefined,
+2026-05-18 18:01:18 +01:00:   retryable: undefined
+2026-05-18 18:01:18 +01:00: }
+2026-05-18 18:01:29 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:01:29 +01:00: 
+2026-05-18 18:01:29 +01:00: ```
+2026-05-18 18:01:29 +01:00: new PrismaClient({
+2026-05-18 18:01:29 +01:00:   ...
+2026-05-18 18:01:29 +01:00: })
+2026-05-18 18:01:29 +01:00: ```
+2026-05-18 18:01:29 +01:00: 
+2026-05-18 18:01:29 +01:00: or
+2026-05-18 18:01:29 +01:00: 
+2026-05-18 18:01:29 +01:00: ```
+2026-05-18 18:01:29 +01:00: constructor() {
+2026-05-18 18:01:29 +01:00:   super({ ... });
+2026-05-18 18:01:29 +01:00: }
+2026-05-18 18:01:29 +01:00: ```
+2026-05-18 18:01:29 +01:00:           
+2026-05-18 18:01:29 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:01:29 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:01:29 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:01:29 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:01:29 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:01:29 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:01:29 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:01:29 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:01:29 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:01:29 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:01:29 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:01:29 +01:00:   errorCode: undefined,
+2026-05-18 18:01:29 +01:00:   retryable: undefined
+2026-05-18 18:01:29 +01:00: }
+2026-05-18 18:01:40 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:01:40 +01:00: 
+2026-05-18 18:01:40 +01:00: ```
+2026-05-18 18:01:40 +01:00: new PrismaClient({
+2026-05-18 18:01:40 +01:00:   ...
+2026-05-18 18:01:40 +01:00: })
+2026-05-18 18:01:40 +01:00: ```
+2026-05-18 18:01:40 +01:00: 
+2026-05-18 18:01:40 +01:00: or
+2026-05-18 18:01:40 +01:00: 
+2026-05-18 18:01:40 +01:00: ```
+2026-05-18 18:01:40 +01:00: constructor() {
+2026-05-18 18:01:40 +01:00:   super({ ... });
+2026-05-18 18:01:40 +01:00: }
+2026-05-18 18:01:40 +01:00: ```
+2026-05-18 18:01:40 +01:00:           
+2026-05-18 18:01:40 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:01:40 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:01:40 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:01:40 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:01:40 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:01:40 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:01:40 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:01:40 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:01:40 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:01:40 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:01:40 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:01:40 +01:00:   errorCode: undefined,
+2026-05-18 18:01:40 +01:00:   retryable: undefined
+2026-05-18 18:01:40 +01:00: }
+2026-05-18 18:01:51 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:01:51 +01:00: 
+2026-05-18 18:01:51 +01:00: ```
+2026-05-18 18:01:51 +01:00: new PrismaClient({
+2026-05-18 18:01:51 +01:00:   ...
+2026-05-18 18:01:51 +01:00: })
+2026-05-18 18:01:51 +01:00: ```
+2026-05-18 18:01:51 +01:00: 
+2026-05-18 18:01:51 +01:00: or
+2026-05-18 18:01:51 +01:00: 
+2026-05-18 18:01:51 +01:00: ```
+2026-05-18 18:01:51 +01:00: constructor() {
+2026-05-18 18:01:51 +01:00:   super({ ... });
+2026-05-18 18:01:51 +01:00: }
+2026-05-18 18:01:51 +01:00: ```
+2026-05-18 18:01:51 +01:00:           
+2026-05-18 18:01:51 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:01:51 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:01:51 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:01:51 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:01:51 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:01:51 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:01:51 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:01:51 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:01:51 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:01:51 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:01:51 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:01:51 +01:00:   errorCode: undefined,
+2026-05-18 18:01:51 +01:00:   retryable: undefined
+2026-05-18 18:01:51 +01:00: }
+2026-05-18 18:02:02 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:02:02 +01:00: 
+2026-05-18 18:02:02 +01:00: ```
+2026-05-18 18:02:02 +01:00: new PrismaClient({
+2026-05-18 18:02:02 +01:00:   ...
+2026-05-18 18:02:02 +01:00: })
+2026-05-18 18:02:02 +01:00: ```
+2026-05-18 18:02:02 +01:00: 
+2026-05-18 18:02:02 +01:00: or
+2026-05-18 18:02:02 +01:00: 
+2026-05-18 18:02:02 +01:00: ```
+2026-05-18 18:02:02 +01:00: constructor() {
+2026-05-18 18:02:02 +01:00:   super({ ... });
+2026-05-18 18:02:02 +01:00: }
+2026-05-18 18:02:02 +01:00: ```
+2026-05-18 18:02:02 +01:00:           
+2026-05-18 18:02:02 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:02:02 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:02:02 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:02:02 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:02:02 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:02:02 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:02:02 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:02:02 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:02:02 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:02:02 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:02:02 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:02:02 +01:00:   errorCode: undefined,
+2026-05-18 18:02:02 +01:00:   retryable: undefined
+2026-05-18 18:02:02 +01:00: }
+2026-05-18 18:02:15 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:02:15 +01:00: 
+2026-05-18 18:02:15 +01:00: ```
+2026-05-18 18:02:15 +01:00: new PrismaClient({
+2026-05-18 18:02:15 +01:00:   ...
+2026-05-18 18:02:15 +01:00: })
+2026-05-18 18:02:15 +01:00: ```
+2026-05-18 18:02:15 +01:00: 
+2026-05-18 18:02:15 +01:00: or
+2026-05-18 18:02:15 +01:00: 
+2026-05-18 18:02:15 +01:00: ```
+2026-05-18 18:02:15 +01:00: constructor() {
+2026-05-18 18:02:15 +01:00:   super({ ... });
+2026-05-18 18:02:15 +01:00: }
+2026-05-18 18:02:15 +01:00: ```
+2026-05-18 18:02:15 +01:00:           
+2026-05-18 18:02:15 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:02:15 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:02:15 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:02:15 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:02:15 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:02:15 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:02:15 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:02:15 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:02:15 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:02:15 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:02:15 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:02:15 +01:00:   errorCode: undefined,
+2026-05-18 18:02:15 +01:00:   retryable: undefined
+2026-05-18 18:02:15 +01:00: }
+2026-05-18 18:02:26 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:02:26 +01:00: 
+2026-05-18 18:02:26 +01:00: ```
+2026-05-18 18:02:26 +01:00: new PrismaClient({
+2026-05-18 18:02:26 +01:00:   ...
+2026-05-18 18:02:26 +01:00: })
+2026-05-18 18:02:26 +01:00: ```
+2026-05-18 18:02:26 +01:00: 
+2026-05-18 18:02:26 +01:00: or
+2026-05-18 18:02:26 +01:00: 
+2026-05-18 18:02:26 +01:00: ```
+2026-05-18 18:02:26 +01:00: constructor() {
+2026-05-18 18:02:26 +01:00:   super({ ... });
+2026-05-18 18:02:26 +01:00: }
+2026-05-18 18:02:26 +01:00: ```
+2026-05-18 18:02:26 +01:00:           
+2026-05-18 18:02:26 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:02:26 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:02:26 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:02:26 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:02:26 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:02:26 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:02:26 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:02:26 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:02:26 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:02:26 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:02:26 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:02:26 +01:00:   errorCode: undefined,
+2026-05-18 18:02:26 +01:00:   retryable: undefined
+2026-05-18 18:02:26 +01:00: }
+2026-05-18 18:02:39 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:02:39 +01:00: 
+2026-05-18 18:02:39 +01:00: ```
+2026-05-18 18:02:39 +01:00: new PrismaClient({
+2026-05-18 18:02:39 +01:00:   ...
+2026-05-18 18:02:39 +01:00: })
+2026-05-18 18:02:39 +01:00: ```
+2026-05-18 18:02:39 +01:00: 
+2026-05-18 18:02:39 +01:00: or
+2026-05-18 18:02:39 +01:00: 
+2026-05-18 18:02:39 +01:00: ```
+2026-05-18 18:02:39 +01:00: constructor() {
+2026-05-18 18:02:39 +01:00:   super({ ... });
+2026-05-18 18:02:39 +01:00: }
+2026-05-18 18:02:39 +01:00: ```
+2026-05-18 18:02:39 +01:00:           
+2026-05-18 18:02:39 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:02:39 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:02:39 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:02:39 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:02:39 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:02:39 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:02:39 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:02:39 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:02:39 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:02:39 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:02:39 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:02:39 +01:00:   errorCode: undefined,
+2026-05-18 18:02:39 +01:00:   retryable: undefined
+2026-05-18 18:02:39 +01:00: }
+2026-05-18 18:02:51 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:02:51 +01:00: 
+2026-05-18 18:02:51 +01:00: ```
+2026-05-18 18:02:51 +01:00: new PrismaClient({
+2026-05-18 18:02:51 +01:00:   ...
+2026-05-18 18:02:51 +01:00: })
+2026-05-18 18:02:51 +01:00: ```
+2026-05-18 18:02:51 +01:00: 
+2026-05-18 18:02:51 +01:00: or
+2026-05-18 18:02:51 +01:00: 
+2026-05-18 18:02:51 +01:00: ```
+2026-05-18 18:02:51 +01:00: constructor() {
+2026-05-18 18:02:51 +01:00:   super({ ... });
+2026-05-18 18:02:51 +01:00: }
+2026-05-18 18:02:51 +01:00: ```
+2026-05-18 18:02:51 +01:00:           
+2026-05-18 18:02:51 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:02:51 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:02:51 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:02:51 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:02:51 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:02:51 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:02:51 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:02:51 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:02:51 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:02:51 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:02:51 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:02:51 +01:00:   errorCode: undefined,
+2026-05-18 18:02:51 +01:00:   retryable: undefined
+2026-05-18 18:02:51 +01:00: }
+2026-05-18 18:03:04 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:03:04 +01:00: 
+2026-05-18 18:03:04 +01:00: ```
+2026-05-18 18:03:04 +01:00: new PrismaClient({
+2026-05-18 18:03:04 +01:00:   ...
+2026-05-18 18:03:04 +01:00: })
+2026-05-18 18:03:04 +01:00: ```
+2026-05-18 18:03:04 +01:00: 
+2026-05-18 18:03:04 +01:00: or
+2026-05-18 18:03:04 +01:00: 
+2026-05-18 18:03:04 +01:00: ```
+2026-05-18 18:03:04 +01:00: constructor() {
+2026-05-18 18:03:04 +01:00:   super({ ... });
+2026-05-18 18:03:04 +01:00: }
+2026-05-18 18:03:04 +01:00: ```
+2026-05-18 18:03:04 +01:00:           
+2026-05-18 18:03:04 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:03:04 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:03:04 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:03:04 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:03:04 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:03:04 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:03:04 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:03:04 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:03:04 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:03:04 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:03:04 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:03:04 +01:00:   errorCode: undefined,
+2026-05-18 18:03:04 +01:00:   retryable: undefined
+2026-05-18 18:03:04 +01:00: }
+2026-05-18 18:03:15 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:03:15 +01:00: 
+2026-05-18 18:03:15 +01:00: ```
+2026-05-18 18:03:15 +01:00: new PrismaClient({
+2026-05-18 18:03:15 +01:00:   ...
+2026-05-18 18:03:15 +01:00: })
+2026-05-18 18:03:15 +01:00: ```
+2026-05-18 18:03:15 +01:00: 
+2026-05-18 18:03:15 +01:00: or
+2026-05-18 18:03:15 +01:00: 
+2026-05-18 18:03:15 +01:00: ```
+2026-05-18 18:03:15 +01:00: constructor() {
+2026-05-18 18:03:15 +01:00:   super({ ... });
+2026-05-18 18:03:15 +01:00: }
+2026-05-18 18:03:15 +01:00: ```
+2026-05-18 18:03:15 +01:00:           
+2026-05-18 18:03:15 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:03:15 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:03:15 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:03:15 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:03:15 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:03:15 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:03:15 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:03:15 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:03:15 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:03:15 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:03:15 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:03:15 +01:00:   errorCode: undefined,
+2026-05-18 18:03:15 +01:00:   retryable: undefined
+2026-05-18 18:03:15 +01:00: }
+2026-05-18 18:03:27 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:03:27 +01:00: 
+2026-05-18 18:03:27 +01:00: ```
+2026-05-18 18:03:27 +01:00: new PrismaClient({
+2026-05-18 18:03:27 +01:00:   ...
+2026-05-18 18:03:27 +01:00: })
+2026-05-18 18:03:27 +01:00: ```
+2026-05-18 18:03:27 +01:00: 
+2026-05-18 18:03:27 +01:00: or
+2026-05-18 18:03:27 +01:00: 
+2026-05-18 18:03:27 +01:00: ```
+2026-05-18 18:03:27 +01:00: constructor() {
+2026-05-18 18:03:27 +01:00:   super({ ... });
+2026-05-18 18:03:27 +01:00: }
+2026-05-18 18:03:27 +01:00: ```
+2026-05-18 18:03:27 +01:00:           
+2026-05-18 18:03:27 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:03:27 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:03:27 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:03:27 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:03:27 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:03:27 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:03:27 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:03:27 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:03:27 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:03:27 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:03:27 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:03:27 +01:00:   errorCode: undefined,
+2026-05-18 18:03:27 +01:00:   retryable: undefined
+2026-05-18 18:03:27 +01:00: }
+2026-05-18 18:03:39 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:03:39 +01:00: 
+2026-05-18 18:03:39 +01:00: ```
+2026-05-18 18:03:39 +01:00: new PrismaClient({
+2026-05-18 18:03:39 +01:00:   ...
+2026-05-18 18:03:39 +01:00: })
+2026-05-18 18:03:39 +01:00: ```
+2026-05-18 18:03:39 +01:00: 
+2026-05-18 18:03:39 +01:00: or
+2026-05-18 18:03:39 +01:00: 
+2026-05-18 18:03:39 +01:00: ```
+2026-05-18 18:03:39 +01:00: constructor() {
+2026-05-18 18:03:39 +01:00:   super({ ... });
+2026-05-18 18:03:39 +01:00: }
+2026-05-18 18:03:39 +01:00: ```
+2026-05-18 18:03:39 +01:00:           
+2026-05-18 18:03:39 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:03:39 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:03:39 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:03:39 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:03:39 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:03:39 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:03:39 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:03:39 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:03:39 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:03:39 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:03:39 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:03:39 +01:00:   errorCode: undefined,
+2026-05-18 18:03:39 +01:00:   retryable: undefined
+2026-05-18 18:03:39 +01:00: }
+2026-05-18 18:03:51 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:03:51 +01:00: 
+2026-05-18 18:03:51 +01:00: ```
+2026-05-18 18:03:51 +01:00: new PrismaClient({
+2026-05-18 18:03:51 +01:00:   ...
+2026-05-18 18:03:51 +01:00: })
+2026-05-18 18:03:51 +01:00: ```
+2026-05-18 18:03:51 +01:00: 
+2026-05-18 18:03:51 +01:00: or
+2026-05-18 18:03:51 +01:00: 
+2026-05-18 18:03:51 +01:00: ```
+2026-05-18 18:03:51 +01:00: constructor() {
+2026-05-18 18:03:51 +01:00:   super({ ... });
+2026-05-18 18:03:51 +01:00: }
+2026-05-18 18:03:51 +01:00: ```
+2026-05-18 18:03:51 +01:00:           
+2026-05-18 18:03:51 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:03:51 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:03:51 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:03:51 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:03:51 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:03:51 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:03:51 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:03:51 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:03:51 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:03:51 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:03:51 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:03:51 +01:00:   errorCode: undefined,
+2026-05-18 18:03:51 +01:00:   retryable: undefined
+2026-05-18 18:03:51 +01:00: }
+2026-05-18 18:04:03 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:04:03 +01:00: 
+2026-05-18 18:04:03 +01:00: ```
+2026-05-18 18:04:03 +01:00: new PrismaClient({
+2026-05-18 18:04:03 +01:00:   ...
+2026-05-18 18:04:03 +01:00: })
+2026-05-18 18:04:03 +01:00: ```
+2026-05-18 18:04:03 +01:00: 
+2026-05-18 18:04:03 +01:00: or
+2026-05-18 18:04:03 +01:00: 
+2026-05-18 18:04:03 +01:00: ```
+2026-05-18 18:04:03 +01:00: constructor() {
+2026-05-18 18:04:03 +01:00:   super({ ... });
+2026-05-18 18:04:03 +01:00: }
+2026-05-18 18:04:03 +01:00: ```
+2026-05-18 18:04:03 +01:00:           
+2026-05-18 18:04:03 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:04:03 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:04:03 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:04:03 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:04:03 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:04:03 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:04:03 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:04:03 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:04:03 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:04:03 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:04:03 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:04:03 +01:00:   errorCode: undefined,
+2026-05-18 18:04:03 +01:00:   retryable: undefined
+2026-05-18 18:04:03 +01:00: }
+2026-05-18 18:04:14 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:04:14 +01:00: 
+2026-05-18 18:04:14 +01:00: ```
+2026-05-18 18:04:14 +01:00: new PrismaClient({
+2026-05-18 18:04:14 +01:00:   ...
+2026-05-18 18:04:14 +01:00: })
+2026-05-18 18:04:14 +01:00: ```
+2026-05-18 18:04:14 +01:00: 
+2026-05-18 18:04:14 +01:00: or
+2026-05-18 18:04:14 +01:00: 
+2026-05-18 18:04:14 +01:00: ```
+2026-05-18 18:04:14 +01:00: constructor() {
+2026-05-18 18:04:14 +01:00:   super({ ... });
+2026-05-18 18:04:14 +01:00: }
+2026-05-18 18:04:14 +01:00: ```
+2026-05-18 18:04:14 +01:00:           
+2026-05-18 18:04:14 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:04:14 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:04:14 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:04:14 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:04:14 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:04:14 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:04:14 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:04:14 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:04:14 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:04:14 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:04:14 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:04:14 +01:00:   errorCode: undefined,
+2026-05-18 18:04:14 +01:00:   retryable: undefined
+2026-05-18 18:04:14 +01:00: }
+2026-05-18 18:04:27 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:04:27 +01:00: 
+2026-05-18 18:04:27 +01:00: ```
+2026-05-18 18:04:27 +01:00: new PrismaClient({
+2026-05-18 18:04:27 +01:00:   ...
+2026-05-18 18:04:27 +01:00: })
+2026-05-18 18:04:27 +01:00: ```
+2026-05-18 18:04:27 +01:00: 
+2026-05-18 18:04:27 +01:00: or
+2026-05-18 18:04:27 +01:00: 
+2026-05-18 18:04:27 +01:00: ```
+2026-05-18 18:04:27 +01:00: constructor() {
+2026-05-18 18:04:27 +01:00:   super({ ... });
+2026-05-18 18:04:27 +01:00: }
+2026-05-18 18:04:27 +01:00: ```
+2026-05-18 18:04:27 +01:00:           
+2026-05-18 18:04:27 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:04:27 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:04:27 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:04:27 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:04:27 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:04:27 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:04:27 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:04:27 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:04:27 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:04:27 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:04:27 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:04:27 +01:00:   errorCode: undefined,
+2026-05-18 18:04:27 +01:00:   retryable: undefined
+2026-05-18 18:04:27 +01:00: }
+2026-05-18 18:04:38 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:04:38 +01:00: 
+2026-05-18 18:04:38 +01:00: ```
+2026-05-18 18:04:38 +01:00: new PrismaClient({
+2026-05-18 18:04:38 +01:00:   ...
+2026-05-18 18:04:38 +01:00: })
+2026-05-18 18:04:38 +01:00: ```
+2026-05-18 18:04:38 +01:00: 
+2026-05-18 18:04:38 +01:00: or
+2026-05-18 18:04:38 +01:00: 
+2026-05-18 18:04:38 +01:00: ```
+2026-05-18 18:04:38 +01:00: constructor() {
+2026-05-18 18:04:38 +01:00:   super({ ... });
+2026-05-18 18:04:38 +01:00: }
+2026-05-18 18:04:38 +01:00: ```
+2026-05-18 18:04:38 +01:00:           
+2026-05-18 18:04:38 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:04:38 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:04:38 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:04:38 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:04:38 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:04:38 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:04:38 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:04:38 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:04:38 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:04:38 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:04:38 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:04:38 +01:00:   errorCode: undefined,
+2026-05-18 18:04:38 +01:00:   retryable: undefined
+2026-05-18 18:04:38 +01:00: }
+2026-05-18 18:04:49 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:04:49 +01:00: 
+2026-05-18 18:04:49 +01:00: ```
+2026-05-18 18:04:49 +01:00: new PrismaClient({
+2026-05-18 18:04:49 +01:00:   ...
+2026-05-18 18:04:49 +01:00: })
+2026-05-18 18:04:49 +01:00: ```
+2026-05-18 18:04:49 +01:00: 
+2026-05-18 18:04:49 +01:00: or
+2026-05-18 18:04:49 +01:00: 
+2026-05-18 18:04:49 +01:00: ```
+2026-05-18 18:04:49 +01:00: constructor() {
+2026-05-18 18:04:49 +01:00:   super({ ... });
+2026-05-18 18:04:49 +01:00: }
+2026-05-18 18:04:49 +01:00: ```
+2026-05-18 18:04:49 +01:00:           
+2026-05-18 18:04:49 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:04:49 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:04:49 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:04:49 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:04:49 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:04:49 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:04:49 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:04:49 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:04:49 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:04:49 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:04:49 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:04:49 +01:00:   errorCode: undefined,
+2026-05-18 18:04:49 +01:00:   retryable: undefined
+2026-05-18 18:04:49 +01:00: }
+2026-05-18 18:05:01 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:05:01 +01:00: 
+2026-05-18 18:05:01 +01:00: ```
+2026-05-18 18:05:01 +01:00: new PrismaClient({
+2026-05-18 18:05:01 +01:00:   ...
+2026-05-18 18:05:01 +01:00: })
+2026-05-18 18:05:01 +01:00: ```
+2026-05-18 18:05:01 +01:00: 
+2026-05-18 18:05:01 +01:00: or
+2026-05-18 18:05:01 +01:00: 
+2026-05-18 18:05:01 +01:00: ```
+2026-05-18 18:05:01 +01:00: constructor() {
+2026-05-18 18:05:01 +01:00:   super({ ... });
+2026-05-18 18:05:01 +01:00: }
+2026-05-18 18:05:01 +01:00: ```
+2026-05-18 18:05:01 +01:00:           
+2026-05-18 18:05:01 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:05:01 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:05:01 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:05:01 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:05:01 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:05:01 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:05:01 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:05:01 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:05:01 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:05:01 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:05:01 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:05:01 +01:00:   errorCode: undefined,
+2026-05-18 18:05:01 +01:00:   retryable: undefined
+2026-05-18 18:05:01 +01:00: }
+2026-05-18 18:05:14 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:05:14 +01:00: 
+2026-05-18 18:05:14 +01:00: ```
+2026-05-18 18:05:14 +01:00: new PrismaClient({
+2026-05-18 18:05:14 +01:00:   ...
+2026-05-18 18:05:14 +01:00: })
+2026-05-18 18:05:14 +01:00: ```
+2026-05-18 18:05:14 +01:00: 
+2026-05-18 18:05:14 +01:00: or
+2026-05-18 18:05:14 +01:00: 
+2026-05-18 18:05:14 +01:00: ```
+2026-05-18 18:05:14 +01:00: constructor() {
+2026-05-18 18:05:14 +01:00:   super({ ... });
+2026-05-18 18:05:14 +01:00: }
+2026-05-18 18:05:14 +01:00: ```
+2026-05-18 18:05:14 +01:00:           
+2026-05-18 18:05:14 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:05:14 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:05:14 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:05:14 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:05:14 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:05:14 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:05:14 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:05:14 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:05:14 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:05:14 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:05:14 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:05:14 +01:00:   errorCode: undefined,
+2026-05-18 18:05:14 +01:00:   retryable: undefined
+2026-05-18 18:05:14 +01:00: }
+2026-05-18 18:05:29 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:05:29 +01:00: 
+2026-05-18 18:05:29 +01:00: ```
+2026-05-18 18:05:29 +01:00: new PrismaClient({
+2026-05-18 18:05:29 +01:00:   ...
+2026-05-18 18:05:29 +01:00: })
+2026-05-18 18:05:29 +01:00: ```
+2026-05-18 18:05:29 +01:00: 
+2026-05-18 18:05:29 +01:00: or
+2026-05-18 18:05:29 +01:00: 
+2026-05-18 18:05:29 +01:00: ```
+2026-05-18 18:05:29 +01:00: constructor() {
+2026-05-18 18:05:29 +01:00:   super({ ... });
+2026-05-18 18:05:29 +01:00: }
+2026-05-18 18:05:29 +01:00: ```
+2026-05-18 18:05:29 +01:00:           
+2026-05-18 18:05:29 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:05:29 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:05:29 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:05:29 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:05:29 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:05:29 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:05:29 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:05:29 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:05:29 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:05:29 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:05:29 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:05:29 +01:00:   errorCode: undefined,
+2026-05-18 18:05:29 +01:00:   retryable: undefined
+2026-05-18 18:05:29 +01:00: }
+2026-05-18 18:05:40 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:05:40 +01:00: 
+2026-05-18 18:05:40 +01:00: ```
+2026-05-18 18:05:40 +01:00: new PrismaClient({
+2026-05-18 18:05:40 +01:00:   ...
+2026-05-18 18:05:40 +01:00: })
+2026-05-18 18:05:40 +01:00: ```
+2026-05-18 18:05:40 +01:00: 
+2026-05-18 18:05:40 +01:00: or
+2026-05-18 18:05:40 +01:00: 
+2026-05-18 18:05:40 +01:00: ```
+2026-05-18 18:05:40 +01:00: constructor() {
+2026-05-18 18:05:40 +01:00:   super({ ... });
+2026-05-18 18:05:40 +01:00: }
+2026-05-18 18:05:40 +01:00: ```
+2026-05-18 18:05:40 +01:00:           
+2026-05-18 18:05:40 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:05:40 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:05:40 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:05:40 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:05:40 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:05:40 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:05:40 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:05:40 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:05:40 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:05:40 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:05:40 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:05:40 +01:00:   errorCode: undefined,
+2026-05-18 18:05:40 +01:00:   retryable: undefined
+2026-05-18 18:05:40 +01:00: }
+2026-05-18 18:05:51 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:05:51 +01:00: 
+2026-05-18 18:05:51 +01:00: ```
+2026-05-18 18:05:51 +01:00: new PrismaClient({
+2026-05-18 18:05:51 +01:00:   ...
+2026-05-18 18:05:51 +01:00: })
+2026-05-18 18:05:51 +01:00: ```
+2026-05-18 18:05:51 +01:00: 
+2026-05-18 18:05:51 +01:00: or
+2026-05-18 18:05:51 +01:00: 
+2026-05-18 18:05:51 +01:00: ```
+2026-05-18 18:05:51 +01:00: constructor() {
+2026-05-18 18:05:51 +01:00:   super({ ... });
+2026-05-18 18:05:51 +01:00: }
+2026-05-18 18:05:51 +01:00: ```
+2026-05-18 18:05:51 +01:00:           
+2026-05-18 18:05:51 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:05:51 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:05:51 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:05:51 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:05:51 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:05:51 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:05:51 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:05:51 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:05:51 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:05:51 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:05:51 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:05:51 +01:00:   errorCode: undefined,
+2026-05-18 18:05:51 +01:00:   retryable: undefined
+2026-05-18 18:05:51 +01:00: }
+2026-05-18 18:06:03 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:06:03 +01:00: 
+2026-05-18 18:06:03 +01:00: ```
+2026-05-18 18:06:03 +01:00: new PrismaClient({
+2026-05-18 18:06:03 +01:00:   ...
+2026-05-18 18:06:03 +01:00: })
+2026-05-18 18:06:03 +01:00: ```
+2026-05-18 18:06:03 +01:00: 
+2026-05-18 18:06:03 +01:00: or
+2026-05-18 18:06:03 +01:00: 
+2026-05-18 18:06:03 +01:00: ```
+2026-05-18 18:06:03 +01:00: constructor() {
+2026-05-18 18:06:03 +01:00:   super({ ... });
+2026-05-18 18:06:03 +01:00: }
+2026-05-18 18:06:03 +01:00: ```
+2026-05-18 18:06:03 +01:00:           
+2026-05-18 18:06:03 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:06:03 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:06:03 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:06:03 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:06:03 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:06:03 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:06:03 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:06:03 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:06:03 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:06:03 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:06:03 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:06:03 +01:00:   errorCode: undefined,
+2026-05-18 18:06:03 +01:00:   retryable: undefined
+2026-05-18 18:06:03 +01:00: }
+2026-05-18 18:06:16 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:06:16 +01:00: 
+2026-05-18 18:06:16 +01:00: ```
+2026-05-18 18:06:16 +01:00: new PrismaClient({
+2026-05-18 18:06:16 +01:00:   ...
+2026-05-18 18:06:16 +01:00: })
+2026-05-18 18:06:16 +01:00: ```
+2026-05-18 18:06:16 +01:00: 
+2026-05-18 18:06:16 +01:00: or
+2026-05-18 18:06:16 +01:00: 
+2026-05-18 18:06:16 +01:00: ```
+2026-05-18 18:06:16 +01:00: constructor() {
+2026-05-18 18:06:16 +01:00:   super({ ... });
+2026-05-18 18:06:16 +01:00: }
+2026-05-18 18:06:16 +01:00: ```
+2026-05-18 18:06:16 +01:00:           
+2026-05-18 18:06:16 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:06:16 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:06:16 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:06:16 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:06:16 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:06:16 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:06:16 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:06:16 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:06:16 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:06:16 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:06:16 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:06:16 +01:00:   errorCode: undefined,
+2026-05-18 18:06:16 +01:00:   retryable: undefined
+2026-05-18 18:06:16 +01:00: }
+2026-05-18 18:06:32 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:06:32 +01:00: 
+2026-05-18 18:06:32 +01:00: ```
+2026-05-18 18:06:32 +01:00: new PrismaClient({
+2026-05-18 18:06:32 +01:00:   ...
+2026-05-18 18:06:32 +01:00: })
+2026-05-18 18:06:32 +01:00: ```
+2026-05-18 18:06:32 +01:00: 
+2026-05-18 18:06:32 +01:00: or
+2026-05-18 18:06:32 +01:00: 
+2026-05-18 18:06:32 +01:00: ```
+2026-05-18 18:06:32 +01:00: constructor() {
+2026-05-18 18:06:32 +01:00:   super({ ... });
+2026-05-18 18:06:32 +01:00: }
+2026-05-18 18:06:32 +01:00: ```
+2026-05-18 18:06:32 +01:00:           
+2026-05-18 18:06:32 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:06:32 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:06:32 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:06:32 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:06:32 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:06:32 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:06:32 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:06:32 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:06:32 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:06:32 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:06:32 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:06:32 +01:00:   errorCode: undefined,
+2026-05-18 18:06:32 +01:00:   retryable: undefined
+2026-05-18 18:06:32 +01:00: }
+2026-05-18 18:06:44 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:06:44 +01:00: 
+2026-05-18 18:06:44 +01:00: ```
+2026-05-18 18:06:44 +01:00: new PrismaClient({
+2026-05-18 18:06:44 +01:00:   ...
+2026-05-18 18:06:44 +01:00: })
+2026-05-18 18:06:44 +01:00: ```
+2026-05-18 18:06:44 +01:00: 
+2026-05-18 18:06:44 +01:00: or
+2026-05-18 18:06:44 +01:00: 
+2026-05-18 18:06:44 +01:00: ```
+2026-05-18 18:06:44 +01:00: constructor() {
+2026-05-18 18:06:44 +01:00:   super({ ... });
+2026-05-18 18:06:44 +01:00: }
+2026-05-18 18:06:44 +01:00: ```
+2026-05-18 18:06:44 +01:00:           
+2026-05-18 18:06:44 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:06:44 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:06:44 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:06:44 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:06:44 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:06:44 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:06:44 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:06:44 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:06:44 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:06:44 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:06:44 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:06:44 +01:00:   errorCode: undefined,
+2026-05-18 18:06:44 +01:00:   retryable: undefined
+2026-05-18 18:06:44 +01:00: }
+2026-05-18 18:06:58 +01:00: PrismaClientInitializationError: `PrismaClient` needs to be constructed with a non-empty, valid `PrismaClientOptions`:
+2026-05-18 18:06:58 +01:00: 
+2026-05-18 18:06:58 +01:00: ```
+2026-05-18 18:06:58 +01:00: new PrismaClient({
+2026-05-18 18:06:58 +01:00:   ...
+2026-05-18 18:06:58 +01:00: })
+2026-05-18 18:06:58 +01:00: ```
+2026-05-18 18:06:58 +01:00: 
+2026-05-18 18:06:58 +01:00: or
+2026-05-18 18:06:58 +01:00: 
+2026-05-18 18:06:58 +01:00: ```
+2026-05-18 18:06:58 +01:00: constructor() {
+2026-05-18 18:06:58 +01:00:   super({ ... });
+2026-05-18 18:06:58 +01:00: }
+2026-05-18 18:06:58 +01:00: ```
+2026-05-18 18:06:58 +01:00:           
+2026-05-18 18:06:58 +01:00:     at new t (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:336:15)
+2026-05-18 18:06:58 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\src\core\databases\prisma.ts:10:39)
+2026-05-18 18:06:58 +01:00:     at Module._compile (node:internal/modules/cjs/loader:1760:14)
+2026-05-18 18:06:58 +01:00:     at Object..js (node:internal/modules/cjs/loader:1893:10)
+2026-05-18 18:06:58 +01:00:     at Module.load (node:internal/modules/cjs/loader:1480:32)
+2026-05-18 18:06:58 +01:00:     at Module._load (node:internal/modules/cjs/loader:1299:12)
+2026-05-18 18:06:58 +01:00:     at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+2026-05-18 18:06:58 +01:00:     at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+2026-05-18 18:06:58 +01:00:     at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+2026-05-18 18:06:58 +01:00:     at Module.Hook._require.Module.require (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:101:39) {
+2026-05-18 18:06:58 +01:00:   clientVersion: '7.8.0',
+2026-05-18 18:06:58 +01:00:   errorCode: undefined,
+2026-05-18 18:06:58 +01:00:   retryable: undefined
+2026-05-18 18:06:58 +01:00: }
+2026-05-19 22:59:00 +01:00: Tue, 19 May 2026 21:59:00 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-19 22:59:00 +01:00: Tue, 19 May 2026 21:59:00 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 17:21:40 +01:00: Wed, 20 May 2026 16:21:40 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 17:21:40 +01:00: Wed, 20 May 2026 16:21:40 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 17:28:28 +01:00: Wed, 20 May 2026 16:28:28 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 17:28:28 +01:00: Wed, 20 May 2026 16:28:28 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 17:29:10 +01:00: Wed, 20 May 2026 16:29:10 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 17:29:10 +01:00: Wed, 20 May 2026 16:29:10 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 17:37:19 +01:00: Wed, 20 May 2026 16:37:19 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 17:37:19 +01:00: Wed, 20 May 2026 16:37:19 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 17:39:56 +01:00: Wed, 20 May 2026 16:39:56 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 17:39:56 +01:00: Wed, 20 May 2026 16:39:56 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:03:02 +01:00: Wed, 20 May 2026 17:03:02 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:03:02 +01:00: Wed, 20 May 2026 17:03:02 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:05:57 +01:00: Wed, 20 May 2026 17:05:57 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:05:57 +01:00: Wed, 20 May 2026 17:05:57 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:07:04 +01:00: Wed, 20 May 2026 17:07:04 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:07:04 +01:00: Wed, 20 May 2026 17:07:04 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:12:32 +01:00: Wed, 20 May 2026 17:12:32 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:12:32 +01:00: Wed, 20 May 2026 17:12:32 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:17:58 +01:00: Wed, 20 May 2026 17:17:58 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:17:58 +01:00: Wed, 20 May 2026 17:17:58 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:22:13 +01:00: Wed, 20 May 2026 17:22:13 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:22:13 +01:00: Wed, 20 May 2026 17:22:13 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:51:38 +01:00: Wed, 20 May 2026 17:51:38 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:51:38 +01:00: Wed, 20 May 2026 17:51:38 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 18:58:15 +01:00: Wed, 20 May 2026 17:58:15 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-20 18:58:15 +01:00: Wed, 20 May 2026 17:58:15 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-20 19:02:02 +01:00: Wed, 20 May 2026 18:02:02 GMT morgan deprecated undefined format: specify a format at dist\app.js:105:43
+2026-05-20 19:02:02 +01:00: Wed, 20 May 2026 18:02:02 GMT morgan deprecated default format: use combined format at dist\app.js:105:43
+2026-05-20 19:16:36 +01:00: Wed, 20 May 2026 18:16:36 GMT morgan deprecated undefined format: specify a format at dist\app.js:105:43
+2026-05-20 19:16:36 +01:00: Wed, 20 May 2026 18:16:36 GMT morgan deprecated default format: use combined format at dist\app.js:105:43
+2026-05-20 19:19:40 +01:00: Wed, 20 May 2026 18:19:40 GMT morgan deprecated undefined format: specify a format at dist\app.js:105:43
+2026-05-20 19:19:40 +01:00: Wed, 20 May 2026 18:19:40 GMT morgan deprecated default format: use combined format at dist\app.js:105:43
+2026-05-20 19:22:00 +01:00: Wed, 20 May 2026 18:22:00 GMT morgan deprecated undefined format: specify a format at dist\app.js:105:43
+2026-05-20 19:22:00 +01:00: Wed, 20 May 2026 18:22:00 GMT morgan deprecated default format: use combined format at dist\app.js:105:43
+2026-05-20 19:23:30 +01:00: Wed, 20 May 2026 18:23:30 GMT morgan deprecated undefined format: specify a format at dist\app.js:105:43
+2026-05-20 19:23:30 +01:00: Wed, 20 May 2026 18:23:30 GMT morgan deprecated default format: use combined format at dist\app.js:105:43

@@ -5,6 +5,7 @@ import cors from 'cors';
 import express from 'express';
 import helmet from 'helmet';
 import hpp from 'hpp';
+import { createProxyMiddleware } from 'http-proxy-middleware';
 import path from 'path'
 const socket = require('socket.io')
 import morgan from 'morgan';
@@ -16,6 +17,7 @@ import { engine } from 'express-handlebars';
 import { Routes } from './core/routes/interfaces/RouteInterface';
 import { logger, stream, registerShutdownHandler } from './core/utils';
 import { globalErrorHandler } from './core/middlewares/ErrorMiddleware';
+import { spaFallback } from './core/middlewares/SpaMiddleware';
 import Handlebars from 'handlebars'
 
 
@@ -47,6 +49,7 @@ class App {
     // this.initSocket()
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
+    this.initializeSpaRoutes();
     this.initializeErrorHandling();
     // this.handleViews();
   }
@@ -145,7 +148,14 @@ class App {
     this.app.use(morgan(LOG_FORMAT, { stream }));
     this.app.use(cors({ origin: '*' }));
     this.app.use(hpp());
-    this.app.use(helmet());
+    this.app.use(helmet({
+      hsts: false,
+      contentSecurityPolicy: false,
+      crossOriginResourcePolicy: false,
+      crossOriginEmbedderPolicy: false,
+      crossOriginOpenerPolicy: false,
+      originAgentCluster: false,
+    }));
     this.app.use(compression());
     this.app.use(express.json({ limit: "15mb" }));
     this.app.use(express.urlencoded({ limit: "15mb", extended: true }));
@@ -178,6 +188,29 @@ class App {
         }
       })
     })
+  }
+
+
+  private initializeSpaRoutes() {
+    logger.info('Initializing SPA Routes ....');
+
+    // Terminal: static files + SPA fallback
+    this.app.use('/terminal', express.static(path.resolve(process.cwd(), 'public/terminal')));
+    this.app.use('/terminal', spaFallback('terminal'));
+
+    // Admin: reverse proxy to Next.js standalone (port 3031)
+    const adminProxy = createProxyMiddleware({
+      target: 'http://localhost:3031',
+      changeOrigin: true,
+    });
+    this.app.use((req, res, next) => {
+      if (req.url.startsWith('/admin') || req.url.startsWith('/_next')) {
+        return adminProxy(req, res, next);
+      }
+      next();
+    });
+
+    logger.info('SPA Routes Initialized Successfully');
   }
 
   private initializeErrorHandling() {
