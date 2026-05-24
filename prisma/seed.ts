@@ -1,36 +1,77 @@
-import { PrismaClient, UserRole, Gender, ChurchStatus } from "@prisma/client";
-import bcrypt from "bcrypt";
+import "dotenv/config";
 
-const prisma = new PrismaClient();
+import { PrismaClient } from "@prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { Pool } from "pg";
+
+const connectionString = process.env.DATABASE_URL!;
+const schemaMatch = connectionString.match(/[?&]schema=([^&]+)/);
+const schema = schemaMatch ? schemaMatch[1] : "public";
+
+const pool = new Pool({
+  connectionString,
+  options: `-c search_path=${schema}`,
+});
+const adapter = new PrismaPg(pool);
+const prisma = new PrismaClient({ adapter });
 
 async function main() {
-  const email = process.env.ADMIN_EMAIL || "admin@vfc.com";
-  const password = process.env.ADMIN_PASSWORD || "admin123";
+  const departments = [
+    {
+      name: "Prayer Department",
+      description: "Handles prayer activities and intercession",
+    },
+    {
+      name: "Organizing Department",
+      description: "Manages organizational activities and planning",
+    },
+    {
+      name: "Media Department",
+      description: "Manages media, communications, and content creation",
+    },
+    {
+      name: "Music Department",
+      description: "Coordinates music and choir activities",
+    },
+    {
+      name: "Sound and Technical Department",
+      description: "Manages sound systems and technical operations",
+    },
+    {
+      name: "Drama Department",
+      description: "Coordinates drama and theatrical presentations",
+    },
+    {
+      name: "Sanctuary Department",
+      description: "Maintains cleanliness and orderliness of the sanctuary",
+    },
+    {
+      name: "Ushering Department",
+      description: "Manages ushering and congregation coordination",
+    },
+    {
+      name: "Evangelism and Outreach Department",
+      description: "Coordinates evangelism and community outreach",
+    },
+    {
+      name: "Hospitality Department",
+      description: "Handles hospitality and guest reception",
+    },
+    {
+      name: "Welfare Department",
+      description: "Manages welfare and member support programs",
+    },
+  ];
 
-  const existing = await prisma.user.findUnique({ where: { email } });
-
-  if (existing) {
-    console.log(`Admin user already exists: ${email}`);
-    return;
+  for (const dept of departments) {
+    await prisma.department.upsert({
+      where: { name: dept.name },
+      update: {},
+      create: dept,
+    });
   }
 
-  const hashedPassword = await bcrypt.hash(password, 10);
-
-  const admin = await prisma.user.create({
-    data: {
-      firstName: "Admin",
-      lastName: "User",
-      email,
-      password: hashedPassword,
-      phoneNumber: "+2340000000000",
-      gender: Gender.MALE,
-      address: "Admin",
-      churchStatus: ChurchStatus.MEMBER,
-      role: UserRole.ADMIN,
-    },
-  });
-
-  console.log(`Admin user created: ${admin.email} (${admin.id})`);
+  console.log(`Seeded ${departments.length} departments`);
 }
 
 main()

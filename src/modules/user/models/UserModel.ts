@@ -31,6 +31,11 @@ export interface IUser {
   stateOfOrigin?: string;
   emergencyContact?: string;
 
+  // Department relations (sent as ID arrays; translated to Prisma connect/set in UserService)
+  departmentIds?: string[];
+  headDepartmentIds?: string[];
+  assistantDepartmentIds?: string[];
+
   // Attendance relation
   attendances?: IAttendance[];
 

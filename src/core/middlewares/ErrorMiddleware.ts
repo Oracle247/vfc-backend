@@ -96,6 +96,8 @@ function handleDatabaseError(error: any): AppError {
   }
 
   if (error instanceof Prisma.PrismaClientValidationError) {
+    console.error("Message:", error.message);
+
     return new AppError('Invalid input for database operation.', HttpCodes.BAD_REQUEST);
   }
 

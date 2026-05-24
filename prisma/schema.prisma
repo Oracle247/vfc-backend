@@ -42,8 +42,8 @@ model User {
   createdAt    DateTime     @default(now())
   updatedAt    DateTime     @updatedAt
   departments  Department[] @relation("UserDepartments")
-  departmentId String?
-  Department   Department[] @relation("DepartmentHead")
+  headedDepartments Department[] @relation("DepartmentHead")
+  assistantDepartments Department[] @relation("DepartmentAssistant")
 
   createdInvoices  Invoice[]        @relation("CreatedInvoices")
   paidInvoices     Invoice[]        @relation("PaidInvoices")
@@ -77,7 +77,7 @@ model Department {
   headId      String?
   head        User?   @relation("DepartmentHead", fields: [headId], references: [id])
   members     User[]  @relation("UserDepartments")
-  userId      String?
+  assistantHeads User[] @relation("DepartmentAssistant")
 }
 
 model Invoice {

@@ -20,16 +20,46 @@ export class UserService {
       hashedPassword = await bcrypt.hash(data.password, 10);
     }
 
+    const {
+      attendances,
+      departmentIds,
+      headDepartmentIds,
+      assistantDepartmentIds,
+      ...rest
+    } = data;
+
     let prismaData: any = {
-      ...data,
+      ...rest,
       password: hashedPassword,
     };
 
-    if (data.attendances) {
+    if (rest.dateOfBirth) {
+      prismaData.dateOfBirth = new Date(rest.dateOfBirth as any);
+    }
+
+    if (attendances) {
       prismaData.attendances = {
-        create: data.attendances.map((attendance) => ({
+        create: attendances.map((attendance) => ({
           ...attendance,
         })),
+      };
+    }
+
+    if (departmentIds?.length) {
+      prismaData.departments = {
+        connect: departmentIds.map((id) => ({ id })),
+      };
+    }
+
+    if (headDepartmentIds?.length) {
+      prismaData.headedDepartments = {
+        connect: headDepartmentIds.map((id) => ({ id })),
+      };
+    }
+
+    if (assistantDepartmentIds?.length) {
+      prismaData.assistantDepartments = {
+        connect: assistantDepartmentIds.map((id) => ({ id })),
       };
     }
 
@@ -182,10 +212,41 @@ export class UserService {
       data.password = await bcrypt.hash(data.password, 10);
     }
 
-    let prismaData: any = { ...data };
-    if (data.attendances) {
+    const {
+      attendances,
+      departmentIds,
+      headDepartmentIds,
+      assistantDepartmentIds,
+      ...rest
+    } = data;
+
+    let prismaData: any = { ...rest };
+
+    if (rest.dateOfBirth) {
+      prismaData.dateOfBirth = new Date(rest.dateOfBirth as any);
+    }
+
+    if (attendances) {
       prismaData.attendances = {
-        set: data.attendances.map((attendance) => ({ id: attendance.id })),
+        set: attendances.map((attendance) => ({ id: attendance.id })),
+      };
+    }
+
+    if (departmentIds) {
+      prismaData.departments = {
+        set: departmentIds.map((id) => ({ id })),
+      };
+    }
+
+    if (headDepartmentIds) {
+      prismaData.headedDepartments = {
+        set: headDepartmentIds.map((id) => ({ id })),
+      };
+    }
+
+    if (assistantDepartmentIds) {
+      prismaData.assistantDepartments = {
+        set: assistantDepartmentIds.map((id) => ({ id })),
       };
     }
 

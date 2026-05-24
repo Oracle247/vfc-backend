@@ -1,33 +1,40 @@
 import { z } from "zod";
-import { Gender, ChurchStatus } from "@prisma/client";
+import { Gender, ChurchStatus, MembershipType } from "@prisma/client";
 
 // Register User Schema
 export const RegisterSchema = z.object({
-    firstName: z.string().min(1, "First name is required"),
-    lastName: z.string().min(1, "Last name is required"),
-    email: z.string().email("Invalid email address"),
-    phoneNumber: z.string().min(1, "Phone number is required"),
-    gender: z.nativeEnum(Gender),
-    address: z.string().min(1, "Address is required"),
-    dateOfBirth: z.string().datetime().optional(), // or z.date() depending on frontend
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  email: z.string().email("Invalid email address"),
+  phoneNumber: z.string().min(1, "Phone number is required"),
 
-    // Campus-specific details
-    matricNumber: z.string().optional(),
-    department: z.string().optional(),
-    level: z.string().optional(),
-    faculty: z.string().optional(),
+  gender: z.nativeEnum(Gender),
+  address: z.string().min(1, "Address is required"),
 
-    // Other identifiers
-    churchStatus: z.nativeEnum(ChurchStatus), // member, visitor, first_timer
-    nationality: z.string().optional(),
-    stateOfOrigin: z.string().optional(),
-    emergencyContact: z.string().optional(),
+  dateOfBirth: z.string().optional(),
 
-    // Security
-    password: z.string().min(6, "Password must be at least 6 characters").optional(),
-    // system fields
-    createdAt: z.date().optional(),
-    updatedAt: z.date().optional(),
+  // Campus-specific details
+  matricNumber: z.string().optional(),
+  department: z.string().optional(),
+  level: z.string().optional(),
+  faculty: z.string().optional(),
+
+  // Church journey
+  churchStatus: z.nativeEnum(ChurchStatus),
+
+  membershipType: z.nativeEnum(MembershipType).optional(),
+
+  // 👇 Department relations
+  departmentIds: z.array(z.string()).optional(),     // members
+  headDepartmentIds: z.array(z.string()).optional(), // departments user heads
+  assistantDepartmentIds: z.array(z.string()).optional(), // departments user assists
+
+  nationality: z.string().optional(),
+  stateOfOrigin: z.string().optional(),
+  emergencyContact: z.string().optional(),
+
+  // Security
+  password: z.string().min(6, "Password must be at least 6 characters").optional(),
 });
 
 // Login User Schema
