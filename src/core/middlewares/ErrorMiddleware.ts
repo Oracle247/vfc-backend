@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { logger } from '../utils/logger';
+import { logDevError } from '../utils/devLogger';
 import { HttpCodes } from '../constants';
 import { AppError } from '../exceptions';
 import { Prisma } from '@prisma/client'; // Import Prisma
@@ -29,7 +30,10 @@ function handleDatabaseError(error: any): AppError {
       case 'P2001':
         return new AppError('Record not found.', HttpCodes.NOT_FOUND);
       case 'P2002':
-        return new AppError('Unique constraint violation. Record already exists.', HttpCodes.BAD_REQUEST);
+        {
+          logDevError(error);
+          return new AppError('Unique constraint violation. Record already exists.', HttpCodes.BAD_REQUEST);
+        }
       case 'P2003':
         return new AppError('Foreign key constraint violation.', HttpCodes.BAD_REQUEST);
       case 'P2004':
@@ -96,8 +100,7 @@ function handleDatabaseError(error: any): AppError {
   }
 
   if (error instanceof Prisma.PrismaClientValidationError) {
-    console.error("Message:", error.message);
-
+    logDevError(error);
     return new AppError('Invalid input for database operation.', HttpCodes.BAD_REQUEST);
   }
 

@@ -528,3 +528,335 @@
 2026-05-22 21:08:18 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-22T20:08:18.736Z"}
 2026-05-22 21:08:18 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-22T20:08:18.736Z"}
 2026-05-22 21:08:18 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-22T20:08:18.736Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-24T05:47:06.623Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-24T05:47:06.625Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-24T05:47:06.626Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-24T05:47:06.626Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-24T05:47:06.627Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-24T05:47:06.627Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-24T05:47:06.627Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T05:47:06.633Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-24T05:47:06.633Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-24T05:47:06.633Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-24T05:47:06.634Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-24T05:47:06.634Z"}
+2026-05-24 06:47:06 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T05:47:06.634Z"}
+2026-05-24 06:48:46 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-24 07:14:55 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-24T06:14:55.964Z"}
+2026-05-24 07:14:55 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-24T06:14:55.970Z"}
+2026-05-24 07:14:55 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-24T06:14:55.971Z"}
+2026-05-24 07:14:55 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-24T06:14:55.973Z"}
+2026-05-24 07:14:55 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-24T06:14:55.974Z"}
+2026-05-24 07:14:55 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-24T06:14:55.975Z"}
+2026-05-24 07:14:55 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-24T06:14:55.978Z"}
+2026-05-24 07:14:56 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T06:14:56.013Z"}
+2026-05-24 07:14:56 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-24T06:14:56.032Z"}
+2026-05-24 07:14:56 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-24T06:14:56.032Z"}
+2026-05-24 07:14:56 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-24T06:14:56.032Z"}
+2026-05-24 07:14:56 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-24T06:14:56.033Z"}
+2026-05-24 07:14:56 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T06:14:56.033Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-24T06:35:27.193Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-24T06:35:27.196Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-24T06:35:27.196Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-24T06:35:27.196Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-24T06:35:27.197Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-24T06:35:27.197Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-24T06:35:27.197Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T06:35:27.202Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-24T06:35:27.202Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-24T06:35:27.202Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-24T06:35:27.203Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-24T06:35:27.203Z"}
+2026-05-24 07:35:27 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T06:35:27.204Z"}
+2026-05-24 07:36:42 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-24T06:48:26.085Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-24T06:48:26.090Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-24T06:48:26.091Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-24T06:48:26.096Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-24T06:48:26.096Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-24T06:48:26.102Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-24T06:48:26.103Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T06:48:26.117Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-24T06:48:26.118Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-24T06:48:26.118Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-24T06:48:26.118Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-24T06:48:26.119Z"}
+2026-05-24 07:48:26 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-24T06:48:26.119Z"}
+2026-05-24 07:49:07 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-24 07:58:49 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-24 07:59:29 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-25T13:52:26.687Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-25T13:52:26.689Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-25T13:52:26.690Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-25T13:52:26.690Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-25T13:52:26.690Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-25T13:52:26.691Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-25T13:52:26.692Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T13:52:26.700Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-25T13:52:26.700Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-25T13:52:26.701Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-25T13:52:26.701Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-25T13:52:26.702Z"}
+2026-05-25 14:52:25 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T13:52:26.702Z"}
+2026-05-25 14:53:02 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-25 15:02:53 +01:00: Searching for user with name: Ada
+2026-05-25 15:07:08 +01:00: Searching for user with name: Ada
+2026-05-25 15:09:45 +01:00: Searching for user with name: Ada
+2026-05-25 15:12:04 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constraint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:12:04.878Z"}
+2026-05-25 15:12:18 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constraint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:12:18.878Z"}
+2026-05-25 15:12:26 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constraint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:12:26.177Z"}
+2026-05-25 15:12:51 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constraint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:12:51.844Z"}
+2026-05-25 15:16:37 +01:00: Searching for user with name: Tarm
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-25T14:24:51.150Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-25T14:24:51.152Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-25T14:24:51.152Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-25T14:24:51.152Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-25T14:24:51.153Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-25T14:24:51.153Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-25T14:24:51.154Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:24:51.159Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-25T14:24:51.159Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-25T14:24:51.160Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-25T14:24:51.161Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-25T14:24:51.162Z"}
+2026-05-25 15:24:51 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:24:51.163Z"}
+2026-05-25 15:24:55 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constraint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:24:55.425Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-25T14:28:13.974Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-25T14:28:13.978Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-25T14:28:13.979Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-25T14:28:13.980Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-25T14:28:13.980Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-25T14:28:13.982Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-25T14:28:13.982Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:28:13.988Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-25T14:28:13.989Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-25T14:28:13.989Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-25T14:28:13.990Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-25T14:28:13.990Z"}
+2026-05-25 15:28:13 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:28:13.990Z"}
+2026-05-25 15:28:27 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constraint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:28:27.318Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-25T14:32:14.320Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-25T14:32:14.323Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-25T14:32:14.324Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-25T14:32:14.324Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-25T14:32:14.325Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-25T14:32:14.325Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-25T14:32:14.325Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:32:14.332Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-25T14:32:14.333Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-25T14:32:14.333Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-25T14:32:14.333Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-25T14:32:14.333Z"}
+2026-05-25 15:32:14 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:32:14.333Z"}
+2026-05-25 15:32:38 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constrint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:32:38.750Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-25T14:36:00.948Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-25T14:36:00.950Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-25T14:36:00.950Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-25T14:36:00.951Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-25T14:36:00.951Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-25T14:36:00.952Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-25T14:36:00.952Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:36:00.964Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-25T14:36:00.965Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-25T14:36:00.966Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-25T14:36:00.967Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-25T14:36:00.968Z"}
+2026-05-25 15:36:00 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:36:00.968Z"}
+2026-05-25 15:36:12 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Unique constrint violation. Record already exists., Stack: undefined","timestamp":"2026-05-25T14:36:12.054Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-25T14:54:02.362Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-25T14:54:02.367Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-25T14:54:02.368Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-25T14:54:02.369Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-25T14:54:02.369Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-25T14:54:02.370Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-25T14:54:02.370Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:54:02.417Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-25T14:54:02.417Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-25T14:54:02.418Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-25T14:54:02.419Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-25T14:54:02.419Z"}
+2026-05-25 15:54:02 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-25T14:54:02.419Z"}
+2026-05-25 15:54:26 +01:00: Searching for user with name: Tarm
+2026-05-25 15:58:14 +01:00: Searching for user with name: Tarm
+2026-05-25 16:03:47 +01:00: Searching for user with name: Tarm
+2026-05-25 16:07:47 +01:00: Searching for user with name: Tarm
+2026-05-25 16:21:03 +01:00: Searching for user with name: Tarm
+2026-05-25 16:23:33 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-25 16:27:24 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-25 16:53:11 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-25 16:56:34 +01:00: Searching for user with name: igo
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-27T14:18:48.180Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-27T14:18:48.188Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-27T14:18:48.189Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-27T14:18:48.191Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-27T14:18:48.192Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-27T14:18:48.192Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-27T14:18:48.194Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T14:18:48.209Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-27T14:18:48.210Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-27T14:18:48.210Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-27T14:18:48.210Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-27T14:18:48.210Z"}
+2026-05-27 15:18:48 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T14:18:48.211Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-27T14:32:59.857Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-27T14:32:59.869Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-27T14:32:59.871Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-27T14:32:59.874Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-27T14:32:59.874Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-27T14:32:59.875Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-27T14:32:59.875Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T14:32:59.887Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-27T14:32:59.887Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-27T14:32:59.890Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-27T14:32:59.890Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-27T14:32:59.891Z"}
+2026-05-27 15:32:59 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T14:32:59.891Z"}
+2026-05-27 15:38:52 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-27T14:58:59.855Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-27T14:58:59.858Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-27T14:58:59.858Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-27T14:58:59.859Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-27T14:58:59.859Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-27T14:58:59.860Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-27T14:58:59.860Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T14:58:59.899Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-27T14:58:59.899Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-27T14:58:59.899Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-27T14:58:59.900Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-27T14:58:59.900Z"}
+2026-05-27 15:58:59 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T14:58:59.900Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-27T15:01:28.836Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-27T15:01:28.840Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-27T15:01:28.841Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-27T15:01:28.843Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-27T15:01:28.844Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-27T15:01:28.844Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-27T15:01:28.845Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T15:01:28.863Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-27T15:01:28.864Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-27T15:01:28.874Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-27T15:01:28.875Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-27T15:01:28.875Z"}
+2026-05-27 16:01:28 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-27T15:01:28.877Z"}
+2026-05-27 16:07:53 +01:00: Searching for user with name: Ana
+2026-05-27 16:08:10 +01:00: Searching for user with name: Beat
+2026-05-27 16:08:43 +01:00: Searching for user with name: Ta
+2026-05-27 16:08:44 +01:00: Searching for user with name: Tama
+2026-05-27 16:08:45 +01:00: Searching for user with name: Tamar
+2026-05-27 16:59:16 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-05-27T15:59:16.401Z"}
+2026-05-27 17:04:31 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 17:04:59 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 17:13:25 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 17:20:28 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 17:23:18 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 17:27:23 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-05-27T16:27:23.067Z"}
+2026-05-27 17:28:49 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 17:35:39 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-27 17:44:00 +01:00: Searching for user with name: T
+2026-05-27 17:44:01 +01:00: Searching for user with name: Ta
+2026-05-27 17:44:10 +01:00: Searching for user with name: An
+2026-05-27 17:44:15 +01:00: Searching for user with name: Er
+2026-05-27 17:44:16 +01:00: Searching for user with name: Ere
+2026-05-27 17:44:20 +01:00: Searching for user with name: Ayib
+2026-05-27 17:44:23 +01:00: Searching for user with name: A
+2026-05-27 17:44:38 +01:00: Searching for user with name: On
+2026-05-27 17:44:40 +01:00: Searching for user with name: Ono
+2026-05-27 17:44:43 +01:00: Searching for user with name: Obr
+2026-05-27 17:44:45 +01:00: Searching for user with name: O
+2026-05-27 17:44:59 +01:00: Searching for user with name: Fait
+2026-05-27 17:45:14 +01:00: Searching for user with name: Fai
+2026-05-27 17:45:15 +01:00: Searching for user with name: F
+2026-05-27 17:45:17 +01:00: Searching for user with name: Fl
+2026-05-27 17:45:18 +01:00: Searching for user with name: F
+2026-05-27 17:45:22 +01:00: Searching for user with name: D
+2026-05-27 17:45:23 +01:00: Searching for user with name: Des
+2026-05-27 17:52:24 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-05-27T16:52:24.137Z"}
+2026-05-27 18:19:55 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-05-27T17:19:55.609Z"}
+2026-05-27 18:20:08 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-05-27T17:20:08.162Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-28T15:35:33.850Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-28T15:35:33.852Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-28T15:35:33.853Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-28T15:35:33.853Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-28T15:35:33.854Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-28T15:35:33.856Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-28T15:35:33.858Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-28T15:35:33.866Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-28T15:35:33.866Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-28T15:35:33.866Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-28T15:35:33.867Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-28T15:35:33.867Z"}
+2026-05-28 16:35:33 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-28T15:35:33.867Z"}
+2026-05-28 16:39:26 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-28 16:43:28 +01:00: Searching for user with name: O
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-28T16:55:54.372Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-28T16:55:54.374Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-28T16:55:54.375Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-28T16:55:54.376Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-28T16:55:54.376Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-28T16:55:54.377Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-28T16:55:54.378Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-28T16:55:54.383Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-28T16:55:54.384Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-28T16:55:54.384Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-28T16:55:54.386Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-28T16:55:54.386Z"}
+2026-05-28 17:55:54 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-28T16:55:54.386Z"}
+2026-05-28 18:00:08 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-28 18:01:30 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-28 19:01:33 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-28 19:02:56 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-29T19:53:07.145Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-29T19:53:07.150Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-29T19:53:07.151Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-29T19:53:07.152Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-29T19:53:07.153Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-29T19:53:07.154Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-29T19:53:07.154Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-29T19:53:07.170Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-29T19:53:07.171Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-29T19:53:07.171Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-29T19:53:07.172Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-29T19:53:07.172Z"}
+2026-05-29 20:53:07 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-29T19:53:07.172Z"}
+2026-05-29 20:53:30 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-29 21:01:22 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-29 21:02:23 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*(1'[39m }
+2026-05-29 21:02:23 +01:00: {"level":"error","message":"[POST] /api/v1/auth/login >> Status: 500, Message: Invalid email or password, Stack: undefined","timestamp":"2026-05-29T20:02:23.543Z"}
+2026-05-29 21:02:28 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-29 21:20:06 +01:00: Searching for user with name: Teg
+2026-05-29 21:20:12 +01:00: Searching for user with name: Tegg
+2026-05-29 21:20:12 +01:00: Searching for user with name: Tegga
+2026-05-29 21:20:17 +01:00: Searching for user with name: Mi
+2026-05-29 21:20:35 +01:00: Searching for user with name: E
+2026-05-29 21:20:35 +01:00: Searching for user with name: Emm
+2026-05-29 21:20:46 +01:00: Searching for user with name: Jul
+2026-05-29 21:20:54 +01:00: Searching for user with name: Sol
+2026-05-29 21:21:33 +01:00: Searching for user with name: E
+2026-05-29 21:21:34 +01:00: Searching for user with name: Em
+2026-05-29 21:21:42 +01:00: Searching for user with name: Viv
+2026-05-29 21:21:44 +01:00: Searching for user with name: Vivi
+2026-05-29 21:26:46 +01:00: Searching for user with name: And
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T14:40:48.633Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T14:40:48.746Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T14:40:48.747Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T14:40:48.774Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T14:40:48.775Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T14:40:48.776Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T14:40:48.777Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-30T14:40:48.806Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-30T14:40:48.836Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-30T14:40:48.837Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-30T14:40:48.838Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-30T14:40:48.839Z"}
+2026-05-30 15:40:48 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-30T14:40:48.839Z"}
+2026-05-30 15:42:23 +01:00: {"level":"error","message":"[DELETE] /api/v1/attendance/session/cmp5r8br10002dom8wry3fbgw >> Status: 400, Message: Foreign key constraint violation., Stack: undefined","timestamp":"2026-05-30T14:42:23.218Z"}
+2026-05-30 15:42:23 +01:00: {"level":"error","message":"[DELETE] /api/v1/attendance/session/cmp5r8br10002dom8wry3fbgw >> Status: 400, Message: Foreign key constraint violation., Stack: undefined","timestamp":"2026-05-30T14:42:23.895Z"}
+2026-05-30 15:42:27 +01:00: {"level":"error","message":"[DELETE] /api/v1/attendance/session/cmprd8pmj000al8m859uwu17v >> Status: 400, Message: Foreign key constraint violation., Stack: undefined","timestamp":"2026-05-30T14:42:27.602Z"}
+2026-05-30 15:47:05 +01:00: Searching for user with name: Ruth
+2026-05-30 15:51:39 +01:00: {"level":"error","message":"[DELETE] /api/v1/attendance/session/cmpsgs3ys00001om8ucbndex4 >> Status: 400, Message: Foreign key constraint violation., Stack: undefined","timestamp":"2026-05-30T14:51:39.333Z"}
+2026-05-30 15:52:42 +01:00: Searching for user with name: S
+2026-05-30 15:52:44 +01:00: Searching for user with name: Sol
+2026-05-30 15:53:24 +01:00: Searching for user with name: Viv
+2026-05-30 15:53:57 +01:00: Searching for user with name: Viv
+2026-05-30 16:02:55 +01:00: Searching for user with name: Ch
+2026-05-30 16:03:10 +01:00: Searching for user with name: Ruth

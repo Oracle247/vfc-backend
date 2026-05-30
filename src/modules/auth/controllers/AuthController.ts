@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
 import { AuthService } from "../services";
 import { successResponse } from "../../../core/utils/responses.utils";
+import { logDevError } from "../../../core/utils";
 
 export class AuthController {
     private authService;
@@ -14,6 +15,7 @@ export class AuthController {
             const result = await this.authService.register({ ...req.body });
             successResponse(res, "User registered successfully", StatusCodes.CREATED, result);
         } catch (err) {
+            logDevError(err);
             next(err);
         }
     }
@@ -24,6 +26,7 @@ export class AuthController {
             const data = await this.authService.login(req.body.email, req.body.password);
             successResponse(res, "Login successful", StatusCodes.OK, { ...data });
         } catch (err) {
+            logDevError(err);
             next(err);
         }
     }
@@ -34,6 +37,7 @@ export class AuthController {
             const result = await this.authService.changePassword(userId, req.body.oldPassword, req.body.newPassword);
             successResponse(res, "Password changed successfully", StatusCodes.OK, result);
         } catch (err) {
+            logDevError(err);
             next(err);
         }
     }
@@ -43,6 +47,7 @@ export class AuthController {
             const result = await this.authService.forgotPassword(req.body.email);
             successResponse(res, "Password reset successfully", StatusCodes.OK, result);
         } catch (err) {
+            logDevError(err);
             next(err);
         }
     }
@@ -54,6 +59,7 @@ export class AuthController {
             const decoded = await this.authService.verifyToken(token);
             successResponse(res, "Token verified successfully", StatusCodes.OK, decoded);
         } catch (err) {
+            logDevError(err);
             next(err);
         }
     }

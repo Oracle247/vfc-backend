@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
 import { DepartmentService } from "../services";
 import { successResponse } from "../../../core/utils/responses.utils";
+import { logDevError } from "../../../core/utils";
 
 export class DepartmentController {
   private departmentService = new DepartmentService();
@@ -11,6 +12,7 @@ export class DepartmentController {
       const department = await this.departmentService.createDepartment(req.body);
       successResponse(res, "Department created successfully", StatusCodes.CREATED, department);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -22,6 +24,7 @@ export class DepartmentController {
       const departments = await this.departmentService.getAllDepartments(page, limit);
       successResponse(res, "Departments fetched successfully", StatusCodes.OK, departments);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -31,6 +34,7 @@ export class DepartmentController {
       const department = await this.departmentService.getDepartmentById(req.params.id);
       successResponse(res, "Department fetched successfully", StatusCodes.OK, department);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -40,6 +44,7 @@ export class DepartmentController {
       const department = await this.departmentService.updateDepartment(req.params.id, req.body);
       successResponse(res, "Department updated successfully", StatusCodes.OK, department);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -49,6 +54,7 @@ export class DepartmentController {
       await this.departmentService.deleteDepartment(req.params.id);
       successResponse(res, "Department deleted successfully", StatusCodes.OK);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -58,6 +64,7 @@ export class DepartmentController {
       const department = await this.departmentService.assignHead(req.params.id, req.body.userId);
       successResponse(res, "Department head assigned successfully", StatusCodes.OK, department);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -67,6 +74,7 @@ export class DepartmentController {
       const department = await this.departmentService.removeHead(req.params.id);
       successResponse(res, "Department head removed successfully", StatusCodes.OK, department);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -76,6 +84,7 @@ export class DepartmentController {
       const department = await this.departmentService.addMembers(req.params.id, req.body.userIds);
       successResponse(res, "Members added successfully", StatusCodes.OK, department);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -85,6 +94,7 @@ export class DepartmentController {
       const department = await this.departmentService.removeMembers(req.params.id, req.body.userIds);
       successResponse(res, "Members removed successfully", StatusCodes.OK, department);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -96,6 +106,7 @@ export class DepartmentController {
       const result = await this.departmentService.bulkCreateFromExcel(file.path);
       successResponse(res, "Departments imported successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };

@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
 import { UserService } from "../services";
 import { successResponse } from "../../../core/utils/responses.utils";
+import { logDevError } from "../../../core/utils";
 
 export class UserController {
   private userService = new UserService();
@@ -19,6 +20,7 @@ export class UserController {
       });
       successResponse(res, "Users fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -28,6 +30,7 @@ export class UserController {
       const user = await this.userService.updateUser(req.params.id, req.body);
       successResponse(res, "User updated successfully", StatusCodes.OK, user);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -37,6 +40,7 @@ export class UserController {
       const user = await this.userService.updateChurchJourney(req.params.id, req.body);
       successResponse(res, "Church journey updated successfully", StatusCodes.OK, user);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -46,6 +50,7 @@ export class UserController {
       const user = await this.userService.setPassword(req.params.id, req.body.password);
       successResponse(res, "Password set successfully", StatusCodes.OK, user);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -57,6 +62,7 @@ export class UserController {
       const result = await this.userService.bulkImportFromExcel(file.path);
       successResponse(res, "Members imported successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -66,6 +72,7 @@ export class UserController {
       const users = await this.userService.getAllUsers();
       successResponse(res, "Users fetched successfully", StatusCodes.OK, users);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   }
@@ -76,6 +83,7 @@ export class UserController {
       if (!user) return next(new Error("User not found"));
       successResponse(res, "User fetched successfully", StatusCodes.OK, user);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   }
@@ -88,6 +96,7 @@ export class UserController {
       if (!user) return next(new Error("User not found"));
       successResponse(res, "User fetched successfully", StatusCodes.OK, user);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   }
@@ -98,6 +107,7 @@ export class UserController {
       if (!user) return next(new Error("User not found"));
       successResponse(res, "User fetched successfully", StatusCodes.OK, user);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   }
@@ -109,6 +119,7 @@ export class UserController {
       const analysisResult = await this.userService.analyzeExpenses(file.path);
       successResponse(res, "Expenses analyzed successfully", StatusCodes.OK, analysisResult);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   }
@@ -118,6 +129,7 @@ export class UserController {
       const deletedUser = await this.userService.deleteUser(req.params.id);
       successResponse(res, "User deleted successfully", StatusCodes.OK, deletedUser);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   }

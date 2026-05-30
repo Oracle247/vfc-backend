@@ -1,5 +1,6 @@
 import prisma from "../../../core/databases/prisma";
 import { paginate } from "../../../core/utils/paginate";
+import { logDevError } from "../../../core/utils";
 import XLSX from "xlsx";
 import fs from "node:fs";
 
@@ -207,6 +208,7 @@ export class DepartmentService {
 
         results.created++;
       } catch (error: any) {
+        logDevError(error);
         results.errors.push(`"${row.name}": ${error.message}`);
       }
     }

@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import { UserRole } from "@prisma/client";
 import { UserService } from "../../user/services";
 import { IUser } from "../../user/models/UserModel";
+import { logDevError } from "../../../core/utils";
 
 const JWT_SECRET = process.env.JWT_SECRET || "your_secret_key";
 
@@ -83,6 +84,7 @@ export class AuthService {
             const decoded = jwt.verify(token, JWT_SECRET) as { userId: string; role: UserRole };
             return decoded;
         } catch (err) {
+            logDevError(err);
             throw new Error("Invalid token");
         }
     }

@@ -1,4 +1,5 @@
 export { logger, stream } from './logger'
+export { logDevError } from './devLogger'
 export { sendResponse } from './response'
 export { validateEnv } from './validateEnv'
 export { registerShutdownHandler } from './error'

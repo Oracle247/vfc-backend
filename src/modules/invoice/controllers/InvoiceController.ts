@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { InvoiceService } from "../services/InvoiceService";
 import { StatusCodes } from "http-status-codes";
 import { successResponse } from "../../../core/utils/responses.utils";
+import { logDevError } from "../../../core/utils";
 
 export class InvoiceController {
   private invoiceService = new InvoiceService();
@@ -12,6 +13,7 @@ export class InvoiceController {
       const result = await this.invoiceService.createInvoice({ ...req.body, userId });
       successResponse(res, "Invoice created successfully", StatusCodes.CREATED, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -23,6 +25,7 @@ export class InvoiceController {
       const result = await this.invoiceService.getInvoices(page, limit);
       successResponse(res, "Invoices fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -33,6 +36,7 @@ export class InvoiceController {
       const result = await this.invoiceService.getInvoiceById(id);
       successResponse(res, "Invoice fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -44,6 +48,7 @@ export class InvoiceController {
       const result = await this.invoiceService.approveInvoice({ invoiceId: id, userId });
       successResponse(res, "Invoice approved successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -61,6 +66,7 @@ export class InvoiceController {
       });
       successResponse(res, "Payment recorded successfully", StatusCodes.CREATED, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -71,6 +77,7 @@ export class InvoiceController {
       const result = await this.invoiceService.getPaymentsByInvoiceId(id);
       successResponse(res, "Payments fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -82,6 +89,7 @@ export class InvoiceController {
       const result = await this.invoiceService.markAsPaid({ invoiceId: id, userId });
       successResponse(res, "Invoice marked as paid successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -92,6 +100,7 @@ export class InvoiceController {
       const result = await this.invoiceService.updateInvoice(id, req.body);
       successResponse(res, "Invoice updated successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -102,6 +111,7 @@ export class InvoiceController {
       const result = await this.invoiceService.deleteInvoice(id);
       successResponse(res, "Invoice deleted successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };

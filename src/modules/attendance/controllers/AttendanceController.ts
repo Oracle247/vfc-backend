@@ -2,6 +2,7 @@ import { Request, Response, NextFunction } from "express";
 import { AttendanceService } from "../services/AttendanceService";
 import { StatusCodes } from "http-status-codes";
 import { successResponse } from "../../../core/utils/responses.utils";
+import { logDevError } from "../../../core/utils";
 
 export class AttendanceController {
   private attendanceService = new AttendanceService();
@@ -15,6 +16,7 @@ export class AttendanceController {
       const result = await this.attendanceService.startSession(serviceName, new Date(startedAt));
       successResponse(res, "Attendance session started successfully", StatusCodes.CREATED, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -24,10 +26,11 @@ export class AttendanceController {
    */
   public markAttendance = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { sessionId, userId } = req.body;
-      const result = await this.attendanceService.markAttendance(sessionId, userId);
+      const { sessionId, userId, markedAt } = req.body;
+      const result = await this.attendanceService.markAttendance(sessionId, userId, markedAt ? new Date(markedAt) : undefined);
       successResponse(res, "Attendance marked successfully", StatusCodes.CREATED, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -43,6 +46,7 @@ export class AttendanceController {
       const result = await this.attendanceService.getAllSessions(page, limit);
       successResponse(res, "Attendance sessions fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -56,6 +60,7 @@ export class AttendanceController {
       const result = await this.attendanceService.getSessionById(id);
       successResponse(res, "Attendance session fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -69,6 +74,7 @@ export class AttendanceController {
       const result = await this.attendanceService.updateSession(id, req.body);
       successResponse(res, "Attendance session updated successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -82,6 +88,7 @@ export class AttendanceController {
       const result = await this.attendanceService.bulkMarkAttendance(sessionId, userIds);
       successResponse(res, "Bulk attendance marked successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -95,6 +102,7 @@ export class AttendanceController {
       const result = await this.attendanceService.deleteSession(id);
       successResponse(res, "Attendance session deleted successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -104,6 +112,7 @@ export class AttendanceController {
       const result = await this.attendanceService.getAttendanceSummary();
       successResponse(res, "Attendance summary fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -114,6 +123,7 @@ export class AttendanceController {
       const result = await this.attendanceService.getTopMembers(limit);
       successResponse(res, "Top members fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -124,6 +134,7 @@ export class AttendanceController {
       const result = await this.attendanceService.getMemberAttendanceHistory(userId);
       successResponse(res, "Member attendance history fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -134,6 +145,7 @@ export class AttendanceController {
       const result = await this.attendanceService.getAttendanceTrend(groupBy);
       successResponse(res, "Attendance trend fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };
@@ -143,6 +155,7 @@ export class AttendanceController {
       const result = await this.attendanceService.getAttendanceRate();
       successResponse(res, "Attendance rate fetched successfully", StatusCodes.OK, result);
     } catch (err) {
+      logDevError(err);
       next(err);
     }
   };

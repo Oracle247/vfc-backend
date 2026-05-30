@@ -1,6 +1,7 @@
 import { UserRole } from "@prisma/client";
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
+import { logDevError } from "../utils";
 
 const JWT_SECRET = process.env.JWT_SECRET || "your_secret_key";
 
@@ -17,6 +18,7 @@ export function authenticate(req: Request, res: Response, next: NextFunction) {
 
         next();
     } catch (error) {
+        logDevError(error);
         res.status(401).json({ message: "Invalid or expired token" });
     }
 }
@@ -30,6 +32,7 @@ export function authorize(...roles: UserRole[]) {
             }
             next();
         } catch (error) {
+            logDevError(error);
             next(error);
         }
     };

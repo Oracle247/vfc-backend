@@ -2420,3 +2420,49 @@
 2026-05-22 03:00:12 +01:00: Fri, 22 May 2026 02:00:12 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
 2026-05-22 21:08:18 +01:00: Fri, 22 May 2026 20:08:18 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
 2026-05-22 21:08:18 +01:00: Fri, 22 May 2026 20:08:18 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-24 06:47:06 +01:00: Sun, 24 May 2026 05:47:06 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-24 06:47:06 +01:00: Sun, 24 May 2026 05:47:06 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-24 07:14:55 +01:00: Sun, 24 May 2026 06:14:55 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-24 07:14:55 +01:00: Sun, 24 May 2026 06:14:55 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-24 07:35:27 +01:00: Sun, 24 May 2026 06:35:27 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-24 07:35:27 +01:00: Sun, 24 May 2026 06:35:27 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-24 07:48:26 +01:00: Sun, 24 May 2026 06:48:26 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-24 07:48:26 +01:00: Sun, 24 May 2026 06:48:26 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-25 14:52:25 +01:00: Mon, 25 May 2026 13:52:26 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-25 14:52:25 +01:00: Mon, 25 May 2026 13:52:26 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-25 15:24:51 +01:00: Mon, 25 May 2026 14:24:51 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-25 15:24:51 +01:00: Mon, 25 May 2026 14:24:51 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-25 15:28:13 +01:00: Mon, 25 May 2026 14:28:13 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-25 15:28:13 +01:00: Mon, 25 May 2026 14:28:13 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-25 15:32:14 +01:00: Mon, 25 May 2026 14:32:14 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-25 15:32:14 +01:00: Mon, 25 May 2026 14:32:14 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-25 15:36:00 +01:00: Mon, 25 May 2026 14:36:00 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-25 15:36:00 +01:00: Mon, 25 May 2026 14:36:00 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-25 15:36:12 +01:00: Message: 
+2026-05-25 15:36:12 +01:00: Invalid `prisma.user.create()` invocation:
+2026-05-25 15:36:12 +01:00: 
+2026-05-25 15:36:12 +01:00: 
+2026-05-25 15:36:12 +01:00: Unique constraint failed on the fields: (`"matricNumber"`)
+2026-05-25 15:36:12 +01:00: Message: 
+2026-05-25 15:36:12 +01:00: Invalid `prisma.user.create()` invocation:
+2026-05-25 15:36:12 +01:00: 
+2026-05-25 15:36:12 +01:00: 
+2026-05-25 15:36:12 +01:00: Unique constraint failed on the fields: (`"matricNumber"`)
+2026-05-25 15:54:02 +01:00: Mon, 25 May 2026 14:54:02 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-25 15:54:02 +01:00: Mon, 25 May 2026 14:54:02 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-27 15:18:48 +01:00: Wed, 27 May 2026 14:18:48 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-27 15:18:48 +01:00: Wed, 27 May 2026 14:18:48 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-27 15:32:59 +01:00: Wed, 27 May 2026 14:32:59 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-27 15:32:59 +01:00: Wed, 27 May 2026 14:32:59 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-27 15:58:59 +01:00: Wed, 27 May 2026 14:58:59 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-27 15:58:59 +01:00: Wed, 27 May 2026 14:58:59 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-27 16:01:28 +01:00: Wed, 27 May 2026 15:01:28 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-27 16:01:28 +01:00: Wed, 27 May 2026 15:01:28 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-28 16:35:33 +01:00: Thu, 28 May 2026 15:35:33 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-28 16:35:33 +01:00: Thu, 28 May 2026 15:35:33 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-28 17:55:54 +01:00: Thu, 28 May 2026 16:55:54 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-28 17:55:54 +01:00: Thu, 28 May 2026 16:55:54 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-29 20:53:07 +01:00: Fri, 29 May 2026 19:53:07 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-29 20:53:07 +01:00: Fri, 29 May 2026 19:53:07 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-05-30 15:40:48 +01:00: Sat, 30 May 2026 14:40:48 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-05-30 15:40:48 +01:00: Sat, 30 May 2026 14:40:48 GMT morgan deprecated default format: use combined format at dist\app.js:104:43

@@ -30,7 +30,7 @@ export class AttendanceService {
     });
   }
 
-  async markAttendance(sessionId: string, userId: string) {
+  async markAttendance(sessionId: string, userId: string, markedAt?: Date) {
     // Ensure session exists
     const session = await prisma.attendanceSession.findUnique({
       where: { id: sessionId },
@@ -44,7 +44,7 @@ export class AttendanceService {
     if (alreadyMarked) throw new Error("User already marked present");
 
     await prisma.attendance.create({
-      data: { sessionId, userId },
+      data: { sessionId, userId, markedAt },
       include: { user: true },
     });
 
@@ -66,7 +66,15 @@ export class AttendanceService {
     const session = await prisma.attendanceSession.findUnique({
       where: { id: sessionId },
       include: {
-        attendees: { include: { user: true } },
+        attendees: {
+          include: {
+            user: {
+              include: {
+                departments: true,
+              },
+            }
+          }
+        },
       },
     });
 

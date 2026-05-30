@@ -6,6 +6,7 @@ import { paginate } from "../../../core/utils/paginate";
 import XLSX from "xlsx";
 import fs from "node:fs";
 import { analyzeTransactions } from "../../../core/utils/transaction";
+import { logDevError } from "../../../core/utils";
 
 type User = Prisma.UserGetPayload<{}>;
 
@@ -35,6 +36,10 @@ export class UserService {
 
     if (rest.dateOfBirth) {
       prismaData.dateOfBirth = new Date(rest.dateOfBirth as any);
+    }
+
+    if(rest.matricNumber === "") {
+      prismaData.matricNumber = null;
     }
 
     if (attendances) {
@@ -226,6 +231,10 @@ export class UserService {
       prismaData.dateOfBirth = new Date(rest.dateOfBirth as any);
     }
 
+    if(rest.matricNumber === "") {
+      prismaData.matricNumber = null;
+    }
+
     if (attendances) {
       prismaData.attendances = {
         set: attendances.map((attendance) => ({ id: attendance.id })),
@@ -376,6 +385,7 @@ export class UserService {
 
         results.created++;
       } catch (error: any) {
+        logDevError(error);
         results.errors.push(`"${row.email}": ${error.message}`);
       }
     }

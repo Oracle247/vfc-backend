@@ -27,6 +27,7 @@ export const UpdateAttendanceSessionSchema = z
 export const MarkAttendanceSchema = z.object({
     sessionId: z.string().cuid("Invalid session ID"),
     userId: z.string().cuid("Invalid user ID"),
+    markedAt: z.string().datetime({ message: "Invalid date format" }).optional(),
 });
 
 /**
