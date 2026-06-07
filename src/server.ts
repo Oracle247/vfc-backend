@@ -5,18 +5,20 @@ import {
     AttendanceRoute,
     AuthRoute,
     InvoiceRoute,
-    DepartmentRoute
+    DepartmentRoute,
+    SettingsRoute
 } from './core/routes';
 import { validateEnv } from './core/utils/validateEnv';
 
 validateEnv();
-
+    
 const app = new App([
     new UserRoute(),
     new AuthRoute(),
     new AttendanceRoute(),
     new InvoiceRoute(),
     new DepartmentRoute(),
+    new SettingsRoute(),
     new IndexRoute()
 ]);
 

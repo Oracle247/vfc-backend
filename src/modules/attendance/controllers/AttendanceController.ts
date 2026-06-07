@@ -1,19 +1,37 @@
 import { Request, Response, NextFunction } from "express";
 import { AttendanceService } from "../services/AttendanceService";
+import { AttendancePdfService } from "../services/AttendancePdfService";
 import { StatusCodes } from "http-status-codes";
 import { successResponse } from "../../../core/utils/responses.utils";
 import { logDevError } from "../../../core/utils";
+import { parseAttendanceFilterQuery } from "../utils/attendanceFilters";
 
 export class AttendanceController {
   private attendanceService = new AttendanceService();
+  private attendancePdfService = new AttendancePdfService();
 
   /**
    * Start a new attendance session (e.g., "Sunday Service")
    */
   public startSession = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { serviceName, startedAt } = req.body;
-      const result = await this.attendanceService.startSession(serviceName, new Date(startedAt));
+      const { serviceName, startedAt, date, services } = req.body;
+      const result = await this.attendanceService.startSession({
+        serviceName,
+        startedAt: new Date(startedAt),
+        date: date ? new Date(date) : undefined,
+        services: services.map((s: {
+          order: number;
+          serviceTime: string;
+          preServiceTime?: string | null;
+          closesAt?: string | null;
+        }) => ({
+          order: s.order,
+          serviceTime: new Date(s.serviceTime),
+          preServiceTime: s.preServiceTime ? new Date(s.preServiceTime) : null,
+          closesAt: s.closesAt ? new Date(s.closesAt) : null,
+        })),
+      });
       successResponse(res, "Attendance session started successfully", StatusCodes.CREATED, result);
     } catch (err) {
       logDevError(err);
@@ -26,8 +44,13 @@ export class AttendanceController {
    */
   public markAttendance = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { sessionId, userId, markedAt } = req.body;
-      const result = await this.attendanceService.markAttendance(sessionId, userId, markedAt ? new Date(markedAt) : undefined);
+      const { sessionId, userId, markedAt, serviceOrder } = req.body;
+      const result = await this.attendanceService.markAttendance(
+        sessionId,
+        userId,
+        markedAt ? new Date(markedAt) : undefined,
+        typeof serviceOrder === "number" ? serviceOrder : undefined,
+      );
       successResponse(res, "Attendance marked successfully", StatusCodes.CREATED, result);
     } catch (err) {
       logDevError(err);
@@ -52,12 +75,14 @@ export class AttendanceController {
   };
 
   /**
-   * Get single session details (with attendees)
+   * Get single session details (with attendees), optionally filtered.
+   * Filters: departmentIds (csv), gender, membershipType, churchStatus, lateComers.
    */
   public getSessionById = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
-      const result = await this.attendanceService.getSessionById(id);
+      const filters = parseAttendanceFilterQuery(req.query as Record<string, unknown>);
+      const result = await this.attendanceService.getSessionById(id, filters);
       successResponse(res, "Attendance session fetched successfully", StatusCodes.OK, result);
     } catch (err) {
       logDevError(err);
@@ -66,12 +91,30 @@ export class AttendanceController {
   };
 
   /**
-   * Update a session (serviceName/date)
+   * Update a session (serviceName/date/services array)
    */
   public updateSession = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
-      const result = await this.attendanceService.updateSession(id, req.body);
+      const { serviceName, startedAt, date, services } = req.body;
+      const data: Parameters<typeof this.attendanceService.updateSession>[1] = {};
+      if (serviceName !== undefined) data.serviceName = serviceName;
+      if (startedAt !== undefined) data.startedAt = new Date(startedAt);
+      if (date !== undefined) data.date = new Date(date);
+      if (Array.isArray(services)) {
+        data.services = services.map((s: {
+          order: number;
+          serviceTime: string;
+          preServiceTime?: string | null;
+          closesAt?: string | null;
+        }) => ({
+          order: s.order,
+          serviceTime: new Date(s.serviceTime),
+          preServiceTime: s.preServiceTime ? new Date(s.preServiceTime) : null,
+          closesAt: s.closesAt ? new Date(s.closesAt) : null,
+        }));
+      }
+      const result = await this.attendanceService.updateSession(id, data);
       successResponse(res, "Attendance session updated successfully", StatusCodes.OK, result);
     } catch (err) {
       logDevError(err);
@@ -101,6 +144,38 @@ export class AttendanceController {
       const { id } = req.params;
       const result = await this.attendanceService.deleteSession(id);
       successResponse(res, "Attendance session deleted successfully", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  /**
+   * Edit a single attendance record (admin: change markedAt and/or serviceOrder).
+   */
+  public updateAttendance = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { id } = req.params;
+      const { markedAt, serviceOrder } = req.body;
+      const result = await this.attendanceService.updateAttendance(id, {
+        ...(markedAt !== undefined ? { markedAt: new Date(markedAt) } : {}),
+        ...(typeof serviceOrder === "number" ? { serviceOrder } : {}),
+      });
+      successResponse(res, "Attendance updated successfully", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  /**
+   * Delete a single attendance record (admin).
+   */
+  public deleteAttendance = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { id } = req.params;
+      const result = await this.attendanceService.deleteAttendance(id);
+      successResponse(res, "Attendance deleted successfully", StatusCodes.OK, result);
     } catch (err) {
       logDevError(err);
       next(err);
@@ -154,6 +229,26 @@ export class AttendanceController {
     try {
       const result = await this.attendanceService.getAttendanceRate();
       successResponse(res, "Attendance rate fetched successfully", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  /**
+   * Export the session attendance as a PDF report.
+   * Accepts the same filter query params as `getSessionById`.
+   */
+  public exportSessionPdf = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { id } = req.params;
+      const filters = parseAttendanceFilterQuery(req.query as Record<string, unknown>);
+      const requestingUserId = req.user?.id;
+      if (!requestingUserId) {
+        res.status(StatusCodes.UNAUTHORIZED).json({ message: "Unauthorized" });
+        return;
+      }
+      await this.attendancePdfService.streamSessionReport(id, filters, requestingUserId, res);
     } catch (err) {
       logDevError(err);
       next(err);

@@ -860,3 +860,1065 @@
 2026-05-30 15:53:57 +01:00: Searching for user with name: Viv
 2026-05-30 16:02:55 +01:00: Searching for user with name: Ch
 2026-05-30 16:03:10 +01:00: Searching for user with name: Ruth
+2026-05-31 00:12:29 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:12:29.742Z"}
+2026-05-31 00:12:29 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:29.745Z"}
+2026-05-31 00:12:29 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:12:29.747Z"}
+2026-05-31 00:12:29 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:12:29.749Z"}
+2026-05-31 00:12:29 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:12:29.750Z"}
+2026-05-31 00:12:29 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:29.750Z"}
+2026-05-31 00:12:29 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:12:29.750Z"}
+2026-05-31 00:12:29 +01:00: {"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"uncaughtException listen EADDRINUSE: address already in use :::3030","port":3030,"stack":"Error: listen EADDRINUSE: address already in use :::3030\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at App.listen (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\app.ts:86:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\server.ts:23:5)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js:33:23)","syscall":"listen","timestamp":"2026-05-30T23:12:29.809Z"}
+2026-05-31 00:12:37 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:12:37.262Z"}
+2026-05-31 00:12:37 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:37.266Z"}
+2026-05-31 00:12:37 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:12:37.266Z"}
+2026-05-31 00:12:37 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:12:37.267Z"}
+2026-05-31 00:12:37 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:12:37.267Z"}
+2026-05-31 00:12:37 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:37.268Z"}
+2026-05-31 00:12:37 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:12:37.268Z"}
+2026-05-31 00:12:37 +01:00: {"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"uncaughtException listen EADDRINUSE: address already in use :::3030","port":3030,"stack":"Error: listen EADDRINUSE: address already in use :::3030\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at App.listen (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\app.ts:86:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\server.ts:23:5)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js:33:23)","syscall":"listen","timestamp":"2026-05-30T23:12:37.301Z"}
+2026-05-31 00:12:43 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:12:43.822Z"}
+2026-05-31 00:12:43 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:43.825Z"}
+2026-05-31 00:12:43 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:12:43.826Z"}
+2026-05-31 00:12:43 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:12:43.827Z"}
+2026-05-31 00:12:43 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:12:43.828Z"}
+2026-05-31 00:12:43 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:43.829Z"}
+2026-05-31 00:12:43 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:12:43.830Z"}
+2026-05-31 00:12:43 +01:00: {"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"uncaughtException listen EADDRINUSE: address already in use :::3030","port":3030,"stack":"Error: listen EADDRINUSE: address already in use :::3030\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at App.listen (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\app.ts:86:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\server.ts:23:5)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js:33:23)","syscall":"listen","timestamp":"2026-05-30T23:12:43.860Z"}
+2026-05-31 00:12:50 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:12:50.490Z"}
+2026-05-31 00:12:50 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:50.494Z"}
+2026-05-31 00:12:50 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:12:50.495Z"}
+2026-05-31 00:12:50 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:12:50.497Z"}
+2026-05-31 00:12:50 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:12:50.497Z"}
+2026-05-31 00:12:50 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:50.499Z"}
+2026-05-31 00:12:50 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:12:50.499Z"}
+2026-05-31 00:12:50 +01:00: {"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"uncaughtException listen EADDRINUSE: address already in use :::3030","port":3030,"stack":"Error: listen EADDRINUSE: address already in use :::3030\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at App.listen (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\app.ts:86:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\server.ts:23:5)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js:33:23)","syscall":"listen","timestamp":"2026-05-30T23:12:50.542Z"}
+2026-05-31 00:12:58 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:12:58.960Z"}
+2026-05-31 00:12:58 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:58.964Z"}
+2026-05-31 00:12:58 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:12:58.965Z"}
+2026-05-31 00:12:58 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:12:58.966Z"}
+2026-05-31 00:12:58 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:12:58.966Z"}
+2026-05-31 00:12:58 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:12:58.967Z"}
+2026-05-31 00:12:58 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:12:58.967Z"}
+2026-05-31 00:12:58 +01:00: {"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"uncaughtException listen EADDRINUSE: address already in use :::3030","port":3030,"stack":"Error: listen EADDRINUSE: address already in use :::3030\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at App.listen (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\app.ts:86:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\server.ts:23:5)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js:33:23)","syscall":"listen","timestamp":"2026-05-30T23:12:58.993Z"}
+2026-05-31 00:13:07 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:13:07.182Z"}
+2026-05-31 00:13:07 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:13:07.185Z"}
+2026-05-31 00:13:07 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:13:07.186Z"}
+2026-05-31 00:13:07 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:13:07.186Z"}
+2026-05-31 00:13:07 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:13:07.187Z"}
+2026-05-31 00:13:07 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:13:07.187Z"}
+2026-05-31 00:13:07 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:13:07.187Z"}
+2026-05-31 00:13:07 +01:00: {"address":"::","code":"EADDRINUSE","errno":-4091,"level":"error","message":"uncaughtException listen EADDRINUSE: address already in use :::3030","port":3030,"stack":"Error: listen EADDRINUSE: address already in use :::3030\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at Server.listen (node:net:2102:7)\n    at App.listen (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\app.ts:86:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\Documents\\oracle_codes\\vfc-backend\\src\\server.ts:23:5)\n    at Module._compile (node:internal/modules/cjs/loader:1760:14)\n    at Object..js (node:internal/modules/cjs/loader:1893:10)\n    at Module.load (node:internal/modules/cjs/loader:1480:32)\n    at Module._load (node:internal/modules/cjs/loader:1299:12)\n    at Object.<anonymous> (C:\\Users\\Oebiy\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js:33:23)","syscall":"listen","timestamp":"2026-05-30T23:13:07.229Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:13:14.058Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:13:14.060Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:13:14.061Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:13:14.064Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:13:14.064Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:13:14.065Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:13:14.065Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-30T23:13:14.070Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-30T23:13:14.071Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-30T23:13:14.071Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-30T23:13:14.071Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-30T23:13:14.071Z"}
+2026-05-31 00:13:14 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-30T23:13:14.071Z"}
+2026-05-31 00:14:25 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-31 00:16:00 +01:00: {"level":"error","message":"[GET] /api/v1/attendance/session/cmpsqjiqm0003pkm8rsqrdsj4 >> Status: 500, Message: Attendance session not found, Stack: undefined","timestamp":"2026-05-30T23:16:00.289Z"}
+2026-05-31 00:16:00 +01:00: {"level":"error","message":"[GET] /api/v1/attendance/session/cmpsqjiqm0003pkm8rsqrdsj4 >> Status: 500, Message: Attendance session not found, Stack: undefined","timestamp":"2026-05-30T23:16:00.298Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-30T23:26:56.454Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-30T23:26:56.458Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-30T23:26:56.459Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-30T23:26:56.460Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-30T23:26:56.466Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-30T23:26:56.467Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-30T23:26:56.469Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-30T23:26:56.484Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-30T23:26:56.485Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-30T23:26:56.485Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-30T23:26:56.485Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-30T23:26:56.486Z"}
+2026-05-31 00:26:56 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-30T23:26:56.486Z"}
+2026-05-31 00:28:24 +01:00: Searching for user with name: Dest
+2026-05-31 00:28:41 +01:00: Searching for user with name: Jo
+2026-05-31 00:28:42 +01:00: Searching for user with name: Jose
+2026-05-31 00:28:52 +01:00: Searching for user with name: Long
+2026-05-31 00:28:57 +01:00: Searching for user with name: Igol
+2026-05-31 00:29:42 +01:00: Searching for user with name: Spri 
+2026-05-31 00:29:44 +01:00: Searching for user with name: Spri
+2026-05-31 00:29:59 +01:00: Searching for user with name: Eli
+2026-05-31 00:31:14 +01:00: {"level":"error","message":"[GET] /api/v1/attendance/session/cmpsqjiqm0003pkm8rsqrdsj4 >> Status: 500, Message: Attendance session not found, Stack: undefined","timestamp":"2026-05-30T23:31:14.757Z"}
+2026-05-31 00:31:42 +01:00: {"level":"error","message":"[GET] /api/v1/attendance/session/cmpsqjiqm0003pkm8rsqrdsj4 >> Status: 500, Message: Attendance session not found, Stack: undefined","timestamp":"2026-05-30T23:31:42.904Z"}
+2026-05-31 00:31:42 +01:00: {"level":"error","message":"[GET] /api/v1/attendance/session/cmpsqjiqm0003pkm8rsqrdsj4 >> Status: 500, Message: Attendance session not found, Stack: undefined","timestamp":"2026-05-30T23:31:42.913Z"}
+2026-05-31 00:32:52 +01:00: Searching for user with name: Pri
+2026-05-31 00:32:58 +01:00: Searching for user with name: Victo
+2026-05-31 00:33:06 +01:00: Searching for user with name: Odi
+2026-05-31 00:33:16 +01:00: Searching for user with name: Odi
+2026-05-31 00:33:27 +01:00: Searching for user with name: Rutg
+2026-05-31 00:33:30 +01:00: Searching for user with name: Ruth
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-05-31T05:29:05.104Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-05-31T05:29:05.108Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-05-31T05:29:05.109Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-05-31T05:29:05.111Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-05-31T05:29:05.117Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-05-31T05:29:05.117Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-05-31T05:29:05.118Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-31T05:29:05.152Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-05-31T05:29:05.153Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-05-31T05:29:05.153Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-05-31T05:29:05.154Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-05-31T05:29:05.154Z"}
+2026-05-31 06:29:05 +01:00: {"level":"info","message":"=================================","timestamp":"2026-05-31T05:29:05.154Z"}
+2026-05-31 06:30:11 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-31 06:32:54 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-05-31 06:34:31 +01:00: Searching for user with name: Sle
+2026-05-31 06:34:38 +01:00: Searching for user with name: Pr
+2026-05-31 06:34:40 +01:00: Searching for user with name: Pre
+2026-05-31 06:34:43 +01:00: Searching for user with name: P
+2026-05-31 06:34:46 +01:00: Searching for user with name: Pre
+2026-05-31 06:35:01 +01:00: Searching for user with name: Ru
+2026-05-31 06:35:36 +01:00: Searching for user with name: C
+2026-05-31 06:35:37 +01:00: Searching for user with name: Ch
+2026-05-31 06:35:37 +01:00: Searching for user with name: Cha
+2026-05-31 06:36:07 +01:00: Searching for user with name: P
+2026-05-31 06:36:08 +01:00: Searching for user with name: Pre
+2026-05-31 06:36:09 +01:00: Searching for user with name: Prey
+2026-05-31 06:38:09 +01:00: Searching for user with name: J
+2026-05-31 06:38:14 +01:00: Searching for user with name: Jh
+2026-05-31 06:38:16 +01:00: Searching for user with name: Jo
+2026-05-31 06:39:49 +01:00: Searching for user with name: Vic
+2026-05-31 06:41:15 +01:00: Searching for user with name: Ton
+2026-05-31 06:41:24 +01:00: Searching for user with name: Oy
+2026-05-31 06:41:26 +01:00: Searching for user with name: Oye
+2026-05-31 06:41:26 +01:00: Searching for user with name: Oyei
+2026-05-31 06:41:34 +01:00: Searching for user with name: Mel
+2026-05-31 06:41:40 +01:00: Searching for user with name: St
+2026-05-31 06:41:41 +01:00: Searching for user with name: Sta
+2026-05-31 06:42:10 +01:00: Searching for user with name: A
+2026-05-31 06:42:11 +01:00: Searching for user with name: An
+2026-05-31 06:42:14 +01:00: Searching for user with name: And
+2026-05-31 06:42:36 +01:00: Searching for user with name: A
+2026-05-31 06:42:37 +01:00: Searching for user with name: Aa
+2026-05-31 06:42:37 +01:00: Searching for user with name: Aar
+2026-05-31 06:42:42 +01:00: Searching for user with name: Aa
+2026-05-31 06:43:01 +01:00: Searching for user with name: A
+2026-05-31 06:43:25 +01:00: Searching for user with name: S
+2026-05-31 06:43:25 +01:00: Searching for user with name: Solo
+2026-05-31 06:44:17 +01:00: Searching for user with name: Mic
+2026-05-31 06:44:40 +01:00: Searching for user with name: Op
+2026-05-31 06:45:24 +01:00: Searching for user with name: Da
+2026-05-31 06:45:25 +01:00: Searching for user with name: Davi
+2026-05-31 06:45:48 +01:00: Searching for user with name: Chr
+2026-05-31 06:45:49 +01:00: Searching for user with name: Chri
+2026-05-31 06:45:57 +01:00: Searching for user with name: C
+2026-05-31 06:46:02 +01:00: Searching for user with name: Cst
+2026-05-31 06:46:05 +01:00: Searching for user with name: Sta
+2026-05-31 06:46:44 +01:00: Searching for user with name: U
+2026-05-31 06:46:45 +01:00: Searching for user with name: Ur
+2026-05-31 06:46:46 +01:00: Searching for user with name: Uru
+2026-05-31 06:47:04 +01:00: Searching for user with name: P
+2026-05-31 06:47:05 +01:00: Searching for user with name: Pet
+2026-05-31 06:49:43 +01:00: Searching for user with name: E
+2026-05-31 06:49:44 +01:00: Searching for user with name: Emm
+2026-05-31 06:49:45 +01:00: Searching for user with name: Emma
+2026-05-31 06:50:40 +01:00: Searching for user with name: E
+2026-05-31 06:50:44 +01:00: Searching for user with name: Dud
+2026-05-31 06:50:55 +01:00: Searching for user with name: Ow
+2026-05-31 06:51:35 +01:00: Searching for user with name: Juli
+2026-05-31 06:51:54 +01:00: Searching for user with name: P
+2026-05-31 06:51:55 +01:00: Searching for user with name: Pret
+2026-05-31 06:51:57 +01:00: Searching for user with name: Prey
+2026-05-31 06:52:12 +01:00: Searching for user with name: Emma
+2026-05-31 06:52:19 +01:00: Searching for user with name: Ka
+2026-05-31 06:52:22 +01:00: Searching for user with name: Kar
+2026-05-31 06:52:47 +01:00: Searching for user with name: Da
+2026-05-31 06:52:53 +01:00: Searching for user with name: Davi
+2026-05-31 06:54:22 +01:00: Searching for user with name: Tarm
+2026-05-31 06:54:29 +01:00: Searching for user with name: Gab
+2026-05-31 06:55:01 +01:00: Searching for user with name: Fav
+2026-05-31 06:55:08 +01:00: Searching for user with name: Ti u
+2026-05-31 06:55:10 +01:00: Searching for user with name: T
+2026-05-31 06:55:11 +01:00: Searching for user with name: Tibu
+2026-05-31 06:56:59 +01:00: Searching for user with name: Marc
+2026-05-31 06:57:25 +01:00: Searching for user with name: Just
+2026-05-31 06:58:17 +01:00: Searching for user with name: Famou
+2026-05-31 06:58:18 +01:00: Searching for user with name: Famous
+2026-05-31 06:58:31 +01:00: Searching for user with name: S
+2026-05-31 06:58:35 +01:00: Searching for user with name: Gabr
+2026-05-31 06:59:02 +01:00: Searching for user with name: Faith
+2026-05-31 06:59:03 +01:00: Searching for user with name: Faithful 
+2026-05-31 06:59:22 +01:00: Searching for user with name: Al
+2026-05-31 06:59:28 +01:00: Searching for user with name: Oy
+2026-05-31 06:59:31 +01:00: Searching for user with name: Aloy
+2026-05-31 06:59:39 +01:00: Searching for user with name: Ma
+2026-05-31 06:59:40 +01:00: Searching for user with name: Mark
+2026-05-31 06:59:57 +01:00: Searching for user with name: G
+2026-05-31 06:59:59 +01:00: Searching for user with name: Go
+2026-05-31 07:00:01 +01:00: Searching for user with name: God
+2026-05-31 07:00:02 +01:00: Searching for user with name: Godwi
+2026-05-31 07:00:02 +01:00: Searching for user with name: Godwin 
+2026-05-31 07:00:19 +01:00: Searching for user with name: Ola
+2026-05-31 07:00:21 +01:00: Searching for user with name: Oladi
+2026-05-31 07:00:26 +01:00: Searching for user with name: Oladimipo
+2026-05-31 07:00:28 +01:00: Searching for user with name: Oladimip
+2026-05-31 07:00:29 +01:00: Searching for user with name: Oladimi
+2026-05-31 07:00:32 +01:00: Searching for user with name: Oladimipo
+2026-05-31 07:00:55 +01:00: Searching for user with name: Su
+2026-05-31 07:00:55 +01:00: Searching for user with name: Succ
+2026-05-31 07:01:44 +01:00: Searching for user with name: S
+2026-05-31 07:01:44 +01:00: Searching for user with name: So
+2026-05-31 07:01:45 +01:00: Searching for user with name: Solo
+2026-05-31 07:01:46 +01:00: Searching for user with name: Solomon 
+2026-05-31 07:02:21 +01:00: Searching for user with name: U
+2026-05-31 07:02:21 +01:00: Searching for user with name: Uyo
+2026-05-31 07:02:27 +01:00: Searching for user with name: St
+2026-05-31 07:02:28 +01:00: Searching for user with name: Ste
+2026-05-31 07:02:46 +01:00: Searching for user with name: Jos
+2026-05-31 07:02:48 +01:00: Searching for user with name: Josep
+2026-05-31 07:02:50 +01:00: Searching for user with name: Joseph
+2026-05-31 07:03:16 +01:00: Searching for user with name: Akpo
+2026-05-31 07:03:18 +01:00: Searching for user with name: Akpogh
+2026-05-31 07:03:46 +01:00: Searching for user with name: Vict
+2026-05-31 07:03:47 +01:00: Searching for user with name: Victo
+2026-05-31 07:03:48 +01:00: Searching for user with name: Victoria
+2026-05-31 07:04:05 +01:00: Searching for user with name: Cov
+2026-05-31 07:04:10 +01:00: Searching for user with name: Robins
+2026-05-31 07:04:12 +01:00: Searching for user with name: Robin
+2026-05-31 07:04:13 +01:00: Searching for user with name: Robinson 
+2026-05-31 07:04:23 +01:00: Searching for user with name: Desti y
+2026-05-31 07:04:24 +01:00: Searching for user with name: Desti
+2026-05-31 07:04:26 +01:00: Searching for user with name: Destiny
+2026-05-31 07:04:56 +01:00: Searching for user with name: Tama
+2026-05-31 07:04:57 +01:00: Searching for user with name: Tamara
+2026-05-31 07:05:27 +01:00: Searching for user with name: Bu
+2026-05-31 07:05:27 +01:00: Searching for user with name: Bud
+2026-05-31 07:05:28 +01:00: Searching for user with name: Bu
+2026-05-31 07:05:29 +01:00: Searching for user with name: Buf
+2026-05-31 07:05:30 +01:00: Searching for user with name: Buff
+2026-05-31 07:05:31 +01:00: Searching for user with name: Buffington 
+2026-05-31 07:05:52 +01:00: Searching for user with name: Otu
+2026-05-31 07:05:53 +01:00: Searching for user with name: Otur
+2026-05-31 07:05:57 +01:00: Searching for user with name: Ot
+2026-05-31 07:05:58 +01:00: Searching for user with name: Oto
+2026-05-31 07:05:58 +01:00: Searching for user with name: Otor
+2026-05-31 07:05:59 +01:00: Searching for user with name: Otoru
+2026-05-31 07:06:35 +01:00: Searching for user with name: N
+2026-05-31 07:06:36 +01:00: Searching for user with name: Ngo
+2026-05-31 07:06:38 +01:00: Searching for user with name: Ngozi
+2026-05-31 07:06:56 +01:00: Searching for user with name: E
+2026-05-31 07:06:58 +01:00: Searching for user with name: Esosa
+2026-05-31 07:07:03 +01:00: Searching for user with name: Essay 
+2026-05-31 07:07:06 +01:00: Searching for user with name: Em
+2026-05-31 07:07:13 +01:00: Searching for user with name: Emm
+2026-05-31 07:07:13 +01:00: Searching for user with name: Emman
+2026-05-31 07:07:15 +01:00: Searching for user with name: Emmanuel 
+2026-05-31 07:07:16 +01:00: Searching for user with name: Emmanuel
+2026-05-31 07:07:18 +01:00: Searching for user with name: Emmanuella 
+2026-05-31 07:07:43 +01:00: Searching for user with name: O
+2026-05-31 07:07:44 +01:00: Searching for user with name: Ogi
+2026-05-31 07:07:45 +01:00: Searching for user with name: Ogidi
+2026-05-31 07:07:48 +01:00: Searching for user with name: Ogidiga
+2026-05-31 07:08:09 +01:00: Searching for user with name: Danie
+2026-05-31 07:08:09 +01:00: Searching for user with name: Daniel 
+2026-05-31 07:08:59 +01:00: Searching for user with name: Wisd
+2026-05-31 07:09:00 +01:00: Searching for user with name: Wisdom 
+2026-05-31 07:09:02 +01:00: Searching for user with name: Wisdo
+2026-05-31 07:09:03 +01:00: Searching for user with name: Wisd
+2026-05-31 07:09:09 +01:00: Searching for user with name: Ste
+2026-05-31 07:09:11 +01:00: Searching for user with name: Step
+2026-05-31 07:09:14 +01:00: Searching for user with name: Steph
+2026-05-31 07:09:14 +01:00: Searching for user with name: Stephe
+2026-05-31 07:09:17 +01:00: Searching for user with name: Stephen 
+2026-05-31 07:09:19 +01:00: Searching for user with name: Stephen
+2026-05-31 07:10:18 +01:00: Searching for user with name: Ste
+2026-05-31 07:10:19 +01:00: Searching for user with name: Steph
+2026-05-31 07:10:20 +01:00: Searching for user with name: Stephen 
+2026-05-31 07:10:23 +01:00: Searching for user with name: Stephen
+2026-05-31 07:10:23 +01:00: Searching for user with name: Stephen 
+2026-05-31 07:10:25 +01:00: Searching for user with name: Stephen wisd
+2026-05-31 07:10:27 +01:00: Searching for user with name: Stephen wisdom 
+2026-05-31 07:10:32 +01:00: Searching for user with name: Wido
+2026-05-31 07:10:33 +01:00: Searching for user with name: Wid
+2026-05-31 07:10:34 +01:00: Searching for user with name: Wi
+2026-05-31 07:10:35 +01:00: Searching for user with name: Wis
+2026-05-31 07:11:26 +01:00: {"level":"error","message":"[POST] /api/v1/attendance/mark >> Status: 500, Message: User already marked present, Stack: undefined","timestamp":"2026-05-31T06:11:26.412Z"}
+2026-05-31 07:11:45 +01:00: Searching for user with name: Be
+2026-05-31 07:11:47 +01:00: Searching for user with name: Beke
+2026-05-31 07:11:48 +01:00: Searching for user with name: Bekebo
+2026-05-31 07:12:12 +01:00: Searching for user with name: Godman
+2026-05-31 07:12:37 +01:00: Searching for user with name: Mal
+2026-05-31 07:12:38 +01:00: Searching for user with name: Ma
+2026-05-31 07:12:40 +01:00: Searching for user with name: Matida
+2026-05-31 07:12:43 +01:00: Searching for user with name: Mati
+2026-05-31 07:12:44 +01:00: Searching for user with name: Matil
+2026-05-31 07:13:13 +01:00: Searching for user with name: Fran
+2026-05-31 07:13:35 +01:00: Searching for user with name: Stanl
+2026-05-31 07:13:56 +01:00: Searching for user with name: Ka
+2026-05-31 07:13:56 +01:00: Searching for user with name: Kar
+2026-05-31 07:14:01 +01:00: Searching for user with name: Ikpo
+2026-05-31 07:14:04 +01:00: Searching for user with name: Ikpor
+2026-05-31 07:14:05 +01:00: Searching for user with name: Ikporo
+2026-05-31 07:14:06 +01:00: Searching for user with name: Important 
+2026-05-31 07:14:10 +01:00: Searching for user with name: I
+2026-05-31 07:14:11 +01:00: Searching for user with name: Ikpo
+2026-05-31 07:14:14 +01:00: Searching for user with name: Ikporo
+2026-05-31 07:14:15 +01:00: Searching for user with name: Ikporo 
+2026-05-31 07:14:18 +01:00: Searching for user with name: Ikporo karin
+2026-05-31 07:14:19 +01:00: Searching for user with name: Ikporo karina
+2026-05-31 07:14:25 +01:00: Searching for user with name: P
+2026-05-31 07:14:28 +01:00: Searching for user with name: Pre
+2026-05-31 07:14:30 +01:00: Searching for user with name: Preco
+2026-05-31 07:14:31 +01:00: Searching for user with name: Prec
+2026-05-31 07:14:32 +01:00: Searching for user with name: Precious 
+2026-05-31 07:14:44 +01:00: Searching for user with name: A
+2026-05-31 07:14:47 +01:00: Searching for user with name: Ala
+2026-05-31 07:14:48 +01:00: Searching for user with name: Alak
+2026-05-31 07:14:49 +01:00: Searching for user with name: Alakee
+2026-05-31 07:14:50 +01:00: Searching for user with name: Alake
+2026-05-31 07:14:55 +01:00: Searching for user with name: Alakere
+2026-05-31 07:14:58 +01:00: Searching for user with name: Mat
+2026-05-31 07:15:01 +01:00: Searching for user with name: Emm
+2026-05-31 07:15:02 +01:00: Searching for user with name: Emmanuel
+2026-05-31 07:15:05 +01:00: Searching for user with name: Emmanuella 
+2026-05-31 07:15:18 +01:00: Searching for user with name: Henry
+2026-05-31 07:15:20 +01:00: {"level":"error","message":"[POST] /api/v1/attendance/mark >> Status: 500, Message: User already marked present, Stack: undefined","timestamp":"2026-05-31T06:15:20.127Z"}
+2026-05-31 07:15:42 +01:00: Searching for user with name: Osab
+2026-05-31 07:15:43 +01:00: Searching for user with name: Osa
+2026-05-31 07:15:45 +01:00: Searching for user with name: E
+2026-05-31 07:15:45 +01:00: Searching for user with name: Osagie
+2026-05-31 07:15:45 +01:00: Searching for user with name: Emm
+2026-05-31 07:15:46 +01:00: Searching for user with name: Emma
+2026-05-31 07:15:53 +01:00: Searching for user with name: Beatr
+2026-05-31 07:16:06 +01:00: Searching for user with name: Se
+2026-05-31 07:16:07 +01:00: Searching for user with name: Segg
+2026-05-31 07:16:10 +01:00: Searching for user with name: Seg
+2026-05-31 07:16:20 +01:00: Searching for user with name: Osa
+2026-05-31 07:16:21 +01:00: Searching for user with name: Osag
+2026-05-31 07:16:23 +01:00: Searching for user with name: Osa
+2026-05-31 07:16:25 +01:00: Searching for user with name: Osagie 
+2026-05-31 07:16:29 +01:00: Searching for user with name: Osagie be
+2026-05-31 07:16:30 +01:00: Searching for user with name: Osagie Beatrice 
+2026-05-31 07:16:33 +01:00: Searching for user with name: Betr
+2026-05-31 07:16:34 +01:00: Searching for user with name: Bet
+2026-05-31 07:16:36 +01:00: Searching for user with name: Be
+2026-05-31 07:16:38 +01:00: Searching for user with name: Beatr
+2026-05-31 07:17:06 +01:00: Searching for user with name: S
+2026-05-31 07:17:07 +01:00: Searching for user with name: Sol
+2026-05-31 07:17:09 +01:00: Searching for user with name: Solo
+2026-05-31 07:17:10 +01:00: Searching for user with name: Solomon 
+2026-05-31 07:17:47 +01:00: Searching for user with name: Beat
+2026-05-31 07:18:24 +01:00: Searching for user with name: Be
+2026-05-31 07:18:24 +01:00: Searching for user with name: Betr
+2026-05-31 07:18:24 +01:00: Searching for user with name: Beatr
+2026-05-31 07:18:24 +01:00: Searching for user with name: B
+2026-05-31 07:18:24 +01:00: Searching for user with name: Beatrice 
+2026-05-31 07:18:24 +01:00: Searching for user with name: Be
+2026-05-31 07:18:41 +01:00: {"level":"error","message":"[POST] /api/v1/attendance/mark >> Status: 500, Message: User already marked present, Stack: undefined","timestamp":"2026-05-31T06:18:41.802Z"}
+2026-05-31 07:18:47 +01:00: Searching for user with name: A
+2026-05-31 07:18:48 +01:00: Searching for user with name: Aye
+2026-05-31 07:18:56 +01:00: Searching for user with name: Se
+2026-05-31 07:18:57 +01:00: Searching for user with name: Seg
+2026-05-31 07:18:58 +01:00: Searching for user with name: Segg
+2026-05-31 07:19:04 +01:00: Searching for user with name: All
+2026-05-31 07:19:06 +01:00: Searching for user with name: Allen 
+2026-05-31 07:19:07 +01:00: Searching for user with name: Allen
+2026-05-31 07:19:08 +01:00: Searching for user with name: Allen 
+2026-05-31 07:19:09 +01:00: Searching for user with name: Allen pr
+2026-05-31 07:19:10 +01:00: Searching for user with name: Allen pri
+2026-05-31 07:19:10 +01:00: Searching for user with name: Allen prin
+2026-05-31 07:19:12 +01:00: Searching for user with name: Allen prince
+2026-05-31 07:19:13 +01:00: Searching for user with name: Allen princess 
+2026-05-31 07:19:17 +01:00: Searching for user with name: Prin
+2026-05-31 07:19:18 +01:00: Searching for user with name: Princess 
+2026-05-31 07:19:19 +01:00: Searching for user with name: Princess
+2026-05-31 07:19:20 +01:00: Searching for user with name: Princes
+2026-05-31 07:19:22 +01:00: Searching for user with name: Pr
+2026-05-31 07:19:25 +01:00: Searching for user with name: Prin
+2026-05-31 07:19:26 +01:00: Searching for user with name: Princ
+2026-05-31 07:19:27 +01:00: Searching for user with name: Prin
+2026-05-31 07:19:30 +01:00: Searching for user with name: Princ
+2026-05-31 07:19:31 +01:00: Searching for user with name: Princess 
+2026-05-31 07:19:33 +01:00: Searching for user with name: Princess a
+2026-05-31 07:19:34 +01:00: Searching for user with name: Princess al
+2026-05-31 07:19:34 +01:00: Searching for user with name: Princess all
+2026-05-31 07:19:36 +01:00: Searching for user with name: Princess Allen 
+2026-05-31 07:19:45 +01:00: Searching for user with name: Prec
+2026-05-31 07:19:46 +01:00: Searching for user with name: Precious 
+2026-05-31 07:20:30 +01:00: Searching for user with name:  A
+2026-05-31 07:20:33 +01:00: Searching for user with name:  Naio
+2026-05-31 07:20:34 +01:00: Searching for user with name:  Naiomi
+2026-05-31 07:20:35 +01:00: Searching for user with name:  N
+2026-05-31 07:20:36 +01:00: Searching for user with name:  No
+2026-05-31 07:20:37 +01:00: Searching for user with name:  Noa
+2026-05-31 07:20:41 +01:00: Searching for user with name:  M
+2026-05-31 07:20:42 +01:00: Searching for user with name:  Ma
+2026-05-31 07:20:46 +01:00: Searching for user with name:  Matthew godst
+2026-05-31 07:20:48 +01:00: Searching for user with name:  Matthew godstime
+2026-05-31 07:20:59 +01:00: Searching for user with name: Na
+2026-05-31 07:21:39 +01:00: Searching for user with name: Sm
+2026-05-31 07:21:40 +01:00: Searching for user with name: S
+2026-05-31 07:21:41 +01:00: Searching for user with name: Sam
+2026-05-31 07:21:42 +01:00: Searching for user with name: Samue
+2026-05-31 07:22:09 +01:00: Searching for user with name: Se
+2026-05-31 07:22:10 +01:00: Searching for user with name: Seg
+2026-05-31 07:22:15 +01:00: Searching for user with name: Seggie
+2026-05-31 07:22:21 +01:00: Searching for user with name: Segg
+2026-05-31 07:22:25 +01:00: Searching for user with name: Seggie
+2026-05-31 07:23:04 +01:00: Searching for user with name: O
+2026-05-31 07:42:08 +01:00: Searching for user with name: Succ
+2026-05-31 07:42:23 +01:00: Searching for user with name: David
+2026-05-31 07:48:55 +01:00: Searching for user with name: D
+2026-05-31 07:48:56 +01:00: Searching for user with name: Dav
+2026-05-31 07:58:15 +01:00: Searching for user with name: Sa
+2026-05-31 07:58:16 +01:00: Searching for user with name: Samue
+2026-05-31 07:58:17 +01:00: Searching for user with name: Samuel
+2026-05-31 07:58:21 +01:00: Searching for user with name: Samuel 
+2026-05-31 07:58:25 +01:00: Searching for user with name: Samuel te
+2026-05-31 08:03:16 +01:00: Searching for user with name: E
+2026-05-31 08:03:17 +01:00: Searching for user with name: Eb
+2026-05-31 08:03:18 +01:00: Searching for user with name: Ebi
+2026-05-31 08:03:20 +01:00: Searching for user with name: Ebi 
+2026-05-31 08:03:20 +01:00: Searching for user with name: Ebi p
+2026-05-31 08:03:21 +01:00: Searching for user with name: Ebi pr
+2026-05-31 08:05:26 +01:00: Searching for user with name: Dum
+2026-05-31 08:06:53 +01:00: Searching for user with name: Timi
+2026-05-31 08:06:56 +01:00: Searching for user with name: Timip
+2026-05-31 08:07:02 +01:00: Searching for user with name: Timipere
+2026-05-31 08:07:03 +01:00: Searching for user with name: Timipere 
+2026-05-31 08:07:04 +01:00: Searching for user with name: Timipere t
+2026-05-31 08:08:49 +01:00: Searching for user with name: Ebik
+2026-05-31 08:08:51 +01:00: Searching for user with name: Ebiker
+2026-05-31 08:10:59 +01:00: Searching for user with name: Ene
+2026-05-31 08:11:02 +01:00: Searching for user with name: Enek
+2026-05-31 08:16:40 +01:00: Searching for user with name: Leas
+2026-05-31 08:16:42 +01:00: Searching for user with name: Lea
+2026-05-31 08:16:44 +01:00: Searching for user with name: Lead
+2026-05-31 08:20:54 +01:00: Searching for user with name: Tomb
+2026-05-31 08:22:28 +01:00: Searching for user with name: D
+2026-05-31 08:22:29 +01:00: Searching for user with name: Den
+2026-05-31 08:23:36 +01:00: Searching for user with name: A
+2026-05-31 08:23:37 +01:00: Searching for user with name: Agh
+2026-05-31 08:24:33 +01:00: Searching for user with name: Ja
+2026-05-31 08:24:35 +01:00: Searching for user with name: Jason 
+2026-05-31 08:24:37 +01:00: Searching for user with name: Jas
+2026-05-31 08:24:38 +01:00: Searching for user with name: Ja
+2026-05-31 08:24:39 +01:00: Searching for user with name: Jato
+2026-05-31 08:26:28 +01:00: Searching for user with name: On
+2026-05-31 08:26:30 +01:00: Searching for user with name: Onu
+2026-05-31 08:30:01 +01:00: Searching for user with name: S
+2026-05-31 08:30:02 +01:00: Searching for user with name: A
+2026-05-31 08:30:03 +01:00: Searching for user with name: Al
+2026-05-31 08:30:05 +01:00: Searching for user with name: Al 
+2026-05-31 08:30:06 +01:00: Searching for user with name: Al
+2026-05-31 08:30:07 +01:00: Searching for user with name: Alb
+2026-05-31 08:33:32 +01:00: Searching for user with name: B
+2026-05-31 08:33:33 +01:00: Searching for user with name: Be
+2026-05-31 08:33:34 +01:00: Searching for user with name: Ben
+2026-05-31 08:33:35 +01:00: Searching for user with name: Bena
+2026-05-31 08:36:41 +01:00: Searching for user with name: B
+2026-05-31 08:36:42 +01:00: Searching for user with name: Br
+2026-05-31 08:36:43 +01:00: Searching for user with name: B
+2026-05-31 08:36:44 +01:00: Searching for user with name: Bi
+2026-05-31 08:36:45 +01:00: Searching for user with name: Bir
+2026-05-31 08:36:48 +01:00: Searching for user with name: Biri
+2026-05-31 08:36:51 +01:00: Searching for user with name: Birid
+2026-05-31 08:39:50 +01:00: Searching for user with name: B
+2026-05-31 08:39:51 +01:00: Searching for user with name: Bjk
+2026-05-31 08:43:00 +01:00: Searching for user with name: Ho
+2026-05-31 08:43:02 +01:00: Searching for user with name: How
+2026-05-31 08:57:45 +01:00: Searching for user with name: Howe
+2026-05-31 09:00:08 +01:00: Searching for user with name: Ton
+2026-05-31 09:00:11 +01:00: Searching for user with name: Tond
+2026-05-31 09:00:16 +01:00: Searching for user with name: D
+2026-05-31 09:00:20 +01:00: Searching for user with name: Di
+2026-05-31 09:00:22 +01:00: Searching for user with name: Dit
+2026-05-31 09:00:24 +01:00: Searching for user with name: Dito
+2026-05-31 09:00:24 +01:00: Searching for user with name: Diton
+2026-05-31 09:02:19 +01:00: Searching for user with name: Frid
+2026-05-31 09:12:06 +01:00: Searching for user with name: B
+2026-05-31 09:12:08 +01:00: Searching for user with name: I
+2026-05-31 09:12:09 +01:00: Searching for user with name: Ik
+2026-05-31 09:12:13 +01:00: Searching for user with name: Iker
+2026-05-31 09:12:16 +01:00: Searching for user with name: Ikere
+2026-05-31 09:12:21 +01:00: Searching for user with name: Ikerew
+2026-05-31 09:12:21 +01:00: Searching for user with name: Ikerewu
+2026-05-31 09:12:43 +01:00: Searching for user with name: Ikerewu 
+2026-05-31 09:17:54 +01:00: Searching for user with name: One
+2026-05-31 09:17:55 +01:00: Searching for user with name: Oneme
+2026-05-31 09:17:57 +01:00: Searching for user with name: Onemen
+2026-05-31 09:17:57 +01:00: Searching for user with name: Onemena
+2026-05-31 09:18:03 +01:00: Searching for user with name: O
+2026-05-31 09:19:08 +01:00: Searching for user with name: Ogh
+2026-05-31 09:19:11 +01:00: Searching for user with name: Oghe
+2026-05-31 09:19:12 +01:00: Searching for user with name: Oghem
+2026-05-31 09:28:22 +01:00: Searching for user with name: Vals
+2026-05-31 09:28:23 +01:00: Searching for user with name: Vald
+2026-05-31 09:28:47 +01:00: Searching for user with name: Vall
+2026-05-31 09:28:48 +01:00: Searching for user with name: Val
+2026-05-31 09:29:44 +01:00: Searching for user with name: Do
+2026-05-31 09:29:45 +01:00: Searching for user with name: Dorc
+2026-05-31 09:30:01 +01:00: Searching for user with name: D
+2026-05-31 09:30:06 +01:00: Searching for user with name: Tar
+2026-05-31 09:30:07 +01:00: Searching for user with name: Tarm
+2026-05-31 09:30:09 +01:00: Searching for user with name: Tar
+2026-05-31 09:30:15 +01:00: Searching for user with name: Be
+2026-05-31 09:30:15 +01:00: Searching for user with name: Ben
+2026-05-31 09:30:42 +01:00: Searching for user with name: Jo
+2026-05-31 09:30:43 +01:00: Searching for user with name: Jos
+2026-05-31 09:32:26 +01:00: Searching for user with name: Dor
+2026-05-31 09:32:27 +01:00: Searching for user with name: Dorc
+2026-05-31 09:33:05 +01:00: Searching for user with name: Mar
+2026-05-31 09:33:09 +01:00: Searching for user with name: Marc
+2026-05-31 09:33:39 +01:00: Searching for user with name: Imole
+2026-05-31 09:34:46 +01:00: Searching for user with name: U
+2026-05-31 09:34:46 +01:00: Searching for user with name: Uyo
+2026-05-31 09:34:49 +01:00: Searching for user with name: U
+2026-05-31 09:34:51 +01:00: Searching for user with name: Step
+2026-05-31 09:35:35 +01:00: Searching for user with name: P
+2026-05-31 09:35:36 +01:00: Searching for user with name: Pe
+2026-05-31 09:35:38 +01:00: Searching for user with name: Peter
+2026-05-31 09:35:58 +01:00: Searching for user with name: Victo
+2026-05-31 09:36:08 +01:00: Searching for user with name: Robi
+2026-05-31 09:36:26 +01:00: Searching for user with name: Victori
+2026-05-31 09:37:14 +01:00: Searching for user with name: Chr
+2026-05-31 09:37:15 +01:00: Searching for user with name: Chris
+2026-05-31 09:37:18 +01:00: Searching for user with name: Seg
+2026-05-31 09:37:29 +01:00: Searching for user with name: Em
+2026-05-31 09:37:30 +01:00: Searching for user with name: Emm
+2026-05-31 09:39:43 +01:00: Searching for user with name: Peter
+2026-05-31 09:47:01 +01:00: Searching for user with name: Peter
+2026-05-31 10:01:51 +01:00: Searching for user with name: Peter
+2026-05-31 10:07:47 +01:00: Searching for user with name: Peter
+2026-05-31 10:10:59 +01:00: Searching for user with name: Pre
+2026-05-31 10:11:01 +01:00: Searching for user with name: Precio
+2026-05-31 10:11:02 +01:00: Searching for user with name: Precios
+2026-05-31 10:11:04 +01:00: Searching for user with name: Precio
+2026-05-31 10:11:05 +01:00: Searching for user with name: Precious
+2026-05-31 10:11:57 +01:00: Searching for user with name: Indak
+2026-05-31 10:15:32 +01:00: Searching for user with name: Pere
+2026-05-31 10:15:41 +01:00: Searching for user with name: Perebo
+2026-05-31 10:16:12 +01:00: Searching for user with name: Miracle
+2026-05-31 10:16:21 +01:00: Searching for user with name: Stanl
+2026-05-31 10:16:23 +01:00: Searching for user with name: Stanley
+2026-05-31 10:18:27 +01:00: Searching for user with name: Mess
+2026-05-31 10:18:28 +01:00: Searching for user with name: Messi
+2026-05-31 10:18:30 +01:00: Searching for user with name: Messiah 
+2026-05-31 10:18:30 +01:00: Searching for user with name: 8
+2026-05-31 10:18:42 +01:00: Searching for user with name: Godwj
+2026-05-31 10:18:45 +01:00: Searching for user with name: Godwi
+2026-05-31 10:19:00 +01:00: Searching for user with name: Oladj
+2026-05-31 10:19:03 +01:00: Searching for user with name: Oladi
+2026-05-31 10:19:05 +01:00: Searching for user with name: Oladipu
+2026-05-31 10:19:12 +01:00: Searching for user with name: O
+2026-05-31 10:19:19 +01:00: Searching for user with name: Solo
+2026-05-31 10:19:43 +01:00: Searching for user with name: Ste
+2026-05-31 10:19:52 +01:00: Searching for user with name: Uy
+2026-05-31 10:19:52 +01:00: Searching for user with name: Uyo
+2026-05-31 10:20:11 +01:00: Searching for user with name: Steph
+2026-05-31 10:21:24 +01:00: Searching for user with name: Oreva
+2026-05-31 10:23:33 +01:00: Searching for user with name: De
+2026-05-31 10:23:34 +01:00: Searching for user with name: Debo
+2026-05-31 10:23:35 +01:00: Searching for user with name: Debora
+2026-05-31 10:23:36 +01:00: Searching for user with name: Deborah
+2026-05-31 10:23:59 +01:00: Searching for user with name: Adama
+2026-05-31 10:27:31 +01:00: Searching for user with name: Ike
+2026-05-31 10:27:33 +01:00: Searching for user with name: Ikech
+2026-05-31 10:28:53 +01:00: Searching for user with name: P
+2026-05-31 10:28:55 +01:00: Searching for user with name: Pr
+2026-05-31 10:28:57 +01:00: Searching for user with name: Pra
+2026-05-31 10:29:47 +01:00: Searching for user with name: Rich
+2026-05-31 10:29:47 +01:00: Searching for user with name: Richard 
+2026-05-31 10:31:31 +01:00: Searching for user with name: Natha
+2026-05-31 10:31:34 +01:00: Searching for user with name: Nathan
+2026-05-31 10:31:36 +01:00: Searching for user with name: Nathani
+2026-05-31 10:33:44 +01:00: Searching for user with name: A
+2026-05-31 10:33:48 +01:00: Searching for user with name: Pri
+2026-05-31 10:33:49 +01:00: Searching for user with name: P
+2026-05-31 10:33:50 +01:00: Searching for user with name: Pat
+2026-05-31 10:33:52 +01:00: Searching for user with name: Pati
+2026-05-31 10:33:53 +01:00: Searching for user with name: Patie
+2026-05-31 10:34:12 +01:00: Searching for user with name: Patience 
+2026-05-31 10:36:09 +01:00: Searching for user with name: F
+2026-05-31 10:36:09 +01:00: Searching for user with name: Fa
+2026-05-31 10:36:12 +01:00: Searching for user with name: Ffran
+2026-05-31 11:00:28 +01:00: Searching for user with name: Fran
+2026-05-31 11:05:07 +01:00: Searching for user with name: Vict
+2026-05-31 11:05:29 +01:00: Searching for user with name: Aaron
+2026-05-31 11:05:41 +01:00: Searching for user with name: Igol
+2026-05-31 11:05:41 +01:00: Searching for user with name: Igolk
+2026-05-31 11:05:44 +01:00: Searching for user with name: Igol
+2026-05-31 11:06:24 +01:00: Searching for user with name: Geor
+2026-05-31 11:08:31 +01:00: Searching for user with name: Ange
+2026-05-31 11:08:44 +01:00: Searching for user with name: Tri
+2026-05-31 11:12:03 +01:00: Searching for user with name: Fe
+2026-05-31 11:59:44 +01:00: Searching for user with name: Ak
+2026-05-31 11:59:46 +01:00: Searching for user with name: Akpo
+2026-05-31 12:08:30 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 500, Message: User already exists, Stack: undefined","timestamp":"2026-05-31T11:08:30.231Z"}
+2026-05-31 12:08:46 +01:00: Searching for user with name: Brigh
+2026-05-31 12:11:13 +01:00: Searching for user with name: Rob
+2026-05-31 12:12:40 +01:00: Searching for user with name: Da
+2026-05-31 12:12:48 +01:00: Searching for user with name: Danie
+2026-05-31 12:12:49 +01:00: Searching for user with name: Daniel
+2026-05-31 12:13:01 +01:00: Searching for user with name: Dan
+2026-05-31 12:13:11 +01:00: Searching for user with name: Daniel 
+2026-05-31 12:14:01 +01:00: Searching for user with name: Kar
+2026-05-31 12:23:48 +01:00: Searching for user with name: Pre
+2026-05-31 12:23:52 +01:00: Searching for user with name: Prec
+2026-05-31 12:23:53 +01:00: Searching for user with name: Precious 
+2026-05-31 12:28:54 +01:00: Searching for user with name: L
+2026-05-31 12:28:56 +01:00: Searching for user with name: Leader
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-06-01T13:56:13.832Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-06-01T13:56:13.834Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-06-01T13:56:13.835Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-06-01T13:56:13.835Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-06-01T13:56:13.835Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-06-01T13:56:13.836Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-06-01T13:56:13.837Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-01T13:56:13.842Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-06-01T13:56:13.842Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-06-01T13:56:13.843Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-06-01T13:56:13.843Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-06-01T13:56:13.843Z"}
+2026-06-01 14:56:13 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-01T13:56:13.843Z"}
+2026-06-01 14:57:10 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-01 14:59:20 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-01 15:28:57 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-06-01T14:41:32.389Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-06-01T14:41:32.394Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-06-01T14:41:32.395Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-06-01T14:41:32.396Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-06-01T14:41:32.397Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-06-01T14:41:32.398Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-06-01T14:41:32.398Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-01T14:41:32.410Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-06-01T14:41:32.413Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-06-01T14:41:32.420Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-06-01T14:41:32.421Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-06-01T14:41:32.424Z"}
+2026-06-01 15:41:32 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-01T14:41:32.427Z"}
+2026-06-01 15:42:12 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-06-01T15:27:38.471Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-06-01T15:27:38.508Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-06-01T15:27:38.510Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-06-01T15:27:38.517Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-06-01T15:27:38.518Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-06-01T15:27:38.519Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-06-01T15:27:38.520Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-01T15:27:38.532Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-06-01T15:27:38.533Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-06-01T15:27:38.564Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-06-01T15:27:38.565Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-06-01T15:27:38.566Z"}
+2026-06-01 16:27:38 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-01T15:27:38.568Z"}
+2026-06-01 16:28:27 +01:00: Searching for user with name: Ogo
+2026-06-01 16:28:38 +01:00: Searching for user with name: Og
+2026-06-01 16:28:40 +01:00: Searching for user with name: O
+2026-06-01 16:28:41 +01:00: Searching for user with name: Oi
+2026-06-01 16:28:43 +01:00: Searching for user with name: I
+2026-06-01 16:28:44 +01:00: Searching for user with name: Ig
+2026-06-01 16:29:05 +01:00: Searching for user with name: B
+2026-06-01 16:29:11 +01:00: Searching for user with name: Bea
+2026-06-01 16:29:42 +01:00: Searching for user with name: I
+2026-06-01 16:29:42 +01:00: Searching for user with name: Ig
+2026-06-01 16:30:12 +01:00: Searching for user with name: Den
+2026-06-01 16:30:26 +01:00: Searching for user with name: Ga
+2026-06-01 16:30:26 +01:00: Searching for user with name: Gab
+2026-06-01 16:30:51 +01:00: Searching for user with name: T
+2026-06-01 16:30:52 +01:00: Searching for user with name: Ta
+2026-06-01 16:30:53 +01:00: Searching for user with name: Tama
+2026-06-01 16:31:04 +01:00: Searching for user with name: Bor
+2026-06-01 16:31:15 +01:00: Searching for user with name: Blo
+2026-06-01 16:31:16 +01:00: Searching for user with name: Blos
+2026-06-01 16:31:20 +01:00: Searching for user with name: J
+2026-06-01 16:31:22 +01:00: Searching for user with name: Som
+2026-06-01 16:31:40 +01:00: Searching for user with name: Ver
+2026-06-01 16:31:46 +01:00: Searching for user with name: Sa
+2026-06-01 16:31:48 +01:00: Searching for user with name: Sam
+2026-06-01 16:32:00 +01:00: Searching for user with name: Fes
+2026-06-01 16:32:01 +01:00: Searching for user with name: Fest
+2026-06-01 16:32:08 +01:00: Searching for user with name: King
+2026-06-01 16:32:18 +01:00: Searching for user with name: Rut
+2026-06-01 16:32:32 +01:00: Searching for user with name: B
+2026-06-01 16:32:33 +01:00: Searching for user with name: Bar
+2026-06-01 16:32:35 +01:00: Searching for user with name: Bara
+2026-06-01 16:32:39 +01:00: Searching for user with name: Joy
+2026-06-01 16:34:10 +01:00: Searching for user with name: F
+2026-06-01 16:34:11 +01:00: Searching for user with name: Fe
+2026-06-01 16:34:11 +01:00: Searching for user with name: Fes
+2026-06-01 16:39:14 +01:00: Searching for user with name: V
+2026-06-01 16:39:15 +01:00: Searching for user with name: Va
+2026-06-01 16:39:16 +01:00: Searching for user with name: Val
+2026-06-01 16:39:31 +01:00: Searching for user with name: Timi
+2026-06-01 16:39:47 +01:00: Searching for user with name: Chi
+2026-06-01 16:51:36 +01:00: Searching for user with name: Ton
+2026-06-01 16:52:11 +01:00: Searching for user with name: Ow
+2026-06-01 16:52:14 +01:00: Searching for user with name: Owo
+2026-06-01 16:58:52 +01:00: Searching for user with name: Aa
+2026-06-01 17:02:28 +01:00: Searching for user with name: Opp
+2026-06-01 17:49:49 +01:00: Searching for user with name: Triu
+2026-06-01 17:50:24 +01:00: Searching for user with name: Tim
+2026-06-01 17:52:30 +01:00: Searching for user with name: E
+2026-06-01 17:52:31 +01:00: Searching for user with name: Emm
+2026-06-01 17:52:56 +01:00: Searching for user with name: Pr
+2026-06-01 17:52:59 +01:00: Searching for user with name: Pret
+2026-06-01 17:53:58 +01:00: Searching for user with name: Ol
+2026-06-01 17:54:03 +01:00: Searching for user with name: A
+2026-06-01 17:54:03 +01:00: Searching for user with name: An
+2026-06-01 17:54:27 +01:00: Searching for user with name: St
+2026-06-01 17:54:29 +01:00: Searching for user with name: Ste
+2026-06-01 17:54:31 +01:00: Searching for user with name: Stel
+2026-06-01 17:55:26 +01:00: Searching for user with name: S
+2026-06-01 17:55:40 +01:00: Searching for user with name: Olad
+2026-06-01 17:55:57 +01:00: Searching for user with name: G
+2026-06-01 17:55:58 +01:00: Searching for user with name: Go
+2026-06-01 17:56:00 +01:00: Searching for user with name: G
+2026-06-01 17:56:02 +01:00: Searching for user with name: Geo
+2026-06-01 17:56:13 +01:00: Searching for user with name: Do
+2026-06-01 17:56:13 +01:00: Searching for user with name: Dor
+2026-06-01 17:56:14 +01:00: Searching for user with name: Dorc
+2026-06-01 17:56:26 +01:00: Searching for user with name: A
+2026-06-01 17:56:27 +01:00: Searching for user with name: And
+2026-06-01 17:56:38 +01:00: Searching for user with name: M
+2026-06-01 17:56:40 +01:00: Searching for user with name: Marc
+2026-06-01 17:57:00 +01:00: Searching for user with name: A
+2026-06-01 17:57:01 +01:00: Searching for user with name: Ak
+2026-06-01 17:57:02 +01:00: Searching for user with name: Akp
+2026-06-01 17:57:37 +01:00: Searching for user with name: Conf
+2026-06-01 17:57:58 +01:00: Searching for user with name: V
+2026-06-01 17:57:58 +01:00: Searching for user with name: Va
+2026-06-01 17:58:16 +01:00: Searching for user with name: Jo
+2026-06-01 17:58:16 +01:00: Searching for user with name: Jose
+2026-06-01 17:58:31 +01:00: Searching for user with name: Favo
+2026-06-01 17:58:45 +01:00: Searching for user with name: Peter
+2026-06-01 17:59:25 +01:00: Searching for user with name: Spr
+2026-06-01 17:59:36 +01:00: Searching for user with name: Osa
+2026-06-01 17:59:45 +01:00: Searching for user with name: N
+2026-06-01 17:59:47 +01:00: Searching for user with name: Ng
+2026-06-01 17:59:49 +01:00: Searching for user with name: Ngo
+2026-06-01 18:00:07 +01:00: Searching for user with name: Dav
+2026-06-01 18:00:27 +01:00: Searching for user with name: Stan
+2026-06-01 18:01:38 +01:00: Searching for user with name: Sta
+2026-06-01 18:01:51 +01:00: Searching for user with name: Dek
+2026-06-01 18:01:58 +01:00: Searching for user with name: Deku
+2026-06-01 18:03:12 +01:00: Searching for user with name: Ogid
+2026-06-01 18:03:30 +01:00: Searching for user with name: E
+2026-06-01 18:03:32 +01:00: Searching for user with name: Emper
+2026-06-01 18:03:46 +01:00: Searching for user with name: Youn
+2026-06-01 18:03:48 +01:00: Searching for user with name: Young
+2026-06-01 18:05:48 +01:00: Searching for user with name: You
+2026-06-01 18:14:28 +01:00: Searching for user with name: Solo
+2026-06-01 18:14:44 +01:00: Searching for user with name: Ma
+2026-06-01 18:14:51 +01:00: Searching for user with name: St
+2026-06-01 18:14:52 +01:00: Searching for user with name: Stephanie 
+2026-06-01 18:14:59 +01:00: Searching for user with name: Laur
+2026-06-01 18:15:17 +01:00: Searching for user with name: Pre
+2026-06-01 18:15:18 +01:00: Searching for user with name: Prey
+2026-06-01 18:15:27 +01:00: Searching for user with name: Juli
+2026-06-01 18:15:45 +01:00: Searching for user with name: Vict
+2026-06-01 18:15:50 +01:00: Searching for user with name: Vic
+2026-06-01 18:16:13 +01:00: Searching for user with name: V
+2026-06-01 18:16:16 +01:00: Searching for user with name: God
+2026-06-01 18:16:27 +01:00: Searching for user with name: Solo
+2026-06-01 18:18:25 +01:00: Searching for user with name: E
+2026-06-01 18:18:41 +01:00: Searching for user with name: Em
+2026-06-01 18:18:42 +01:00: Searching for user with name: Empe
+2026-06-01 18:19:08 +01:00: Searching for user with name: You
+2026-06-01 18:22:16 +01:00: Searching for user with name: Ore
+2026-06-01 18:22:53 +01:00: Searching for user with name: Vict
+2026-06-01 18:23:08 +01:00: Searching for user with name: Te
+2026-06-01 18:23:09 +01:00: Searching for user with name: Teg
+2026-06-01 18:23:16 +01:00: Searching for user with name: G
+2026-06-01 18:23:17 +01:00: Searching for user with name: Gift
+2026-06-01 18:23:41 +01:00: Searching for user with name: Tev
+2026-06-01 18:23:41 +01:00: Searching for user with name: Tevll
+2026-06-01 18:23:43 +01:00: Searching for user with name: Te
+2026-06-01 18:23:44 +01:00: Searching for user with name: Tebo
+2026-06-01 18:23:46 +01:00: Searching for user with name: Teb
+2026-06-01 18:23:47 +01:00: Searching for user with name: Te
+2026-06-01 18:23:48 +01:00: Searching for user with name: Tegb
+2026-06-01 18:23:50 +01:00: Searching for user with name: T
+2026-06-01 18:23:52 +01:00: Searching for user with name: Ni
+2026-06-01 18:23:53 +01:00: Searching for user with name: Nic
+2026-06-01 18:23:56 +01:00: Searching for user with name: Mich
+2026-06-01 18:24:16 +01:00: Searching for user with name: Br
+2026-06-01 18:24:17 +01:00: Searching for user with name: Brig
+2026-06-01 18:24:43 +01:00: Searching for user with name: Aa
+2026-06-01 18:25:44 +01:00: Searching for user with name: Eli
+2026-06-01 18:25:45 +01:00: Searching for user with name: Elia
+2026-06-01 18:29:42 +01:00: Searching for user with name: A
+2026-06-01 18:29:42 +01:00: Searching for user with name: Aki
+2026-06-01 18:29:54 +01:00: Searching for user with name: A
+2026-06-01 18:29:54 +01:00: Searching for user with name: Aki
+2026-06-01 18:32:41 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-06-01T17:32:41.630Z"}
+2026-06-01 18:34:22 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-06-01T17:34:22.636Z"}
+2026-06-01 18:34:35 +01:00: {"level":"error","message":"[POST] /api/v1/auth/register >> Status: 400, Message: Invalid input for database operation., Stack: undefined","timestamp":"2026-06-01T17:34:35.070Z"}
+2026-06-01 18:35:06 +01:00: Searching for user with name: A
+2026-06-01 18:35:06 +01:00: Searching for user with name: Aki
+2026-06-01 18:38:43 +01:00: Searching for user with name: Melo
+2026-06-01 18:38:48 +01:00: Searching for user with name: T
+2026-06-01 18:38:49 +01:00: Searching for user with name: Ta
+2026-06-01 18:38:50 +01:00: Searching for user with name: Tar
+2026-06-01 18:40:09 +01:00: Searching for user with name: Faith
+2026-06-01 18:44:54 +01:00: Searching for user with name: Victo
+2026-06-01 18:45:06 +01:00: Searching for user with name: Con
+2026-06-01 18:45:10 +01:00: Searching for user with name: Conve
+2026-06-01 18:45:31 +01:00: Searching for user with name: Ag
+2026-06-01 18:45:33 +01:00: Searching for user with name: Agb
+2026-06-01 18:46:00 +01:00: Searching for user with name: A
+2026-06-01 18:46:01 +01:00: Searching for user with name: Al
+2026-06-01 18:46:09 +01:00: Searching for user with name: E
+2026-06-01 18:46:09 +01:00: Searching for user with name: El
+2026-06-01 18:46:16 +01:00: Searching for user with name: Elk
+2026-06-01 18:47:36 +01:00: Searching for user with name: Oyinb
+2026-06-01 18:47:39 +01:00: Searching for user with name: O
+2026-06-01 18:47:45 +01:00: Searching for user with name: Oy
+2026-06-01 18:47:47 +01:00: Searching for user with name: Oye
+2026-06-01 18:47:48 +01:00: Searching for user with name: Oyei
+2026-06-01 18:50:43 +01:00: Searching for user with name: S
+2026-06-01 18:50:45 +01:00: Searching for user with name: Slle
+2026-06-01 18:50:47 +01:00: Searching for user with name: Sl
+2026-06-01 18:50:48 +01:00: Searching for user with name: Sle
+2026-06-01 18:51:33 +01:00: Searching for user with name: G
+2026-06-01 18:51:33 +01:00: Searching for user with name: Go
+2026-06-01 18:51:35 +01:00: Searching for user with name: Gow
+2026-06-01 18:51:37 +01:00: Searching for user with name: Go
+2026-06-01 18:51:38 +01:00: Searching for user with name: Goe
+2026-06-01 18:51:40 +01:00: Searching for user with name: G
+2026-06-01 18:51:41 +01:00: Searching for user with name: Ge
+2026-06-01 18:51:42 +01:00: Searching for user with name: Geo
+2026-06-01 18:51:50 +01:00: Searching for user with name: George 
+2026-06-01 18:57:09 +01:00: Searching for user with name: Chr
+2026-06-01 18:57:14 +01:00: Searching for user with name: Seg
+2026-06-01 19:02:49 +01:00: Searching for user with name: Suc
+2026-06-01 19:02:49 +01:00: Searching for user with name: Succ
+2026-06-01 19:03:23 +01:00: Searching for user with name: Og
+2026-06-01 19:03:28 +01:00: Searching for user with name: Ogoli
+2026-06-01 21:08:05 +01:00: Searching for user with name: Eli
+2026-06-01 21:08:07 +01:00: Searching for user with name: Elia
+2026-06-01 21:20:27 +01:00: Searching for user with name: Obw
+2026-06-01 21:20:28 +01:00: Searching for user with name: Ob
+2026-06-01 21:20:28 +01:00: Searching for user with name: Oba
+2026-06-01 21:20:37 +01:00: Searching for user with name: Ob
+2026-06-01 21:20:38 +01:00: Searching for user with name: Oba
+2026-06-01 21:24:58 +01:00: Searching for user with name: Ani
+2026-06-01 21:25:01 +01:00: Searching for user with name: Anita
+2026-06-01 21:29:36 +01:00: Searching for user with name: Pere
+2026-06-01 21:29:43 +01:00: Searching for user with name: Ma
+2026-06-01 21:29:44 +01:00: Searching for user with name: Mac
+2026-06-01 21:34:09 +01:00: Searching for user with name: Car
+2026-06-01 21:34:11 +01:00: Searching for user with name: Carter 
+2026-06-01 21:34:13 +01:00: Searching for user with name: Carter
+2026-06-01 21:36:29 +01:00: Searching for user with name: Chr
+2026-06-01 21:36:30 +01:00: Searching for user with name: Chri
+2026-06-01 21:36:31 +01:00: Searching for user with name: Christopher 
+2026-06-01 21:36:33 +01:00: Searching for user with name: Christopher
+2026-06-01 21:37:59 +01:00: Searching for user with name: Eli
+2026-06-02 19:14:51 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-06-02T19:03:38.183Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-06-02T19:03:38.188Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-06-02T19:03:38.190Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-06-02T19:03:38.191Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-06-02T19:03:38.192Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-06-02T19:03:38.192Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-06-02T19:03:38.193Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-02T19:03:38.205Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-06-02T19:03:38.205Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-06-02T19:03:38.205Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-06-02T19:03:38.206Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-06-02T19:03:38.206Z"}
+2026-06-02 20:03:38 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-02T19:03:38.206Z"}
+2026-06-02 20:04:39 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-06-05T15:57:00.570Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-06-05T15:57:00.574Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-06-05T15:57:00.575Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-06-05T15:57:00.577Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-06-05T15:57:00.577Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-06-05T15:57:00.578Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-06-05T15:57:00.579Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-05T15:57:00.588Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-06-05T15:57:00.588Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-06-05T15:57:00.589Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-06-05T15:57:00.589Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-06-05T15:57:00.590Z"}
+2026-06-05 16:57:00 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-05T15:57:00.590Z"}
+2026-06-05 16:57:40 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-05 16:59:38 +01:00: Searching for user with name: Ruth
+2026-06-05 17:01:03 +01:00: Searching for user with name: Tib
+2026-06-05 17:02:06 +01:00: Searching for user with name: V
+2026-06-05 17:02:08 +01:00: Searching for user with name: Va
+2026-06-05 17:02:24 +01:00: Searching for user with name: Va
+2026-06-05 17:02:25 +01:00: Searching for user with name: Val
+2026-06-05 17:02:42 +01:00: Searching for user with name: Bed
+2026-06-05 17:02:58 +01:00: Searching for user with name: Opp
+2026-06-05 17:03:37 +01:00: Searching for user with name: T
+2026-06-05 17:03:38 +01:00: Searching for user with name: Ta
+2026-06-05 17:04:04 +01:00: Searching for user with name: Matt
+2026-06-05 17:04:08 +01:00: Searching for user with name: Na
+2026-06-05 17:04:10 +01:00: Searching for user with name: Naom
+2026-06-05 17:04:36 +01:00: Searching for user with name: God
+2026-06-05 17:04:39 +01:00: Searching for user with name: Godp
+2026-06-05 17:04:45 +01:00: Searching for user with name: Triu
+2026-06-05 17:05:20 +01:00: Searching for user with name: Chi
+2026-06-05 17:05:57 +01:00: Searching for user with name: A
+2026-06-05 17:05:58 +01:00: Searching for user with name: Andr
+2026-06-05 17:06:14 +01:00: Searching for user with name: Mar
+2026-06-05 17:06:20 +01:00: Searching for user with name: Ak
+2026-06-05 17:06:27 +01:00: Searching for user with name: Akpo
+2026-06-05 17:06:27 +01:00: Searching for user with name: Akpoe
+2026-06-05 17:06:53 +01:00: Searching for user with name: Jjo
+2026-06-05 17:06:54 +01:00: Searching for user with name: Jjos
+2026-06-05 17:06:56 +01:00: Searching for user with name: J
+2026-06-05 17:06:57 +01:00: Searching for user with name: Jo
+2026-06-05 17:06:57 +01:00: Searching for user with name: Jos
+2026-06-05 17:07:06 +01:00: Searching for user with name: O
+2026-06-05 17:07:07 +01:00: Searching for user with name: Ow
+2026-06-05 17:08:37 +01:00: Searching for user with name: O
+2026-06-05 17:08:38 +01:00: Searching for user with name: Owo
+2026-06-05 17:08:44 +01:00: {"level":"error","message":"[POST] /api/v1/attendance/mark >> Status: 500, Message: User already marked present, Stack: undefined","timestamp":"2026-06-05T16:08:44.667Z"}
+2026-06-05 17:15:47 +01:00: Searching for user with name: G
+2026-06-05 17:15:48 +01:00: Searching for user with name: God
+2026-06-05 17:15:52 +01:00: Searching for user with name: Godp
+2026-06-05 17:16:05 +01:00: Searching for user with name: S
+2026-06-05 17:16:07 +01:00: Searching for user with name: Succ
+2026-06-05 17:19:22 +01:00: Searching for user with name: Aa
+2026-06-05 17:20:34 +01:00: Searching for user with name: M
+2026-06-05 17:20:34 +01:00: Searching for user with name: Me
+2026-06-05 17:20:35 +01:00: Searching for user with name: Mel
+2026-06-05 17:21:06 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-05 17:26:56 +01:00: Login successful, sending response with data: { email: [32m'ruthoussa58@gmail.com'[39m, password: [32m'ruth123'[39m }
+2026-06-05 17:27:11 +01:00: Searching for user with name: S
+2026-06-05 17:27:12 +01:00: Searching for user with name: Su
+2026-06-05 17:27:12 +01:00: Searching for user with name: Succ
+2026-06-05 17:27:17 +01:00: Searching for user with name: Jo
+2026-06-05 17:27:18 +01:00: Searching for user with name: Jos
+2026-06-05 17:27:22 +01:00: Searching for user with name: Jo
+2026-06-05 17:28:07 +01:00: Login successful, sending response with data: { email: [32m'ruthoussa58@gmail.com'[39m, password: [32m'ruth123'[39m }
+2026-06-05 17:28:22 +01:00: Searching for user with name: A
+2026-06-05 17:28:22 +01:00: Searching for user with name: Al
+2026-06-05 17:28:31 +01:00: Searching for user with name: Da
+2026-06-05 17:28:32 +01:00: Searching for user with name: Dan
+2026-06-05 17:29:58 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-05 17:30:50 +01:00: Searching for user with name: K
+2026-06-05 17:30:52 +01:00: Searching for user with name: Lon
+2026-06-05 17:31:00 +01:00: Searching for user with name: O
+2026-06-05 17:31:01 +01:00: Searching for user with name: Og
+2026-06-05 17:31:17 +01:00: Searching for user with name: Aa
+2026-06-05 17:31:34 +01:00: Searching for user with name: I
+2026-06-05 17:31:35 +01:00: Searching for user with name: Ig
+2026-06-05 17:31:35 +01:00: Searching for user with name: Igoo
+2026-06-05 17:31:37 +01:00: Searching for user with name: Igo
+2026-06-05 17:31:48 +01:00: Searching for user with name: P
+2026-06-05 17:31:49 +01:00: Searching for user with name: Pree
+2026-06-05 17:31:52 +01:00: Searching for user with name: Pret
+2026-06-05 17:32:26 +01:00: Searching for user with name: A
+2026-06-05 17:32:26 +01:00: Searching for user with name: An
+2026-06-05 17:35:14 +01:00: Searching for user with name: L
+2026-06-05 17:35:15 +01:00: Searching for user with name: La
+2026-06-05 17:35:16 +01:00: Searching for user with name: Lau
+2026-06-05 17:36:39 +01:00: Searching for user with name: Bea
+2026-06-05 18:03:56 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-05 18:04:11 +01:00: Searching for user with name: Tar
+2026-06-05 18:04:32 +01:00: Searching for user with name: Ang
+2026-06-05 18:04:52 +01:00: Searching for user with name: A
+2026-06-05 18:04:53 +01:00: Searching for user with name: All
+2026-06-05 18:05:34 +01:00: Searching for user with name: Garr
+2026-06-05 18:05:47 +01:00: Searching for user with name: Dav
+2026-06-05 18:06:27 +01:00: Searching for user with name: D
+2026-06-05 18:06:27 +01:00: Searching for user with name: Dud
+2026-06-05 18:06:46 +01:00: Searching for user with name: Melod
+2026-06-05 18:06:59 +01:00: Searching for user with name: St
+2026-06-05 18:06:59 +01:00: Searching for user with name: Sta
+2026-06-05 18:07:00 +01:00: Searching for user with name: Stan
+2026-06-05 18:07:01 +01:00: Searching for user with name: Stans
+2026-06-05 18:07:03 +01:00: Searching for user with name: Stand
+2026-06-05 18:07:33 +01:00: Searching for user with name: Vict
+2026-06-05 18:07:34 +01:00: Searching for user with name: Victor
+2026-06-05 18:07:57 +01:00: Searching for user with name: Good
+2026-06-05 18:08:04 +01:00: Searching for user with name: Vict
+2026-06-05 18:08:25 +01:00: Searching for user with name: Godm
+2026-06-05 18:08:32 +01:00: Searching for user with name: Spr
+2026-06-05 18:08:43 +01:00: Searching for user with name: Fai
+2026-06-05 18:09:02 +01:00: Searching for user with name: O
+2026-06-05 18:09:03 +01:00: Searching for user with name: Og
+2026-06-05 18:09:04 +01:00: Searching for user with name: Ogr
+2026-06-05 18:09:08 +01:00: Searching for user with name: Ogir
+2026-06-05 18:09:23 +01:00: Searching for user with name: Matil
+2026-06-05 18:09:24 +01:00: Searching for user with name: Matild
+2026-06-05 18:09:51 +01:00: Searching for user with name: Victor
+2026-06-05 18:10:07 +01:00: Searching for user with name: Lift
+2026-06-05 18:10:23 +01:00: Searching for user with name: Ike
+2026-06-05 18:10:25 +01:00: Searching for user with name: Iked
+2026-06-05 18:10:29 +01:00: Searching for user with name: Mira
+2026-06-05 18:10:56 +01:00: Searching for user with name: Ngo
+2026-06-05 18:11:09 +01:00: Searching for user with name: G
+2026-06-05 18:11:11 +01:00: Searching for user with name: God
+2026-06-05 18:11:12 +01:00: Searching for user with name: Godw
+2026-06-05 18:11:59 +01:00: Searching for user with name: Cov
+2026-06-05 18:12:22 +01:00: Searching for user with name: Fav
+2026-06-05 18:12:22 +01:00: Searching for user with name: Favo
+2026-06-05 18:14:44 +01:00: Searching for user with name: E
+2026-06-05 18:14:45 +01:00: Searching for user with name: Elk
+2026-06-05 18:16:19 +01:00: Searching for user with name: Ste
+2026-06-05 18:17:00 +01:00: Searching for user with name: Ste
+2026-06-05 18:20:39 +01:00: Searching for user with name: Da
+2026-06-05 18:20:40 +01:00: Searching for user with name: Davi
+2026-06-05 18:20:48 +01:00: Searching for user with name: Preye
+2026-06-05 18:20:59 +01:00: Searching for user with name: Pret
+2026-06-05 18:21:01 +01:00: Searching for user with name: Prey
+2026-06-05 18:21:07 +01:00: Searching for user with name: Preye
+2026-06-05 18:21:28 +01:00: Searching for user with name: Oyin
+2026-06-05 18:23:30 +01:00: Searching for user with name: S
+2026-06-05 18:23:31 +01:00: Searching for user with name: Sta
+2026-06-05 18:27:11 +01:00: Login successful, sending response with data: { email: [32m'ruthoussa58@gmail.com'[39m, password: [32m'ruth123'[39m }
+2026-06-05 18:28:08 +01:00: Searching for user with name: Timi
+2026-06-05 18:28:30 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"Initializing Routes ....","timestamp":"2026-06-05T17:34:23.257Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"Routes Initialized Successfully ✔️","timestamp":"2026-06-05T17:34:23.266Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"Initializing SPA Routes ....","timestamp":"2026-06-05T17:34:23.267Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"SPA Routes Initialized Successfully","timestamp":"2026-06-05T17:34:23.268Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"Initializing Error Handler ....","timestamp":"2026-06-05T17:34:23.274Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"Error Handler Initialized Successfully ✔️","timestamp":"2026-06-05T17:34:23.275Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"Starting Server ....","timestamp":"2026-06-05T17:34:23.277Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-05T17:34:23.296Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"========= SERVER 🚀=======","timestamp":"2026-06-05T17:34:23.298Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"========= ENV: production ========","timestamp":"2026-06-05T17:34:23.299Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"========= PORT: 3030 ========","timestamp":"2026-06-05T17:34:23.299Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"🚀 Server running on  undefined:3030 🚀","timestamp":"2026-06-05T17:34:23.299Z"}
+2026-06-05 18:34:23 +01:00: {"level":"info","message":"=================================","timestamp":"2026-06-05T17:34:23.299Z"}
+2026-06-05 18:48:15 +01:00: Searching for user with name: S
+2026-06-05 18:48:15 +01:00: Searching for user with name: Sl
+2026-06-05 18:49:59 +01:00: Searching for user with name: L
+2026-06-05 18:50:00 +01:00: Searching for user with name: Lea
+2026-06-05 18:52:13 +01:00: Searching for user with name: K
+2026-06-05 18:52:14 +01:00: Searching for user with name: Kr
+2026-06-05 18:52:18 +01:00: Searching for user with name: C
+2026-06-05 18:52:20 +01:00: Searching for user with name: Ch
+2026-06-05 18:52:21 +01:00: Searching for user with name: Chr
+2026-06-05 19:14:19 +01:00: Searching for user with name: A
+2026-06-05 19:14:19 +01:00: Searching for user with name: Ar
+2026-06-05 19:14:19 +01:00: Searching for user with name: Arr
+2026-06-05 19:14:20 +01:00: Searching for user with name: Ar
+2026-06-05 19:14:20 +01:00: Searching for user with name: A
+2026-06-05 19:14:20 +01:00: Searching for user with name: Aa
+2026-06-05 19:14:31 +01:00: Searching for user with name: A
+2026-06-05 19:14:46 +01:00: Searching for user with name: M
+2026-06-05 19:14:46 +01:00: Searching for user with name: Me
+2026-06-05 19:14:46 +01:00: Searching for user with name: Mel
+2026-06-05 19:14:49 +01:00: {"level":"error","message":"[POST] /api/v1/attendance/mark >> Status: 500, Message: User already marked present, Stack: undefined","timestamp":"2026-06-05T18:14:49.718Z"}
+2026-06-05 19:14:54 +01:00: {"level":"error","message":"[POST] /api/v1/attendance/mark >> Status: 500, Message: User already marked present, Stack: undefined","timestamp":"2026-06-05T18:14:54.812Z"}
+2026-06-05 19:14:57 +01:00: {"level":"error","message":"[POST] /api/v1/attendance/mark >> Status: 500, Message: User already marked present, Stack: undefined","timestamp":"2026-06-05T18:14:57.289Z"}
+2026-06-05 19:21:42 +01:00: Searching for user with name: Imop
+2026-06-05 19:21:43 +01:00: Searching for user with name: Imo
+2026-06-05 19:21:44 +01:00: Searching for user with name: Imol
+2026-06-05 19:24:14 +01:00: Searching for user with name: Ver
+2026-06-05 19:24:22 +01:00: Searching for user with name: Steph
+2026-06-05 19:26:03 +01:00: Searching for user with name: A
+2026-06-05 19:26:04 +01:00: Searching for user with name: An
+2026-06-05 19:26:05 +01:00: Searching for user with name: Ang
+2026-06-05 19:27:00 +01:00: Searching for user with name: Vera
+2026-06-05 20:02:22 +01:00: Searching for user with name: Ver
+2026-06-05 20:02:23 +01:00: Searching for user with name: Vera
+2026-06-05 20:05:41 +01:00: Searching for user with name: Felin
+2026-06-05 20:05:45 +01:00: Searching for user with name: Dest
+2026-06-05 20:05:48 +01:00: Searching for user with name: Lo
+2026-06-05 20:05:49 +01:00: Searching for user with name: Loll
+2026-06-05 20:05:52 +01:00: Searching for user with name: God
+2026-06-07 02:09:27 +01:00: Login successful, sending response with data: { email: [32m'oebiyeladouemmanuel@gmail.com'[39m, password: [32m'8resofT*1'[39m }

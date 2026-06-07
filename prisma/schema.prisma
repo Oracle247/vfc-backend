@@ -52,22 +52,39 @@ model User {
 }
 
 model AttendanceSession {
-  id          String       @id @default(cuid())
+  id          String           @id @default(cuid())
   serviceName String
   date        DateTime?
-  startedAt   DateTime     @default(now())
+  startedAt   DateTime         @default(now())
   endedAt     DateTime?
+  services    SessionService[]
   attendees   Attendance[]
-  createdAt   DateTime     @default(now())
+  createdAt   DateTime         @default(now())
+}
+
+model SessionService {
+  id             String            @id @default(cuid())
+  sessionId      String
+  session        AttendanceSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  order          Int
+  serviceTime    DateTime
+  preServiceTime DateTime?
+  closesAt       DateTime?
+
+  @@unique([sessionId, order])
+  @@index([sessionId])
 }
 
 model Attendance {
-  id        String            @id @default(cuid())
-  sessionId String
-  userId    String
-  session   AttendanceSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
-  user      User              @relation(fields: [userId], references: [id], onDelete: Cascade)
-  markedAt  DateTime          @default(now())
+  id           String            @id @default(cuid())
+  sessionId    String
+  userId       String
+  session      AttendanceSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  user         User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  markedAt     DateTime          @default(now())
+  serviceOrder Int               @default(1)
+
+  @@index([sessionId, serviceOrder])
 }
 
 model Department {
@@ -193,4 +210,12 @@ enum InvoiceStatus {
   APPROVED
   PARTIALLY_PAID
   PAID
+}
+
+model ChurchSettings {
+  id        String   @id @default("singleton")
+  name      String
+  logoUrl   String?
+  address   String?
+  updatedAt DateTime @updatedAt
 }

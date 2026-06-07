@@ -1,18 +1,62 @@
 import { Prisma } from "@prisma/client";
 import prisma from "../../../core/databases/prisma";
 import { paginate } from "../../../core/utils/paginate";
+import {
+  AttendanceFilterParams,
+  applyPostFetchFilters,
+  buildAttendanceWhere,
+  inferServiceOrder,
+  SessionServiceLite,
+} from "../utils/attendanceFilters";
 
-type AttendanceSession = Prisma.AttendanceSessionGetPayload<{
-  include: {
-    attendees: {
-      include: { user: true };
-    };
-  };
-}>;
+export interface ServiceInput {
+  order: number;
+  serviceTime: Date;
+  preServiceTime?: Date | null;
+  closesAt?: Date | null;
+}
+
+export interface StartSessionInput {
+  serviceName: string;
+  startedAt: Date;
+  date?: Date;
+  services: ServiceInput[];
+}
+
+export interface UpdateSessionInput {
+  serviceName?: string;
+  startedAt?: Date;
+  date?: Date;
+  services?: ServiceInput[];
+}
+
+// Helper: a session loaded with the relations every caller needs.
+const sessionInclude = {
+  services: { orderBy: { order: "asc" as const } },
+  attendees: {
+    include: { user: { include: { departments: true } } },
+  },
+} satisfies Prisma.AttendanceSessionInclude;
+
+const normaliseService = (s: ServiceInput) => ({
+  order: s.order,
+  serviceTime: s.serviceTime,
+  preServiceTime: s.preServiceTime ?? null,
+  closesAt: s.closesAt ?? null,
+});
+
+const toLite = (s: { order: number; serviceTime: Date; preServiceTime: Date | null; closesAt: Date | null }): SessionServiceLite => ({
+  order: s.order,
+  serviceTime: s.serviceTime,
+  preServiceTime: s.preServiceTime,
+  closesAt: s.closesAt,
+});
 
 export class AttendanceService {
 
-  async startSession(serviceName: string, startedAt: Date): Promise<AttendanceSession> {
+  async startSession(input: StartSessionInput) {
+    const { serviceName, startedAt, date, services } = input;
+
     // Prevent duplicate sessions for same startedAt + service
     const existing = await prisma.attendanceSession.findFirst({
       where: { startedAt, serviceName },
@@ -23,17 +67,24 @@ export class AttendanceService {
       data: {
         serviceName,
         startedAt,
+        date: date ?? null,
+        services: {
+          create: services.map(normaliseService),
+        },
       },
-      include: {
-        attendees: { include: { user: true } },
-      },
+      include: sessionInclude,
     });
   }
 
-  async markAttendance(sessionId: string, userId: string, markedAt?: Date) {
-    // Ensure session exists
+  async markAttendance(
+    sessionId: string,
+    userId: string,
+    markedAt?: Date,
+    serviceOrderOverride?: number,
+  ) {
     const session = await prisma.attendanceSession.findUnique({
       where: { id: sessionId },
+      include: { services: { orderBy: { order: "asc" } } },
     });
     if (!session) throw new Error("Attendance session not found");
 
@@ -43,12 +94,19 @@ export class AttendanceService {
     });
     if (alreadyMarked) throw new Error("User already marked present");
 
+    const effectiveMarkedAt = markedAt ?? new Date();
+    const orders = new Set(session.services.map((s) => s.order));
+    const serviceOrder =
+      serviceOrderOverride && orders.has(serviceOrderOverride)
+        ? serviceOrderOverride
+        : inferServiceOrder(effectiveMarkedAt, session.services.map(toLite));
+
     await prisma.attendance.create({
-      data: { sessionId, userId, markedAt },
+      data: { sessionId, userId, markedAt: effectiveMarkedAt, serviceOrder },
       include: { user: true },
     });
 
-    return { success: true };
+    return { success: true, serviceOrder };
   }
 
   async getAllSessions(page = 1, limit = 10) {
@@ -56,44 +114,60 @@ export class AttendanceService {
       page,
       limit,
       include: {
+        services: { orderBy: { order: "asc" } },
         attendees: { include: { user: true } },
       },
       orderBy: { date: "desc" },
     });
   }
 
-  async getSessionById(sessionId: string): Promise<AttendanceSession | null> {
+  async getSessionById(sessionId: string, filters: AttendanceFilterParams = {}) {
     const session = await prisma.attendanceSession.findUnique({
       where: { id: sessionId },
       include: {
+        services: { orderBy: { order: "asc" } },
         attendees: {
+          where: buildAttendanceWhere(filters),
           include: {
-            user: {
-              include: {
-                departments: true,
-              },
-            }
-          }
+            user: { include: { departments: true } },
+          },
         },
       },
     });
 
     if (!session) throw new Error("Attendance session not found");
 
-    return session;
+    const filteredAttendees = applyPostFetchFilters(
+      session.attendees,
+      filters,
+      session.services.map(toLite),
+    );
+
+    return { ...session, attendees: filteredAttendees };
   }
 
-  async updateSession(sessionId: string, data: Partial<{ serviceName: string; date: Date }>) {
-    return await prisma.attendanceSession.update({
-      where: { id: sessionId },
-      data,
-      include: { attendees: { include: { user: true } } },
+  async updateSession(sessionId: string, data: UpdateSessionInput) {
+    const { services, ...rest } = data;
+    // When a services array is provided, replace the whole set.
+    return await prisma.$transaction(async (tx) => {
+      if (services && services.length > 0) {
+        await tx.sessionService.deleteMany({ where: { sessionId } });
+        await tx.sessionService.createMany({
+          data: services.map((s) => ({ ...normaliseService(s), sessionId })),
+        });
+      }
+      return tx.attendanceSession.update({
+        where: { id: sessionId },
+        data: rest,
+        include: sessionInclude,
+      });
     });
   }
 
   async bulkMarkAttendance(sessionId: string, userIds: string[]) {
     const session = await prisma.attendanceSession.findUnique({
       where: { id: sessionId },
+      include: { services: { orderBy: { order: "asc" } } },
     });
     if (!session) throw new Error("Attendance session not found");
 
@@ -106,8 +180,10 @@ export class AttendanceService {
     const toMark = userIds.filter(id => !alreadyMarkedIds.has(id));
 
     if (toMark.length > 0) {
+      const now = new Date();
+      const serviceOrder = inferServiceOrder(now, session.services.map(toLite));
       await prisma.attendance.createMany({
-        data: toMark.map(userId => ({ sessionId, userId })),
+        data: toMark.map(userId => ({ sessionId, userId, markedAt: now, serviceOrder })),
       });
     }
 
@@ -120,6 +196,44 @@ export class AttendanceService {
   async deleteSession(sessionId: string) {
     return await prisma.attendanceSession.delete({
       where: { id: sessionId },
+    });
+  }
+
+  async updateAttendance(
+    attendanceId: string,
+    data: { markedAt?: Date; serviceOrder?: number },
+  ) {
+    if (data.serviceOrder !== undefined) {
+      // Make sure the requested serviceOrder actually exists on the parent session.
+      const row = await prisma.attendance.findUnique({
+        where: { id: attendanceId },
+        select: {
+          sessionId: true,
+          session: { select: { services: { select: { order: true } } } },
+        },
+      });
+      if (!row) throw new Error("Attendance not found");
+      const valid = row.session.services.some((s) => s.order === data.serviceOrder);
+      if (!valid) {
+        throw new Error(
+          `Service order ${data.serviceOrder} does not exist on this session`,
+        );
+      }
+    }
+
+    return await prisma.attendance.update({
+      where: { id: attendanceId },
+      data: {
+        ...(data.markedAt !== undefined ? { markedAt: data.markedAt } : {}),
+        ...(data.serviceOrder !== undefined ? { serviceOrder: data.serviceOrder } : {}),
+      },
+      include: { user: { include: { departments: true } } },
+    });
+  }
+
+  async deleteAttendance(attendanceId: string) {
+    return await prisma.attendance.delete({
+      where: { id: attendanceId },
     });
   }
 

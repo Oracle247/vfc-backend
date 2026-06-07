@@ -3,3 +3,5 @@ node_modules
 .env
 /dist
 /public
+# Production-only staged copy produced by vision-control-panel build
+/.stage

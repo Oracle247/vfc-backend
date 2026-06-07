@@ -42,6 +42,14 @@ export class UserService {
       prismaData.matricNumber = null;
     }
 
+    if(rest.phoneNumber === ""){
+      rest.phoneNumber = '090xxxxxxxx'
+    }
+
+    if(rest.email === ""){
+      rest.email = 'test@gmail.com'
+    }
+
     if (attendances) {
       prismaData.attendances = {
         create: attendances.map((attendance) => ({

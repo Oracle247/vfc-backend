@@ -197,6 +197,11 @@ class App {
     this.app.use('/terminal', express.static(path.resolve(process.cwd(), 'public/terminal')));
     this.app.use('/terminal', spaFallback('terminal'));
 
+    // Admin: bare /admin lands on the dashboard, not the marketing landing.
+    // basePath in next.config.js writes the admin dashboard to /admin/admin/.
+    this.app.get('/admin', (_req, res) => res.redirect(308, '/admin/admin/'));
+    this.app.get('/admin/', (_req, res) => res.redirect(308, '/admin/admin/'));
+
     // Admin: static files + SPA fallback
     this.app.use('/admin', express.static(path.resolve(process.cwd(), 'public/admin')));
     this.app.use('/admin', spaFallback('admin'));

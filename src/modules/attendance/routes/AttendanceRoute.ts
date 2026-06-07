@@ -7,7 +7,9 @@ import {
   CreateAttendanceSessionSchema,
   UpdateAttendanceSessionSchema,
   MarkAttendanceSchema,
-  BulkMarkAttendanceSchema
+  BulkMarkAttendanceSchema,
+  SessionFilterQuerySchema,
+  UpdateAttendanceSchema
 } from '../schema/attendance.schema';
 import { validate } from '../../../core/middlewares';
 
@@ -81,10 +83,18 @@ class AttendanceRoute implements Routes {
       this.attendanceController.getAllSessions
     );
 
-    // Get single session by ID
+    // Get single session by ID (supports filter query params)
     this.router.get(`${this.path}/session/:id`,
       authenticate,
+      validate(SessionFilterQuerySchema, "query"),
       this.attendanceController.getSessionById
+    );
+
+    // Export session attendance as PDF (same filters as the list endpoint)
+    this.router.get(`${this.path}/session/:id/pdf`,
+      authenticate,
+      validate(SessionFilterQuerySchema, "query"),
+      this.attendanceController.exportSessionPdf
     );
 
     // Update a session
@@ -100,6 +110,22 @@ class AttendanceRoute implements Routes {
       authenticate,
       authorize(UserRole.ADMIN),
       this.attendanceController.deleteSession
+    );
+
+    // Edit a single attendance entry (markedAt). Registered after /session/:id
+    // routes so Express resolves the more specific path first.
+    this.router.put(`${this.path}/:id`,
+      authenticate,
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      validate(UpdateAttendanceSchema),
+      this.attendanceController.updateAttendance
+    );
+
+    // Delete a single attendance entry
+    this.router.delete(`${this.path}/:id`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      this.attendanceController.deleteAttendance
     );
   }
 }
