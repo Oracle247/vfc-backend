@@ -94,8 +94,11 @@ function handleDatabaseError(error: any): AppError {
         return new AppError('Database error during raw query.', HttpCodes.SERVER_ERROR);
       case 'P2034':
         return new AppError('Database connection closed unexpectedly.', HttpCodes.SERVER_ERROR);
-      default:
+      default: {
+        logDevError(error);
+        console.log({error})
         return new AppError('A known Prisma error occurred.', HttpCodes.SERVER_ERROR);
+      }
     }
   }
 

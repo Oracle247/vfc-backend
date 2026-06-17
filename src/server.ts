@@ -6,7 +6,9 @@ import {
     AuthRoute,
     InvoiceRoute,
     DepartmentRoute,
-    SettingsRoute
+    SettingsRoute,
+    ServiceDayRoute,
+    SpecialProgramRoute
 } from './core/routes';
 import { validateEnv } from './core/utils/validateEnv';
 
@@ -19,6 +21,8 @@ const app = new App([
     new InvoiceRoute(),
     new DepartmentRoute(),
     new SettingsRoute(),
+    new ServiceDayRoute(),
+    new SpecialProgramRoute(),
     new IndexRoute()
 ]);
 

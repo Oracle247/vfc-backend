@@ -41,28 +41,44 @@ const validateServicesArray = (services: Array<{ order: number }>) => {
  * `services` is required and lists every service in the session. A single-service
  * session has one row with order=1. Multi-service has N rows ordered 1..N.
  */
-export const CreateAttendanceSessionSchema = z.object({
-    serviceName: z.string().min(1, "Service name is required"),
-    startedAt: z.string().datetime({ message: "Invalid date format" }),
-    date: z.string().datetime().optional(),
-    services: z
-        .array(SessionServiceInput)
-        .min(1, "At least one service is required")
-        .refine(validateServicesArray, {
-            message: "Service `order` values must be 1, 2, 3 ... without gaps",
-            path: ["services"],
-        }),
-});
+export const CreateAttendanceSessionSchema = z
+    .object({
+        serviceName: z.string().min(1, "Service name is required"),
+        startedAt: z.string().datetime({ message: "Invalid date format" }),
+        date: z.string().datetime().optional(),
+        serviceDayId: z.string().cuid().nullable().optional(),
+        specialProgramId: z.string().cuid().nullable().optional(),
+        services: z
+            .array(SessionServiceInput)
+            .min(1, "At least one service is required")
+            .refine(validateServicesArray, {
+                message: "Service `order` values must be 1, 2, 3 ... without gaps",
+                path: ["services"],
+            }),
+    })
+    // Exactly one of serviceDayId / specialProgramId must be provided for new
+    // sessions. Existing rows already have one populated by the migration.
+    .refine(
+        (data) => Boolean(data.serviceDayId) !== Boolean(data.specialProgramId),
+        {
+            message: "Provide exactly one of serviceDayId or specialProgramId",
+            path: ["serviceDayId"],
+        },
+    );
 
 /**
  * Schema for updating an attendance session.
  * When `services` is provided, it replaces ALL existing services for the session.
+ * Either parent link can be swapped; we still require at most one set on the
+ * resulting row (enforced in the service when both are sent).
  */
 export const UpdateAttendanceSessionSchema = z
     .object({
         serviceName: z.string().min(1).optional(),
         startedAt: z.string().datetime().optional(),
         date: z.string().datetime().optional(),
+        serviceDayId: z.string().cuid().nullable().optional(),
+        specialProgramId: z.string().cuid().nullable().optional(),
         services: z
             .array(SessionServiceInput)
             .min(1)
@@ -115,6 +131,30 @@ export const UpdateAttendanceSchema = z
     .refine((data) => data.markedAt !== undefined || data.serviceOrder !== undefined, {
         message: "At least one field must be provided",
     });
+
+/**
+ * Schema for recording income on a session. Each "service" block holds a list
+ * of (category, method, amount) entries. Categories/methods are the Prisma
+ * enums verbatim so we can pass them straight to the service.
+ */
+export const UpsertSessionIncomeSchema = z.object({
+    services: z
+        .array(
+            z.object({
+                serviceOrder: z.number().int().positive(),
+                entries: z
+                    .array(
+                        z.object({
+                            category: z.enum(["TITHE", "OFFERING", "SPECIAL_DONATION"]),
+                            method: z.enum(["CASH", "TRANSFER"]),
+                            amount: z.number().nonnegative(),
+                        }),
+                    )
+                    .min(0),
+            }),
+        )
+        .min(1, "Provide income for at least one service"),
+});
 
 /**
  * Schema for bulk marking attendance (multiple users at once)

@@ -49,17 +49,106 @@ model User {
   paidInvoices     Invoice[]        @relation("PaidInvoices")
   approvedInvoices Invoice[]        @relation("ApprovedInvoices")
   recordedPayments InvoicePayment[] @relation("RecordedPayments")
+  recordedIncomes  SessionIncome[]  @relation("RecordedIncomes")
+  passwordInvites  InviteToken[]    @relation("UserInvites")
+  createdInvites   InviteToken[]    @relation("CreatedInvites")
+  deptLateUpdates  ServiceDayDepartmentLateTime[] @relation("DeptLateUpdates")
 }
 
 model AttendanceSession {
-  id          String           @id @default(cuid())
-  serviceName String
-  date        DateTime?
-  startedAt   DateTime         @default(now())
-  endedAt     DateTime?
-  services    SessionService[]
-  attendees   Attendance[]
-  createdAt   DateTime         @default(now())
+  id               String           @id @default(cuid())
+  serviceName      String
+  date             DateTime?
+  startedAt        DateTime         @default(now())
+  endedAt          DateTime?
+  serviceDayId     String?
+  serviceDay       ServiceDay?      @relation(fields: [serviceDayId], references: [id], onDelete: SetNull)
+  specialProgramId String?
+  specialProgram   SpecialProgram?  @relation(fields: [specialProgramId], references: [id], onDelete: SetNull)
+  services         SessionService[]
+  attendees        Attendance[]
+  createdAt        DateTime         @default(now())
+
+  @@index([serviceDayId])
+  @@index([specialProgramId])
+}
+
+model ServiceDay {
+  id            String                          @id @default(cuid())
+  name          String
+  weekday       Weekday
+  services      ServiceDayService[]
+  sessions      AttendanceSession[]
+  deptLateTimes ServiceDayDepartmentLateTime[]
+  createdAt     DateTime                        @default(now())
+  updatedAt     DateTime                        @updatedAt
+}
+
+// Per-department late-coming override for a given service day. When a session
+// for this ServiceDay is reported, workers in `department` are considered
+// "late" if marked after `lateTime` (HH:mm, local). Falls back to the
+// session-wide cutoff when no override exists.
+model ServiceDayDepartmentLateTime {
+  id           String     @id @default(cuid())
+  serviceDayId String
+  serviceDay   ServiceDay @relation(fields: [serviceDayId], references: [id], onDelete: Cascade)
+  departmentId String
+  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  lateTime     String     // "HH:mm"
+  updatedById  String?
+  updatedBy    User?      @relation("DeptLateUpdates", fields: [updatedById], references: [id], onDelete: SetNull)
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@unique([serviceDayId, departmentId])
+  @@index([serviceDayId])
+  @@index([departmentId])
+}
+
+model ServiceDayService {
+  id             String     @id @default(cuid())
+  serviceDayId   String
+  serviceDay     ServiceDay @relation(fields: [serviceDayId], references: [id], onDelete: Cascade)
+  order          Int
+  serviceTime    String     // "HH:mm"
+  preServiceTime String?    // "HH:mm" or null
+  closesAt       String?    // "HH:mm" or null
+
+  @@unique([serviceDayId, order])
+  @@index([serviceDayId])
+}
+
+model SpecialProgram {
+  id        String                  @id @default(cuid())
+  name      String
+  date      DateTime?
+  services  SpecialProgramService[]
+  sessions  AttendanceSession[]
+  createdAt DateTime                @default(now())
+  updatedAt DateTime                @updatedAt
+}
+
+model SpecialProgramService {
+  id               String         @id @default(cuid())
+  specialProgramId String
+  specialProgram   SpecialProgram @relation(fields: [specialProgramId], references: [id], onDelete: Cascade)
+  order            Int
+  serviceTime      String         // "HH:mm"
+  preServiceTime   String?        // "HH:mm" or null
+  closesAt         String?        // "HH:mm" or null
+
+  @@unique([specialProgramId, order])
+  @@index([specialProgramId])
+}
+
+enum Weekday {
+  SUNDAY
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
 }
 
 model SessionService {
@@ -70,9 +159,52 @@ model SessionService {
   serviceTime    DateTime
   preServiceTime DateTime?
   closesAt       DateTime?
+  incomes        SessionIncome[]
 
   @@unique([sessionId, order])
   @@index([sessionId])
+}
+
+model SessionIncome {
+  id               String         @id @default(cuid())
+  sessionServiceId String
+  sessionService   SessionService @relation(fields: [sessionServiceId], references: [id], onDelete: Cascade)
+  category         IncomeCategory
+  method           PaymentMethod
+  amount           Decimal        @db.Decimal(12, 2)
+  recordedById     String?
+  recordedBy       User?          @relation("RecordedIncomes", fields: [recordedById], references: [id], onDelete: SetNull)
+  recordedAt       DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+
+  @@unique([sessionServiceId, category, method])
+  @@index([sessionServiceId])
+}
+
+enum IncomeCategory {
+  TITHE
+  OFFERING
+  SPECIAL_DONATION
+}
+
+enum PaymentMethod {
+  CASH
+  TRANSFER
+}
+
+model InviteToken {
+  id          String    @id @default(cuid())
+  userId      String
+  user        User      @relation("UserInvites", fields: [userId], references: [id], onDelete: Cascade)
+  token       String    @unique
+  createdById String?
+  createdBy   User?     @relation("CreatedInvites", fields: [createdById], references: [id], onDelete: SetNull)
+  expiresAt   DateTime
+  usedAt      DateTime?
+  createdAt   DateTime  @default(now())
+
+  @@index([userId])
+  @@index([token])
 }
 
 model Attendance {
@@ -88,13 +220,14 @@ model Attendance {
 }
 
 model Department {
-  id          String  @id @default(uuid())
-  name        String  @unique
-  description String?
-  headId      String?
-  head        User?   @relation("DepartmentHead", fields: [headId], references: [id])
-  members     User[]  @relation("UserDepartments")
-  assistantHeads User[] @relation("DepartmentAssistant")
+  id             String                          @id @default(uuid())
+  name           String                          @unique
+  description    String?
+  headId         String?
+  head           User?                           @relation("DepartmentHead", fields: [headId], references: [id])
+  members        User[]                          @relation("UserDepartments")
+  assistantHeads User[]                          @relation("DepartmentAssistant")
+  lateTimes      ServiceDayDepartmentLateTime[]
 }
 
 model Invoice {

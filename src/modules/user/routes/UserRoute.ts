@@ -101,6 +101,13 @@ class UserRoute implements Routes {
       authorize(UserRole.ADMIN),
       this.userController.deleteUser
     );
+
+    // Send password-setup invite email
+    this.router.post(`${this.path}/:id/invite`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      this.userController.sendInvite
+    );
   }
 }
 

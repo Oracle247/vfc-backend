@@ -2604,3 +2604,64 @@
 2026-06-05 20:07:48 +01:00: No local access policy defined. Consider using setLocalAccessPolicy() to restrict local file system access.
 2026-06-05 20:09:32 +01:00: No URL access policy defined. Consider using setUrlAccessPolicy() to restrict external resource downloads.
 2026-06-05 20:09:32 +01:00: No local access policy defined. Consider using setLocalAccessPolicy() to restrict local file system access.
+2026-06-07 03:59:48 +01:00: Sun, 07 Jun 2026 02:59:48 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-06-07 03:59:48 +01:00: Sun, 07 Jun 2026 02:59:48 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-06-07 03:59:49 +01:00: Error: listen EADDRINUSE: address already in use :::3030
+2026-06-07 03:59:49 +01:00: [90m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[39m
+2026-06-07 03:59:49 +01:00: [90m    at listenInCluster (node:net:1997:12)[39m
+2026-06-07 03:59:49 +01:00: [90m    at Server.listen (node:net:2102:7)[39m
+2026-06-07 03:59:49 +01:00:     at App.listen [90m(C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\[39msrc\app.ts:86:12[90m)[39m
+2026-06-07 03:59:49 +01:00:     at Object.<anonymous> [90m(C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\[39msrc\server.ts:25:5[90m)[39m
+2026-06-07 03:59:49 +01:00: [90m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2026-06-07 03:59:49 +01:00: [90m    at Object..js (node:internal/modules/cjs/loader:1893:10)[39m
+2026-06-07 03:59:49 +01:00: [90m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+2026-06-07 03:59:49 +01:00: [90m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+2026-06-07 03:59:49 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\[4mpm2[24m\lib\ProcessContainerFork.js:33:23) {
+2026-06-07 03:59:49 +01:00:   code: [32m'EADDRINUSE'[39m,
+2026-06-07 03:59:49 +01:00:   errno: [33m-4091[39m,
+2026-06-07 03:59:49 +01:00:   syscall: [32m'listen'[39m,
+2026-06-07 03:59:49 +01:00:   address: [32m'::'[39m,
+2026-06-07 03:59:49 +01:00:   port: [33m3030[39m
+2026-06-07 03:59:49 +01:00: }
+2026-06-07 03:59:57 +01:00: Sun, 07 Jun 2026 02:59:57 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-06-07 03:59:57 +01:00: Sun, 07 Jun 2026 02:59:57 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-06-07 03:59:57 +01:00: Error: listen EADDRINUSE: address already in use :::3030
+2026-06-07 03:59:57 +01:00: [90m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[39m
+2026-06-07 03:59:57 +01:00: [90m    at listenInCluster (node:net:1997:12)[39m
+2026-06-07 03:59:57 +01:00: [90m    at Server.listen (node:net:2102:7)[39m
+2026-06-07 03:59:57 +01:00:     at App.listen [90m(C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\[39msrc\app.ts:86:12[90m)[39m
+2026-06-07 03:59:57 +01:00:     at Object.<anonymous> [90m(C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\[39msrc\server.ts:25:5[90m)[39m
+2026-06-07 03:59:57 +01:00: [90m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2026-06-07 03:59:57 +01:00: [90m    at Object..js (node:internal/modules/cjs/loader:1893:10)[39m
+2026-06-07 03:59:57 +01:00: [90m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+2026-06-07 03:59:57 +01:00: [90m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+2026-06-07 03:59:57 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\[4mpm2[24m\lib\ProcessContainerFork.js:33:23) {
+2026-06-07 03:59:57 +01:00:   code: [32m'EADDRINUSE'[39m,
+2026-06-07 03:59:57 +01:00:   errno: [33m-4091[39m,
+2026-06-07 03:59:57 +01:00:   syscall: [32m'listen'[39m,
+2026-06-07 03:59:57 +01:00:   address: [32m'::'[39m,
+2026-06-07 03:59:57 +01:00:   port: [33m3030[39m
+2026-06-07 03:59:57 +01:00: }
+2026-06-07 04:00:05 +01:00: Sun, 07 Jun 2026 03:00:05 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-06-07 04:00:05 +01:00: Sun, 07 Jun 2026 03:00:05 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-06-07 04:00:05 +01:00: Error: listen EADDRINUSE: address already in use :::3030
+2026-06-07 04:00:05 +01:00: [90m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[39m
+2026-06-07 04:00:05 +01:00: [90m    at listenInCluster (node:net:1997:12)[39m
+2026-06-07 04:00:05 +01:00: [90m    at Server.listen (node:net:2102:7)[39m
+2026-06-07 04:00:05 +01:00:     at App.listen [90m(C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\[39msrc\app.ts:86:12[90m)[39m
+2026-06-07 04:00:05 +01:00:     at Object.<anonymous> [90m(C:\Users\Oebiy\Documents\oracle_codes\vfc-backend\[39msrc\server.ts:25:5[90m)[39m
+2026-06-07 04:00:05 +01:00: [90m    at Module._compile (node:internal/modules/cjs/loader:1760:14)[39m
+2026-06-07 04:00:05 +01:00: [90m    at Object..js (node:internal/modules/cjs/loader:1893:10)[39m
+2026-06-07 04:00:05 +01:00: [90m    at Module.load (node:internal/modules/cjs/loader:1480:32)[39m
+2026-06-07 04:00:05 +01:00: [90m    at Module._load (node:internal/modules/cjs/loader:1299:12)[39m
+2026-06-07 04:00:05 +01:00:     at Object.<anonymous> (C:\Users\Oebiy\AppData\Roaming\npm\node_modules\[4mpm2[24m\lib\ProcessContainerFork.js:33:23) {
+2026-06-07 04:00:05 +01:00:   code: [32m'EADDRINUSE'[39m,
+2026-06-07 04:00:05 +01:00:   errno: [33m-4091[39m,
+2026-06-07 04:00:05 +01:00:   syscall: [32m'listen'[39m,
+2026-06-07 04:00:05 +01:00:   address: [32m'::'[39m,
+2026-06-07 04:00:05 +01:00:   port: [33m3030[39m
+2026-06-07 04:00:05 +01:00: }
+2026-06-07 04:00:14 +01:00: Sun, 07 Jun 2026 03:00:14 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-06-07 04:00:14 +01:00: Sun, 07 Jun 2026 03:00:14 GMT morgan deprecated default format: use combined format at dist\app.js:104:43
+2026-06-07 06:20:15 +01:00: Sun, 07 Jun 2026 05:20:15 GMT morgan deprecated undefined format: specify a format at dist\app.js:104:43
+2026-06-07 06:20:15 +01:00: Sun, 07 Jun 2026 05:20:15 GMT morgan deprecated default format: use combined format at dist\app.js:104:43

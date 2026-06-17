@@ -3,7 +3,7 @@ import { Request, Response, NextFunction, Router } from 'express';
 import { AuthController } from '../controllers';
 import { Routes } from "../../../core/routes/interfaces";
 import { authenticate } from '../../../core/middlewares/AuthMiddleware';
-import { ChangePasswordSchema, LoginSchema, RegisterSchema, ResetPasswordSchema, VerifyTokenSchema } from '../schema/auth.schema';
+import { AcceptInviteSchema, ChangePasswordSchema, LoginSchema, RegisterSchema, ResetPasswordSchema, VerifyTokenSchema } from '../schema/auth.schema';
 import { validate } from '../../../core/middlewares';
 
 class AuthRoute implements Routes {
@@ -30,6 +30,11 @@ class AuthRoute implements Routes {
 
         this.router.post(`${this.path}/verify-token`, validate(VerifyTokenSchema), this.userController.verifyToken);
 
+        // Public invite-acceptance flow — no `authenticate` because the user
+        // is setting their password for the first time. Token in the URL is
+        // the auth.
+        this.router.get(`${this.path}/setup/:token`, this.userController.getSetupToken);
+        this.router.post(`${this.path}/setup/:token`, validate(AcceptInviteSchema), this.userController.acceptSetupToken);
     }
 }
 

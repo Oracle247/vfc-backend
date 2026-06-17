@@ -9,7 +9,8 @@ import {
   MarkAttendanceSchema,
   BulkMarkAttendanceSchema,
   SessionFilterQuerySchema,
-  UpdateAttendanceSchema
+  UpdateAttendanceSchema,
+  UpsertSessionIncomeSchema,
 } from '../schema/attendance.schema';
 import { validate } from '../../../core/middlewares';
 
@@ -110,6 +111,33 @@ class AttendanceRoute implements Routes {
       authenticate,
       authorize(UserRole.ADMIN),
       this.attendanceController.deleteSession
+    );
+
+    // Read income matrix for a session
+    this.router.get(`${this.path}/session/:id/income`,
+      authenticate,
+      this.attendanceController.getSessionIncome
+    );
+
+    // Upsert income for a session (ADMIN + WORKER per product decision)
+    this.router.put(`${this.path}/session/:id/income`,
+      authenticate,
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      validate(UpsertSessionIncomeSchema),
+      this.attendanceController.upsertSessionIncome
+    );
+
+    // Close / reopen — soft close, just toggles endedAt
+    this.router.post(`${this.path}/session/:id/close`,
+      authenticate,
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      this.attendanceController.closeSession
+    );
+
+    this.router.post(`${this.path}/session/:id/reopen`,
+      authenticate,
+      authorize(UserRole.ADMIN, UserRole.WORKER),
+      this.attendanceController.reopenSession
     );
 
     // Edit a single attendance entry (markedAt). Registered after /session/:id

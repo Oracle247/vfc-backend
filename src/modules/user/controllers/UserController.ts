@@ -1,11 +1,25 @@
 import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
 import { UserService } from "../services";
+import { InviteService } from "../../auth/services";
 import { successResponse } from "../../../core/utils/responses.utils";
 import { logDevError } from "../../../core/utils";
 
 export class UserController {
   private userService = new UserService();
+  private inviteService = new InviteService();
+
+  /** Admin generates an invite link + emails it to the user. */
+  public sendInvite = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { id } = req.params;
+      const result = await this.inviteService.createForUser(id, req.user?.id);
+      successResponse(res, "Invite sent", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
 
   public getFilteredUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {

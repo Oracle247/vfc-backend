@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { AttendanceService } from "../services/AttendanceService";
 import { AttendancePdfService } from "../services/AttendancePdfService";
+import { SessionIncomeService } from "../services/SessionIncomeService";
 import { StatusCodes } from "http-status-codes";
 import { successResponse } from "../../../core/utils/responses.utils";
 import { logDevError } from "../../../core/utils";
@@ -9,17 +10,20 @@ import { parseAttendanceFilterQuery } from "../utils/attendanceFilters";
 export class AttendanceController {
   private attendanceService = new AttendanceService();
   private attendancePdfService = new AttendancePdfService();
+  private sessionIncomeService = new SessionIncomeService();
 
   /**
    * Start a new attendance session (e.g., "Sunday Service")
    */
   public startSession = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { serviceName, startedAt, date, services } = req.body;
+      const { serviceName, startedAt, date, serviceDayId, specialProgramId, services } = req.body;
       const result = await this.attendanceService.startSession({
         serviceName,
         startedAt: new Date(startedAt),
         date: date ? new Date(date) : undefined,
+        serviceDayId: serviceDayId ?? null,
+        specialProgramId: specialProgramId ?? null,
         services: services.map((s: {
           order: number;
           serviceTime: string;
@@ -96,11 +100,13 @@ export class AttendanceController {
   public updateSession = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { id } = req.params;
-      const { serviceName, startedAt, date, services } = req.body;
+      const { serviceName, startedAt, date, serviceDayId, specialProgramId, services } = req.body;
       const data: Parameters<typeof this.attendanceService.updateSession>[1] = {};
       if (serviceName !== undefined) data.serviceName = serviceName;
       if (startedAt !== undefined) data.startedAt = new Date(startedAt);
       if (date !== undefined) data.date = new Date(date);
+      if (serviceDayId !== undefined) data.serviceDayId = serviceDayId;
+      if (specialProgramId !== undefined) data.specialProgramId = specialProgramId;
       if (Array.isArray(services)) {
         data.services = services.map((s: {
           order: number;
@@ -249,6 +255,53 @@ export class AttendanceController {
         return;
       }
       await this.attendancePdfService.streamSessionReport(id, filters, requestingUserId, res);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  /** Read the income matrix for a session. */
+  public getSessionIncome = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.sessionIncomeService.getForSession(req.params.id);
+      successResponse(res, "Session income fetched", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  /** Upsert the income matrix (entries omitted from the payload are untouched). */
+  public upsertSessionIncome = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.sessionIncomeService.upsertForSession(
+        req.params.id,
+        req.body,
+        req.user?.id,
+      );
+      successResponse(res, "Session income saved", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  /** Soft-close: sets endedAt = now(). Reopen clears it. */
+  public closeSession = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.sessionIncomeService.closeSession(req.params.id);
+      successResponse(res, "Session closed", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  public reopenSession = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await this.sessionIncomeService.reopenSession(req.params.id);
+      successResponse(res, "Session reopened", StatusCodes.OK, result);
     } catch (err) {
       logDevError(err);
       next(err);

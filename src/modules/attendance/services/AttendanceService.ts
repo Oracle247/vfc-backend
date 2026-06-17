@@ -20,6 +20,8 @@ export interface StartSessionInput {
   serviceName: string;
   startedAt: Date;
   date?: Date;
+  serviceDayId?: string | null;
+  specialProgramId?: string | null;
   services: ServiceInput[];
 }
 
@@ -27,12 +29,16 @@ export interface UpdateSessionInput {
   serviceName?: string;
   startedAt?: Date;
   date?: Date;
+  serviceDayId?: string | null;
+  specialProgramId?: string | null;
   services?: ServiceInput[];
 }
 
 // Helper: a session loaded with the relations every caller needs.
 const sessionInclude = {
   services: { orderBy: { order: "asc" as const } },
+  serviceDay: true,
+  specialProgram: true,
   attendees: {
     include: { user: { include: { departments: true } } },
   },
@@ -52,10 +58,51 @@ const toLite = (s: { order: number; serviceTime: Date; preServiceTime: Date | nu
   closesAt: s.closesAt,
 });
 
+const FOUR_WEEKS_MS = 28 * 24 * 60 * 60 * 1000;
+const VISITOR_TO_MEMBER_THRESHOLD = 3;
+
+/**
+ * Auto-promote churchStatus after an attendance mark.
+ *   FIRST_TIMER  → VISITOR  (always, on first mark)
+ *   VISITOR      → MEMBER   (when ≥ {@link VISITOR_TO_MEMBER_THRESHOLD}
+ *                            attendances in the last 4 weeks, inclusive of
+ *                            the just-created mark).
+ * Silent: callers don't surface the change; the next read of the user
+ * reflects it. Admin-edited statuses still work — this only fires upward.
+ */
+async function promoteChurchStatusIfDue(userId: string): Promise<void> {
+  const user = await prisma.user.findUnique({
+    where: { id: userId },
+    select: { churchStatus: true },
+  });
+  if (!user) return;
+
+  if (user.churchStatus === "FIRST_TIMER") {
+    await prisma.user.update({
+      where: { id: userId },
+      data: { churchStatus: "VISITOR" },
+    });
+    return;
+  }
+
+  if (user.churchStatus === "VISITOR") {
+    const since = new Date(Date.now() - FOUR_WEEKS_MS);
+    const recentCount = await prisma.attendance.count({
+      where: { userId, markedAt: { gte: since } },
+    });
+    if (recentCount >= VISITOR_TO_MEMBER_THRESHOLD) {
+      await prisma.user.update({
+        where: { id: userId },
+        data: { churchStatus: "MEMBER" },
+      });
+    }
+  }
+}
+
 export class AttendanceService {
 
   async startSession(input: StartSessionInput) {
-    const { serviceName, startedAt, date, services } = input;
+    const { serviceName, startedAt, date, serviceDayId, specialProgramId, services } = input;
 
     // Prevent duplicate sessions for same startedAt + service
     const existing = await prisma.attendanceSession.findFirst({
@@ -63,11 +110,17 @@ export class AttendanceService {
     });
     if (existing) throw new Error("Session already exists for this date and service");
 
+    if (serviceDayId && specialProgramId) {
+      throw new Error("Session can only link to one of serviceDay or specialProgram, not both");
+    }
+
     return await prisma.attendanceSession.create({
       data: {
         serviceName,
         startedAt,
         date: date ?? null,
+        serviceDayId: serviceDayId ?? null,
+        specialProgramId: specialProgramId ?? null,
         services: {
           create: services.map(normaliseService),
         },
@@ -106,6 +159,8 @@ export class AttendanceService {
       include: { user: true },
     });
 
+    await promoteChurchStatusIfDue(userId);
+
     return { success: true, serviceOrder };
   }
 
@@ -115,9 +170,13 @@ export class AttendanceService {
       limit,
       include: {
         services: { orderBy: { order: "asc" } },
+        serviceDay: true,
+        specialProgram: true,
         attendees: { include: { user: true } },
       },
-      orderBy: { date: "desc" },
+      // Order by creation time descending so the list groups (item #7) read
+      // newest-first inside each ServiceDay / SpecialProgram section.
+      orderBy: { createdAt: "desc" },
     });
   }
 
@@ -125,7 +184,12 @@ export class AttendanceService {
     const session = await prisma.attendanceSession.findUnique({
       where: { id: sessionId },
       include: {
-        services: { orderBy: { order: "asc" } },
+        services: {
+          orderBy: { order: "asc" },
+          include: { incomes: true },
+        },
+        serviceDay: true,
+        specialProgram: true,
         attendees: {
           where: buildAttendanceWhere(filters),
           include: {
@@ -147,7 +211,24 @@ export class AttendanceService {
   }
 
   async updateSession(sessionId: string, data: UpdateSessionInput) {
-    const { services, ...rest } = data;
+    const { services, serviceDayId, specialProgramId, ...rest } = data;
+
+    // Swapping the parent link: if either is set explicitly to a value, the
+    // other side must be cleared so a session never points at both. The
+    // caller passes one or the other; never both populated.
+    if (serviceDayId && specialProgramId) {
+      throw new Error("Session can only link to one of serviceDay or specialProgram, not both");
+    }
+    const linkPatch: { serviceDayId?: string | null; specialProgramId?: string | null } = {};
+    if (serviceDayId !== undefined) {
+      linkPatch.serviceDayId = serviceDayId;
+      if (serviceDayId !== null) linkPatch.specialProgramId = null;
+    }
+    if (specialProgramId !== undefined) {
+      linkPatch.specialProgramId = specialProgramId;
+      if (specialProgramId !== null) linkPatch.serviceDayId = null;
+    }
+
     // When a services array is provided, replace the whole set.
     return await prisma.$transaction(async (tx) => {
       if (services && services.length > 0) {
@@ -158,7 +239,7 @@ export class AttendanceService {
       }
       return tx.attendanceSession.update({
         where: { id: sessionId },
-        data: rest,
+        data: { ...rest, ...linkPatch },
         include: sessionInclude,
       });
     });
@@ -185,6 +266,13 @@ export class AttendanceService {
       await prisma.attendance.createMany({
         data: toMark.map(userId => ({ sessionId, userId, markedAt: now, serviceOrder })),
       });
+      // Sequential (not parallel) — the count query in the promotion helper
+      // depends on the row we just inserted being visible. Per-row work is
+      // tiny (two indexed queries), so this is fine for bulk sizes typical
+      // of a single church service.
+      for (const userId of toMark) {
+        await promoteChurchStatusIfDue(userId);
+      }
     }
 
     return {

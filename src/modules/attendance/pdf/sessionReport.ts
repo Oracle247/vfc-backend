@@ -1,10 +1,37 @@
-import { ChurchStatus, Gender, MembershipType } from "@prisma/client";
-import type { TDocumentDefinitions } from "pdfmake/interfaces";
+import {
+  ChurchStatus,
+  Gender,
+  IncomeCategory,
+  MembershipType,
+  PaymentMethod,
+} from "@prisma/client";
+import type { Content, TDocumentDefinitions } from "pdfmake/interfaces";
 import {
   isLateAttendance,
   AttendeeWithUser,
   SessionServiceLite,
 } from "../utils/attendanceFilters";
+
+export interface IncomeEntry {
+  serviceOrder: number;
+  category: IncomeCategory;
+  method: PaymentMethod;
+  amount: number;
+}
+
+export interface MissedWorker {
+  firstName: string;
+  lastName: string;
+  phoneNumber: string;
+  departments?: Array<{ id: string; name: string }>;
+}
+
+export interface DeptLateOverride {
+  departmentId: string;
+  departmentName: string;
+  /** "HH:mm" 24-hour. Applied to each service's calendar date. */
+  lateTime: string;
+}
 
 export interface SessionReportInput {
   churchName: string;
@@ -15,6 +42,17 @@ export interface SessionReportInput {
   generatedByName: string;
   generatedAt: Date;
   attendees: AttendeeWithUser[];
+  /** Optional — when present, the report includes an Income Summary section. */
+  incomes?: IncomeEntry[];
+  /** Workers (membershipType=WORKER) who weren't marked in this session. */
+  missedWorkers?: MissedWorker[];
+  /**
+   * Per-department late-time overrides for the session's ServiceDay. Renders
+   * a "Per-department Late Workers" section keyed by these — independent of
+   * the session-wide late check, which still uses the worker's pre-service
+   * cutoff. Empty/omitted ⇒ no per-dept section.
+   */
+  deptLateOverrides?: DeptLateOverride[];
 }
 
 interface DepartmentStat {
@@ -240,6 +278,213 @@ export function buildSessionReportDocDefinition(input: SessionReportInput): TDoc
         ]
       : [];
 
+  // Income tables — one per service, plus a grand totals table when N > 1.
+  // We render only if at least one non-zero entry exists, so PDFs for sessions
+  // that haven't recorded income stay short.
+  const incomeRows = (input.incomes ?? []).filter((e) => e.amount > 0);
+  const hasIncome = incomeRows.length > 0;
+
+  const CATEGORY_LABEL: Record<IncomeCategory, string> = {
+    TITHE: "Tithe",
+    OFFERING: "Offering",
+    SPECIAL_DONATION: "Special Donation",
+  };
+  const CATEGORY_ORDER: IncomeCategory[] = ["TITHE", "OFFERING", "SPECIAL_DONATION"];
+
+  const fmtMoney = (n: number) =>
+    n.toLocaleString("en-NG", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  const sumBy = (rows: IncomeEntry[], cat?: IncomeCategory, method?: PaymentMethod) =>
+    rows
+      .filter((r) => (cat ? r.category === cat : true) && (method ? r.method === method : true))
+      .reduce((acc, r) => acc + r.amount, 0);
+
+  const buildPerServiceIncomeTable = (svcOrder: number) => {
+    const rows = incomeRows.filter((r) => r.serviceOrder === svcOrder);
+    const body: Array<Array<{ text: string; bold?: boolean; fillColor?: string }>> = [
+      headerRow(["Category", "Cash", "Transfer", "Total"]),
+    ];
+    for (const cat of CATEGORY_ORDER) {
+      const cash = sumBy(rows, cat, "CASH");
+      const transfer = sumBy(rows, cat, "TRANSFER");
+      if (cash === 0 && transfer === 0) continue;
+      body.push([
+        { text: CATEGORY_LABEL[cat] },
+        { text: fmtMoney(cash) },
+        { text: fmtMoney(transfer) },
+        { text: fmtMoney(cash + transfer), bold: true },
+      ]);
+    }
+    // Footer row: totals across categories
+    body.push([
+      { text: "Total", bold: true, fillColor: "#f9fafb" },
+      { text: fmtMoney(sumBy(rows, undefined, "CASH")), bold: true, fillColor: "#f9fafb" },
+      { text: fmtMoney(sumBy(rows, undefined, "TRANSFER")), bold: true, fillColor: "#f9fafb" },
+      { text: fmtMoney(sumBy(rows)), bold: true, fillColor: "#f9fafb" },
+    ]);
+    return body;
+  };
+
+  // Grand totals — one row per (service) showing each service's combined take,
+  // plus a final all-services row. Only shown when there's more than one service.
+  const buildGrandTotalsTable = () => {
+    const body: Array<Array<{ text: string; bold?: boolean; fillColor?: string }>> = [
+      headerRow(["Service", "Cash", "Transfer", "Total"]),
+    ];
+    for (const s of sortedServices) {
+      const rows = incomeRows.filter((r) => r.serviceOrder === s.order);
+      if (rows.length === 0) continue;
+      body.push([
+        { text: `Service ${s.order}` },
+        { text: fmtMoney(sumBy(rows, undefined, "CASH")) },
+        { text: fmtMoney(sumBy(rows, undefined, "TRANSFER")) },
+        { text: fmtMoney(sumBy(rows)), bold: true },
+      ]);
+    }
+    body.push([
+      { text: "All services", bold: true, fillColor: "#f9fafb" },
+      { text: fmtMoney(sumBy(incomeRows, undefined, "CASH")), bold: true, fillColor: "#f9fafb" },
+      { text: fmtMoney(sumBy(incomeRows, undefined, "TRANSFER")), bold: true, fillColor: "#f9fafb" },
+      { text: fmtMoney(sumBy(incomeRows)), bold: true, fillColor: "#f9fafb" },
+    ]);
+    return body;
+  };
+
+  // Missed workers — all church workers minus those marked in this session.
+  // The caller does the subtraction; we just render rows. Sorted alphabetically
+  // by first name to match the workers section.
+  const missedWorkerRows = (input.missedWorkers ?? []).map((w) => [
+    `${w.firstName} ${w.lastName}`.trim(),
+    (w.departments ?? []).map((d) => d.name).join(", ") || "—",
+    w.phoneNumber || "—",
+  ]);
+
+  // ── Per-department late workers ────────────────────────────────────────
+  // For each override, find workers (in that department) whose markedAt for
+  // their service is past `lateTime` applied to the service's calendar date.
+  // A worker in two overriding depts surfaces in both — that's intentional
+  // (each dept head wants their own list).
+  const overrides = input.deptLateOverrides ?? [];
+
+  const cutoffForOverride = (lateHHMM: string, base: Date): Date => {
+    const [h, m] = lateHHMM.split(":").map(Number);
+    const d = new Date(base);
+    d.setHours(h, m, 0, 0);
+    return d;
+  };
+
+  const deptLateBlocks: Content[] = [];
+  if (overrides.length > 0) {
+    deptLateBlocks.push({
+      text: "Per-department Late Workers",
+      style: "sectionHeading",
+      margin: [0, 18, 0, 6] as [number, number, number, number],
+    });
+    deptLateBlocks.push({
+      text: "Workers flagged using each department's own late cutoff (overrides the session-wide rule).",
+      italics: true,
+      color: "#6b7280",
+      margin: [0, 0, 0, 6] as [number, number, number, number],
+    });
+
+    // Stable order: by department name.
+    const sortedOverrides = [...overrides].sort((a, b) =>
+      a.departmentName.localeCompare(b.departmentName),
+    );
+
+    for (const ov of sortedOverrides) {
+      const lateForOv = workers.filter((a) => {
+        const inDept = (a.user.departments ?? []).some((d) => d.id === ov.departmentId);
+        if (!inDept) return false;
+        const cutoff = cutoffForOverride(ov.lateTime, serviceFor(a).serviceTime);
+        return a.markedAt.getTime() > cutoff.getTime();
+      });
+
+      const rows = lateForOv
+        .slice()
+        .sort((a, b) => fullName(a.user).localeCompare(fullName(b.user)))
+        .map((a) => {
+          const cutoff = cutoffForOverride(ov.lateTime, serviceFor(a).serviceTime);
+          const base = [
+            fullName(a.user),
+            formatTime(a.markedAt),
+            String(minutesLate(a.markedAt, cutoff)),
+          ];
+          return isMulti ? [...base, serviceLabel(a.serviceOrder)] : base;
+        });
+
+      deptLateBlocks.push(
+        {
+          text: `${ov.departmentName} — cutoff ${ov.lateTime}`,
+          style: "subHeading",
+          margin: [0, 8, 0, 4] as [number, number, number, number],
+        },
+        rows.length === 0
+          ? { text: "No late workers for this department.", italics: true, color: "#6b7280" }
+          : {
+              table: {
+                widths: isMulti ? ["*", "auto", "auto", "auto"] : ["*", "auto", "auto"],
+                body: [
+                  headerRow(
+                    isMulti
+                      ? ["Name", "Arrival Time", "Minutes Late", "Service"]
+                      : ["Name", "Arrival Time", "Minutes Late"],
+                  ),
+                  ...rows,
+                ],
+              },
+              layout: "lightHorizontalLines",
+            },
+      );
+    }
+  }
+
+  // Suppress the per-service block when there's only one service AND it'd
+  // duplicate the grand totals. Single-service sessions get a single matrix
+  // and skip the totals table.
+  const incomeBlocks: Content[] = [];
+  if (hasIncome) {
+    incomeBlocks.push({
+      text: "Income Summary",
+      style: "sectionHeading",
+      margin: [0, 18, 0, 6] as [number, number, number, number],
+    });
+    for (const s of sortedServices) {
+      const perServiceRows = incomeRows.filter((r) => r.serviceOrder === s.order);
+      if (perServiceRows.length === 0) continue;
+      incomeBlocks.push(
+        {
+          text: isMulti ? `Service ${s.order}` : "Breakdown",
+          style: "subHeading",
+          margin: [0, 6, 0, 4] as [number, number, number, number],
+        },
+        {
+          table: {
+            widths: ["*", "auto", "auto", "auto"],
+            body: buildPerServiceIncomeTable(s.order),
+          },
+          layout: "lightHorizontalLines",
+        },
+      );
+    }
+    if (isMulti) {
+      incomeBlocks.push(
+        {
+          text: "Grand Totals",
+          style: "subHeading",
+          margin: [0, 10, 0, 4] as [number, number, number, number],
+        },
+        {
+          table: {
+            widths: ["*", "auto", "auto", "auto"],
+            body: buildGrandTotalsTable(),
+          },
+          layout: "lightHorizontalLines",
+        },
+      );
+    }
+  }
+
   return {
     pageMargins: [40, 50, 40, 50],
     defaultStyle: { fontSize: 9, color: "#111827" },
@@ -306,6 +551,9 @@ export function buildSessionReportDocDefinition(input: SessionReportInput): TDoc
             },
           ]
         : []),
+
+      // Income summary (only when recorded — skipped silently otherwise)
+      ...incomeBlocks,
 
       // Department breakdown
       { text: "Department Breakdown", style: "sectionHeading", margin: [0, 18, 0, 6] },
@@ -429,6 +677,28 @@ export function buildSessionReportDocDefinition(input: SessionReportInput): TDoc
           },
           layout: "lightHorizontalLines",
         },
+
+      // Missed Workers — workers who weren't marked at this session.
+      {
+        text: `Missed Workers (${(input.missedWorkers ?? []).length})`,
+        style: "sectionHeading",
+        margin: [0, 18, 0, 6],
+      },
+      missedWorkerRows.length === 0
+        ? { text: "All workers present.", italics: true, color: "#6b7280" }
+        : {
+          table: {
+            widths: ["*", "*", "auto"],
+            body: [
+              headerRow(["Name", "Department(s)", "Phone"]),
+              ...missedWorkerRows,
+            ],
+          },
+          layout: "lightHorizontalLines",
+        },
+
+      // Per-department late workers (rendered only when overrides exist)
+      ...deptLateBlocks,
     ],
     styles: {
       churchName: { fontSize: 18, bold: true },
@@ -436,6 +706,7 @@ export function buildSessionReportDocDefinition(input: SessionReportInput): TDoc
       reportTitle: { fontSize: 13, bold: true, color: "#374151" },
       sessionName: { fontSize: 12, bold: true },
       sectionHeading: { fontSize: 12, bold: true, color: "#1f2937" },
+      subHeading: { fontSize: 10, bold: true, color: "#374151" },
     },
     footer: (currentPage, pageCount) => ({
       text: `Page ${currentPage} of ${pageCount}`,

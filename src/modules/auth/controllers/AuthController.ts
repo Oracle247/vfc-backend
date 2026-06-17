@@ -1,13 +1,38 @@
 import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
-import { AuthService } from "../services";
+import { AuthService, InviteService } from "../services";
 import { successResponse } from "../../../core/utils/responses.utils";
 import { logDevError } from "../../../core/utils";
 
 export class AuthController {
     private authService;
+    private inviteService;
     constructor() {
         this.authService = new AuthService();
+        this.inviteService = new InviteService();
+    }
+
+    /** Public: validate an invite token and return basic user info. */
+    public getSetupToken = async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            const result = await this.inviteService.lookupToken(req.params.token);
+            successResponse(res, "Token valid", StatusCodes.OK, result);
+        } catch (err) {
+            logDevError(err);
+            next(err);
+        }
+    }
+
+    /** Public: accept an invite token + new password. Marks token used. */
+    public acceptSetupToken = async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            const { password } = req.body;
+            const result = await this.inviteService.accept(req.params.token, password);
+            successResponse(res, "Password set", StatusCodes.OK, result);
+        } catch (err) {
+            logDevError(err);
+            next(err);
+        }
     }
 
     public register = async (req: Request, res: Response, next: NextFunction) => {

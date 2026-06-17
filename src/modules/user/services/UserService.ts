@@ -139,8 +139,15 @@ export class UserService {
   }
 
   async getUser(id: string): Promise<Partial<User> | null> {
+    // Include both M2M relations on User → Department so the exco dashboard
+    // (which scopes its UI to the caller's headed/assistant departments) and
+    // any other "me" consumer can render dept context without a 2nd request.
     const result = await prisma.user.findUnique({
       where: { id },
+      include: {
+        headedDepartments: { select: { id: true, name: true } },
+        assistantDepartments: { select: { id: true, name: true } },
+      },
     });
 
     if (!result) {
