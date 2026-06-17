@@ -220,10 +220,29 @@ export class AttendanceController {
     }
   };
 
+  /** Personal attendance history for the authenticated user. */
+  public getMyAttendances = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      if (!req.user) {
+        res.status(StatusCodes.UNAUTHORIZED).json({ message: "Unauthorized" });
+        return;
+      }
+      const result = await this.attendanceService.getMemberAttendanceHistory(req.user.id);
+      successResponse(res, "My attendance history fetched", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
   public getAttendanceTrend = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const groupBy = (req.query.groupBy as 'session' | 'week' | 'month') || 'session';
-      const result = await this.attendanceService.getAttendanceTrend(groupBy);
+      const departmentId = req.query.departmentId as string | undefined;
+
+      console.log(departmentId)
+      
+      const result = await this.attendanceService.getAttendanceTrend(groupBy, departmentId);
       successResponse(res, "Attendance trend fetched successfully", StatusCodes.OK, result);
     } catch (err) {
       logDevError(err);

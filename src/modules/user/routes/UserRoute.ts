@@ -5,7 +5,7 @@ import { authenticate, authorize } from '../../../core/middlewares/AuthMiddlewar
 import { UserRole } from '@prisma/client';
 import { upload } from '../../../core/utils';
 import { validate } from '../../../core/middlewares';
-import { UpdateChurchJourneySchema, SetPasswordSchema, UpdateUserSchema } from '../schema/user.schema';
+import { UpdateChurchJourneySchema, SetPasswordSchema, UpdateUserSchema, UpdateAccountStatusSchema } from '../schema/user.schema';
 
 class UserRoute implements Routes {
   public path = '/user';
@@ -93,6 +93,14 @@ class UserRoute implements Routes {
       authorize(UserRole.ADMIN),
       validate(SetPasswordSchema),
       this.userController.setPassword
+    );
+
+    // Update account lifecycle status (suspend/inactivate/archive/restore)
+    this.router.patch(`${this.path}/:id/status`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(UpdateAccountStatusSchema),
+      this.userController.updateAccountStatus
     );
 
     // Delete user

@@ -68,6 +68,11 @@ class AttendanceRoute implements Routes {
       this.attendanceController.getMemberAttendanceHistory
     );
 
+    this.router.get(`${this.path}/me`,
+      authenticate,
+      this.attendanceController.getMyAttendances
+    );
+
     this.router.get(`${this.path}/analytics/trend`,
       authenticate,
       this.attendanceController.getAttendanceTrend

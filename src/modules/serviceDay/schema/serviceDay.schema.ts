@@ -41,6 +41,33 @@ export const UpsertDeptLateTimeSchema = z.object({
     lateTime: z.string().regex(TIME_HHMM, "Use HH:mm 24-hour time"),
 });
 
+export const CreateVariationSchema = z.object({
+    name: z.string().min(1),
+    services: z
+        .array(ServiceTemplateInput)
+        .min(1, "At least one service is required")
+        .refine(validateOrdersContiguous, {
+            message: "Service `order` values must be 1, 2, 3 ... without gaps",
+            path: ["services"],
+        }),
+});
+
+export const UpdateVariationSchema = z
+    .object({
+        name: z.string().min(1).optional(),
+        services: z
+            .array(ServiceTemplateInput)
+            .min(1)
+            .refine(validateOrdersContiguous, {
+                message: "Service `order` values must be 1, 2, 3 ... without gaps",
+                path: ["services"],
+            })
+            .optional(),
+    })
+    .refine((data) => Object.keys(data).length > 0, {
+        message: "At least one field must be provided",
+    });
+
 export const UpdateServiceDaySchema = z
     .object({
         name: z.string().min(1).optional(),

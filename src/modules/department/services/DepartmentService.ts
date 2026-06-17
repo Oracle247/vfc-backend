@@ -24,6 +24,7 @@ export class DepartmentService {
       limit,
       include: {
         head: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
         members: { select: { id: true, firstName: true, lastName: true, email: true } },
       },
       orderBy: { name: "asc" },
@@ -38,6 +39,7 @@ export class DepartmentService {
       where: { id },
       include: {
         head: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
         members: { select: { id: true, firstName: true, lastName: true, email: true } },
       },
     });
@@ -91,6 +93,7 @@ export class DepartmentService {
       },
       include: {
         head: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
         members: { select: { id: true, firstName: true, lastName: true, email: true } },
       },
     });
@@ -108,6 +111,7 @@ export class DepartmentService {
       data: { headId: null },
       include: {
         head: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
         members: { select: { id: true, firstName: true, lastName: true, email: true } },
       },
     });
@@ -135,6 +139,7 @@ export class DepartmentService {
       },
       include: {
         head: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
         members: { select: { id: true, firstName: true, lastName: true, email: true } },
       },
     });
@@ -161,9 +166,94 @@ export class DepartmentService {
       data: updateData,
       include: {
         head: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
         members: { select: { id: true, firstName: true, lastName: true, email: true } },
       },
     });
+  }
+
+  async addAssistants(departmentId: string, userIds: string[]) {
+    console.log("Adding assistants", departmentId, userIds);
+    const department = await prisma.department.findUnique({ where: { id: departmentId } });
+    if (!department) throw new Error("Department not found");
+
+    const users = await prisma.user.findMany({ where: { id: { in: userIds } } });
+    if (users.length !== userIds.length) {
+      const foundIds = users.map((u) => u.id);
+      const missing = userIds.filter((id) => !foundIds.includes(id));
+      throw new Error(`Users not found: ${missing.join(", ")}`);
+    }
+
+    return prisma.department.update({
+      where: { id: departmentId },
+      data: {
+        assistantHeads: { connect: userIds.map((id) => ({ id })) },
+      },
+      include: {
+        head: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
+        members: { select: { id: true, firstName: true, lastName: true, email: true } },
+      },
+    });
+  }
+
+  async removeAssistants(departmentId: string, userIds: string[]) {
+    const department = await prisma.department.findUnique({ where: { id: departmentId } });
+    if (!department) throw new Error("Department not found");
+
+    return prisma.department.update({
+      where: { id: departmentId },
+      data: { assistantHeads: { disconnect: userIds.map((id) => ({ id })) } },
+      include: {
+        head:           { select: { id: true, firstName: true, lastName: true, email: true } },
+        members: { select: { id: true, firstName: true, lastName: true, email: true } },
+        assistantHeads: { select: { id: true, firstName: true, lastName: true, email: true } },
+      },
+    });
+  }
+
+  // ── Department positions (Position × User × Department) ──────────────
+
+  async listPositions(departmentId: string) {
+    const department = await prisma.department.findUnique({ where: { id: departmentId } });
+    if (!department) throw new Error("Department not found");
+
+    return prisma.departmentPosition.findMany({
+      where: { departmentId },
+      include: {
+        user:     { select: { id: true, firstName: true, lastName: true, email: true } },
+        position: { select: { id: true, name: true, description: true } },
+      },
+      orderBy: [{ position: { name: "asc" } }, { assignedAt: "asc" }],
+    });
+  }
+
+  async assignPosition(departmentId: string, userId: string, positionId: string) {
+    const [dept, user, position] = await Promise.all([
+      prisma.department.findUnique({ where: { id: departmentId } }),
+      prisma.user.findUnique({ where: { id: userId } }),
+      prisma.position.findUnique({ where: { id: positionId } }),
+    ]);
+    if (!dept) throw new Error("Department not found");
+    if (!user) throw new Error("User not found");
+    if (!position) throw new Error("Position not found");
+
+    return prisma.departmentPosition.upsert({
+      where: { userId_departmentId_positionId: { userId, departmentId, positionId } },
+      create: { userId, departmentId, positionId },
+      update: {},
+      include: {
+        user:     { select: { id: true, firstName: true, lastName: true, email: true } },
+        position: { select: { id: true, name: true, description: true } },
+      },
+    });
+  }
+
+  async removePosition(departmentId: string, userId: string, positionId: string) {
+    await prisma.departmentPosition.deleteMany({
+      where: { departmentId, userId, positionId },
+    });
+    return { success: true };
   }
 
   /**

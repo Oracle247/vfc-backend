@@ -8,3 +8,4 @@ export { DepartmentRoute } from '../../modules/department/routes';
 export { SettingsRoute } from '../../modules/settings/routes';
 export { ServiceDayRoute } from '../../modules/serviceDay/routes';
 export { SpecialProgramRoute } from '../../modules/specialProgram/routes';
+export { RbacRoute } from '../../modules/rbac/routes';

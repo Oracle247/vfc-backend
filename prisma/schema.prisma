@@ -38,6 +38,10 @@ model User {
   // System access role (separate from church journey)
   role UserRole @default(MEMBER)
 
+  // Worker lifecycle state. Only ACTIVE users can log in. Other states are
+  // visible to admins for member-management views but block authentication.
+  accountStatus AccountStatus @default(ACTIVE)
+
   attendances  Attendance[]
   createdAt    DateTime     @default(now())
   updatedAt    DateTime     @updatedAt
@@ -53,6 +57,7 @@ model User {
   passwordInvites  InviteToken[]    @relation("UserInvites")
   createdInvites   InviteToken[]    @relation("CreatedInvites")
   deptLateUpdates  ServiceDayDepartmentLateTime[] @relation("DeptLateUpdates")
+  deptPositions    DepartmentPosition[]           @relation("UserDepartmentPositions")
 }
 
 model AttendanceSession {
@@ -78,16 +83,39 @@ model ServiceDay {
   name          String
   weekday       Weekday
   services      ServiceDayService[]
+  variations    ServiceDayVariation[]
   sessions      AttendanceSession[]
   deptLateTimes ServiceDayDepartmentLateTime[]
   createdAt     DateTime                        @default(now())
   updatedAt     DateTime                        @updatedAt
 }
 
-// Per-department late-coming override for a given service day. When a session
-// for this ServiceDay is reported, workers in `department` are considered
-// "late" if marked after `lateTime` (HH:mm, local). Falls back to the
-// session-wide cutoff when no override exists.
+model ServiceDayVariation {
+  id           String                       @id @default(cuid())
+  serviceDayId String
+  serviceDay   ServiceDay                   @relation(fields: [serviceDayId], references: [id], onDelete: Cascade)
+  name         String
+  services     ServiceDayVariationService[]
+  createdAt    DateTime                     @default(now())
+  updatedAt    DateTime                     @updatedAt
+
+  @@unique([serviceDayId, name])
+  @@index([serviceDayId])
+}
+
+model ServiceDayVariationService {
+  id             String              @id @default(cuid())
+  variationId    String
+  variation      ServiceDayVariation @relation(fields: [variationId], references: [id], onDelete: Cascade)
+  order          Int
+  serviceTime    String              // "HH:mm"
+  preServiceTime String?             // "HH:mm" or null
+  closesAt       String?             // "HH:mm" or null
+
+  @@unique([variationId, order])
+  @@index([variationId])
+}
+
 model ServiceDayDepartmentLateTime {
   id           String     @id @default(cuid())
   serviceDayId String
@@ -228,6 +256,60 @@ model Department {
   members        User[]                          @relation("UserDepartments")
   assistantHeads User[]                          @relation("DepartmentAssistant")
   lateTimes      ServiceDayDepartmentLateTime[]
+  positions      DepartmentPosition[]
+}
+
+// Title within a department: HOD, Assistant HOD, Secretary, Coordinator, ...
+// Decoupled from the existing head/assistantHeads relations so admins can add
+// finer roles without disturbing the legacy two-rung hierarchy.
+model Position {
+  id          String               @id @default(cuid())
+  name        String               @unique
+  description String?
+  permissions PositionPermission[]
+  assignments DepartmentPosition[]
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+}
+
+// A capability the system can check, addressed by `key`. Bound to Positions
+// via PositionPermission. Heads/assistants get implicit grants via code in
+// src/core/permissions.ts.
+model Permission {
+  id          String               @id @default(cuid())
+  key         String               @unique
+  label       String
+  description String?
+  positions   PositionPermission[]
+  createdAt   DateTime             @default(now())
+}
+
+model PositionPermission {
+  positionId   String
+  permissionId String
+  position     Position   @relation(fields: [positionId], references: [id], onDelete: Cascade)
+  permission   Permission @relation(fields: [permissionId], references: [id], onDelete: Cascade)
+
+  @@id([positionId, permissionId])
+  @@index([permissionId])
+}
+
+// Per-(user × department) Position assignment. A user can hold multiple
+// positions in the same department (e.g. Secretary + Coordinator) — the
+// resolver takes the union of their permissions.
+model DepartmentPosition {
+  id           String     @id @default(cuid())
+  userId       String
+  departmentId String
+  positionId   String
+  user         User       @relation("UserDepartmentPositions", fields: [userId], references: [id], onDelete: Cascade)
+  department   Department @relation(fields: [departmentId], references: [id], onDelete: Cascade)
+  position     Position   @relation(fields: [positionId], references: [id], onDelete: Cascade)
+  assignedAt   DateTime   @default(now())
+
+  @@unique([userId, departmentId, positionId])
+  @@index([departmentId])
+  @@index([userId])
 }
 
 model Invoice {
@@ -319,6 +401,13 @@ enum UserRole {
   MEMBER
   WORKER
   ADMIN
+}
+
+enum AccountStatus {
+  ACTIVE
+  INACTIVE
+  SUSPENDED
+  ARCHIVED
 }
 
 model InvoicePayment {

@@ -1,4 +1,4 @@
-import { Prisma, ChurchStatus, Gender, MembershipType, UserRole, WorkerType } from "@prisma/client";
+import { Prisma, AccountStatus, ChurchStatus, Gender, MembershipType, UserRole, WorkerType } from "@prisma/client";
 import bcrypt from "bcrypt";
 import { IUser } from "../models/UserModel";
 import prisma from "../../../core/databases/prisma";
@@ -145,8 +145,15 @@ export class UserService {
     const result = await prisma.user.findUnique({
       where: { id },
       include: {
-        headedDepartments: { select: { id: true, name: true } },
+        departments:          { select: { id: true, name: true } },
+        headedDepartments:    { select: { id: true, name: true } },
         assistantDepartments: { select: { id: true, name: true } },
+        deptPositions: {
+          select: {
+            departmentId: true,
+            position: { select: { id: true, name: true } },
+          },
+        },
       },
     });
 
@@ -154,8 +161,14 @@ export class UserService {
       throw new Error("User not found");
     }
 
+    // Resolve permissions per department in one pass so the frontend doesn't
+    // have to make N requests. Imported here (not at top) to avoid a cycle
+    // with core/permissions which doesn't import this module.
+    const { permissionsByDepartmentForUser } = await import("../../../core/permissions");
+    const permissionsByDepartment = await permissionsByDepartmentForUser(id);
+
     const { password, ...userWithoutPassword } = result;
-    return userWithoutPassword;
+    return { ...userWithoutPassword, permissionsByDepartment } as Partial<User>;
   }
 
   async analyzeExpenses(filePath: string): Promise<any> {
@@ -201,6 +214,9 @@ export class UserService {
     churchStatus?: ChurchStatus;
     membershipType?: MembershipType;
     role?: UserRole;
+    accountStatus?: AccountStatus;
+    /** Filter to users who are members of this department. */
+    departmentId?: string;
     search?: string;
   }) {
     const where: any = {};
@@ -208,6 +224,10 @@ export class UserService {
     if (params.churchStatus) where.churchStatus = params.churchStatus;
     if (params.membershipType) where.membershipType = params.membershipType;
     if (params.role) where.role = params.role;
+    if (params.accountStatus) where.accountStatus = params.accountStatus;
+    if (params.departmentId) {
+      where.departments = { some: { id: params.departmentId } };
+    }
     if (params.search) {
       where.OR = [
         { firstName: { contains: params.search, mode: "insensitive" } },
@@ -222,6 +242,19 @@ export class UserService {
       where,
       orderBy: { createdAt: "desc" },
     });
+  }
+
+  /**
+   * Flip a user's accountStatus. Used by the admin members page for
+   * suspend/inactive/archive/restore actions.
+   */
+  async updateAccountStatus(id: string, accountStatus: AccountStatus) {
+    const updated = await prisma.user.update({
+      where: { id },
+      data: { accountStatus },
+      select: { id: true, accountStatus: true },
+    });
+    return updated;
   }
 
   /**

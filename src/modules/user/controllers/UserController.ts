@@ -23,16 +23,32 @@ export class UserController {
 
   public getFilteredUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const { page, limit, churchStatus, membershipType, role, search } = req.query;
+      const {
+        page, limit, churchStatus, membershipType, role,
+        accountStatus, departmentId, search,
+      } = req.query;
       const result = await this.userService.getFilteredUsers({
         page: page ? parseInt(page as string) : undefined,
         limit: limit ? parseInt(limit as string) : undefined,
         churchStatus: churchStatus as any,
         membershipType: membershipType as any,
         role: role as any,
+        accountStatus: accountStatus as any,
+        departmentId: departmentId as string | undefined,
         search: search as string,
       });
       successResponse(res, "Users fetched successfully", StatusCodes.OK, result);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  public updateAccountStatus = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const { accountStatus } = req.body;
+      const user = await this.userService.updateAccountStatus(req.params.id, accountStatus);
+      successResponse(res, "Account status updated", StatusCodes.OK, user);
     } catch (err) {
       logDevError(err);
       next(err);

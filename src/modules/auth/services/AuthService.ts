@@ -34,6 +34,15 @@ export class AuthService {
             throw new Error("Invalid email or password");
         }
 
+        // Account lifecycle gate. Only ACTIVE users may authenticate.
+        if (user.accountStatus !== "ACTIVE") {
+            const reason =
+                user.accountStatus === "SUSPENDED" ? "Your account has been suspended." :
+                user.accountStatus === "ARCHIVED"  ? "Your account has been archived." :
+                                                    "Your account is inactive.";
+            throw new Error(`${reason} Please contact an administrator.`);
+        }
+
         const token = jwt.sign(
             { userId: user.id, role: user.role },
             JWT_SECRET,

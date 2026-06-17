@@ -1,0 +1,1 @@
+export { RbacRoute } from "./RbacRoute";

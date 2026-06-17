@@ -371,10 +371,21 @@ export class AttendanceService {
     });
   }
 
-  async getAttendanceTrend(groupBy: 'session' | 'week' | 'month' = 'session') {
+  async getAttendanceTrend(groupBy: 'session' | 'week' | 'month' = 'session', departmentId?: string) {
     if (groupBy === 'session') {
+      const attendeesCount = departmentId
+        ? {
+            where: {
+              user: { departments: { some: { id: departmentId } } },
+            },
+          }
+        : true;
+
       const sessions = await prisma.attendanceSession.findMany({
-        include: { _count: { select: { attendees: true } } },
+        include: {
+          _count: { select: { attendees: attendeesCount } },
+          serviceDay: { select: { id: true, name: true, weekday: true } },
+        },
         orderBy: { startedAt: 'asc' },
       });
 
@@ -382,13 +393,32 @@ export class AttendanceService {
         period: s.startedAt.toISOString(),
         label: s.serviceName,
         count: s._count.attendees,
+        serviceDayId:   s.serviceDay?.id ?? null,
+        serviceDayName: s.serviceDay?.name ?? null,
+        weekday:        s.serviceDay?.weekday ?? null,
       }));
     }
 
     const interval = groupBy === 'week' ? 'week' : 'month';
-    const results: { period: Date; count: bigint }[] = await prisma.$queryRawUnsafe(
-      `SELECT date_trunc('${interval}', "markedAt") as period, COUNT(*)::bigint as count FROM "Attendance" GROUP BY period ORDER BY period`
-    );
+
+
+    const results: { period: Date; count: bigint }[] = departmentId
+      ? await prisma.$queryRaw`
+          SELECT date_trunc(${interval}, a."markedAt") AS period,
+                 COUNT(*)::bigint AS count
+          FROM "Attendance" a
+          JOIN "_UserDepartments" ud ON ud."B" = a."userId"
+          WHERE ud."A" = ${departmentId}
+          GROUP BY period
+          ORDER BY period
+        `
+      : await prisma.$queryRaw`
+          SELECT date_trunc(${interval}, "markedAt") AS period,
+                 COUNT(*)::bigint AS count
+          FROM "Attendance"
+          GROUP BY period
+          ORDER BY period
+        `;
 
     return results.map(r => ({
       period: new Date(r.period).toISOString(),

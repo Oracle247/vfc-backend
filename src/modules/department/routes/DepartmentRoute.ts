@@ -11,6 +11,9 @@ import {
   AssignHeadSchema,
   AssignMembersSchema,
   RemoveMembersSchema,
+  AssignAssistantsSchema,
+  RemoveAssistantsSchema,
+  AssignPositionSchema,
 } from '../schema/department.schema';
 
 class DepartmentRoute implements Routes {
@@ -99,6 +102,41 @@ class DepartmentRoute implements Routes {
       authorize(UserRole.ADMIN),
       validate(RemoveMembersSchema),
       this.departmentController.removeMembers
+    );
+
+    this.router.post(`${this.path}/:id/assistants`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(AssignAssistantsSchema),
+      this.departmentController.addAssistants
+    );
+
+    this.router.delete(`${this.path}/:id/assistants`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(RemoveAssistantsSchema),
+      this.departmentController.removeAssistants
+    );
+
+    // Per-(user × dept) Position assignments. Admins assign, but any
+    // authenticated user can read the list (so dept exec UIs can show
+    // current titleholders).
+    this.router.get(`${this.path}/:id/positions`,
+      authenticate,
+      this.departmentController.listPositions
+    );
+
+    this.router.post(`${this.path}/:id/positions`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(AssignPositionSchema),
+      this.departmentController.assignPosition
+    );
+
+    this.router.delete(`${this.path}/:id/positions/:positionId/users/:userId`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      this.departmentController.removePosition
     );
   }
 }

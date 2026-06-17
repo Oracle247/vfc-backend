@@ -29,6 +29,12 @@ const normaliseTemplate = (s: ServiceTemplateInput) => ({
 
 const include = {
   services: { orderBy: { order: "asc" as const } },
+  variations: {
+    orderBy: { name: "asc" as const },
+    include: {
+      services: { orderBy: { order: "asc" as const } },
+    },
+  },
 };
 
 export class ServiceDayService {

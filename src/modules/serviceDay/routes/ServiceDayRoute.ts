@@ -1,6 +1,10 @@
 import { Request, Response, NextFunction, Router } from "express";
 import { UserRole } from "@prisma/client";
-import { ServiceDayController, DepartmentLateTimeController } from "../controllers";
+import {
+  ServiceDayController,
+  DepartmentLateTimeController,
+  ServiceDayVariationController,
+} from "../controllers";
 import { Routes } from "../../../core/routes/interfaces";
 import { authenticate, authorize } from "../../../core/middlewares/AuthMiddleware";
 import { validate } from "../../../core/middlewares";
@@ -8,6 +12,8 @@ import {
   CreateServiceDaySchema,
   UpdateServiceDaySchema,
   UpsertDeptLateTimeSchema,
+  CreateVariationSchema,
+  UpdateVariationSchema,
 } from "../schema/serviceDay.schema";
 
 class ServiceDayRoute implements Routes {
@@ -15,6 +21,7 @@ class ServiceDayRoute implements Routes {
   public router = Router();
   public controller = new ServiceDayController();
   public lateTimeController = new DepartmentLateTimeController();
+  public variationController = new ServiceDayVariationController();
 
   constructor() {
     this.initializeRoutes();
@@ -72,6 +79,34 @@ class ServiceDayRoute implements Routes {
     this.router.delete(`${this.path}/:serviceDayId/department-late-times/:departmentId`,
       authenticate,
       this.lateTimeController.remove,
+    );
+
+    // Variations under a service day. ADMIN-only writes (a variation is a
+    // long-lived template, not a per-session knob). Reads are open to any
+    // authed user so the session-start dialog can show them.
+    this.router.get(`${this.path}/:serviceDayId/variations`,
+      authenticate,
+      this.variationController.list,
+    );
+
+    this.router.post(`${this.path}/:serviceDayId/variations`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(CreateVariationSchema),
+      this.variationController.create,
+    );
+
+    this.router.put(`${this.path}/:serviceDayId/variations/:variationId`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      validate(UpdateVariationSchema),
+      this.variationController.update,
+    );
+
+    this.router.delete(`${this.path}/:serviceDayId/variations/:variationId`,
+      authenticate,
+      authorize(UserRole.ADMIN),
+      this.variationController.remove,
     );
   }
 }

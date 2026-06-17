@@ -25,3 +25,16 @@ export const AssignMembersSchema = z.object({
 export const RemoveMembersSchema = z.object({
   userIds: z.array(z.string().cuid("Invalid user ID")).min(1, "At least one user ID is required"),
 });
+
+export const AssignAssistantsSchema = z.object({
+  userIds: z.array(z.string().cuid("Invalid user ID")).min(1, "At least one user ID is required"),
+});
+
+export const RemoveAssistantsSchema = z.object({
+  userIds: z.array(z.string().cuid("Invalid user ID")).min(1, "At least one user ID is required"),
+});
+
+export const AssignPositionSchema = z.object({
+  userId:     z.string().cuid("Invalid user ID"),
+  positionId: z.string().cuid("Invalid position ID"),
+});

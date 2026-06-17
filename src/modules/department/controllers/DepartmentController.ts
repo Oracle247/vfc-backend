@@ -99,6 +99,64 @@ export class DepartmentController {
     }
   };
 
+  public addAssistants = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const department = await this.departmentService.addAssistants(req.params.id, req.body.userIds);
+      successResponse(res, "Assistants added", StatusCodes.OK, department);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  public removeAssistants = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const department = await this.departmentService.removeAssistants(req.params.id, req.body.userIds);
+      successResponse(res, "Assistants removed", StatusCodes.OK, department);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  public listPositions = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const rows = await this.departmentService.listPositions(req.params.id);
+      successResponse(res, "Positions fetched", StatusCodes.OK, rows);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  public assignPosition = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const row = await this.departmentService.assignPosition(
+        req.params.id,
+        req.body.userId,
+        req.body.positionId,
+      );
+      successResponse(res, "Position assigned", StatusCodes.OK, row);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
+  public removePosition = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      await this.departmentService.removePosition(
+        req.params.id,
+        req.params.userId,
+        req.params.positionId,
+      );
+      successResponse(res, "Position removed", StatusCodes.OK);
+    } catch (err) {
+      logDevError(err);
+      next(err);
+    }
+  };
+
   public bulkImport = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const file = req.file;
